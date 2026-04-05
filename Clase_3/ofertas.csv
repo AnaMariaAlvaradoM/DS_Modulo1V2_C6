@@ -1,0 +1,401 @@
+oferta_id,empresa,area,nivel_requerido,ciudad,modalidad,tipo_contrato,salario_minimo_cop,salario_maximo_cop,vacantes,skills_requeridos,estado,fecha_publicacion,dias_abierta
+1,Pragma,Frontend,Junior,Medellín,Híbrido,Medio Tiempo,2000000,3212683,3,React|TypeScript,Pausada,2024-03-17,29
+2,Pragma,Ciberseguridad,Senior,Barranquilla,Remoto,Freelance,7000000,8813541,1,Burp Suite|Kali,Cerrada,2024-03-07,74
+3,Arus,Data Science,Lead,Villavicencio,Remoto,Tiempo Completo,10000000,13861278,1,Pandas|TensorFlow|SQL,Activa,2024-04-28,120
+4,Habi,BI & Analytics,Junior,Tunja,Remoto,Medio Tiempo,2000000,3297953,1,DAX|SQL|Python|Power BI,Cerrada,2024-02-15,63
+5,MercadoLibre,BI & Analytics,Junior,Popayán,Remoto,Tiempo Completo,2000000,3122354,3,SQL|Excel|Python,Activa,2024-10-04,106
+6,Pragma,BI & Analytics,Semi-Senior,Cali,Remoto,Tiempo Completo,4000000,6760766,4,Excel|Tableau|Python,Activa,2024-01-29,47
+7,Bancolombia Digital,BI & Analytics,Lead,Villavicencio,Remoto,Práctica,10000000,11641609,1,SQL|Tableau|Excel,Activa,2024-07-20,47
+8,Bancolombia Digital,Mobile,Senior,Neiva,Presencial,Práctica,7000000,8823539,3,React Native|Kotlin|Flutter|Swift,Cerrada,2024-04-06,38
+9,MercadoLibre,Full Stack,Lead,Neiva,Remoto,Medio Tiempo,10000000,11708599,4,React|Node.js|Docker,Activa,2024-03-01,12
+10,Konrad Lorenz Tech,BI & Analytics,Semi-Senior,Tunja,Híbrido,Freelance,4000000,6118012,2,DAX|SQL|Python|Tableau,Activa,2024-09-20,109
+11,Habi,Full Stack,Junior,Montería,Remoto,Medio Tiempo,2000000,4304994,1,React|Docker|Node.js,Cerrada,2024-10-19,58
+12,PSL,DevOps,Semi-Senior,Neiva,Remoto,Freelance,4000000,7796386,1,Jenkins|Kubernetes,Activa,2024-04-30,29
+13,Rappi Tech,Data Science,Semi-Senior,Cali,Híbrido,Freelance,4000000,7803729,5,SQL|TensorFlow|Pandas|Scikit-learn,Activa,2024-01-15,48
+14,Truora,BI & Analytics,Senior,Ibagué,Presencial,Práctica,7000000,10461328,3,Power BI|Python|Tableau,Cerrada,2024-06-20,35
+15,Arus,Machine Learning,Lead,Villavicencio,Presencial,Práctica,10000000,11266682,4,TensorFlow|PyTorch,Activa,2024-05-23,17
+16,TechCorp Colombia,Mobile,Senior,Tunja,Híbrido,Tiempo Completo,7000000,10402021,3,Kotlin|Swift,Pausada,2024-06-05,66
+17,Konrad Lorenz Tech,BI & Analytics,Semi-Senior,Pasto,Híbrido,Práctica,4000000,6665452,3,SQL|Python,Cerrada,2024-04-03,24
+18,Siigo,Mobile,Semi-Senior,Pasto,Híbrido,Tiempo Completo,4000000,6114405,2,Kotlin|Swift|Flutter|Dart,Activa,2024-05-26,7
+19,PSL,BI & Analytics,Junior,Ibagué,Presencial,Medio Tiempo,2000000,3234195,4,Power BI|SQL|Excel,Activa,2024-04-22,85
+20,Truora,Data Science,Junior,Popayán,Presencial,Medio Tiempo,2000000,3595963,1,Scikit-learn|SQL,Activa,2024-10-08,58
+21,Nequi,QA,Semi-Senior,Pasto,Híbrido,Freelance,4000000,5739112,4,Postman|JMeter|Selenium,Cerrada,2024-09-15,68
+22,Nequi,Backend,Lead,Bucaramanga,Híbrido,Tiempo Completo,10000000,13900365,5,Spring Boot|Java|FastAPI|SQL,Activa,2024-06-23,113
+23,Pragma,Ciberseguridad,Lead,Montería,Presencial,Freelance,10000000,12705981,2,Python|OWASP|Kali,Activa,2024-01-02,15
+24,Platzi,Frontend,Lead,Cali,Remoto,Freelance,10000000,12365177,5,React|TypeScript,Cerrada,2024-01-24,14
+25,Pragma,Full Stack,Semi-Senior,Cali,Presencial,Medio Tiempo,4000000,6341290,4,JavaScript|Python|Node.js,Cerrada,2024-04-09,25
+26,Nequi,DevOps,Junior,Villavicencio,Híbrido,Tiempo Completo,2000000,5073567,2,AWS|Terraform,Pausada,2024-04-11,16
+27,Pragma,QA,Senior,Popayán,Presencial,Medio Tiempo,7000000,8112361,5,Pytest|Postman|Selenium,Cerrada,2024-10-21,90
+28,Habi,Diseño UX/UI,Senior,Pasto,Híbrido,Medio Tiempo,7000000,8984114,2,CSS|Sketch|Prototyping|Figma,Activa,2024-08-14,30
+29,Truora,Mobile,Senior,Manizales,Presencial,Medio Tiempo,7000000,8541915,2,Flutter|React Native|Swift,Activa,2024-02-14,65
+30,Platzi,Backend,Junior,Neiva,Remoto,Medio Tiempo,2000000,4631961,5,Spring Boot|Java|FastAPI|SQL,Activa,2024-03-02,98
+31,TechCorp Colombia,Data Science,Junior,Armenia,Remoto,Medio Tiempo,2000000,4662730,1,TensorFlow|Scikit-learn|R|SQL,Activa,2024-10-10,29
+32,Addi,Backend,Lead,Santa Marta,Híbrido,Freelance,10000000,12688363,4,Java|Spring Boot|FastAPI,Activa,2024-08-14,97
+33,Pragma,DevOps,Semi-Senior,Bucaramanga,Híbrido,Tiempo Completo,4000000,7662294,1,Jenkins|Terraform,Cerrada,2024-05-29,42
+34,MercadoLibre,Full Stack,Semi-Senior,Bucaramanga,Híbrido,Freelance,4000000,6698807,1,Docker|JavaScript|SQL,Activa,2024-06-21,28
+35,Siigo,DevOps,Lead,Cali,Híbrido,Tiempo Completo,10000000,13229577,1,Kubernetes|Docker,Activa,2024-09-08,36
+36,Siigo,Ciberseguridad,Senior,Tunja,Presencial,Tiempo Completo,7000000,10739724,5,Python|Linux|Burp Suite|OWASP,Activa,2024-01-07,114
+37,Inlaze,BI & Analytics,Junior,Cúcuta,Híbrido,Práctica,2000000,3961496,5,SQL|Tableau|Excel,Cerrada,2024-08-30,56
+38,Komet Sales,Ciberseguridad,Junior,Ibagué,Presencial,Tiempo Completo,2000000,3730982,1,Python|OWASP|Kali,Activa,2024-08-07,93
+39,Arus,QA,Lead,Bogotá,Híbrido,Tiempo Completo,10000000,13416892,4,JMeter|Cypress|Pytest,Activa,2024-04-18,76
+40,Truora,Frontend,Junior,Bogotá,Remoto,Tiempo Completo,2000000,4063763,2,JavaScript|CSS,Activa,2024-03-22,86
+41,Globant,Full Stack,Lead,Cartagena,Híbrido,Tiempo Completo,10000000,11627766,3,Docker|SQL,Activa,2024-04-13,74
+42,Bold,Machine Learning,Lead,Tunja,Híbrido,Práctica,10000000,12702817,1,Python|TensorFlow,Activa,2024-09-24,61
+43,Truora,BI & Analytics,Lead,Manizales,Remoto,Medio Tiempo,10000000,11553025,4,DAX|Excel|Python,Cerrada,2024-01-15,68
+44,Komet Sales,Full Stack,Lead,Manizales,Híbrido,Medio Tiempo,10000000,13646459,5,Python|JavaScript,Pausada,2024-06-07,26
+45,Konrad Lorenz Tech,Full Stack,Lead,Cúcuta,Remoto,Tiempo Completo,10000000,13149556,5,React|JavaScript,Cerrada,2024-04-03,39
+46,Runa,Frontend,Junior,Cali,Presencial,Tiempo Completo,2000000,4464254,4,HTML|TypeScript|Vue.js|React,Cerrada,2024-05-19,46
+47,TechCorp Colombia,Data Science,Junior,Cartagena,Presencial,Práctica,2000000,4659447,3,SQL|Scikit-learn|Pandas,Activa,2024-08-10,64
+48,PSL,Machine Learning,Lead,Cali,Presencial,Medio Tiempo,10000000,12617562,3,Python|SQL|Scikit-learn,Activa,2024-01-18,33
+49,Konrad Lorenz Tech,DevOps,Senior,Manizales,Presencial,Medio Tiempo,7000000,8157852,5,Terraform|Kubernetes|AWS,Cerrada,2024-05-19,82
+50,Globant,Ciberseguridad,Junior,Pasto,Remoto,Práctica,2000000,3934239,3,OWASP|Python|Linux,Activa,2024-07-08,76
+51,Globant,QA,Senior,Bucaramanga,Híbrido,Medio Tiempo,7000000,9940589,4,Selenium|Postman,Cerrada,2024-08-06,48
+52,Inlaze,Machine Learning,Senior,Tunja,Híbrido,Freelance,7000000,10565756,4,Scikit-learn|TensorFlow|PyTorch|MLflow,Activa,2024-05-24,53
+53,Siigo,Mobile,Senior,Cúcuta,Híbrido,Freelance,7000000,8306158,3,Dart|Swift|Kotlin|Flutter,Cerrada,2024-07-21,82
+54,Arus,Diseño UX/UI,Senior,Neiva,Presencial,Medio Tiempo,7000000,10411388,3,Prototyping|CSS|Sketch|Figma,Cerrada,2024-05-15,12
+55,Runa,DevOps,Junior,Ibagué,Híbrido,Práctica,2000000,3538144,5,Terraform|Linux|Jenkins|Docker,Cerrada,2024-04-21,83
+56,Globant,DevOps,Semi-Senior,Bogotá,Híbrido,Práctica,4000000,5541437,1,AWS|Jenkins,Cerrada,2024-02-28,71
+57,Nequi,Mobile,Senior,Cúcuta,Híbrido,Práctica,7000000,9554174,3,Flutter|Swift,Activa,2024-10-26,17
+58,PSL,Data Science,Junior,Santa Marta,Híbrido,Práctica,2000000,4276690,4,R|Scikit-learn|Python|Pandas,Pausada,2024-03-16,93
+59,Globant,Frontend,Senior,Cartagena,Remoto,Medio Tiempo,7000000,9935549,3,CSS|TypeScript|React|HTML,Cerrada,2024-07-01,77
+60,Truora,Machine Learning,Senior,Bogotá,Híbrido,Práctica,7000000,8330852,5,PyTorch|MLflow|SQL|Python,Cerrada,2024-02-05,43
+61,Leal,Mobile,Senior,Villavicencio,Remoto,Tiempo Completo,7000000,8303998,2,Swift|Kotlin,Pausada,2024-10-08,48
+62,Addi,Frontend,Semi-Senior,Bucaramanga,Híbrido,Medio Tiempo,4000000,5140448,2,Vue.js|TypeScript,Activa,2024-08-22,38
+63,TechCorp Colombia,DevOps,Junior,Cúcuta,Remoto,Práctica,2000000,5995595,5,Docker|Linux|Jenkins|AWS,Activa,2024-07-21,101
+64,Runa,Diseño UX/UI,Semi-Senior,Santa Marta,Presencial,Tiempo Completo,4000000,5641689,1,Figma|HTML|Adobe XD,Cerrada,2024-09-06,66
+65,PSL,DevOps,Junior,Pereira,Presencial,Tiempo Completo,2000000,3650812,2,Kubernetes|Terraform,Activa,2024-07-06,7
+66,Addi,Machine Learning,Senior,Villavicencio,Presencial,Medio Tiempo,7000000,9880959,3,TensorFlow|MLflow,Cerrada,2024-03-22,35
+67,TechCorp Colombia,Frontend,Semi-Senior,Cartagena,Remoto,Medio Tiempo,4000000,6384913,4,JavaScript|React,Activa,2024-02-25,28
+68,Nequi,Data Science,Semi-Senior,Santa Marta,Presencial,Práctica,4000000,6849575,1,SQL|Python|Pandas,Cerrada,2024-03-03,64
+69,Truora,BI & Analytics,Semi-Senior,Pasto,Presencial,Medio Tiempo,4000000,5237672,2,SQL|Power BI,Activa,2024-07-08,27
+70,Truora,DevOps,Senior,Bucaramanga,Remoto,Tiempo Completo,7000000,8909261,3,Terraform|Jenkins,Cerrada,2024-03-08,15
+71,Runa,Ciberseguridad,Junior,Bogotá,Remoto,Práctica,2000000,3683857,2,Kali|Python,Cerrada,2024-03-08,47
+72,Arus,Ciberseguridad,Lead,Tunja,Presencial,Tiempo Completo,10000000,12997692,4,Wireshark|OWASP,Activa,2024-05-13,53
+73,Bancolombia Digital,Frontend,Senior,Villavicencio,Presencial,Medio Tiempo,7000000,10251598,4,Vue.js|CSS,Activa,2024-08-28,81
+74,Pragma,Backend,Semi-Senior,Ibagué,Híbrido,Tiempo Completo,4000000,7453387,3,Node.js|Django|Java|FastAPI,Activa,2024-09-30,37
+75,Nequi,Ciberseguridad,Semi-Senior,Neiva,Híbrido,Tiempo Completo,4000000,5781427,1,Wireshark|Burp Suite,Activa,2024-02-14,7
+76,Siigo,Cloud,Junior,Pasto,Híbrido,Práctica,2000000,5576102,1,Terraform|GCP,Cerrada,2024-02-07,68
+77,Siigo,Diseño UX/UI,Junior,Cartagena,Presencial,Tiempo Completo,2000000,5465231,5,Adobe XD|Figma|HTML|CSS,Cerrada,2024-06-30,32
+78,Pragma,Frontend,Semi-Senior,Armenia,Presencial,Freelance,4000000,6047625,2,Vue.js|HTML,Activa,2024-04-03,21
+79,Globant,Frontend,Semi-Senior,Villavicencio,Remoto,Práctica,4000000,7848465,3,TypeScript|React|CSS|Vue.js,Cerrada,2024-05-13,85
+80,Platzi,Diseño UX/UI,Junior,Pereira,Remoto,Freelance,2000000,4234919,3,CSS|HTML|Adobe XD|Figma,Activa,2024-01-10,40
+81,TechCorp Colombia,Mobile,Lead,Bucaramanga,Remoto,Freelance,10000000,13574672,4,Kotlin|Swift|Dart|React Native,Cerrada,2024-06-27,19
+82,Habi,Ciberseguridad,Senior,Bucaramanga,Presencial,Práctica,7000000,10661960,2,Kali|Linux,Activa,2024-06-11,54
+83,Truora,Ciberseguridad,Lead,Ibagué,Remoto,Medio Tiempo,10000000,12504466,5,Kali|Wireshark|Python,Activa,2024-08-02,11
+84,TechCorp Colombia,Frontend,Semi-Senior,Pasto,Híbrido,Medio Tiempo,4000000,5632959,5,React|JavaScript|HTML,Activa,2024-02-06,42
+85,Konrad Lorenz Tech,Machine Learning,Senior,Villavicencio,Remoto,Práctica,7000000,9024935,4,MLflow|PyTorch,Cerrada,2024-03-19,62
+86,Bancolombia Digital,Full Stack,Semi-Senior,Montería,Presencial,Tiempo Completo,4000000,6406033,3,JavaScript|React|Python,Cerrada,2024-01-14,80
+87,Siigo,Diseño UX/UI,Junior,Tunja,Remoto,Tiempo Completo,2000000,4143414,5,Figma|Prototyping,Activa,2024-04-24,91
+88,Globant,Frontend,Semi-Senior,Bucaramanga,Remoto,Freelance,4000000,6241818,5,React|TypeScript|CSS|Vue.js,Cerrada,2024-02-27,57
+89,PSL,Ciberseguridad,Lead,Bogotá,Remoto,Tiempo Completo,10000000,13226497,3,Kali|OWASP|Linux,Activa,2024-10-02,8
+90,Bancolombia Digital,Full Stack,Junior,Villavicencio,Remoto,Práctica,2000000,4854906,5,Docker|SQL|Python,Activa,2024-06-09,67
+91,PSL,Mobile,Lead,Barranquilla,Híbrido,Práctica,10000000,11542328,2,Swift|React Native|Flutter|Kotlin,Activa,2024-04-02,15
+92,MercadoLibre,Backend,Semi-Senior,Bogotá,Presencial,Tiempo Completo,4000000,5190723,3,Spring Boot|Python,Activa,2024-05-09,69
+93,Inlaze,Mobile,Lead,Barranquilla,Remoto,Práctica,10000000,13579485,4,Dart|Kotlin|React Native|Flutter,Activa,2024-07-27,76
+94,Inlaze,Full Stack,Semi-Senior,Pereira,Remoto,Tiempo Completo,4000000,5239130,2,Docker|React,Cerrada,2024-08-04,62
+95,Bancolombia Digital,Diseño UX/UI,Junior,Bogotá,Presencial,Medio Tiempo,2000000,3676514,5,Figma|Prototyping,Activa,2024-10-05,51
+96,Konrad Lorenz Tech,QA,Junior,Bucaramanga,Presencial,Medio Tiempo,2000000,5220716,2,Cypress|Pytest|JMeter,Activa,2024-01-01,120
+97,Runa,Machine Learning,Semi-Senior,Medellín,Remoto,Práctica,4000000,6669784,5,TensorFlow|SQL|MLflow,Cerrada,2024-03-24,68
+98,Inlaze,Cloud,Semi-Senior,Villavicencio,Híbrido,Medio Tiempo,4000000,5899636,4,Kubernetes|AWS|Terraform,Activa,2024-02-12,65
+99,Bold,Frontend,Lead,Barranquilla,Remoto,Práctica,10000000,13315884,3,React|HTML,Pausada,2024-02-25,1
+100,Nequi,Full Stack,Semi-Senior,Manizales,Híbrido,Medio Tiempo,4000000,5415862,5,SQL|Python,Cerrada,2024-04-24,54
+101,Inlaze,Diseño UX/UI,Junior,Armenia,Presencial,Tiempo Completo,2000000,4703141,4,HTML|Adobe XD,Activa,2024-02-18,84
+102,TechCorp Colombia,Machine Learning,Semi-Senior,Tunja,Híbrido,Tiempo Completo,4000000,7743868,3,Scikit-learn|MLflow,Activa,2024-02-08,80
+103,Globant,Ciberseguridad,Lead,Neiva,Híbrido,Tiempo Completo,10000000,12477834,5,Wireshark|Kali,Activa,2024-09-30,83
+104,MercadoLibre,QA,Lead,Bogotá,Híbrido,Medio Tiempo,10000000,13942284,4,Pytest|Postman|JMeter,Activa,2024-07-23,69
+105,Konrad Lorenz Tech,Backend,Semi-Senior,Neiva,Remoto,Freelance,4000000,7586806,5,Java|Django|Node.js,Activa,2024-03-24,44
+106,TechCorp Colombia,Full Stack,Lead,Neiva,Híbrido,Freelance,10000000,11572537,5,Docker|SQL|React,Cerrada,2024-01-12,66
+107,Addi,Machine Learning,Lead,Cúcuta,Remoto,Práctica,10000000,13407926,5,MLflow|SQL,Activa,2024-01-12,72
+108,Truora,Ciberseguridad,Senior,Santa Marta,Híbrido,Freelance,7000000,10875547,5,Python|Wireshark|Linux,Cerrada,2024-05-25,61
+109,Globant,Machine Learning,Senior,Montería,Presencial,Medio Tiempo,7000000,9212050,4,SQL|MLflow|Python,Activa,2024-06-24,27
+110,Runa,BI & Analytics,Senior,Tunja,Remoto,Freelance,7000000,9216414,3,Excel|Python|SQL|Power BI,Activa,2024-03-26,85
+111,Bancolombia Digital,Frontend,Junior,Bucaramanga,Presencial,Medio Tiempo,2000000,4923847,1,JavaScript|HTML|React|TypeScript,Activa,2024-05-28,71
+112,Komet Sales,Cloud,Senior,Popayán,Remoto,Medio Tiempo,7000000,8002284,5,Kubernetes|AWS,Cerrada,2024-10-20,81
+113,PSL,QA,Lead,Tunja,Híbrido,Medio Tiempo,10000000,13595663,5,Postman|JMeter|Selenium|Cypress,Cerrada,2024-05-14,23
+114,Komet Sales,Frontend,Lead,Bogotá,Remoto,Tiempo Completo,10000000,11892774,1,CSS|HTML,Cerrada,2024-07-18,61
+115,TechCorp Colombia,QA,Semi-Senior,Pasto,Presencial,Freelance,4000000,5407230,5,Cypress|Postman|Pytest,Activa,2024-10-16,25
+116,Inlaze,Ciberseguridad,Junior,Armenia,Híbrido,Tiempo Completo,2000000,5741513,1,Python|OWASP|Wireshark|Kali,Activa,2024-03-23,54
+117,Komet Sales,DevOps,Lead,Barranquilla,Remoto,Medio Tiempo,10000000,12138264,3,Terraform|Docker|AWS|Kubernetes,Activa,2024-05-09,17
+118,Addi,Mobile,Senior,Tunja,Presencial,Freelance,7000000,8691366,3,Flutter|Kotlin,Pausada,2024-07-12,19
+119,Truora,QA,Lead,Cartagena,Presencial,Práctica,10000000,11747678,2,Selenium|Postman|Cypress|JMeter,Pausada,2024-04-02,16
+120,Bold,Full Stack,Senior,Bogotá,Presencial,Práctica,7000000,9288922,4,Docker|Node.js|Python,Pausada,2024-06-04,70
+121,Habi,Machine Learning,Semi-Senior,Montería,Presencial,Medio Tiempo,4000000,5404284,2,Python|TensorFlow|PyTorch,Activa,2024-06-09,1
+122,Nequi,QA,Senior,Barranquilla,Remoto,Tiempo Completo,7000000,8013943,2,JMeter|Pytest,Activa,2024-04-04,12
+123,Bold,Full Stack,Semi-Senior,Armenia,Remoto,Práctica,4000000,6135397,5,Python|Node.js|Docker,Cerrada,2024-05-06,89
+124,MercadoLibre,Cloud,Senior,Bucaramanga,Híbrido,Freelance,7000000,8714336,3,AWS|Docker|GCP,Activa,2024-06-09,13
+125,Habi,Ciberseguridad,Senior,Cali,Presencial,Tiempo Completo,7000000,8229592,3,Python|Kali|Wireshark|Burp Suite,Pausada,2024-09-27,110
+126,Bold,Backend,Senior,Neiva,Presencial,Freelance,7000000,9978100,2,Node.js|SQL,Cerrada,2024-04-19,55
+127,Globant,Cloud,Senior,Neiva,Remoto,Freelance,7000000,10435133,3,GCP|Kubernetes,Cerrada,2024-10-19,68
+128,Bancolombia Digital,Machine Learning,Semi-Senior,Ibagué,Remoto,Práctica,4000000,7141381,5,TensorFlow|Scikit-learn|Python|MLflow,Activa,2024-04-09,16
+129,Siigo,Diseño UX/UI,Semi-Senior,Popayán,Híbrido,Medio Tiempo,4000000,6791487,1,CSS|Figma,Activa,2024-09-16,69
+130,Truora,QA,Semi-Senior,Tunja,Presencial,Medio Tiempo,4000000,5040444,3,Selenium|Postman|Cypress,Cerrada,2024-08-10,33
+131,PSL,Backend,Lead,Montería,Presencial,Medio Tiempo,10000000,12373372,2,Django|Spring Boot,Activa,2024-09-19,7
+132,Addi,Backend,Senior,Armenia,Remoto,Freelance,7000000,9171118,4,SQL|Java|Django|Spring Boot,Activa,2024-09-02,57
+133,PSL,Machine Learning,Junior,Manizales,Remoto,Práctica,2000000,3572739,5,Scikit-learn|PyTorch|MLflow|Python,Cerrada,2024-05-11,58
+134,Bancolombia Digital,Machine Learning,Junior,Barranquilla,Remoto,Freelance,2000000,5011968,2,SQL|PyTorch,Activa,2024-09-29,116
+135,Rappi Tech,Frontend,Junior,Tunja,Híbrido,Práctica,2000000,5783219,5,Vue.js|TypeScript|HTML|CSS,Activa,2024-05-27,22
+136,Habi,Cloud,Senior,Neiva,Híbrido,Freelance,7000000,9837274,2,GCP|Docker|Kubernetes,Activa,2024-07-08,106
+137,Inlaze,Cloud,Semi-Senior,Barranquilla,Híbrido,Tiempo Completo,4000000,5751410,2,Docker|Kubernetes|AWS|Terraform,Activa,2024-10-25,60
+138,Habi,Mobile,Semi-Senior,Neiva,Remoto,Práctica,4000000,5060350,3,Kotlin|Flutter|Swift,Cerrada,2024-09-27,48
+139,Truora,DevOps,Lead,Bucaramanga,Híbrido,Práctica,10000000,13195173,1,Kubernetes|Terraform,Activa,2024-04-21,82
+140,Addi,Cloud,Senior,Tunja,Remoto,Tiempo Completo,7000000,10424820,2,GCP|Kubernetes,Cerrada,2024-09-08,78
+141,TechCorp Colombia,Machine Learning,Junior,Bucaramanga,Remoto,Práctica,2000000,4962977,5,Scikit-learn|SQL|TensorFlow|Python,Activa,2024-06-10,19
+142,Konrad Lorenz Tech,QA,Junior,Popayán,Híbrido,Tiempo Completo,2000000,4949006,1,JMeter|Selenium,Cerrada,2024-06-12,34
+143,Globant,Diseño UX/UI,Junior,Manizales,Híbrido,Tiempo Completo,2000000,3043768,2,HTML|Adobe XD|Sketch|CSS,Pausada,2024-09-29,17
+144,Globant,QA,Senior,Manizales,Híbrido,Práctica,7000000,8177261,5,Selenium|Cypress|JMeter|Pytest,Activa,2024-09-28,42
+145,Pragma,QA,Junior,Cúcuta,Remoto,Práctica,2000000,3866476,4,Cypress|JMeter|Selenium|Pytest,Activa,2024-06-24,120
+146,Bold,BI & Analytics,Semi-Senior,Cali,Remoto,Freelance,4000000,7137656,5,Power BI|Excel|SQL,Activa,2024-05-05,27
+147,Konrad Lorenz Tech,Diseño UX/UI,Junior,Tunja,Presencial,Práctica,2000000,3378945,3,Sketch|Figma|Adobe XD|Prototyping,Cerrada,2024-05-29,67
+148,Runa,BI & Analytics,Semi-Senior,Armenia,Híbrido,Medio Tiempo,4000000,6497653,3,Tableau|Power BI|Python,Cerrada,2024-02-29,22
+149,Pragma,Full Stack,Junior,Popayán,Remoto,Práctica,2000000,5039098,2,SQL|Docker|Python|JavaScript,Activa,2024-03-22,70
+150,PSL,QA,Semi-Senior,Bucaramanga,Híbrido,Tiempo Completo,4000000,6584234,3,Selenium|JMeter,Activa,2024-07-30,10
+151,Konrad Lorenz Tech,QA,Semi-Senior,Tunja,Híbrido,Freelance,4000000,6717964,3,Pytest|Selenium,Activa,2024-07-10,16
+152,Nequi,Frontend,Lead,Bogotá,Presencial,Medio Tiempo,10000000,13040975,4,JavaScript|Vue.js|CSS|TypeScript,Activa,2024-03-09,120
+153,Globant,Mobile,Lead,Popayán,Híbrido,Medio Tiempo,10000000,13482934,3,Dart|Flutter|Swift,Cerrada,2024-01-12,83
+154,Arus,Ciberseguridad,Lead,Bogotá,Híbrido,Medio Tiempo,10000000,11726173,5,Burp Suite|Kali|Wireshark|Linux,Activa,2024-05-22,79
+155,Konrad Lorenz Tech,Backend,Semi-Senior,Tunja,Híbrido,Práctica,4000000,5569522,4,Python|FastAPI,Activa,2024-05-16,114
+156,Globant,BI & Analytics,Junior,Villavicencio,Presencial,Tiempo Completo,2000000,3851842,3,SQL|Excel|Python|DAX,Pausada,2024-09-14,98
+157,Bold,Cloud,Lead,Pasto,Híbrido,Medio Tiempo,10000000,11981619,2,GCP|AWS,Activa,2024-08-31,58
+158,Habi,DevOps,Junior,Bogotá,Híbrido,Tiempo Completo,2000000,4464259,2,Terraform|Kubernetes,Activa,2024-08-02,3
+159,Komet Sales,BI & Analytics,Semi-Senior,Santa Marta,Remoto,Tiempo Completo,4000000,6098765,1,Excel|SQL,Cerrada,2024-03-28,39
+160,Bold,Diseño UX/UI,Senior,Neiva,Remoto,Tiempo Completo,7000000,9126300,3,HTML|CSS|Adobe XD|Figma,Activa,2024-01-29,91
+161,MercadoLibre,Machine Learning,Semi-Senior,Santa Marta,Presencial,Medio Tiempo,4000000,7310383,1,PyTorch|Python|TensorFlow|MLflow,Activa,2024-09-04,92
+162,TechCorp Colombia,Mobile,Lead,Tunja,Presencial,Medio Tiempo,10000000,12634833,3,Swift|Dart,Cerrada,2024-10-21,62
+163,Truora,QA,Junior,Cúcuta,Remoto,Medio Tiempo,2000000,4214723,1,Selenium|Cypress|Postman,Activa,2024-04-19,23
+164,Bancolombia Digital,Machine Learning,Junior,Pereira,Presencial,Práctica,2000000,5205534,4,Scikit-learn|Python,Activa,2024-07-14,28
+165,Bold,Frontend,Lead,Bucaramanga,Remoto,Medio Tiempo,10000000,11147421,1,HTML|React|JavaScript,Activa,2024-05-01,51
+166,Nequi,Machine Learning,Senior,Montería,Híbrido,Tiempo Completo,7000000,8041844,3,Python|Scikit-learn,Activa,2024-06-09,4
+167,Konrad Lorenz Tech,DevOps,Semi-Senior,Bogotá,Remoto,Práctica,4000000,5906757,5,Linux|AWS,Activa,2024-04-07,97
+168,Rappi Tech,Frontend,Semi-Senior,Barranquilla,Remoto,Práctica,4000000,7375534,1,TypeScript|HTML|React|JavaScript,Cerrada,2024-08-29,19
+169,Arus,Backend,Junior,Ibagué,Híbrido,Freelance,2000000,4709232,1,Django|Python,Pausada,2024-02-26,73
+170,Bold,Ciberseguridad,Junior,Santa Marta,Presencial,Medio Tiempo,2000000,4707343,1,Kali|OWASP,Pausada,2024-03-15,106
+171,Komet Sales,Frontend,Semi-Senior,Cartagena,Remoto,Práctica,4000000,5064578,2,Vue.js|JavaScript|React|HTML,Activa,2024-04-19,117
+172,Runa,Full Stack,Junior,Santa Marta,Presencial,Práctica,2000000,4990030,2,React|SQL|Node.js|Docker,Activa,2024-01-12,27
+173,Pragma,Backend,Semi-Senior,Armenia,Presencial,Tiempo Completo,4000000,7732780,4,FastAPI|Java,Cerrada,2024-06-02,81
+174,Komet Sales,Mobile,Senior,Tunja,Presencial,Tiempo Completo,7000000,9603335,1,Flutter|Kotlin|React Native|Dart,Activa,2024-02-24,74
+175,Platzi,Frontend,Lead,Villavicencio,Híbrido,Freelance,10000000,13544475,5,TypeScript|CSS|HTML|JavaScript,Cerrada,2024-05-10,71
+176,Leal,DevOps,Lead,Medellín,Remoto,Freelance,10000000,12308461,4,AWS|Terraform,Activa,2024-09-18,96
+177,Runa,Backend,Junior,Medellín,Presencial,Freelance,2000000,5599257,5,Python|SQL,Activa,2024-08-11,39
+178,Leal,Machine Learning,Semi-Senior,Cartagena,Remoto,Freelance,4000000,5966624,3,Scikit-learn|Python|TensorFlow,Activa,2024-09-18,56
+179,Runa,Backend,Semi-Senior,Popayán,Presencial,Freelance,4000000,6150585,4,Java|Spring Boot,Activa,2024-01-05,22
+180,Pragma,Diseño UX/UI,Lead,Bogotá,Presencial,Freelance,10000000,11006249,2,Figma|CSS,Cerrada,2024-01-02,17
+181,Siigo,Cloud,Lead,Cúcuta,Híbrido,Práctica,10000000,12901852,2,Docker|Kubernetes|AWS|Terraform,Activa,2024-01-03,1
+182,Leal,Mobile,Junior,Bogotá,Remoto,Tiempo Completo,2000000,4612638,5,React Native|Swift,Cerrada,2024-03-18,40
+183,Habi,Ciberseguridad,Lead,Medellín,Presencial,Tiempo Completo,10000000,13272377,3,Burp Suite|OWASP|Kali|Linux,Activa,2024-02-12,110
+184,Bancolombia Digital,DevOps,Junior,Bogotá,Híbrido,Freelance,2000000,5870149,2,Linux|Kubernetes,Activa,2024-03-01,114
+185,Globant,Ciberseguridad,Junior,Popayán,Remoto,Freelance,2000000,3387834,5,Kali|Wireshark|Linux,Activa,2024-07-08,89
+186,Pragma,Machine Learning,Senior,Bogotá,Remoto,Freelance,7000000,10788082,1,PyTorch|Scikit-learn,Activa,2024-04-14,42
+187,Bold,BI & Analytics,Junior,Ibagué,Presencial,Freelance,2000000,4188596,5,Python|Power BI|SQL,Cerrada,2024-05-19,61
+188,Platzi,Backend,Junior,Cartagena,Presencial,Tiempo Completo,2000000,3584179,5,FastAPI|Java,Pausada,2024-09-16,20
+189,Habi,Cloud,Lead,Cúcuta,Remoto,Medio Tiempo,10000000,12640316,2,Terraform|GCP,Activa,2024-06-26,65
+190,Pragma,Diseño UX/UI,Senior,Neiva,Remoto,Freelance,7000000,10672499,2,Adobe XD|HTML,Activa,2024-03-22,120
+191,PSL,Data Science,Junior,Cali,Remoto,Tiempo Completo,2000000,5348867,2,Python|Pandas|TensorFlow|SQL,Activa,2024-06-18,14
+192,Komet Sales,Frontend,Senior,Bogotá,Presencial,Práctica,7000000,8479921,1,Vue.js|TypeScript,Activa,2024-03-29,29
+193,Bancolombia Digital,BI & Analytics,Junior,Cali,Remoto,Medio Tiempo,2000000,5190985,2,DAX|Power BI|Excel|SQL,Activa,2024-01-16,12
+194,Rappi Tech,Machine Learning,Lead,Pasto,Remoto,Medio Tiempo,10000000,11123166,3,SQL|Scikit-learn|MLflow,Pausada,2024-07-10,2
+195,Arus,QA,Semi-Senior,Cúcuta,Presencial,Tiempo Completo,4000000,6281198,2,Postman|JMeter,Cerrada,2024-08-13,63
+196,Habi,Data Science,Junior,Cali,Presencial,Medio Tiempo,2000000,3028704,3,Pandas|R|SQL,Activa,2024-04-14,94
+197,Platzi,DevOps,Senior,Montería,Remoto,Práctica,7000000,9718961,5,Linux|Kubernetes,Activa,2024-06-11,97
+198,Leal,Ciberseguridad,Semi-Senior,Neiva,Remoto,Práctica,4000000,6754500,4,Kali|Python,Pausada,2024-07-23,20
+199,Addi,Machine Learning,Lead,Tunja,Presencial,Freelance,10000000,13615338,3,MLflow|Python,Activa,2024-02-11,85
+200,Komet Sales,Full Stack,Semi-Senior,Bogotá,Remoto,Práctica,4000000,5456562,5,React|Docker|Python,Activa,2024-10-16,62
+201,Nequi,QA,Senior,Cúcuta,Remoto,Freelance,7000000,9758571,4,Postman|JMeter,Activa,2024-02-26,20
+202,MercadoLibre,Mobile,Senior,Pasto,Presencial,Medio Tiempo,7000000,8072108,4,Flutter|Dart|React Native|Swift,Cerrada,2024-05-21,46
+203,Inlaze,DevOps,Junior,Cartagena,Presencial,Medio Tiempo,2000000,3010575,4,Terraform|Jenkins|Kubernetes|Linux,Activa,2024-04-25,44
+204,Runa,Backend,Senior,Montería,Híbrido,Tiempo Completo,7000000,9699329,4,Spring Boot|Python,Activa,2024-01-10,45
+205,Rappi Tech,Data Science,Semi-Senior,Bucaramanga,Presencial,Freelance,4000000,5822391,3,Python|Pandas,Activa,2024-04-05,32
+206,Habi,Data Science,Senior,Popayán,Presencial,Tiempo Completo,7000000,9005447,4,Python|R,Activa,2024-09-15,50
+207,Nequi,Frontend,Junior,Barranquilla,Híbrido,Práctica,2000000,5310049,5,Vue.js|JavaScript,Cerrada,2024-01-26,20
+208,PSL,Data Science,Semi-Senior,Armenia,Remoto,Medio Tiempo,4000000,5448529,4,Python|TensorFlow|Pandas,Cerrada,2024-08-26,81
+209,Habi,Frontend,Senior,Medellín,Híbrido,Freelance,7000000,8413231,5,Vue.js|JavaScript|CSS,Cerrada,2024-08-26,77
+210,Bold,Backend,Semi-Senior,Ibagué,Remoto,Freelance,4000000,7223438,2,Django|Spring Boot,Cerrada,2024-01-12,70
+211,Inlaze,Full Stack,Lead,Bogotá,Presencial,Medio Tiempo,10000000,12962858,5,SQL|JavaScript,Cerrada,2024-04-26,69
+212,Platzi,BI & Analytics,Junior,Popayán,Remoto,Práctica,2000000,3648559,2,Python|SQL|Power BI,Cerrada,2024-07-15,42
+213,Siigo,Ciberseguridad,Senior,Medellín,Presencial,Práctica,7000000,10347376,1,Wireshark|Python|Kali,Cerrada,2024-01-04,33
+214,Inlaze,QA,Lead,Medellín,Remoto,Medio Tiempo,10000000,13731883,3,Pytest|JMeter,Cerrada,2024-05-30,34
+215,Globant,Frontend,Semi-Senior,Villavicencio,Híbrido,Tiempo Completo,4000000,6612507,5,TypeScript|Vue.js|HTML,Cerrada,2024-07-14,80
+216,TechCorp Colombia,Full Stack,Lead,Villavicencio,Presencial,Freelance,10000000,11278053,4,Node.js|React|JavaScript|Python,Cerrada,2024-03-01,41
+217,Addi,Data Science,Junior,Cúcuta,Remoto,Práctica,2000000,3304924,1,SQL|Python,Activa,2024-01-05,28
+218,MercadoLibre,Full Stack,Senior,Cúcuta,Remoto,Tiempo Completo,7000000,10600480,5,Python|Node.js|JavaScript,Cerrada,2024-10-22,27
+219,TechCorp Colombia,DevOps,Junior,Cúcuta,Remoto,Práctica,2000000,5519463,1,Kubernetes|Docker,Cerrada,2024-06-10,39
+220,Leal,QA,Junior,Armenia,Híbrido,Freelance,2000000,5996020,5,Pytest|Cypress|Postman|JMeter,Pausada,2024-05-28,52
+221,Platzi,DevOps,Senior,Cali,Remoto,Tiempo Completo,7000000,9366720,1,Jenkins|Kubernetes|AWS,Cerrada,2024-05-21,73
+222,Globant,Cloud,Lead,Ibagué,Presencial,Medio Tiempo,10000000,13314456,3,AWS|Terraform|Docker|Azure,Activa,2024-02-26,18
+223,Siigo,Backend,Semi-Senior,Pasto,Híbrido,Práctica,4000000,7125210,1,Spring Boot|FastAPI|Python,Activa,2024-05-12,20
+224,MercadoLibre,Full Stack,Lead,Manizales,Híbrido,Práctica,10000000,11079107,2,Node.js|Docker|SQL|React,Activa,2024-05-29,56
+225,Bancolombia Digital,Ciberseguridad,Semi-Senior,Pasto,Remoto,Práctica,4000000,5426752,1,Burp Suite|Python|Kali|Linux,Activa,2024-02-01,106
+226,Platzi,Mobile,Lead,Manizales,Presencial,Tiempo Completo,10000000,11908121,1,Flutter|Swift|React Native|Kotlin,Activa,2024-06-06,30
+227,Inlaze,Backend,Senior,Ibagué,Híbrido,Práctica,7000000,10817393,2,Node.js|Spring Boot,Activa,2024-03-23,73
+228,Pragma,BI & Analytics,Lead,Neiva,Remoto,Freelance,10000000,11191651,4,Python|DAX,Activa,2024-05-08,18
+229,Pragma,Full Stack,Semi-Senior,Armenia,Remoto,Medio Tiempo,4000000,6418753,2,Docker|React|Node.js,Cerrada,2024-07-24,70
+230,Nequi,Machine Learning,Semi-Senior,Popayán,Presencial,Práctica,4000000,7547542,1,MLflow|SQL|Scikit-learn,Activa,2024-01-16,103
+231,MercadoLibre,Machine Learning,Semi-Senior,Medellín,Híbrido,Freelance,4000000,6554058,2,SQL|MLflow,Activa,2024-06-26,101
+232,Truora,Machine Learning,Semi-Senior,Pereira,Híbrido,Práctica,4000000,5351516,3,Python|PyTorch|TensorFlow,Activa,2024-08-18,55
+233,Addi,Full Stack,Senior,Neiva,Remoto,Práctica,7000000,10097955,5,Node.js|React|SQL,Cerrada,2024-09-12,53
+234,Siigo,Backend,Junior,Popayán,Presencial,Medio Tiempo,2000000,3758865,4,SQL|FastAPI,Activa,2024-07-25,96
+235,Bancolombia Digital,DevOps,Semi-Senior,Bucaramanga,Remoto,Medio Tiempo,4000000,7022264,1,Jenkins|AWS|Terraform,Activa,2024-02-08,107
+236,Truora,Machine Learning,Junior,Barranquilla,Presencial,Medio Tiempo,2000000,3239940,3,PyTorch|SQL,Activa,2024-10-05,48
+237,Runa,Cloud,Lead,Tunja,Remoto,Tiempo Completo,10000000,12572012,2,Azure|Docker,Pausada,2024-08-05,75
+238,TechCorp Colombia,Frontend,Semi-Senior,Bucaramanga,Híbrido,Práctica,4000000,7385044,5,TypeScript|Vue.js|HTML|JavaScript,Activa,2024-05-16,24
+239,Platzi,Data Science,Lead,Bogotá,Remoto,Práctica,10000000,12948476,1,Pandas|Python,Pausada,2024-02-11,52
+240,Bancolombia Digital,QA,Junior,Cúcuta,Híbrido,Medio Tiempo,2000000,3875261,2,Postman|JMeter|Cypress,Activa,2024-08-22,24
+241,Bold,DevOps,Junior,Bucaramanga,Híbrido,Freelance,2000000,4860598,4,Kubernetes|Terraform|Docker|Jenkins,Pausada,2024-10-11,1
+242,Arus,BI & Analytics,Senior,Medellín,Remoto,Freelance,7000000,10582777,5,DAX|Excel,Cerrada,2024-10-08,51
+243,Pragma,DevOps,Semi-Senior,Neiva,Híbrido,Medio Tiempo,4000000,7068866,2,Docker|AWS|Kubernetes|Terraform,Activa,2024-02-14,21
+244,PSL,Full Stack,Junior,Montería,Remoto,Medio Tiempo,2000000,4805425,4,SQL|React,Activa,2024-06-18,106
+245,Komet Sales,Cloud,Senior,Pereira,Híbrido,Práctica,7000000,9110546,5,Terraform|AWS,Cerrada,2024-10-27,57
+246,PSL,Cloud,Lead,Bogotá,Presencial,Práctica,10000000,12524159,4,Docker|AWS,Cerrada,2024-01-12,31
+247,Runa,Full Stack,Junior,Bucaramanga,Híbrido,Tiempo Completo,2000000,3695851,2,Python|JavaScript,Cerrada,2024-07-09,48
+248,Platzi,Mobile,Senior,Medellín,Híbrido,Medio Tiempo,7000000,8727094,2,Swift|Flutter,Activa,2024-04-08,32
+249,Komet Sales,Frontend,Semi-Senior,Cali,Remoto,Medio Tiempo,4000000,6569674,3,HTML|React|Vue.js|CSS,Activa,2024-01-31,15
+250,Siigo,QA,Junior,Villavicencio,Híbrido,Freelance,2000000,5915639,2,Postman|Pytest,Cerrada,2024-05-05,34
+251,Runa,BI & Analytics,Semi-Senior,Montería,Remoto,Tiempo Completo,4000000,7254034,1,SQL|Power BI,Activa,2024-10-02,83
+252,Rappi Tech,Mobile,Senior,Bucaramanga,Híbrido,Tiempo Completo,7000000,9863659,3,Dart|Swift|Flutter|Kotlin,Cerrada,2024-07-20,50
+253,Truora,Frontend,Semi-Senior,Villavicencio,Remoto,Tiempo Completo,4000000,7017972,4,JavaScript|HTML,Activa,2024-07-09,36
+254,Habi,BI & Analytics,Semi-Senior,Santa Marta,Híbrido,Tiempo Completo,4000000,7375474,2,Excel|Power BI,Pausada,2024-06-24,80
+255,Bold,Frontend,Lead,Cali,Híbrido,Medio Tiempo,10000000,11418904,4,Vue.js|TypeScript|HTML,Activa,2024-07-24,17
+256,Arus,Frontend,Lead,Villavicencio,Remoto,Medio Tiempo,10000000,13941127,1,React|JavaScript|CSS,Cerrada,2024-08-05,25
+257,Platzi,Machine Learning,Semi-Senior,Santa Marta,Presencial,Medio Tiempo,4000000,6134484,1,SQL|TensorFlow|PyTorch,Activa,2024-02-24,9
+258,Konrad Lorenz Tech,QA,Junior,Barranquilla,Presencial,Medio Tiempo,2000000,3585415,1,Selenium|JMeter,Activa,2024-02-23,39
+259,Pragma,Ciberseguridad,Lead,Santa Marta,Presencial,Medio Tiempo,10000000,12570186,3,Wireshark|Linux|Kali|Burp Suite,Cerrada,2024-03-19,21
+260,Platzi,Full Stack,Senior,Barranquilla,Híbrido,Medio Tiempo,7000000,8031137,3,SQL|Docker,Cerrada,2024-09-04,73
+261,Runa,Full Stack,Lead,Pereira,Remoto,Medio Tiempo,10000000,11713684,5,JavaScript|Node.js|Docker,Activa,2024-10-12,56
+262,Bold,Frontend,Senior,Tunja,Híbrido,Freelance,7000000,9817354,3,CSS|Vue.js|React|HTML,Activa,2024-09-23,43
+263,Konrad Lorenz Tech,Cloud,Semi-Senior,Montería,Híbrido,Práctica,4000000,5566129,4,Terraform|Kubernetes|Azure,Cerrada,2024-01-10,75
+264,Komet Sales,Full Stack,Semi-Senior,Cúcuta,Remoto,Freelance,4000000,6565449,1,React|Docker|Python|SQL,Cerrada,2024-07-19,31
+265,Platzi,Data Science,Junior,Bucaramanga,Presencial,Práctica,2000000,3704654,3,Scikit-learn|SQL,Activa,2024-10-09,53
+266,Rappi Tech,Frontend,Junior,Bucaramanga,Remoto,Medio Tiempo,2000000,4147255,1,JavaScript|HTML|TypeScript|React,Activa,2024-10-20,23
+267,Bancolombia Digital,Frontend,Lead,Cartagena,Presencial,Práctica,10000000,11001034,3,CSS|Vue.js,Pausada,2024-06-24,106
+268,MercadoLibre,BI & Analytics,Semi-Senior,Cali,Presencial,Freelance,4000000,7713781,1,SQL|DAX,Activa,2024-04-28,79
+269,Siigo,Machine Learning,Semi-Senior,Pasto,Remoto,Medio Tiempo,4000000,5564002,2,MLflow|TensorFlow,Activa,2024-08-25,12
+270,Bancolombia Digital,BI & Analytics,Junior,Montería,Remoto,Medio Tiempo,2000000,4935266,4,Python|SQL|DAX,Cerrada,2024-06-13,61
+271,Addi,Data Science,Lead,Cartagena,Presencial,Freelance,10000000,11915988,5,Scikit-learn|SQL,Cerrada,2024-06-30,11
+272,MercadoLibre,DevOps,Lead,Pereira,Presencial,Práctica,10000000,11378039,4,Docker|Kubernetes|Terraform|AWS,Cerrada,2024-03-16,38
+273,Habi,Backend,Junior,Santa Marta,Presencial,Tiempo Completo,2000000,4825666,3,SQL|Node.js,Activa,2024-04-12,92
+274,Globant,Mobile,Senior,Pereira,Presencial,Medio Tiempo,7000000,9945829,4,React Native|Dart|Flutter,Cerrada,2024-07-17,76
+275,Arus,BI & Analytics,Semi-Senior,Cúcuta,Remoto,Tiempo Completo,4000000,6163681,4,SQL|Excel|Python,Cerrada,2024-08-30,51
+276,Truora,Data Science,Junior,Pereira,Remoto,Freelance,2000000,5924827,2,R|Pandas|SQL|TensorFlow,Activa,2024-03-27,37
+277,Truora,Mobile,Junior,Bucaramanga,Remoto,Freelance,2000000,4448504,4,Dart|Kotlin|Swift,Cerrada,2024-04-10,74
+278,MercadoLibre,Machine Learning,Junior,Pasto,Presencial,Freelance,2000000,3945373,4,MLflow|Python|PyTorch|Scikit-learn,Cerrada,2024-03-11,63
+279,Nequi,Ciberseguridad,Semi-Senior,Popayán,Presencial,Freelance,4000000,5265160,1,Linux|Wireshark|Kali,Pausada,2024-01-02,77
+280,Truora,Full Stack,Senior,Santa Marta,Remoto,Tiempo Completo,7000000,9639196,3,Python|React,Activa,2024-01-09,107
+281,Arus,Ciberseguridad,Junior,Montería,Remoto,Freelance,2000000,5049876,4,Wireshark|OWASP|Kali,Cerrada,2024-05-30,38
+282,Bold,Mobile,Semi-Senior,Medellín,Presencial,Práctica,4000000,5345419,5,React Native|Dart|Flutter,Cerrada,2024-06-28,63
+283,Siigo,Full Stack,Lead,Villavicencio,Híbrido,Tiempo Completo,10000000,12542425,3,Python|Docker|JavaScript,Cerrada,2024-02-14,76
+284,Bold,Data Science,Semi-Senior,Armenia,Híbrido,Medio Tiempo,4000000,7419545,1,Python|Pandas|Scikit-learn,Activa,2024-09-21,40
+285,Siigo,Data Science,Senior,Pasto,Presencial,Práctica,7000000,8139528,3,SQL|Pandas|R,Cerrada,2024-04-26,41
+286,Leal,DevOps,Junior,Armenia,Híbrido,Práctica,2000000,5792869,2,Docker|Terraform|Kubernetes|Linux,Activa,2024-07-26,61
+287,Addi,Diseño UX/UI,Semi-Senior,Montería,Presencial,Freelance,4000000,5340922,5,Prototyping|CSS|HTML|Sketch,Activa,2024-09-19,58
+288,Habi,DevOps,Senior,Medellín,Presencial,Práctica,7000000,8860864,5,Linux|Terraform,Activa,2024-06-04,88
+289,Leal,Diseño UX/UI,Lead,Bogotá,Híbrido,Freelance,10000000,13674625,3,Sketch|Figma,Cerrada,2024-06-03,83
+290,Bancolombia Digital,Diseño UX/UI,Lead,Santa Marta,Híbrido,Práctica,10000000,13936678,1,HTML|Figma|Prototyping|Sketch,Activa,2024-07-24,88
+291,Bancolombia Digital,DevOps,Semi-Senior,Cali,Presencial,Medio Tiempo,4000000,7423806,1,Terraform|Linux,Activa,2024-10-24,75
+292,Truora,Backend,Semi-Senior,Barranquilla,Híbrido,Medio Tiempo,4000000,6756069,3,SQL|Python,Pausada,2024-04-14,99
+293,Platzi,Ciberseguridad,Junior,Montería,Presencial,Freelance,2000000,3719808,4,OWASP|Wireshark,Activa,2024-03-21,4
+294,Rappi Tech,Cloud,Semi-Senior,Manizales,Presencial,Freelance,4000000,7881855,5,Docker|Kubernetes|Terraform,Cerrada,2024-02-27,46
+295,Leal,Ciberseguridad,Junior,Bucaramanga,Remoto,Freelance,2000000,5259086,4,Wireshark|Linux|Kali|Python,Activa,2024-07-07,34
+296,Siigo,Cloud,Senior,Medellín,Híbrido,Medio Tiempo,7000000,10909747,1,Terraform|Docker|AWS,Activa,2024-10-02,15
+297,Arus,BI & Analytics,Lead,Manizales,Híbrido,Tiempo Completo,10000000,12441749,5,DAX|Tableau|Power BI,Activa,2024-01-27,14
+298,Konrad Lorenz Tech,Full Stack,Junior,Bogotá,Remoto,Práctica,2000000,3194537,1,Node.js|JavaScript|SQL|Python,Activa,2024-03-20,53
+299,Inlaze,DevOps,Junior,Tunja,Remoto,Tiempo Completo,2000000,4905311,2,AWS|Terraform|Kubernetes|Jenkins,Activa,2024-09-27,22
+300,Inlaze,Mobile,Senior,Ibagué,Remoto,Tiempo Completo,7000000,9919495,2,Swift|React Native|Kotlin|Dart,Activa,2024-10-23,44
+301,Addi,Backend,Junior,Tunja,Remoto,Práctica,2000000,5484438,1,Spring Boot|SQL,Cerrada,2024-07-16,24
+302,Pragma,BI & Analytics,Lead,Bogotá,Híbrido,Tiempo Completo,10000000,13224590,2,Python|SQL,Cerrada,2024-05-02,89
+303,Addi,Full Stack,Semi-Senior,Pereira,Híbrido,Freelance,4000000,6176967,3,React|Node.js|Python|SQL,Activa,2024-07-14,81
+304,TechCorp Colombia,Full Stack,Lead,Cali,Remoto,Tiempo Completo,10000000,12238305,2,Python|JavaScript|Docker,Activa,2024-07-10,28
+305,Bold,Frontend,Semi-Senior,Pasto,Remoto,Tiempo Completo,4000000,5766046,5,HTML|JavaScript|React,Pausada,2024-10-18,58
+306,Bold,Machine Learning,Lead,Bogotá,Remoto,Freelance,10000000,12016208,4,PyTorch|TensorFlow|Scikit-learn,Activa,2024-06-06,6
+307,Platzi,Mobile,Junior,Neiva,Presencial,Freelance,2000000,5850741,1,Kotlin|Swift|Flutter|React Native,Pausada,2024-07-23,106
+308,Truora,Diseño UX/UI,Lead,Manizales,Híbrido,Freelance,10000000,12159495,4,HTML|Figma,Activa,2024-04-11,17
+309,Bold,BI & Analytics,Lead,Popayán,Presencial,Freelance,10000000,13454956,1,Python|Power BI|Excel|Tableau,Activa,2024-10-24,40
+310,MercadoLibre,Data Science,Senior,Popayán,Presencial,Medio Tiempo,7000000,8695355,4,Pandas|TensorFlow|Python,Activa,2024-03-06,2
+311,MercadoLibre,Ciberseguridad,Lead,Pereira,Presencial,Práctica,10000000,13559669,5,Wireshark|OWASP|Linux|Python,Pausada,2024-03-20,76
+312,Leal,QA,Lead,Tunja,Híbrido,Práctica,10000000,13978440,4,Selenium|Postman|Cypress,Activa,2024-04-05,48
+313,Inlaze,DevOps,Senior,Bucaramanga,Remoto,Freelance,7000000,10550173,2,Linux|Kubernetes|Docker|AWS,Activa,2024-04-12,78
+314,TechCorp Colombia,Frontend,Lead,Bogotá,Remoto,Tiempo Completo,10000000,12214640,3,React|CSS|JavaScript,Activa,2024-08-26,120
+315,Bancolombia Digital,Mobile,Semi-Senior,Cúcuta,Híbrido,Tiempo Completo,4000000,5913213,3,React Native|Kotlin|Flutter|Swift,Activa,2024-04-14,67
+316,Runa,Frontend,Junior,Tunja,Presencial,Freelance,2000000,5815895,4,Vue.js|CSS,Activa,2024-03-10,38
+317,Bancolombia Digital,Diseño UX/UI,Semi-Senior,Popayán,Remoto,Medio Tiempo,4000000,6412782,2,CSS|Figma|Adobe XD,Activa,2024-09-05,55
+318,Pragma,Cloud,Lead,Tunja,Remoto,Freelance,10000000,12687361,5,Kubernetes|GCP|Azure,Activa,2024-01-03,11
+319,Bold,Full Stack,Junior,Montería,Presencial,Tiempo Completo,2000000,5207010,4,Docker|Node.js|JavaScript|React,Activa,2024-09-02,20
+320,Truora,DevOps,Senior,Santa Marta,Remoto,Medio Tiempo,7000000,9333736,2,Terraform|Jenkins|AWS|Docker,Pausada,2024-04-09,62
+321,Truora,Data Science,Junior,Armenia,Presencial,Medio Tiempo,2000000,5694268,2,Pandas|Python,Activa,2024-06-28,8
+322,Bancolombia Digital,Machine Learning,Semi-Senior,Cartagena,Híbrido,Freelance,4000000,7608914,5,MLflow|Scikit-learn,Activa,2024-02-06,76
+323,Bold,DevOps,Semi-Senior,Medellín,Remoto,Freelance,4000000,5771116,3,Jenkins|Terraform|Docker,Cerrada,2024-06-07,45
+324,Addi,Mobile,Lead,Bogotá,Presencial,Práctica,10000000,11539684,2,React Native|Dart,Activa,2024-02-03,119
+325,Habi,QA,Junior,Cali,Presencial,Tiempo Completo,2000000,5885937,5,Pytest|Cypress|Postman,Cerrada,2024-07-01,21
+326,Rappi Tech,Machine Learning,Senior,Santa Marta,Presencial,Práctica,7000000,8807762,3,MLflow|Python|PyTorch,Activa,2024-02-07,72
+327,Globant,QA,Junior,Ibagué,Presencial,Freelance,2000000,4137698,5,Selenium|JMeter|Cypress|Pytest,Activa,2024-07-06,32
+328,Bancolombia Digital,Ciberseguridad,Junior,Cúcuta,Remoto,Medio Tiempo,2000000,3052854,3,Kali|Python|Linux|OWASP,Activa,2024-06-08,16
+329,MercadoLibre,Diseño UX/UI,Semi-Senior,Cali,Híbrido,Tiempo Completo,4000000,7856206,2,Prototyping|Figma,Activa,2024-07-20,99
+330,Platzi,DevOps,Senior,Tunja,Presencial,Freelance,7000000,10635457,1,Kubernetes|AWS,Cerrada,2024-09-30,79
+331,Habi,QA,Semi-Senior,Ibagué,Remoto,Práctica,4000000,6184826,4,Pytest|Postman|JMeter|Cypress,Cerrada,2024-04-15,36
+332,Bancolombia Digital,Frontend,Semi-Senior,Pereira,Híbrido,Práctica,4000000,6258211,3,TypeScript|HTML,Cerrada,2024-09-14,74
+333,Bancolombia Digital,Data Science,Lead,Bucaramanga,Remoto,Tiempo Completo,10000000,13514423,5,Python|TensorFlow,Activa,2024-05-24,111
+334,Leal,DevOps,Semi-Senior,Villavicencio,Remoto,Tiempo Completo,4000000,6406290,5,Jenkins|Kubernetes,Activa,2024-06-22,72
+335,MercadoLibre,BI & Analytics,Semi-Senior,Barranquilla,Remoto,Práctica,4000000,5135679,3,Tableau|Power BI,Pausada,2024-03-22,19
+336,TechCorp Colombia,Machine Learning,Lead,Armenia,Presencial,Freelance,10000000,12524035,3,SQL|TensorFlow|MLflow|Python,Activa,2024-01-30,111
+337,PSL,Ciberseguridad,Junior,Villavicencio,Híbrido,Tiempo Completo,2000000,5590345,5,Burp Suite|OWASP|Wireshark,Activa,2024-05-04,74
+338,Addi,BI & Analytics,Semi-Senior,Bucaramanga,Remoto,Freelance,4000000,7949111,5,SQL|Power BI,Activa,2024-01-02,47
+339,Rappi Tech,Diseño UX/UI,Lead,Tunja,Presencial,Tiempo Completo,10000000,11544168,3,Figma|Sketch|HTML,Activa,2024-10-11,117
+340,Bancolombia Digital,Cloud,Lead,Ibagué,Remoto,Práctica,10000000,11991969,1,GCP|AWS,Activa,2024-05-02,56
+341,Addi,Frontend,Junior,Santa Marta,Remoto,Tiempo Completo,2000000,3045923,2,HTML|React,Activa,2024-03-01,22
+342,Pragma,Full Stack,Junior,Pasto,Remoto,Tiempo Completo,2000000,5551437,3,Node.js|Python|SQL,Activa,2024-04-12,99
+343,Siigo,Diseño UX/UI,Senior,Barranquilla,Híbrido,Medio Tiempo,7000000,9645942,1,Sketch|HTML,Activa,2024-09-30,56
+344,PSL,QA,Lead,Ibagué,Presencial,Freelance,10000000,13643101,5,Cypress|Postman|JMeter,Pausada,2024-01-23,41
+345,Siigo,Mobile,Senior,Popayán,Remoto,Tiempo Completo,7000000,10338064,1,React Native|Kotlin|Dart|Swift,Cerrada,2024-03-02,80
+346,PSL,Cloud,Semi-Senior,Cúcuta,Presencial,Práctica,4000000,6703493,2,Terraform|Docker,Cerrada,2024-07-08,29
+347,Konrad Lorenz Tech,Ciberseguridad,Junior,Montería,Presencial,Tiempo Completo,2000000,3984544,4,Kali|Wireshark,Activa,2024-08-03,108
+348,Bold,BI & Analytics,Junior,Bogotá,Presencial,Práctica,2000000,5685809,2,Power BI|Tableau,Cerrada,2024-07-26,12
+349,Inlaze,Backend,Senior,Pasto,Remoto,Tiempo Completo,7000000,9570594,2,FastAPI|Spring Boot,Cerrada,2024-02-04,66
+350,Addi,Full Stack,Junior,Armenia,Remoto,Freelance,2000000,4775225,1,Node.js|React,Activa,2024-08-13,74
+351,PSL,Frontend,Senior,Cali,Remoto,Medio Tiempo,7000000,10477703,3,HTML|TypeScript,Activa,2024-10-17,34
+352,Nequi,Mobile,Senior,Barranquilla,Híbrido,Freelance,7000000,10912510,4,Flutter|Dart|Kotlin,Activa,2024-06-12,93
+353,Addi,Cloud,Lead,Cúcuta,Híbrido,Práctica,10000000,13435785,2,Docker|Azure,Activa,2024-07-17,114
+354,Habi,DevOps,Senior,Armenia,Presencial,Práctica,7000000,9660894,5,Docker|Kubernetes|Terraform,Pausada,2024-07-10,88
+355,Truora,Diseño UX/UI,Lead,Cali,Híbrido,Freelance,10000000,12024922,1,Sketch|Figma,Cerrada,2024-02-21,82
+356,Addi,Machine Learning,Senior,Armenia,Remoto,Medio Tiempo,7000000,8795465,2,TensorFlow|SQL|Scikit-learn|MLflow,Cerrada,2024-09-02,37
+357,MercadoLibre,Mobile,Junior,Tunja,Remoto,Freelance,2000000,4006939,2,Dart|Swift|React Native|Flutter,Cerrada,2024-08-23,58
+358,Siigo,Ciberseguridad,Lead,Bucaramanga,Remoto,Freelance,10000000,13733451,2,Python|Wireshark,Activa,2024-05-02,88
+359,TechCorp Colombia,Backend,Senior,Cali,Presencial,Medio Tiempo,7000000,8956104,2,Node.js|SQL,Activa,2024-05-30,18
+360,Habi,Full Stack,Junior,Popayán,Remoto,Tiempo Completo,2000000,5821373,4,Node.js|Docker,Activa,2024-06-13,111
+361,Pragma,Diseño UX/UI,Senior,Villavicencio,Remoto,Práctica,7000000,9357308,4,Sketch|Figma|CSS|HTML,Activa,2024-02-05,26
+362,PSL,Diseño UX/UI,Lead,Manizales,Remoto,Medio Tiempo,10000000,11773031,4,HTML|Prototyping,Pausada,2024-03-18,117
+363,Nequi,Ciberseguridad,Lead,Pereira,Remoto,Práctica,10000000,13123291,1,OWASP|Burp Suite|Python,Pausada,2024-07-24,119
+364,Nequi,Ciberseguridad,Junior,Tunja,Presencial,Tiempo Completo,2000000,3998412,4,Linux|Wireshark|Kali,Cerrada,2024-06-20,88
+365,Rappi Tech,Frontend,Senior,Medellín,Híbrido,Práctica,7000000,10969816,3,JavaScript|TypeScript|CSS,Cerrada,2024-03-08,73
+366,Addi,QA,Semi-Senior,Neiva,Presencial,Medio Tiempo,4000000,6557136,5,Selenium|Cypress,Pausada,2024-08-08,107
+367,Nequi,DevOps,Lead,Popayán,Híbrido,Freelance,10000000,13660416,4,Docker|Jenkins|AWS|Kubernetes,Cerrada,2024-05-14,62
+368,Runa,QA,Lead,Pereira,Remoto,Medio Tiempo,10000000,13462369,5,Postman|Selenium|Pytest|Cypress,Cerrada,2024-10-21,79
+369,Konrad Lorenz Tech,Data Science,Senior,Bogotá,Presencial,Medio Tiempo,7000000,8599460,4,R|TensorFlow,Cerrada,2024-08-11,47
+370,Runa,Diseño UX/UI,Semi-Senior,Santa Marta,Presencial,Tiempo Completo,4000000,5548456,1,CSS|Figma|Prototyping|Sketch,Activa,2024-10-07,75
+371,Platzi,Machine Learning,Senior,Ibagué,Remoto,Freelance,7000000,8068298,1,SQL|TensorFlow|MLflow,Cerrada,2024-04-03,67
+372,Truora,DevOps,Senior,Cúcuta,Remoto,Medio Tiempo,7000000,9430291,4,Terraform|Linux,Cerrada,2024-09-15,72
+373,Pragma,Cloud,Semi-Senior,Pereira,Presencial,Práctica,4000000,5242466,3,Docker|AWS|Terraform,Cerrada,2024-05-28,18
+374,Nequi,Diseño UX/UI,Junior,Santa Marta,Híbrido,Freelance,2000000,4681135,3,Adobe XD|HTML|Figma|Prototyping,Activa,2024-10-21,77
+375,Bold,QA,Lead,Santa Marta,Híbrido,Práctica,10000000,11808652,5,JMeter|Pytest|Selenium|Cypress,Activa,2024-01-02,110
+376,Platzi,Backend,Junior,Medellín,Híbrido,Medio Tiempo,2000000,4749783,1,SQL|Node.js,Activa,2024-03-08,1
+377,Bold,QA,Senior,Popayán,Presencial,Freelance,7000000,9386401,4,Postman|Cypress|Pytest,Cerrada,2024-09-24,61
+378,MercadoLibre,QA,Junior,Santa Marta,Presencial,Práctica,2000000,4151744,1,Postman|JMeter|Cypress,Activa,2024-07-16,68
+379,Bancolombia Digital,Frontend,Senior,Pasto,Remoto,Práctica,7000000,9604801,3,Vue.js|HTML,Activa,2024-02-24,20
+380,Inlaze,Mobile,Junior,Armenia,Presencial,Tiempo Completo,2000000,3602806,2,React Native|Flutter|Kotlin|Dart,Activa,2024-07-27,117
+381,Bancolombia Digital,QA,Lead,Cali,Presencial,Tiempo Completo,10000000,12028235,4,Pytest|Cypress|Postman,Activa,2024-06-01,104
+382,Bancolombia Digital,Full Stack,Lead,Bucaramanga,Remoto,Freelance,10000000,11203471,5,Python|Node.js,Cerrada,2024-09-30,38
+383,Nequi,Diseño UX/UI,Junior,Santa Marta,Híbrido,Tiempo Completo,2000000,5448977,4,CSS|HTML|Sketch,Cerrada,2024-08-31,86
+384,Pragma,Mobile,Senior,Tunja,Presencial,Tiempo Completo,7000000,8879733,3,Kotlin|Dart,Activa,2024-05-18,68
+385,Nequi,Data Science,Lead,Pasto,Presencial,Práctica,10000000,12254747,5,Pandas|R|SQL,Pausada,2024-01-08,74
+386,Konrad Lorenz Tech,Full Stack,Junior,Tunja,Remoto,Medio Tiempo,2000000,5759269,4,Docker|JavaScript,Activa,2024-05-08,35
+387,Komet Sales,DevOps,Junior,Popayán,Híbrido,Medio Tiempo,2000000,4393027,5,Jenkins|Kubernetes,Activa,2024-01-09,60
+388,Globant,Data Science,Semi-Senior,Neiva,Híbrido,Práctica,4000000,6976209,3,SQL|Python|TensorFlow|Scikit-learn,Activa,2024-08-23,47
+389,Arus,Cloud,Lead,Popayán,Híbrido,Medio Tiempo,10000000,11845012,1,GCP|Docker|Terraform|Kubernetes,Activa,2024-03-07,108
+390,Globant,Cloud,Senior,Montería,Remoto,Medio Tiempo,7000000,10712468,2,Kubernetes|GCP|Terraform|Docker,Activa,2024-08-07,4
+391,MercadoLibre,Machine Learning,Senior,Neiva,Presencial,Práctica,7000000,9226983,5,Python|Scikit-learn|MLflow|SQL,Activa,2024-08-15,25
+392,Rappi Tech,Machine Learning,Semi-Senior,Pasto,Remoto,Tiempo Completo,4000000,6966034,5,Scikit-learn|PyTorch,Activa,2024-05-30,100
+393,Addi,QA,Senior,Tunja,Híbrido,Tiempo Completo,7000000,9763320,2,Pytest|JMeter,Activa,2024-08-23,93
+394,Habi,Backend,Lead,Popayán,Híbrido,Tiempo Completo,10000000,11635455,2,FastAPI|SQL,Activa,2024-10-20,8
+395,Platzi,QA,Senior,Neiva,Remoto,Freelance,7000000,9954610,4,JMeter|Cypress|Pytest|Postman,Activa,2024-05-12,10
+396,Runa,QA,Semi-Senior,Popayán,Remoto,Tiempo Completo,4000000,6897641,2,Selenium|Postman|Pytest|Cypress,Activa,2024-02-03,46
+397,Komet Sales,Cloud,Senior,Popayán,Híbrido,Práctica,7000000,8703167,4,Docker|Kubernetes|Terraform,Cerrada,2024-04-17,74
+398,Inlaze,BI & Analytics,Semi-Senior,Bogotá,Remoto,Tiempo Completo,4000000,7874137,4,Python|SQL|Power BI|Excel,Activa,2024-03-18,31
+399,Konrad Lorenz Tech,Full Stack,Junior,Cali,Híbrido,Tiempo Completo,2000000,3648801,5,SQL|JavaScript|React|Python,Cerrada,2024-10-03,76
+400,TechCorp Colombia,Full Stack,Lead,Villavicencio,Presencial,Tiempo Completo,10000000,11496696,1,React|Python|Docker,Activa,2024-03-08,29

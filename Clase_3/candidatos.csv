@@ -1,0 +1,1201 @@
+candidato_id,nombre,ciudad,area_interes,nivel,anos_experiencia,skills_principales,salario_esperado_cop,disponible,fecha_registro
+1,Natalia López,Montería,Data Science,Senior,6,TensorFlow|Scikit-learn|Python|SQL,7785972,Sí,2024-09-15
+2,Alejandro García,Montería,Cloud,Semi-Senior,5,GCP|AWS|Azure|Kubernetes,5165476,Sí,2024-02-22
+3,Camila Moreno,Pasto,Backend,Senior,5,Python|SQL|Spring Boot|Node.js,7583470,Sí,2024-05-28
+4,Camila Molina,Pereira,DevOps,Junior,1,Jenkins|Linux,3405459,Sí,2024-09-30
+5,Miguel Ramírez,Ibagué,Frontend,Lead,11,Vue.js|JavaScript|React|CSS,11769852,Sí,2024-04-18
+6,Natalia Herrera,Montería,BI & Analytics,Lead,11,Excel|DAX|Tableau|Python,13036646,Sí,2024-03-11
+7,Paula Herrera,Villavicencio,Backend,Junior,0,SQL|Django|Python|Spring Boot,3249668,Sí,2024-12-14
+8,Miguel López,Santa Marta,Full Stack,Senior,5,React|SQL|JavaScript,11258742,Sí,2024-11-16
+9,Daniel Ramos,Pasto,Full Stack,Semi-Senior,4,Node.js|SQL|JavaScript|Python,5289807,Sí,2024-10-17
+10,Camila Martínez,Tunja,Diseño UX/UI,Lead,15,Sketch|Adobe XD|HTML|Figma,15980649,Sí,2024-07-23
+11,Cristian Mendoza,Bogotá,QA,Lead,11,Selenium|Postman,14936193,Sí,2024-01-04
+12,Camila Reyes,Santa Marta,Full Stack,Junior,0,Python|React,3402948,Sí,2024-10-19
+13,Gabriela Herrera,Neiva,DevOps,Lead,9,AWS|Jenkins|Linux|Kubernetes,10508455,No,2024-06-22
+14,Carlos Molina,Santa Marta,Backend,Semi-Senior,3,SQL|Java,5047764,Sí,2024-01-26
+15,Natalia Romero,Bucaramanga,Data Science,Junior,0,R|Pandas|Python,2794764,No,2024-05-26
+16,Nicolás Reyes,Medellín,Diseño UX/UI,Lead,11,CSS|Prototyping,10420624,No,2024-09-14
+17,Javier Molina,Manizales,Cloud,Semi-Senior,2,AWS|Azure|Terraform|Kubernetes,6493594,Sí,2024-08-02
+18,Cristian Alvarado,Cartagena,Machine Learning,Senior,10,PyTorch|Scikit-learn,9516557,Sí,2024-02-07
+19,Valentina Ruiz,Manizales,Machine Learning,Junior,0,PyTorch|Python,2774954,Sí,2024-11-09
+20,Carlos Mendoza,Barranquilla,Cloud,Junior,2,GCP|AWS,3556960,Sí,2024-11-05
+21,María Reyes,Montería,QA,Semi-Senior,4,Selenium|Cypress|Postman,5160480,Sí,2024-03-07
+22,Natalia Torres,Tunja,Frontend,Lead,8,JavaScript|React,14634916,Sí,2024-08-08
+23,Laura Rodríguez,Cartagena,Mobile,Senior,6,Flutter|Kotlin|React Native|Swift,8363163,Sí,2024-07-30
+24,Valentina Pérez,Manizales,Diseño UX/UI,Senior,7,Figma|HTML|Prototyping|Sketch,9933147,Sí,2024-04-24
+25,Valentina Guerrero,Tunja,DevOps,Lead,12,Linux|Terraform|AWS,17357131,Sí,2024-04-01
+26,Gabriela Torres,Villavicencio,Data Science,Junior,2,Scikit-learn|TensorFlow|Python,3886398,Sí,2024-12-28
+27,Nicolás García,Cúcuta,Cloud,Semi-Senior,5,GCP|AWS|Kubernetes|Terraform,5712924,Sí,2024-10-10
+28,Laura Sánchez,Cúcuta,BI & Analytics,Lead,12,Excel|SQL|Tableau,15089046,Sí,2024-08-26
+29,Isabella Ruiz,Manizales,Full Stack,Semi-Senior,5,JavaScript|Node.js|Python|Docker,5301993,Sí,2024-03-16
+30,Valentina Rodríguez,Villavicencio,DevOps,Lead,14,Terraform|Kubernetes|AWS|Linux,17488173,Sí,2024-08-05
+31,Felipe Pérez,Tunja,Diseño UX/UI,Lead,15,HTML|CSS,15139300,No,2024-10-07
+32,Isabella Vega,Cali,Frontend,Lead,12,TypeScript|React|Vue.js|CSS,12279311,Sí,2024-06-12
+33,Carolina Romero,Ibagué,Backend,Semi-Senior,3,Java|Python|SQL|Django,5954228,Sí,2024-08-03
+34,Daniela Vega,Tunja,Machine Learning,Junior,2,PyTorch|Scikit-learn|MLflow,3567653,Sí,2024-05-19
+35,Nicolás Herrera,Villavicencio,Data Science,Lead,10,R|Scikit-learn|Python,10704202,No,2024-03-10
+36,Diego Ruiz,Santa Marta,Frontend,Junior,1,Vue.js|HTML|TypeScript,3577078,Sí,2024-08-28
+37,Valentina Cruz,Bogotá,Cloud,Junior,1,AWS|Kubernetes|Azure|Docker,3303035,No,2024-12-08
+38,Andrés Alvarado,Barranquilla,DevOps,Lead,10,Terraform|Docker|Kubernetes|AWS,14830133,No,2024-07-22
+39,Ana Sánchez,Pasto,Backend,Semi-Senior,4,Spring Boot|Python|Node.js|SQL,6122153,No,2024-09-07
+40,Andrés Jiménez,Neiva,QA,Lead,10,Cypress|Postman|JMeter|Pytest,12703686,Sí,2024-02-14
+41,Juliana Vega,Pereira,Ciberseguridad,Semi-Senior,5,Kali|Linux|Burp Suite,5083608,Sí,2024-10-11
+42,Valentina Medina,Cali,DevOps,Junior,0,AWS|Linux|Terraform|Docker,2617056,Sí,2024-06-05
+43,Cristian Alvarado,Santa Marta,QA,Lead,13,JMeter|Postman|Pytest,12647008,Sí,2024-10-01
+44,Luisa Reyes,Manizales,Frontend,Semi-Senior,5,React|Vue.js,4752632,Sí,2024-05-20
+45,Santiago Rodríguez,Cúcuta,Cloud,Senior,10,AWS|Docker,10694920,Sí,2024-01-27
+46,Juliana Molina,Cúcuta,Ciberseguridad,Junior,0,OWASP|Python|Linux|Wireshark,2178637,No,2024-11-06
+47,Alejandro Navarro,Medellín,Machine Learning,Semi-Senior,5,MLflow|Scikit-learn|PyTorch,4416215,Sí,2024-05-15
+48,Cristian Martínez,Cúcuta,Frontend,Semi-Senior,2,TypeScript|CSS|HTML,4970881,Sí,2024-12-25
+49,Diego Ruiz,Cartagena,Backend,Semi-Senior,3,Java|FastAPI|Spring Boot|Node.js,4250140,Sí,2024-10-31
+50,Miguel Ramos,Cali,Machine Learning,Senior,8,Scikit-learn|PyTorch|SQL|TensorFlow,10624119,Sí,2024-11-05
+51,Juliana García,Santa Marta,Backend,Semi-Senior,2,Python|Java|SQL|Django,6455050,No,2024-02-16
+52,Mateo Castro,Villavicencio,BI & Analytics,Senior,6,DAX|Python|Tableau,7307837,Sí,2024-06-10
+53,Juliana Vargas,Pasto,Backend,Lead,15,Python|Java|Django,16375262,Sí,2024-04-14
+54,Juliana Romero,Tunja,Frontend,Senior,5,CSS|React|HTML|TypeScript,10422473,Sí,2024-02-28
+55,Isabella López,Neiva,Full Stack,Semi-Senior,4,SQL|Docker|React,4606672,Sí,2024-02-05
+56,Juliana Ortiz,Neiva,BI & Analytics,Senior,5,Tableau|Excel|Python|SQL,9895109,No,2024-08-21
+57,Javier Vargas,Villavicencio,DevOps,Semi-Senior,5,Jenkins|AWS,6783712,Sí,2024-03-05
+58,Paula Alvarado,Cartagena,QA,Junior,1,Pytest|JMeter,2156926,No,2024-11-28
+59,Camila Molina,Manizales,QA,Lead,8,Selenium|Pytest|Postman|JMeter,10825800,Sí,2024-08-15
+60,Sebastián Reyes,Manizales,Mobile,Junior,0,Kotlin|React Native|Flutter,3113936,Sí,2024-03-28
+61,Sebastián Martínez,Neiva,Machine Learning,Lead,10,Scikit-learn|PyTorch,17540591,No,2024-05-27
+62,Cristian Romero,Pereira,Frontend,Junior,1,TypeScript|Vue.js|HTML|React,2806760,No,2024-10-19
+63,David Alvarado,Pasto,Mobile,Senior,7,Flutter|React Native|Swift|Dart,8594942,Sí,2024-12-13
+64,Luisa Cruz,Cartagena,Full Stack,Semi-Senior,2,SQL|JavaScript|Node.js,5237782,No,2024-03-30
+65,María González,Neiva,Cloud,Senior,6,GCP|Kubernetes|AWS,8892593,No,2024-10-12
+66,David Martínez,Pasto,BI & Analytics,Junior,1,DAX|Tableau|Python|Excel,2227218,Sí,2024-11-13
+67,Carolina Romero,Medellín,QA,Semi-Senior,2,Postman|JMeter|Selenium|Cypress,4156078,Sí,2024-02-19
+68,Felipe Vega,Barranquilla,Cloud,Semi-Senior,5,Kubernetes|Azure|Terraform|GCP,6052470,Sí,2024-01-17
+69,Ana Castro,Villavicencio,DevOps,Lead,9,Jenkins|Terraform|Linux|Docker,17960879,No,2024-02-16
+70,Cristian Sánchez,Pereira,Full Stack,Junior,0,React|JavaScript|Docker|Node.js,3705095,Sí,2024-11-01
+71,Valentina Torres,Manizales,Frontend,Semi-Senior,4,JavaScript|React|HTML|CSS,5357995,Sí,2024-01-27
+72,Laura Cruz,Neiva,BI & Analytics,Junior,2,Excel|DAX|SQL,3056626,Sí,2024-08-22
+73,Natalia García,Cali,Data Science,Lead,9,TensorFlow|Pandas|Python,10550982,Sí,2024-05-20
+74,Alejandro Mendoza,Tunja,Machine Learning,Senior,8,SQL|Python,10607688,Sí,2024-07-30
+75,Sara Ramos,Cartagena,Ciberseguridad,Lead,14,OWASP|Kali|Wireshark,10765248,Sí,2024-02-17
+76,Nicolás López,Montería,Diseño UX/UI,Senior,9,Figma|HTML|Adobe XD|CSS,9412810,Sí,2024-06-29
+77,Andrés Alvarado,Santa Marta,Cloud,Semi-Senior,5,Docker|GCP|AWS,4948579,Sí,2024-11-07
+78,Javier Guerrero,Cartagena,Diseño UX/UI,Senior,7,Adobe XD|Figma|Sketch,10362022,Sí,2024-11-20
+79,Valentina Martínez,Ibagué,Diseño UX/UI,Semi-Senior,5,Adobe XD|Prototyping,6380659,Sí,2024-03-20
+80,Sebastián Ortiz,Santa Marta,Machine Learning,Junior,2,Scikit-learn|SQL|MLflow|TensorFlow,2452080,No,2024-02-26
+81,Daniel Guerrero,Pereira,Full Stack,Lead,11,Python|JavaScript|Docker,16410246,Sí,2024-05-28
+82,Sara López,Cali,Data Science,Lead,10,Scikit-learn|R|SQL,10157215,No,2024-02-09
+83,Diego Vargas,Ibagué,Machine Learning,Lead,14,Python|Scikit-learn|SQL,16979539,Sí,2024-02-15
+84,Nicolás Molina,Manizales,Backend,Semi-Senior,5,Spring Boot|Node.js|FastAPI,4705199,Sí,2024-09-28
+85,Paula Sánchez,Bucaramanga,QA,Senior,6,Postman|Pytest,7632109,No,2024-08-25
+86,Luisa Alvarado,Armenia,Machine Learning,Lead,13,Scikit-learn|Python,16680097,Sí,2024-10-29
+87,Santiago Castro,Cali,Cloud,Junior,1,GCP|Kubernetes,3351963,No,2024-08-24
+88,Gabriela Romero,Ibagué,Diseño UX/UI,Junior,1,Sketch|Figma|HTML|CSS,3498028,Sí,2024-01-21
+89,Felipe Reyes,Medellín,Ciberseguridad,Lead,13,Burp Suite|OWASP|Kali,10552908,Sí,2024-02-18
+90,Juan Guerrero,Villavicencio,BI & Analytics,Senior,7,DAX|Power BI|Tableau|Excel,7710674,No,2024-11-25
+91,Carlos Vargas,Bucaramanga,Frontend,Junior,2,Vue.js|HTML,3994746,No,2024-04-08
+92,Felipe González,Villavicencio,Frontend,Junior,1,Vue.js|CSS|React|HTML,2323491,Sí,2024-08-12
+93,Santiago Jiménez,Cúcuta,QA,Semi-Senior,4,Cypress|Pytest,5967194,No,2024-08-24
+94,Luisa Flores,Tunja,BI & Analytics,Lead,10,SQL|Python|Tableau,17140098,Sí,2024-05-25
+95,Camila Ortiz,Bogotá,Frontend,Senior,8,TypeScript|Vue.js,10325696,Sí,2024-04-30
+96,Daniela Martínez,Cúcuta,QA,Semi-Senior,4,Pytest|Selenium,5981619,No,2024-08-17
+97,Alejandro García,Manizales,Backend,Junior,1,Spring Boot|Node.js,2631559,No,2024-11-23
+98,Carlos Suárez,Cartagena,Ciberseguridad,Junior,0,Wireshark|OWASP|Linux|Kali,2610841,Sí,2024-05-03
+99,Gabriela Jiménez,Pasto,Frontend,Junior,2,TypeScript|JavaScript|HTML,2531943,Sí,2024-06-25
+100,Felipe Cruz,Neiva,Full Stack,Junior,2,Python|Node.js|React,3458336,Sí,2024-02-02
+101,Ana Ortiz,Popayán,Ciberseguridad,Junior,1,Kali|OWASP,2835136,Sí,2024-11-27
+102,María Flores,Neiva,QA,Junior,2,JMeter|Cypress|Postman,3876190,No,2024-12-20
+103,Mateo Castro,Barranquilla,Cloud,Senior,5,Azure|Docker|GCP|Kubernetes,9480007,No,2024-11-04
+104,Ana Jiménez,Villavicencio,Frontend,Lead,13,TypeScript|Vue.js|JavaScript|HTML,17992576,Sí,2024-03-14
+105,Diego Suárez,Medellín,Full Stack,Lead,11,Node.js|Docker|SQL|Python,17959308,Sí,2024-07-09
+106,Isabella Ortiz,Bucaramanga,Backend,Semi-Senior,4,Node.js|Java|Python|Django,6171581,Sí,2024-05-14
+107,Luisa Torres,Cali,Diseño UX/UI,Lead,15,Figma|Sketch,10736442,Sí,2024-12-07
+108,David Reyes,Pereira,Backend,Senior,10,Django|Java|Python,8985887,No,2024-01-14
+109,David Romero,Armenia,Machine Learning,Senior,9,PyTorch|Scikit-learn,10434577,Sí,2024-03-05
+110,Sara Mendoza,Medellín,Backend,Lead,10,SQL|Django,11283586,Sí,2024-03-25
+111,Sebastián Vargas,Santa Marta,Diseño UX/UI,Semi-Senior,4,Prototyping|CSS,6621533,Sí,2024-09-14
+112,Natalia Pérez,Santa Marta,Machine Learning,Semi-Senior,4,Python|SQL,4884194,Sí,2024-09-11
+113,Carolina Mendoza,Medellín,Cloud,Senior,8,Terraform|GCP|Kubernetes|AWS,10486487,No,2024-04-14
+114,Sara Suárez,Ibagué,Frontend,Senior,10,React|Vue.js|JavaScript,8027788,No,2024-05-06
+115,Laura López,Bucaramanga,Data Science,Senior,6,Scikit-learn|SQL|R,10915929,Sí,2024-09-11
+116,Valentina Martínez,Armenia,BI & Analytics,Lead,13,SQL|Tableau,12397031,Sí,2024-02-25
+117,Nicolás González,Pasto,Mobile,Senior,5,Dart|Swift,7616829,No,2024-10-08
+118,Juliana Ramos,Pereira,Machine Learning,Junior,0,MLflow|PyTorch|TensorFlow,3263456,Sí,2024-01-24
+119,Santiago González,Villavicencio,Diseño UX/UI,Senior,6,CSS|Adobe XD|Sketch,11980523,No,2024-12-28
+120,Gabriela Flores,Armenia,Ciberseguridad,Junior,1,Wireshark|Kali|Python,2556857,Sí,2024-01-27
+121,Gabriela Herrera,Ibagué,Frontend,Lead,9,JavaScript|TypeScript,15792336,Sí,2024-07-29
+122,Paula Ortiz,Armenia,Machine Learning,Lead,10,TensorFlow|MLflow|PyTorch|Scikit-learn,11452759,No,2024-09-29
+123,Sara Romero,Cúcuta,QA,Senior,6,Cypress|Postman|Selenium,8738772,No,2024-06-11
+124,Mateo Castro,Medellín,Cloud,Senior,9,GCP|Azure|Kubernetes,7662946,No,2024-12-01
+125,Juliana Cruz,Manizales,Ciberseguridad,Semi-Senior,4,Python|Wireshark,4212925,Sí,2024-01-27
+126,Andrés Jiménez,Pereira,QA,Lead,10,JMeter|Cypress|Postman,12394237,Sí,2024-02-15
+127,Natalia Alvarado,Medellín,DevOps,Junior,0,AWS|Kubernetes|Jenkins,2019434,Sí,2024-06-20
+128,Daniel Ruiz,Neiva,Full Stack,Lead,11,Node.js|React,10118146,Sí,2024-05-31
+129,Gabriela Guerrero,Bucaramanga,DevOps,Semi-Senior,5,AWS|Docker,6002587,Sí,2024-01-04
+130,Juliana Moreno,Medellín,DevOps,Lead,8,Linux|Jenkins|Kubernetes,12573678,Sí,2024-07-26
+131,Cristian Medina,Cartagena,Diseño UX/UI,Senior,10,CSS|Sketch|Prototyping,10816637,Sí,2024-07-31
+132,Ana Romero,Barranquilla,Ciberseguridad,Semi-Senior,2,OWASP|Kali|Python|Wireshark,6297007,Sí,2024-03-25
+133,Sara Molina,Medellín,Cloud,Lead,15,Docker|Terraform,13484833,No,2024-10-15
+134,Santiago Romero,Cali,Ciberseguridad,Senior,8,OWASP|Linux,9890117,Sí,2024-10-04
+135,Santiago Ríos,Montería,Backend,Lead,10,Spring Boot|FastAPI,17294903,No,2024-07-11
+136,Camila Guerrero,Manizales,Full Stack,Semi-Senior,4,SQL|Python|React|Node.js,4014568,No,2024-12-10
+137,Miguel Romero,Barranquilla,BI & Analytics,Lead,13,Tableau|Power BI,15158349,Sí,2024-05-03
+138,María Martínez,Pereira,Backend,Junior,1,SQL|Java|Django,3582061,Sí,2024-04-29
+139,Mariana Ríos,Manizales,Diseño UX/UI,Senior,6,Prototyping|CSS,9308158,Sí,2024-11-16
+140,Cristian Jiménez,Cúcuta,Cloud,Lead,14,GCP|Terraform|Docker|AWS,13972163,Sí,2024-04-25
+141,Daniel Molina,Villavicencio,Diseño UX/UI,Semi-Senior,2,CSS|Prototyping|Sketch,5069529,Sí,2024-08-18
+142,Diego Castro,Tunja,Backend,Semi-Senior,4,Java|Django,6010725,Sí,2024-06-04
+143,Javier García,Pereira,DevOps,Semi-Senior,2,Linux|Terraform,5003826,Sí,2024-07-13
+144,Isabella Romero,Pereira,Full Stack,Senior,7,JavaScript|SQL|Node.js,10472297,Sí,2024-03-15
+145,Valentina Torres,Manizales,Cloud,Lead,13,Terraform|Docker,12158613,No,2024-11-24
+146,Miguel Herrera,Medellín,Ciberseguridad,Semi-Senior,4,Wireshark|Burp Suite|Linux|Kali,4141867,Sí,2024-01-04
+147,Nicolás González,Armenia,Full Stack,Semi-Senior,3,SQL|Node.js|JavaScript|Python,6046209,No,2024-01-07
+148,Valentina Medina,Popayán,Diseño UX/UI,Senior,5,Figma|Prototyping,8610042,Sí,2024-06-30
+149,Juliana Navarro,Medellín,BI & Analytics,Junior,1,Power BI|Tableau|SQL|Excel,2196084,No,2024-01-29
+150,Natalia García,Pereira,Diseño UX/UI,Semi-Senior,5,Figma|CSS|Prototyping|HTML,6903665,Sí,2024-01-24
+151,Javier Martínez,Cartagena,Full Stack,Senior,6,React|Python,10341149,Sí,2024-06-02
+152,Sebastián Alvarado,Barranquilla,DevOps,Lead,10,Linux|Docker|Jenkins|Terraform,12857099,No,2024-06-16
+153,Valentina Mendoza,Cúcuta,Mobile,Lead,14,Swift|React Native|Flutter,10688184,Sí,2024-03-19
+154,Daniela Reyes,Cúcuta,Full Stack,Semi-Senior,5,JavaScript|Docker,5509603,Sí,2024-02-14
+155,Sebastián Jiménez,Bogotá,Ciberseguridad,Lead,13,Python|Wireshark|Kali|Linux,16536144,Sí,2024-10-13
+156,Carolina Ramírez,Cartagena,Machine Learning,Semi-Senior,5,PyTorch|SQL|Scikit-learn,4701318,No,2024-06-02
+157,Mateo Navarro,Cartagena,Backend,Senior,10,Django|Java|SQL|Python,10319304,No,2024-06-17
+158,Isabella Vargas,Ibagué,BI & Analytics,Semi-Senior,4,Tableau|Power BI|Python,6914864,Sí,2024-06-15
+159,Daniela Torres,Pereira,BI & Analytics,Senior,9,Excel|SQL|Python|Tableau,7580144,No,2024-12-10
+160,Mateo González,Armenia,Full Stack,Senior,10,SQL|Docker|JavaScript|React,11482598,No,2024-10-05
+161,Santiago Navarro,Villavicencio,QA,Junior,0,Cypress|Selenium,3578490,Sí,2024-02-20
+162,Juliana Ramírez,Bogotá,Cloud,Semi-Senior,4,Docker|Kubernetes|Azure|Terraform,4438511,Sí,2024-02-29
+163,Mariana Cruz,Neiva,Frontend,Senior,8,TypeScript|Vue.js|HTML|JavaScript,10795402,Sí,2024-06-02
+164,Santiago Navarro,Bucaramanga,Diseño UX/UI,Junior,0,Sketch|Prototyping|CSS|Adobe XD,2694135,Sí,2024-07-26
+165,Natalia Pérez,Bogotá,Frontend,Lead,11,CSS|TypeScript|HTML,12334925,Sí,2024-10-22
+166,Andrés Navarro,Popayán,Cloud,Semi-Senior,4,GCP|Terraform,5314512,No,2024-10-27
+167,Andrés Castro,Ibagué,QA,Lead,12,Cypress|Selenium|Postman|JMeter,10981038,Sí,2024-07-10
+168,Ana González,Tunja,Cloud,Lead,14,Azure|Terraform|Kubernetes,11176892,Sí,2024-06-10
+169,Mariana Ruiz,Popayán,Machine Learning,Junior,1,Scikit-learn|MLflow,3369586,No,2024-07-31
+170,Ana Ramos,Santa Marta,Ciberseguridad,Lead,8,Kali|Python,11411039,No,2024-10-16
+171,Miguel Ortiz,Barranquilla,Ciberseguridad,Junior,2,Python|Burp Suite|Linux|Wireshark,3543480,Sí,2024-08-18
+172,Juliana Castro,Cartagena,Backend,Lead,13,Django|FastAPI|SQL|Java,16756524,Sí,2024-10-18
+173,David Romero,Santa Marta,Mobile,Semi-Senior,4,Flutter|Swift|React Native|Dart,6751028,Sí,2024-05-07
+174,Laura Reyes,Cali,QA,Semi-Senior,5,Postman|JMeter|Pytest|Cypress,4390467,Sí,2024-12-21
+175,Javier Vega,Cali,QA,Lead,8,Selenium|JMeter|Postman|Pytest,11827289,No,2024-04-18
+176,Mateo Torres,Neiva,QA,Senior,9,Selenium|Cypress|JMeter,8325261,No,2024-01-01
+177,Nicolás Sánchez,Santa Marta,Diseño UX/UI,Semi-Senior,4,Prototyping|Adobe XD,5559625,No,2024-11-16
+178,Daniel Cruz,Cali,Diseño UX/UI,Semi-Senior,2,Sketch|HTML,6490072,No,2024-01-05
+179,Valentina Reyes,Barranquilla,QA,Junior,1,JMeter|Selenium,2216429,Sí,2024-03-11
+180,Daniela Ortiz,Montería,Frontend,Semi-Senior,2,Vue.js|React|CSS,6879667,Sí,2024-02-14
+181,Carolina López,Cali,Frontend,Junior,2,React|HTML|Vue.js,2520443,Sí,2024-12-03
+182,Carolina Flores,Barranquilla,DevOps,Semi-Senior,5,AWS|Linux,6095401,Sí,2024-07-03
+183,Javier Vargas,Bogotá,Frontend,Lead,10,JavaScript|HTML|CSS,17739156,Sí,2024-07-22
+184,Paula Flores,Popayán,Full Stack,Lead,10,JavaScript|Node.js|Docker,14499566,Sí,2024-07-19
+185,Gabriela Mendoza,Montería,Full Stack,Junior,1,React|JavaScript,2243241,Sí,2024-03-02
+186,Valentina Reyes,Santa Marta,Frontend,Junior,0,Vue.js|React,3537077,No,2024-05-19
+187,Paula Martínez,Pasto,Mobile,Junior,1,React Native|Swift,2329902,Sí,2024-04-26
+188,Miguel Medina,Medellín,Data Science,Junior,0,Pandas|R|Scikit-learn,3159441,Sí,2024-05-07
+189,Nicolás Ríos,Bucaramanga,Diseño UX/UI,Senior,9,CSS|Figma,7385276,Sí,2024-08-26
+190,Diego Flores,Manizales,Mobile,Senior,5,Kotlin|Dart,11963463,Sí,2024-10-06
+191,Luisa Navarro,Villavicencio,DevOps,Semi-Senior,5,Jenkins|Docker|Linux|Terraform,5289793,Sí,2024-08-02
+192,Mateo Rodríguez,Barranquilla,Frontend,Senior,6,Vue.js|TypeScript|JavaScript|HTML,10308058,Sí,2024-08-10
+193,Cristian González,Cali,DevOps,Senior,8,AWS|Jenkins|Kubernetes,8141788,Sí,2024-03-20
+194,Andrés Pérez,Neiva,Ciberseguridad,Lead,13,Burp Suite|Kali,11322173,Sí,2024-12-26
+195,Ana Suárez,Cúcuta,Data Science,Semi-Senior,3,Pandas|Scikit-learn|Python,4729254,No,2024-08-19
+196,Juan Cruz,Manizales,Cloud,Semi-Senior,5,AWS|Kubernetes,4831030,Sí,2024-10-25
+197,Gabriela Torres,Barranquilla,Backend,Junior,0,Python|Node.js,2089540,No,2024-07-21
+198,Mateo García,Medellín,BI & Analytics,Lead,10,Tableau|Python|Power BI,15429764,Sí,2024-09-12
+199,Nicolás Vega,Popayán,Cloud,Lead,14,Terraform|Azure,16667653,Sí,2024-07-14
+200,Carlos Reyes,Ibagué,QA,Lead,13,Postman|Pytest|Selenium,17514219,Sí,2024-01-30
+201,Carlos Herrera,Santa Marta,Cloud,Senior,6,Kubernetes|Azure,8840557,No,2024-06-30
+202,Javier Ramos,Pereira,Frontend,Semi-Senior,4,JavaScript|Vue.js|React|CSS,6064548,Sí,2024-09-08
+203,Santiago Martínez,Pereira,Data Science,Semi-Senior,3,SQL|Scikit-learn,4547312,Sí,2024-06-14
+204,Santiago García,Cúcuta,Frontend,Semi-Senior,4,HTML|TypeScript|JavaScript|React,4572319,No,2024-11-23
+205,Mateo Mendoza,Bucaramanga,QA,Semi-Senior,4,Postman|Cypress|Selenium,4007540,Sí,2024-04-03
+206,Alejandro Vargas,Pasto,Machine Learning,Semi-Senior,2,SQL|Python|TensorFlow,4704170,Sí,2024-08-16
+207,Valentina Torres,Medellín,DevOps,Semi-Senior,2,Linux|Docker,5838028,No,2024-09-09
+208,Carolina Moreno,Medellín,QA,Lead,11,JMeter|Selenium,12190497,Sí,2024-02-07
+209,Sara Pérez,Bogotá,BI & Analytics,Semi-Senior,2,Excel|DAX|Python,6741544,No,2024-03-21
+210,Santiago López,Medellín,QA,Semi-Senior,5,Postman|Cypress|Selenium|JMeter,6398176,No,2024-03-19
+211,Santiago Castro,Pereira,Data Science,Lead,15,Python|TensorFlow,10687329,No,2024-02-29
+212,Daniel Navarro,Pasto,BI & Analytics,Lead,14,Tableau|Python,12208686,No,2024-08-26
+213,Juliana Ramírez,Villavicencio,Mobile,Junior,0,React Native|Swift|Kotlin|Flutter,3716320,No,2024-10-20
+214,Carolina Ramírez,Neiva,Ciberseguridad,Senior,10,Wireshark|OWASP|Linux|Python,8777463,Sí,2024-03-05
+215,Santiago Jiménez,Villavicencio,Backend,Lead,12,FastAPI|Python|Spring Boot,12735749,Sí,2024-09-23
+216,Isabella Ríos,Barranquilla,Data Science,Lead,10,Scikit-learn|TensorFlow|Python|Pandas,17383114,Sí,2024-07-29
+217,Juliana Moreno,Medellín,Full Stack,Lead,10,SQL|React|Docker,10413482,No,2024-05-17
+218,Carolina Castro,Cúcuta,Data Science,Senior,7,TensorFlow|Python|R|Scikit-learn,9691638,No,2024-11-05
+219,Natalia Martínez,Cúcuta,DevOps,Lead,15,Jenkins|Docker|Kubernetes|Terraform,11137913,Sí,2024-03-29
+220,María Vega,Pasto,DevOps,Junior,0,Linux|Kubernetes|Jenkins,3727017,Sí,2024-12-14
+221,Valentina Ramírez,Santa Marta,QA,Lead,15,Cypress|Postman|Pytest|Selenium,12391335,Sí,2024-07-16
+222,Santiago Pérez,Bogotá,Machine Learning,Semi-Senior,3,SQL|Scikit-learn|Python,4554965,Sí,2024-04-24
+223,Juliana Suárez,Popayán,Mobile,Senior,7,Swift|React Native|Dart,10331556,Sí,2024-01-04
+224,Paula Guerrero,Santa Marta,QA,Senior,8,Postman|Cypress|Pytest,9506441,Sí,2024-09-21
+225,Luisa Ramírez,Montería,Data Science,Lead,10,Python|Pandas|SQL|R,14890757,Sí,2024-06-24
+226,Miguel Reyes,Bucaramanga,DevOps,Lead,12,Linux|Terraform,11073273,Sí,2024-10-13
+227,Luisa Ríos,Montería,Frontend,Senior,6,HTML|Vue.js,10117898,Sí,2024-08-25
+228,Diego López,Medellín,Ciberseguridad,Junior,2,Python|Burp Suite|Kali|Linux,3826303,Sí,2024-07-28
+229,Gabriela Vega,Medellín,Ciberseguridad,Semi-Senior,3,OWASP|Linux|Kali,5896048,Sí,2024-10-22
+230,Luisa Pérez,Bogotá,Ciberseguridad,Junior,0,Burp Suite|OWASP|Wireshark,2079115,Sí,2024-01-08
+231,Carolina Vargas,Cúcuta,Cloud,Semi-Senior,2,Kubernetes|GCP,4430789,Sí,2024-03-26
+232,Camila Ramos,Armenia,Data Science,Senior,10,TensorFlow|R|SQL,8383143,No,2024-01-10
+233,Felipe Ramírez,Villavicencio,Diseño UX/UI,Semi-Senior,2,Adobe XD|Figma,6685701,Sí,2024-10-31
+234,Santiago Guerrero,Armenia,Backend,Junior,0,Python|Django|Node.js,3471924,Sí,2024-06-03
+235,Nicolás Guerrero,Barranquilla,Backend,Senior,8,FastAPI|Django|Python|Node.js,11175337,Sí,2024-05-14
+236,Mariana Medina,Pereira,DevOps,Senior,7,Terraform|AWS,9773304,Sí,2024-01-07
+237,Cristian Martínez,Neiva,Backend,Lead,9,FastAPI|Python|Node.js|Java,10420103,Sí,2024-03-30
+238,Diego Rodríguez,Cartagena,Mobile,Senior,8,Flutter|Dart,8430360,Sí,2024-08-12
+239,Alejandro Torres,Villavicencio,Diseño UX/UI,Junior,1,HTML|Prototyping|Adobe XD,3446830,Sí,2024-02-27
+240,Laura Reyes,Villavicencio,Diseño UX/UI,Junior,0,Prototyping|HTML|Sketch|Adobe XD,3634025,Sí,2024-09-04
+241,Javier Herrera,Ibagué,Backend,Lead,12,Node.js|Python|Django|Java,13630991,Sí,2024-09-03
+242,David Guerrero,Armenia,Full Stack,Lead,10,SQL|Docker|React|JavaScript,12333351,Sí,2024-09-16
+243,Felipe Romero,Armenia,Full Stack,Lead,15,Python|SQL|JavaScript,14172270,Sí,2024-02-22
+244,Daniela Jiménez,Medellín,Data Science,Junior,0,TensorFlow|Pandas|SQL|R,3712510,No,2024-12-02
+245,David Reyes,Barranquilla,Ciberseguridad,Junior,0,OWASP|Kali|Wireshark,2096003,No,2024-02-24
+246,Juliana Suárez,Barranquilla,DevOps,Semi-Senior,5,Linux|Jenkins,5738414,Sí,2024-08-18
+247,Isabella Guerrero,Bucaramanga,Machine Learning,Semi-Senior,2,Scikit-learn|MLflow|SQL|PyTorch,6426632,Sí,2024-02-23
+248,Daniela Guerrero,Neiva,Machine Learning,Senior,8,Scikit-learn|PyTorch|MLflow,8159137,Sí,2024-12-25
+249,Juan Molina,Popayán,QA,Semi-Senior,3,Postman|Pytest|Cypress|Selenium,6912155,Sí,2024-06-29
+250,Juan Herrera,Medellín,Machine Learning,Lead,8,Python|SQL|Scikit-learn|MLflow,12239576,Sí,2024-05-26
+251,Cristian Torres,Tunja,Frontend,Junior,2,TypeScript|JavaScript|React,2815554,Sí,2024-12-20
+252,Cristian Rodríguez,Pereira,BI & Analytics,Lead,8,DAX|Tableau,17646101,Sí,2024-10-28
+253,Juan Cruz,Bucaramanga,Machine Learning,Semi-Senior,3,SQL|Python,6155229,Sí,2024-08-07
+254,Juliana Romero,Ibagué,Mobile,Semi-Senior,4,Swift|Flutter|React Native,4213303,Sí,2024-02-07
+255,Carlos Reyes,Pasto,QA,Semi-Senior,2,Cypress|JMeter|Selenium,4894870,Sí,2024-05-30
+256,María Ortiz,Medellín,Machine Learning,Lead,13,TensorFlow|MLflow|SQL,17683398,Sí,2024-07-16
+257,Juliana Romero,Ibagué,Diseño UX/UI,Senior,9,Figma|Adobe XD|Sketch,7804940,Sí,2024-11-16
+258,Camila Sánchez,Cartagena,Full Stack,Semi-Senior,5,Docker|SQL|JavaScript|Node.js,5926130,Sí,2024-02-07
+259,Santiago Pérez,Ibagué,Mobile,Junior,2,React Native|Dart|Swift,2035422,Sí,2024-11-24
+260,Miguel Suárez,Cali,Backend,Junior,2,Spring Boot|FastAPI|Node.js,2590384,Sí,2024-08-30
+261,Sebastián Romero,Tunja,DevOps,Semi-Senior,5,Kubernetes|Jenkins|Terraform|Docker,6328131,Sí,2024-01-03
+262,Gabriela Suárez,Cartagena,BI & Analytics,Junior,1,Python|Excel,2337545,Sí,2024-04-09
+263,Andrés Pérez,Barranquilla,Full Stack,Junior,2,Docker|JavaScript|Node.js,2414014,Sí,2024-07-01
+264,Laura Guerrero,Neiva,Full Stack,Semi-Senior,4,Node.js|SQL,6585127,Sí,2024-10-16
+265,Gabriela Castro,Pasto,QA,Lead,11,JMeter|Postman,17364240,No,2024-08-24
+266,Isabella Castro,Cali,Mobile,Lead,9,Swift|Dart|React Native,17126854,Sí,2024-10-24
+267,Gabriela Moreno,Cúcuta,Machine Learning,Semi-Senior,4,TensorFlow|PyTorch|Scikit-learn|Python,5949097,Sí,2024-07-22
+268,David Medina,Armenia,Data Science,Semi-Senior,3,R|TensorFlow|Scikit-learn,5504897,No,2024-04-28
+269,Camila Torres,Medellín,QA,Semi-Senior,3,JMeter|Cypress|Selenium,5359252,Sí,2024-05-14
+270,Gabriela Romero,Villavicencio,Machine Learning,Semi-Senior,5,PyTorch|Scikit-learn|TensorFlow|SQL,5447170,No,2024-11-05
+271,Valentina Medina,Bucaramanga,Frontend,Lead,12,React|HTML,15545789,Sí,2024-07-31
+272,Carlos Vargas,Medellín,Diseño UX/UI,Junior,1,Sketch|HTML|Figma|CSS,2268194,Sí,2024-11-18
+273,Paula Rodríguez,Cúcuta,Machine Learning,Semi-Senior,3,Scikit-learn|MLflow|Python|PyTorch,4359655,No,2024-09-03
+274,Sebastián Ramírez,Neiva,BI & Analytics,Semi-Senior,3,DAX|Tableau,6477139,No,2024-07-16
+275,Laura López,Medellín,Data Science,Semi-Senior,5,Pandas|Scikit-learn,6228978,Sí,2024-02-17
+276,Mateo Guerrero,Manizales,Frontend,Junior,2,JavaScript|CSS|TypeScript,3968012,Sí,2024-08-05
+277,Laura Torres,Popayán,Ciberseguridad,Semi-Senior,4,Linux|Python|Wireshark,6180039,Sí,2024-12-18
+278,Carlos Vargas,Santa Marta,BI & Analytics,Senior,8,Excel|Python|Tableau,8708706,No,2024-04-01
+279,David Romero,Manizales,Cloud,Lead,13,Terraform|Azure|AWS|GCP,10841198,Sí,2024-09-17
+280,Daniela Navarro,Montería,QA,Junior,0,Pytest|JMeter,2184844,Sí,2024-02-10
+281,Alejandro Rodríguez,Neiva,Diseño UX/UI,Lead,8,Prototyping|HTML,12399196,Sí,2024-01-18
+282,Carlos Suárez,Cali,Cloud,Semi-Senior,3,Azure|AWS|Kubernetes,5675346,No,2024-07-26
+283,Gabriela Sánchez,Santa Marta,Cloud,Junior,2,Docker|Kubernetes|GCP|Azure,2474576,No,2024-10-21
+284,Valentina Torres,Santa Marta,Frontend,Lead,9,Vue.js|HTML|JavaScript|CSS,12098338,No,2024-07-12
+285,Gabriela Herrera,Villavicencio,DevOps,Senior,9,Docker|Jenkins|Linux,8928793,Sí,2024-07-30
+286,David Medina,Cali,Cloud,Junior,2,Terraform|GCP,3162978,Sí,2024-04-21
+287,Carolina Alvarado,Pereira,Mobile,Semi-Senior,3,Swift|Kotlin,4850464,Sí,2024-03-20
+288,Luisa López,Armenia,Backend,Junior,2,Python|SQL|Node.js|Django,3883496,Sí,2024-09-18
+289,Juliana Moreno,Barranquilla,DevOps,Semi-Senior,5,Jenkins|AWS|Kubernetes|Terraform,6173509,Sí,2024-01-07
+290,Cristian Sánchez,Manizales,BI & Analytics,Junior,1,Excel|Tableau,2564990,Sí,2024-09-12
+291,Nicolás Sánchez,Manizales,BI & Analytics,Senior,7,Excel|Power BI,9264497,Sí,2024-10-11
+292,Nicolás Molina,Cartagena,BI & Analytics,Semi-Senior,3,Python|DAX,6645146,Sí,2024-09-06
+293,Daniel Torres,Armenia,Cloud,Junior,1,Azure|GCP,3759451,Sí,2024-05-13
+294,David Castro,Tunja,Cloud,Senior,8,Kubernetes|Docker|Azure,9978870,No,2024-08-16
+295,Carolina Martínez,Cali,BI & Analytics,Senior,6,DAX|Excel|Python,9882539,Sí,2024-06-11
+296,Natalia Flores,Montería,Diseño UX/UI,Senior,7,Prototyping|CSS|HTML,7193786,Sí,2024-12-04
+297,Juliana Cruz,Tunja,Diseño UX/UI,Junior,0,Figma|HTML,2112880,Sí,2024-02-23
+298,Juliana Suárez,Neiva,Frontend,Junior,2,HTML|Vue.js,3313825,Sí,2024-01-15
+299,Santiago Guerrero,Neiva,QA,Senior,9,JMeter|Pytest|Postman|Selenium,11731044,Sí,2024-06-26
+300,Mateo Romero,Bogotá,DevOps,Junior,1,Kubernetes|Jenkins|Docker,3097473,No,2024-09-30
+301,Valentina Reyes,Montería,Ciberseguridad,Lead,12,Linux|Python|Kali|Wireshark,13311420,Sí,2024-03-24
+302,Ana Cruz,Cúcuta,Full Stack,Lead,9,Docker|React|Node.js,13463688,Sí,2024-02-05
+303,Sebastián González,Ibagué,Mobile,Junior,2,Dart|React Native|Flutter,2040675,Sí,2024-04-05
+304,Andrés Flores,Bogotá,Mobile,Semi-Senior,5,Flutter|Swift,4910952,Sí,2024-09-12
+305,David Ruiz,Bucaramanga,Diseño UX/UI,Junior,1,HTML|Figma|Prototyping,2403056,Sí,2024-03-03
+306,Luisa Reyes,Popayán,DevOps,Lead,8,AWS|Docker,13264199,Sí,2024-06-14
+307,Sebastián Mendoza,Pereira,Diseño UX/UI,Junior,2,Adobe XD|Sketch|Prototyping|Figma,2236828,Sí,2024-03-26
+308,Carlos Torres,Cali,Machine Learning,Junior,1,SQL|Scikit-learn|TensorFlow|MLflow,2521608,Sí,2024-11-16
+309,Santiago Rodríguez,Neiva,QA,Semi-Senior,2,Postman|Cypress,4809355,No,2024-07-02
+310,Miguel González,Tunja,Mobile,Junior,1,React Native|Swift|Kotlin|Flutter,2729105,Sí,2024-02-05
+311,Paula González,Pasto,Ciberseguridad,Senior,8,Wireshark|Burp Suite|Linux|Python,9003086,Sí,2024-12-03
+312,Juan Ramos,Ibagué,BI & Analytics,Semi-Senior,5,Tableau|DAX|Python|Excel,4403728,Sí,2024-01-23
+313,Mariana González,Villavicencio,Frontend,Junior,0,JavaScript|CSS,3379760,Sí,2024-01-26
+314,David Ramírez,Pasto,Machine Learning,Junior,0,Scikit-learn|Python,3170252,Sí,2024-11-11
+315,Juliana Medina,Tunja,Data Science,Junior,1,TensorFlow|R,2808097,Sí,2024-10-18
+316,Natalia Pérez,Bucaramanga,Cloud,Lead,13,Terraform|Kubernetes|AWS|Docker,12831263,Sí,2024-09-30
+317,Alejandro Ruiz,Tunja,QA,Senior,7,JMeter|Postman|Cypress|Selenium,11615736,Sí,2024-07-03
+318,Isabella Ruiz,Manizales,BI & Analytics,Junior,2,Power BI|Tableau|SQL|DAX,2450516,Sí,2024-10-10
+319,Paula Romero,Pasto,Machine Learning,Semi-Senior,2,TensorFlow|PyTorch,6441738,Sí,2024-06-02
+320,Camila Alvarado,Cúcuta,BI & Analytics,Semi-Senior,2,Power BI|Python|SQL,6417109,Sí,2024-06-20
+321,David Vega,Popayán,BI & Analytics,Lead,8,DAX|Python|SQL|Power BI,14738832,Sí,2024-06-16
+322,Paula Reyes,Villavicencio,DevOps,Semi-Senior,5,AWS|Jenkins,4554441,No,2024-10-19
+323,Miguel Rodríguez,Pereira,Cloud,Lead,14,Azure|Kubernetes|Terraform|GCP,11645000,Sí,2024-05-04
+324,Camila Torres,Ibagué,BI & Analytics,Senior,5,Tableau|DAX|Power BI,7203061,Sí,2024-03-27
+325,David Suárez,Medellín,Ciberseguridad,Semi-Senior,2,Kali|Linux|Python|Burp Suite,6604673,Sí,2024-01-08
+326,Sara Reyes,Pereira,Backend,Senior,5,FastAPI|Django,11389472,Sí,2024-10-07
+327,Mateo Suárez,Pereira,Diseño UX/UI,Semi-Senior,2,Sketch|Figma|Adobe XD,6921444,No,2024-12-01
+328,Valentina Martínez,Villavicencio,BI & Analytics,Senior,5,DAX|Python|Power BI,7835536,Sí,2024-09-05
+329,Diego Suárez,Popayán,Cloud,Junior,0,Kubernetes|AWS|Docker|Terraform,2639479,Sí,2024-01-10
+330,David Guerrero,Bogotá,QA,Senior,6,Postman|JMeter,9350436,Sí,2024-06-23
+331,Carolina Moreno,Montería,Full Stack,Semi-Senior,5,React|Python|Docker,6539101,Sí,2024-04-15
+332,Natalia González,Ibagué,Machine Learning,Semi-Senior,4,TensorFlow|MLflow|SQL,6337654,Sí,2024-04-04
+333,Sara Ramos,Pereira,Frontend,Junior,1,HTML|Vue.js|React,2223915,Sí,2024-11-06
+334,Gabriela Suárez,Pasto,DevOps,Semi-Senior,2,AWS|Kubernetes|Linux|Jenkins,5625126,Sí,2024-03-24
+335,María Ramírez,Bucaramanga,Data Science,Lead,11,TensorFlow|R|Scikit-learn|Python,15770210,Sí,2024-08-22
+336,Carolina Ramírez,Popayán,BI & Analytics,Lead,13,Excel|DAX|SQL,16937463,Sí,2024-05-05
+337,Paula Romero,Villavicencio,BI & Analytics,Junior,2,Tableau|Python,3854716,Sí,2024-08-04
+338,Daniel Suárez,Cartagena,Data Science,Semi-Senior,5,Scikit-learn|TensorFlow,5734593,Sí,2024-04-01
+339,Isabella Alvarado,Barranquilla,Diseño UX/UI,Semi-Senior,2,Prototyping|Sketch|Figma|HTML,5884913,No,2024-09-18
+340,Alejandro Pérez,Medellín,BI & Analytics,Lead,10,Power BI|DAX,16125040,No,2024-05-27
+341,Natalia Pérez,Armenia,Backend,Semi-Senior,2,SQL|Spring Boot,4024119,Sí,2024-10-28
+342,Cristian Herrera,Tunja,Ciberseguridad,Lead,8,Wireshark|Kali,11550550,Sí,2024-01-29
+343,Natalia Castro,Bucaramanga,Data Science,Semi-Senior,4,Python|Pandas,6818951,Sí,2024-08-21
+344,Miguel Alvarado,Cali,QA,Junior,0,Selenium|JMeter|Postman,2614114,Sí,2024-06-17
+345,Paula Jiménez,Cali,Cloud,Semi-Senior,3,Docker|Kubernetes,6888425,Sí,2024-05-12
+346,Paula Alvarado,Cúcuta,Machine Learning,Senior,9,TensorFlow|MLflow|SQL,7991593,No,2024-11-16
+347,Carlos López,Bogotá,Diseño UX/UI,Semi-Senior,5,Adobe XD|CSS|Sketch,4843840,Sí,2024-06-06
+348,Daniel Medina,Bucaramanga,Cloud,Senior,10,Terraform|Docker|AWS,9834819,No,2024-08-30
+349,Carlos Rodríguez,Medellín,Full Stack,Semi-Senior,3,Node.js|SQL|Python|Docker,6185539,Sí,2024-10-11
+350,Juan García,Tunja,DevOps,Senior,6,Jenkins|AWS,11789741,No,2024-04-05
+351,Alejandro López,Pasto,Mobile,Senior,7,React Native|Swift,8813112,Sí,2024-03-30
+352,Andrés Castro,Ibagué,Data Science,Semi-Senior,5,Scikit-learn|R|TensorFlow,6027828,Sí,2024-03-14
+353,Luisa Molina,Cúcuta,Backend,Semi-Senior,2,Spring Boot|Django|Python|FastAPI,4184675,Sí,2024-06-19
+354,Isabella Vega,Cúcuta,Data Science,Junior,2,R|SQL|TensorFlow|Python,2580176,No,2024-12-09
+355,Andrés Torres,Tunja,Frontend,Semi-Senior,2,CSS|Vue.js,5136874,Sí,2024-10-20
+356,Felipe Pérez,Armenia,Backend,Senior,9,Java|Python,7423255,No,2024-01-28
+357,Camila Jiménez,Neiva,BI & Analytics,Semi-Senior,5,Tableau|Power BI|SQL,4552789,No,2024-02-19
+358,Isabella Flores,Ibagué,Full Stack,Lead,10,Node.js|Docker|SQL|JavaScript,14089502,Sí,2024-02-03
+359,Mateo López,Villavicencio,QA,Lead,13,Cypress|Pytest|Postman|Selenium,12733593,Sí,2024-06-03
+360,Juan Ruiz,Pereira,BI & Analytics,Lead,10,Python|SQL|Tableau,13616735,No,2024-10-17
+361,Carlos Vargas,Neiva,Cloud,Semi-Senior,2,Docker|Kubernetes,6328206,No,2024-03-31
+362,Daniel Moreno,Cartagena,Backend,Junior,2,FastAPI|Python|Spring Boot|Java,3860722,Sí,2024-12-04
+363,Laura Ruiz,Pasto,Cloud,Senior,6,GCP|Kubernetes|Docker|Azure,7068109,No,2024-03-06
+364,Diego Flores,Manizales,Data Science,Senior,5,SQL|Python,11950653,Sí,2024-12-30
+365,Daniela Moreno,Pasto,BI & Analytics,Lead,10,Power BI|DAX|Python,12419869,Sí,2024-03-09
+366,Valentina Martínez,Montería,Full Stack,Junior,0,JavaScript|React,3803871,Sí,2024-08-20
+367,Paula Jiménez,Manizales,Cloud,Lead,10,Docker|AWS|Terraform,13446357,Sí,2024-01-18
+368,Santiago Alvarado,Santa Marta,Ciberseguridad,Senior,10,OWASP|Wireshark,7656279,Sí,2024-05-05
+369,Mateo Mendoza,Neiva,Diseño UX/UI,Junior,2,CSS|Figma|HTML,3075132,Sí,2024-08-03
+370,David Navarro,Bucaramanga,Mobile,Senior,10,Dart|Kotlin|Flutter|Swift,9447403,Sí,2024-05-26
+371,Mateo Martínez,Bucaramanga,Frontend,Junior,1,Vue.js|JavaScript|CSS,3908684,No,2024-07-08
+372,Carlos Pérez,Cartagena,Mobile,Semi-Senior,3,Flutter|Swift|Kotlin,6080157,No,2024-05-01
+373,Cristian Ruiz,Neiva,Diseño UX/UI,Semi-Senior,4,Figma|Sketch,5997461,Sí,2024-07-13
+374,Cristian Reyes,Villavicencio,BI & Analytics,Lead,14,Tableau|Python,15728381,Sí,2024-02-19
+375,Javier Romero,Neiva,Full Stack,Senior,7,JavaScript|Node.js|SQL,9028339,Sí,2024-09-23
+376,Sara Guerrero,Barranquilla,Diseño UX/UI,Semi-Senior,2,Figma|HTML,4435818,Sí,2024-05-25
+377,Juliana Sánchez,Cartagena,Data Science,Junior,2,TensorFlow|Python|Scikit-learn|Pandas,2788441,Sí,2024-02-26
+378,Ana Pérez,Bucaramanga,Mobile,Senior,10,React Native|Kotlin|Swift,9326055,Sí,2024-07-14
+379,Daniela Vargas,Bucaramanga,Data Science,Senior,8,R|Scikit-learn|Pandas,7909580,No,2024-04-21
+380,Alejandro Mendoza,Santa Marta,Backend,Lead,8,Python|Django,17520491,No,2024-03-17
+381,Natalia Mendoza,Armenia,Data Science,Junior,2,SQL|Pandas|Python|TensorFlow,3002731,Sí,2024-10-03
+382,Felipe García,Tunja,BI & Analytics,Lead,12,SQL|DAX|Tableau,17056342,No,2024-05-28
+383,Natalia Sánchez,Armenia,Frontend,Junior,1,HTML|Vue.js,2177969,Sí,2024-03-12
+384,Santiago Sánchez,Medellín,Data Science,Semi-Senior,5,Scikit-learn|Pandas|Python,4235109,Sí,2024-07-26
+385,Andrés Sánchez,Armenia,Full Stack,Lead,11,JavaScript|React,17609967,Sí,2024-05-04
+386,Ana Mendoza,Barranquilla,Frontend,Junior,0,CSS|React|JavaScript,2239452,Sí,2024-02-02
+387,Carlos Sánchez,Pereira,BI & Analytics,Senior,7,Excel|DAX|Power BI|Python,11975159,Sí,2024-02-02
+388,Andrés Torres,Cartagena,Frontend,Lead,10,React|CSS|JavaScript,16523498,Sí,2024-01-09
+389,Carolina Herrera,Pereira,Backend,Junior,0,FastAPI|SQL|Java,2300076,No,2024-07-29
+390,Felipe Pérez,Bogotá,Machine Learning,Junior,2,Python|PyTorch|MLflow|TensorFlow,3169603,Sí,2024-11-12
+391,David Molina,Armenia,Cloud,Semi-Senior,3,AWS|Azure,4739555,Sí,2024-01-28
+392,Natalia Castro,Tunja,Mobile,Semi-Senior,4,Flutter|Dart,4662891,Sí,2024-02-06
+393,Carolina Ramírez,Ibagué,Diseño UX/UI,Lead,11,Prototyping|Adobe XD|Sketch|Figma,16188677,No,2024-04-12
+394,Daniela Vega,Neiva,DevOps,Junior,1,Kubernetes|Terraform,2373420,No,2024-04-09
+395,Natalia Castro,Neiva,Mobile,Semi-Senior,3,Swift|Flutter|Dart,4718070,Sí,2024-11-05
+396,Sebastián Navarro,Santa Marta,Full Stack,Semi-Senior,3,SQL|React|Docker|Python,5795625,Sí,2024-08-10
+397,Gabriela Ramírez,Medellín,Machine Learning,Semi-Senior,2,Scikit-learn|MLflow,6227685,Sí,2024-08-19
+398,Mateo Ramírez,Bogotá,Backend,Junior,2,Node.js|Java|Python,3006177,No,2024-10-19
+399,Miguel Alvarado,Bogotá,Data Science,Lead,14,SQL|Pandas,13228601,Sí,2024-09-28
+400,Santiago Flores,Barranquilla,BI & Analytics,Senior,10,Tableau|SQL|DAX|Excel,10903662,Sí,2024-07-06
+401,David Pérez,Armenia,Full Stack,Junior,2,Python|JavaScript,3546398,Sí,2024-06-13
+402,David Vega,Popayán,Mobile,Lead,13,React Native|Dart|Kotlin,15954446,Sí,2024-08-19
+403,Alejandro Castro,Barranquilla,Full Stack,Junior,0,React|Node.js|JavaScript,2345539,Sí,2024-09-11
+404,Laura Molina,Bogotá,DevOps,Junior,1,Jenkins|AWS|Terraform,2611355,Sí,2024-09-23
+405,Natalia Vargas,Cúcuta,BI & Analytics,Senior,8,Tableau|Excel|Power BI,8902384,Sí,2024-05-27
+406,Luisa Molina,Bucaramanga,Data Science,Semi-Senior,4,R|Scikit-learn|SQL|Python,6970033,Sí,2024-02-29
+407,Santiago Vargas,Ibagué,Machine Learning,Semi-Senior,4,MLflow|Python,4620523,Sí,2024-09-30
+408,Daniel López,Popayán,Data Science,Lead,13,Python|Scikit-learn,13975450,Sí,2024-10-20
+409,Cristian González,Barranquilla,Machine Learning,Lead,15,TensorFlow|MLflow,15180149,Sí,2024-08-16
+410,David Martínez,Tunja,QA,Junior,2,Pytest|Selenium|JMeter,3781428,No,2024-04-09
+411,Mateo Vargas,Bogotá,Machine Learning,Junior,2,Scikit-learn|PyTorch|SQL|TensorFlow,2596955,No,2024-10-14
+412,Camila Sánchez,Montería,Diseño UX/UI,Lead,12,Prototyping|HTML,11204933,Sí,2024-06-04
+413,Mateo Molina,Bucaramanga,Cloud,Senior,5,Kubernetes|GCP|Terraform,11764027,Sí,2024-04-12
+414,Sebastián Ramos,Bogotá,BI & Analytics,Senior,5,Tableau|Python|Excel|SQL,8292046,Sí,2024-11-23
+415,Mariana Mendoza,Barranquilla,Ciberseguridad,Junior,2,OWASP|Linux|Python,3603730,Sí,2024-10-24
+416,Mateo Alvarado,Santa Marta,BI & Analytics,Senior,10,Excel|DAX|SQL,7490820,Sí,2024-08-24
+417,Carolina Reyes,Cúcuta,Frontend,Senior,7,HTML|Vue.js|JavaScript,7644468,Sí,2024-11-17
+418,Sebastián Ortiz,Barranquilla,Backend,Semi-Senior,4,FastAPI|Spring Boot|Node.js,6432891,Sí,2024-01-07
+419,Laura Medina,Popayán,Mobile,Senior,7,Swift|Dart,11686339,Sí,2024-08-01
+420,Isabella Ríos,Neiva,Backend,Junior,0,FastAPI|Node.js|Java,3865891,Sí,2024-03-29
+421,Ana Flores,Cartagena,Data Science,Junior,0,R|SQL|TensorFlow|Python,2164846,Sí,2024-09-04
+422,Luisa Jiménez,Cali,Data Science,Semi-Senior,2,Python|SQL|TensorFlow,6800060,Sí,2024-03-04
+423,Javier Suárez,Pasto,DevOps,Semi-Senior,4,Linux|Jenkins,4673426,Sí,2024-09-15
+424,Gabriela Martínez,Barranquilla,Backend,Junior,2,Java|Django|Python,3938255,No,2024-07-06
+425,Ana Alvarado,Montería,Frontend,Lead,13,TypeScript|React|CSS,13908266,Sí,2024-09-23
+426,Laura Herrera,Neiva,QA,Senior,5,Selenium|JMeter|Pytest,10724171,No,2024-05-28
+427,Diego Jiménez,Popayán,DevOps,Junior,1,AWS|Docker|Linux|Kubernetes,3381075,Sí,2024-07-21
+428,Daniela Reyes,Villavicencio,Machine Learning,Junior,2,PyTorch|TensorFlow,2257450,No,2024-05-22
+429,Luisa Reyes,Santa Marta,Machine Learning,Senior,7,MLflow|Scikit-learn|SQL|PyTorch,7906277,Sí,2024-09-07
+430,Mateo Ramírez,Bucaramanga,Full Stack,Semi-Senior,2,SQL|JavaScript,6535808,Sí,2024-11-14
+431,Alejandro López,Ibagué,Backend,Lead,15,Django|Node.js|Spring Boot,10148229,Sí,2024-08-08
+432,Carolina Ríos,Tunja,Backend,Lead,15,Python|Spring Boot|Java,14122829,No,2024-03-09
+433,Daniel Reyes,Villavicencio,BI & Analytics,Lead,15,Excel|Power BI|SQL,13169196,Sí,2024-05-25
+434,Sara Rodríguez,Pasto,Data Science,Junior,0,SQL|Pandas|Python|R,2749450,Sí,2024-05-06
+435,Felipe Mendoza,Ibagué,Mobile,Junior,2,Swift|Flutter|Kotlin,2078386,No,2024-05-16
+436,Valentina Reyes,Barranquilla,Ciberseguridad,Junior,1,Wireshark|Python|Burp Suite,3448846,No,2024-09-14
+437,Carlos Ortiz,Tunja,Full Stack,Senior,7,SQL|JavaScript,9224282,Sí,2024-10-20
+438,Daniela Navarro,Montería,DevOps,Junior,2,Docker|Terraform|AWS,2439854,Sí,2024-09-15
+439,Carlos Flores,Popayán,BI & Analytics,Senior,8,Excel|Python|Power BI|SQL,11838912,Sí,2024-12-04
+440,Mariana Cruz,Manizales,Ciberseguridad,Senior,9,Linux|Kali|Burp Suite|Python,9518894,No,2024-07-29
+441,Sara Molina,Villavicencio,Backend,Semi-Senior,4,FastAPI|Django|Java,4476299,Sí,2024-05-05
+442,Carlos Ramos,Cartagena,Mobile,Lead,8,Swift|Kotlin,15525330,Sí,2024-11-25
+443,Diego Rodríguez,Cali,Diseño UX/UI,Lead,13,Adobe XD|Figma|HTML|Sketch,10938956,Sí,2024-09-24
+444,Cristian Ramos,Manizales,Machine Learning,Senior,6,PyTorch|MLflow|Scikit-learn,8828786,Sí,2024-03-30
+445,María Torres,Manizales,Ciberseguridad,Lead,13,Python|Kali|Burp Suite|Linux,13986449,Sí,2024-06-06
+446,Valentina Mendoza,Pasto,Machine Learning,Junior,2,MLflow|Scikit-learn|PyTorch,3894057,Sí,2024-08-14
+447,Daniela García,Ibagué,BI & Analytics,Senior,6,Power BI|Python,10408197,Sí,2024-05-20
+448,Diego Martínez,Popayán,Ciberseguridad,Lead,14,Linux|Kali,15050914,Sí,2024-08-20
+449,Ana García,Cúcuta,Data Science,Semi-Senior,5,Pandas|R,6415119,Sí,2024-05-07
+450,Paula Reyes,Bucaramanga,Full Stack,Semi-Senior,5,Docker|React|Node.js,6487307,Sí,2024-04-11
+451,Camila Jiménez,Cali,QA,Semi-Senior,5,Selenium|Pytest,4831588,Sí,2024-01-26
+452,Daniela Suárez,Armenia,BI & Analytics,Senior,7,SQL|DAX|Python|Power BI,8704106,Sí,2024-05-27
+453,Miguel Herrera,Bucaramanga,BI & Analytics,Semi-Senior,3,DAX|Power BI|Python,4612128,Sí,2024-04-30
+454,Alejandro Ruiz,Pereira,DevOps,Senior,5,Kubernetes|Jenkins|AWS,10550821,Sí,2024-02-07
+455,Andrés Romero,Santa Marta,Data Science,Junior,1,TensorFlow|Scikit-learn|Python|Pandas,3058101,No,2024-12-09
+456,David González,Cali,Cloud,Junior,2,Terraform|GCP|Kubernetes|AWS,2665462,Sí,2024-05-13
+457,Andrés Vargas,Popayán,Data Science,Semi-Senior,4,SQL|TensorFlow|Scikit-learn,5827774,No,2024-03-18
+458,Juan Molina,Armenia,Full Stack,Lead,8,React|JavaScript,13661039,Sí,2024-09-10
+459,Santiago Ruiz,Pereira,QA,Lead,10,Postman|Selenium,17004098,Sí,2024-09-17
+460,Mariana Torres,Barranquilla,Machine Learning,Semi-Senior,2,Python|TensorFlow|Scikit-learn,5378490,Sí,2024-07-20
+461,David Alvarado,Bogotá,Backend,Senior,5,FastAPI|SQL|Spring Boot|Node.js,10800895,Sí,2024-04-18
+462,Diego Rodríguez,Santa Marta,Full Stack,Senior,10,Python|SQL|JavaScript|React,10346360,Sí,2024-04-16
+463,Sebastián Moreno,Pasto,BI & Analytics,Senior,5,Python|Tableau|Power BI,10082451,Sí,2024-09-07
+464,Isabella Vega,Montería,BI & Analytics,Lead,14,Excel|Power BI|Python,12866763,No,2024-12-12
+465,Felipe Mendoza,Cartagena,Full Stack,Semi-Senior,2,JavaScript|SQL|Node.js,6870220,Sí,2024-09-24
+466,Nicolás Flores,Santa Marta,Machine Learning,Junior,2,Scikit-learn|SQL|Python|TensorFlow,2745448,Sí,2024-02-28
+467,Miguel Guerrero,Neiva,Ciberseguridad,Semi-Senior,5,OWASP|Kali|Wireshark,6811273,Sí,2024-06-23
+468,Javier Molina,Villavicencio,Frontend,Semi-Senior,2,JavaScript|TypeScript|HTML|CSS,4055803,No,2024-08-23
+469,Ana Moreno,Bogotá,Full Stack,Lead,14,JavaScript|React|Python,15838743,Sí,2024-01-14
+470,María Herrera,Cartagena,Full Stack,Semi-Senior,3,Node.js|SQL,5769489,Sí,2024-03-19
+471,Miguel Reyes,Villavicencio,Ciberseguridad,Lead,11,Kali|Wireshark,10861204,No,2024-07-31
+472,Diego Herrera,Medellín,Diseño UX/UI,Senior,8,CSS|Prototyping|HTML|Figma,10540030,Sí,2024-10-10
+473,Camila Torres,Bucaramanga,Full Stack,Lead,13,Docker|SQL|JavaScript,12884400,No,2024-04-28
+474,Paula Ramírez,Pasto,Machine Learning,Senior,6,SQL|Scikit-learn|MLflow|PyTorch,8359170,Sí,2024-05-24
+475,Ana Cruz,Cúcuta,Backend,Lead,10,SQL|Python|Spring Boot|Django,10394678,Sí,2024-07-02
+476,Carolina Torres,Tunja,QA,Semi-Senior,2,Selenium|Pytest|Cypress,6039963,Sí,2024-01-24
+477,Luisa Vega,Barranquilla,Cloud,Senior,10,Terraform|AWS|Docker,7352065,Sí,2024-03-26
+478,Natalia López,Pasto,DevOps,Senior,10,AWS|Docker|Kubernetes|Jenkins,8031660,Sí,2024-08-12
+479,Nicolás Ortiz,Montería,Data Science,Semi-Senior,4,SQL|TensorFlow,6640064,No,2024-04-26
+480,Laura Navarro,Bogotá,BI & Analytics,Lead,13,Python|Power BI,10711171,Sí,2024-06-10
+481,Daniela Ortiz,Villavicencio,Frontend,Lead,10,JavaScript|CSS|Vue.js|React,17327838,Sí,2024-06-09
+482,Javier Castro,Pasto,Data Science,Senior,10,TensorFlow|R|Pandas,10393239,Sí,2024-06-03
+483,Camila Rodríguez,Tunja,Cloud,Senior,9,AWS|Docker,9858073,Sí,2024-01-12
+484,Valentina Vega,Popayán,Cloud,Senior,10,AWS|Kubernetes|GCP|Azure,7400412,Sí,2024-08-17
+485,Daniel Alvarado,Villavicencio,Diseño UX/UI,Junior,1,Adobe XD|Prototyping|Sketch,3089819,Sí,2024-07-03
+486,Isabella López,Neiva,Frontend,Lead,8,React|TypeScript|HTML,13378542,No,2024-05-15
+487,Gabriela Herrera,Cartagena,Full Stack,Lead,14,React|Python,11085361,Sí,2024-12-21
+488,María Ruiz,Barranquilla,Ciberseguridad,Junior,2,Wireshark|Burp Suite,2253475,Sí,2024-09-24
+489,Laura López,Montería,QA,Senior,7,Pytest|Cypress,9378021,Sí,2024-09-07
+490,Valentina López,Villavicencio,Cloud,Senior,8,GCP|Docker|Terraform|Azure,8114087,Sí,2024-09-15
+491,Natalia Ruiz,Tunja,Ciberseguridad,Lead,14,Linux|Burp Suite|Kali,16173283,Sí,2024-11-26
+492,Camila Molina,Tunja,Frontend,Junior,2,CSS|JavaScript|React|Vue.js,3209753,Sí,2024-08-31
+493,Paula Vega,Neiva,Data Science,Junior,2,R|Scikit-learn,2177519,Sí,2024-09-08
+494,Diego Ríos,Barranquilla,Data Science,Senior,8,SQL|Pandas|TensorFlow|Python,8410594,Sí,2024-04-03
+495,Juliana Ortiz,Bucaramanga,Backend,Semi-Senior,5,Django|Node.js,6991799,No,2024-02-20
+496,Sara González,Manizales,BI & Analytics,Senior,5,Power BI|Excel,11231392,Sí,2024-05-17
+497,Santiago Vargas,Barranquilla,Ciberseguridad,Lead,14,Linux|Python|Kali|Burp Suite,12555277,No,2024-08-16
+498,Camila Molina,Tunja,Full Stack,Semi-Senior,4,Python|SQL,4175288,No,2024-11-13
+499,Daniel Mendoza,Popayán,Frontend,Junior,0,TypeScript|Vue.js|React|CSS,2589952,Sí,2024-06-02
+500,Camila Moreno,Santa Marta,Diseño UX/UI,Junior,0,CSS|Adobe XD|Prototyping|HTML,3578513,Sí,2024-12-05
+501,Sara Vargas,Bogotá,DevOps,Lead,10,Docker|Terraform|AWS|Linux,14662309,No,2024-07-20
+502,Juan Martínez,Pasto,Full Stack,Junior,2,JavaScript|Node.js|SQL|Python,2811075,No,2024-07-08
+503,Javier Sánchez,Cúcuta,Ciberseguridad,Junior,0,Python|Wireshark,3695368,Sí,2024-01-19
+504,Juliana Herrera,Popayán,Diseño UX/UI,Semi-Senior,3,Adobe XD|CSS,4715032,Sí,2024-02-03
+505,Gabriela González,Bogotá,Diseño UX/UI,Junior,0,Prototyping|Adobe XD|Sketch|CSS,3453296,Sí,2024-12-14
+506,Juan Vega,Armenia,Ciberseguridad,Junior,1,Kali|Python|Burp Suite,2758061,Sí,2024-01-25
+507,Juliana Ríos,Manizales,BI & Analytics,Lead,11,SQL|Excel|DAX,17692313,Sí,2024-04-10
+508,Sebastián Vargas,Manizales,Mobile,Junior,2,Flutter|Kotlin|Swift,2226158,Sí,2024-06-19
+509,Paula Navarro,Villavicencio,DevOps,Junior,2,Docker|Linux|Terraform|AWS,2656994,Sí,2024-02-01
+510,Javier Navarro,Villavicencio,Ciberseguridad,Junior,1,Python|Wireshark|OWASP|Linux,2842390,Sí,2024-08-20
+511,Daniela Ruiz,Cali,BI & Analytics,Junior,1,Power BI|SQL|Excel|Python,3243373,Sí,2024-06-30
+512,Nicolás Herrera,Montería,Diseño UX/UI,Lead,8,Sketch|Adobe XD,12610436,Sí,2024-03-16
+513,Mateo Flores,Tunja,Machine Learning,Senior,5,TensorFlow|MLflow,10540505,Sí,2024-04-12
+514,Natalia Ríos,Ibagué,DevOps,Junior,1,Linux|AWS|Jenkins|Terraform,3292061,Sí,2024-02-23
+515,Isabella Vega,Armenia,Data Science,Lead,11,R|Pandas|TensorFlow|Python,11722318,No,2024-04-04
+516,Mariana García,Pereira,QA,Junior,0,Postman|JMeter,3324004,Sí,2024-04-11
+517,María Flores,Bucaramanga,Frontend,Semi-Senior,3,React|JavaScript,5098020,Sí,2024-07-13
+518,Natalia Navarro,Popayán,Backend,Senior,8,Spring Boot|Node.js|Java,10638290,Sí,2024-03-01
+519,Laura Vega,Medellín,Frontend,Semi-Senior,5,CSS|TypeScript|React,6583808,Sí,2024-03-17
+520,Sara Ramírez,Bucaramanga,Data Science,Senior,6,TensorFlow|Scikit-learn|Python,11271131,No,2024-09-22
+521,Isabella Pérez,Medellín,QA,Senior,10,Postman|JMeter|Cypress,8702891,Sí,2024-07-21
+522,María Flores,Neiva,BI & Analytics,Lead,12,SQL|Power BI|DAX|Excel,14898630,Sí,2024-08-26
+523,Paula Suárez,Villavicencio,QA,Lead,14,JMeter|Postman|Pytest,11961176,Sí,2024-11-26
+524,Camila Castro,Pasto,Backend,Senior,7,Python|Spring Boot,8680293,Sí,2024-12-11
+525,Sara Torres,Pasto,Mobile,Senior,10,Kotlin|Dart,10403748,Sí,2024-08-29
+526,Natalia Medina,Neiva,Frontend,Lead,11,React|CSS|TypeScript,17095098,Sí,2024-08-07
+527,Luisa Reyes,Cúcuta,BI & Analytics,Semi-Senior,5,Power BI|Excel|DAX,4040605,Sí,2024-06-22
+528,Felipe Jiménez,Villavicencio,BI & Analytics,Lead,8,SQL|Power BI|Excel|Python,10534431,No,2024-04-06
+529,Mateo López,Medellín,QA,Lead,10,Cypress|Pytest,10225137,Sí,2024-04-11
+530,Camila Ríos,Bucaramanga,BI & Analytics,Senior,7,SQL|Tableau|DAX,10280828,Sí,2024-03-07
+531,Juan Jiménez,Cúcuta,Ciberseguridad,Junior,1,Burp Suite|OWASP|Linux,3232059,No,2024-05-21
+532,María García,Neiva,Frontend,Lead,11,Vue.js|CSS|TypeScript|React,12415179,No,2024-06-26
+533,Ana Ramos,Neiva,Diseño UX/UI,Senior,8,CSS|HTML,8538842,Sí,2024-07-20
+534,Ana Rodríguez,Tunja,DevOps,Semi-Senior,4,Linux|Kubernetes|AWS|Terraform,5546574,Sí,2024-09-15
+535,Luisa Ortiz,Neiva,QA,Lead,11,Selenium|JMeter|Cypress|Postman,17178745,Sí,2024-07-22
+536,Santiago García,Tunja,Mobile,Junior,2,React Native|Flutter|Dart,3377876,No,2024-05-22
+537,Mariana Pérez,Bucaramanga,Frontend,Junior,2,CSS|TypeScript,2162708,Sí,2024-03-19
+538,Isabella Castro,Villavicencio,Frontend,Semi-Senior,2,HTML|JavaScript|CSS,5293205,Sí,2024-01-25
+539,Luisa Moreno,Bogotá,DevOps,Semi-Senior,3,AWS|Docker,4805943,Sí,2024-12-06
+540,Sebastián Cruz,Villavicencio,Frontend,Junior,1,HTML|React|CSS|Vue.js,3969064,Sí,2024-02-24
+541,David Vargas,Cali,Frontend,Junior,1,TypeScript|React,3379845,Sí,2024-04-21
+542,Nicolás Flores,Bucaramanga,Machine Learning,Lead,9,PyTorch|Scikit-learn|TensorFlow|MLflow,17143354,No,2024-02-04
+543,Sara García,Barranquilla,Machine Learning,Lead,8,Python|MLflow,16352237,Sí,2024-11-13
+544,Camila Rodríguez,Neiva,Frontend,Senior,6,React|JavaScript|HTML,8126313,Sí,2024-11-25
+545,Carlos Ortiz,Tunja,Data Science,Lead,11,SQL|TensorFlow|R|Python,16723065,Sí,2024-11-07
+546,Diego Moreno,Pereira,Cloud,Senior,10,Terraform|AWS,8187256,Sí,2024-03-05
+547,Camila Pérez,Montería,Machine Learning,Semi-Senior,2,TensorFlow|SQL|MLflow,6541124,Sí,2024-10-22
+548,Isabella Mendoza,Montería,DevOps,Senior,7,Kubernetes|AWS|Terraform,10635878,Sí,2024-09-03
+549,Valentina Ortiz,Neiva,BI & Analytics,Lead,10,DAX|Power BI|Tableau|Excel,13146960,No,2024-02-06
+550,Sara González,Armenia,Diseño UX/UI,Lead,8,CSS|Adobe XD,16225974,Sí,2024-07-15
+551,Mateo Flores,Pasto,Full Stack,Junior,1,React|Docker|SQL|Python,3068726,Sí,2024-12-22
+552,Santiago Mendoza,Cartagena,BI & Analytics,Lead,15,Tableau|SQL,17921070,Sí,2024-05-10
+553,Felipe Suárez,Popayán,Machine Learning,Semi-Senior,2,SQL|MLflow|Python,4791982,No,2024-05-09
+554,Ana Flores,Santa Marta,Cloud,Lead,14,AWS|Kubernetes|GCP|Docker,15863712,Sí,2024-01-04
+555,Sebastián Ramos,Bucaramanga,Ciberseguridad,Junior,0,Burp Suite|Kali|OWASP|Python,2785700,No,2024-04-03
+556,Paula López,Neiva,Ciberseguridad,Semi-Senior,3,Kali|Burp Suite,6619013,Sí,2024-02-10
+557,Daniel Martínez,Barranquilla,BI & Analytics,Junior,1,Power BI|Python|Excel|Tableau,2019936,Sí,2024-12-06
+558,Gabriela Navarro,Ibagué,Data Science,Junior,0,Pandas|SQL|TensorFlow,2777592,Sí,2024-07-03
+559,Cristian Moreno,Bogotá,BI & Analytics,Junior,1,DAX|Python|Power BI,3262295,Sí,2024-07-07
+560,Isabella Suárez,Bogotá,Full Stack,Lead,11,Docker|Node.js,16774285,Sí,2024-12-13
+561,Isabella Ramírez,Cúcuta,Machine Learning,Lead,14,SQL|Python|Scikit-learn,17296903,Sí,2024-03-06
+562,Mateo Navarro,Tunja,Backend,Senior,6,SQL|FastAPI,8775371,Sí,2024-02-24
+563,Nicolás Reyes,Cartagena,Data Science,Semi-Senior,5,SQL|Pandas|Python|TensorFlow,6242037,Sí,2024-04-24
+564,Javier Alvarado,Manizales,Machine Learning,Junior,2,SQL|MLflow|Scikit-learn|Python,2543359,Sí,2024-02-15
+565,Sara Cruz,Bogotá,Machine Learning,Semi-Senior,2,PyTorch|Scikit-learn,4259564,Sí,2024-07-17
+566,Nicolás Vargas,Ibagué,QA,Semi-Senior,3,Cypress|JMeter,5244968,No,2024-03-16
+567,Alejandro Flores,Pereira,Frontend,Junior,2,HTML|CSS|TypeScript,3038143,Sí,2024-03-19
+568,Mariana Reyes,Tunja,DevOps,Semi-Senior,2,AWS|Jenkins|Kubernetes|Docker,5415200,No,2024-06-27
+569,Luisa Moreno,Ibagué,BI & Analytics,Junior,2,Excel|Python|SQL|DAX,3577617,Sí,2024-08-22
+570,Natalia Pérez,Bogotá,Machine Learning,Semi-Senior,5,TensorFlow|SQL,6414585,Sí,2024-07-11
+571,Nicolás Guerrero,Ibagué,Frontend,Junior,0,JavaScript|CSS,3244434,No,2024-05-05
+572,Santiago López,Villavicencio,DevOps,Lead,10,Linux|AWS|Docker|Kubernetes,13081329,Sí,2024-03-02
+573,Andrés Martínez,Bucaramanga,Backend,Lead,15,FastAPI|Spring Boot|Python,12502853,Sí,2024-02-20
+574,Sara Martínez,Tunja,Diseño UX/UI,Semi-Senior,2,CSS|Prototyping,6733430,Sí,2024-12-03
+575,Carolina López,Pereira,Frontend,Semi-Senior,5,React|CSS,4676164,Sí,2024-01-18
+576,Camila López,Popayán,Cloud,Senior,8,GCP|AWS,11480375,Sí,2024-10-22
+577,Mateo Reyes,Cartagena,QA,Senior,10,Selenium|Pytest|Cypress|Postman,8125818,Sí,2024-10-29
+578,David Torres,Santa Marta,Frontend,Lead,14,React|TypeScript|CSS|JavaScript,14495491,Sí,2024-02-06
+579,Natalia Cruz,Villavicencio,Mobile,Semi-Senior,4,Swift|Kotlin|Dart,6531712,Sí,2024-03-04
+580,Juan López,Manizales,Full Stack,Lead,9,Node.js|Docker|React,13163813,Sí,2024-07-12
+581,Andrés Navarro,Cúcuta,Backend,Semi-Senior,4,Django|Node.js,5136882,Sí,2024-03-28
+582,Sara Ortiz,Cartagena,BI & Analytics,Semi-Senior,5,SQL|Excel|Power BI,5588805,Sí,2024-01-28
+583,Javier Cruz,Neiva,Full Stack,Senior,10,SQL|React|Docker|Python,9313770,No,2024-09-23
+584,Ana Vega,Manizales,DevOps,Senior,7,Docker|Linux|Terraform,8385069,Sí,2024-02-13
+585,Miguel Flores,Villavicencio,Cloud,Lead,10,Terraform|Docker|AWS,17641068,Sí,2024-08-05
+586,Ana Romero,Manizales,Diseño UX/UI,Senior,9,Prototyping|CSS,10079046,Sí,2024-09-20
+587,David Rodríguez,Cúcuta,BI & Analytics,Lead,9,DAX|Power BI|SQL,12220890,Sí,2024-01-02
+588,Miguel Mendoza,Pasto,Machine Learning,Lead,8,MLflow|Scikit-learn|Python,12756092,Sí,2024-06-30
+589,Andrés García,Popayán,QA,Semi-Senior,4,JMeter|Pytest|Selenium,4644709,No,2024-01-04
+590,Laura Ortiz,Tunja,Full Stack,Senior,8,Node.js|SQL|React,7911799,No,2024-03-23
+591,Laura Castro,Medellín,Diseño UX/UI,Lead,11,Sketch|Adobe XD,16240486,Sí,2024-01-17
+592,Sebastián Guerrero,Ibagué,DevOps,Lead,14,Terraform|AWS|Kubernetes,16090083,No,2024-03-08
+593,Andrés López,Bogotá,Data Science,Semi-Senior,4,R|Python|SQL|TensorFlow,6014075,No,2024-02-12
+594,Luisa Jiménez,Montería,DevOps,Semi-Senior,3,Jenkins|Kubernetes,5987650,Sí,2024-04-06
+595,Diego Alvarado,Cartagena,Full Stack,Semi-Senior,2,Node.js|React,4074077,Sí,2024-07-13
+596,Nicolás Medina,Medellín,Mobile,Semi-Senior,4,Dart|React Native,4461603,Sí,2024-06-28
+597,Ana Jiménez,Pereira,DevOps,Senior,5,Linux|Jenkins,9350146,Sí,2024-08-08
+598,Sebastián Torres,Pasto,Ciberseguridad,Senior,5,Python|Wireshark|Linux|Burp Suite,11940144,Sí,2024-05-01
+599,Natalia Torres,Pereira,DevOps,Lead,9,Terraform|Kubernetes,10628135,Sí,2024-06-03
+600,Miguel Herrera,Neiva,DevOps,Semi-Senior,3,Linux|Jenkins|Terraform|Kubernetes,4492532,No,2024-08-02
+601,Paula Ríos,Pereira,Cloud,Junior,0,AWS|Docker|Kubernetes,3553392,Sí,2024-03-25
+602,Isabella Ortiz,Bucaramanga,Cloud,Lead,12,Azure|AWS,15844525,Sí,2024-09-19
+603,Isabella Medina,Tunja,Diseño UX/UI,Senior,7,Figma|Sketch|CSS|Prototyping,7327916,Sí,2024-05-22
+604,Javier González,Ibagué,Mobile,Junior,2,Kotlin|Dart,2174579,Sí,2024-07-28
+605,Carolina Suárez,Tunja,Mobile,Senior,7,Kotlin|Swift|React Native|Flutter,7892906,No,2024-11-30
+606,Juliana Molina,Cartagena,Full Stack,Semi-Senior,3,Python|SQL,4971917,Sí,2024-09-02
+607,Camila Herrera,Bucaramanga,Frontend,Lead,15,React|Vue.js|JavaScript|HTML,15766050,Sí,2024-02-05
+608,Laura Martínez,Villavicencio,BI & Analytics,Semi-Senior,5,SQL|Excel|DAX|Power BI,4461522,Sí,2024-03-08
+609,Felipe Ortiz,Cartagena,Backend,Senior,5,FastAPI|Node.js|Python|Java,10727278,Sí,2024-06-06
+610,Sara Herrera,Tunja,Frontend,Semi-Senior,4,JavaScript|HTML,4430193,No,2024-03-13
+611,Valentina Ríos,Villavicencio,DevOps,Junior,0,Linux|Jenkins|Kubernetes,3440253,Sí,2024-02-26
+612,Felipe López,Bucaramanga,Mobile,Senior,5,Flutter|Swift,9808875,Sí,2024-12-13
+613,Nicolás González,Cali,Full Stack,Senior,7,SQL|Node.js|Python,8246907,Sí,2024-06-12
+614,Laura Moreno,Cartagena,Ciberseguridad,Lead,14,Kali|Linux|Python|Wireshark,12678614,No,2024-08-05
+615,Mateo Reyes,Tunja,BI & Analytics,Senior,8,Python|Excel|DAX|Tableau,10226487,No,2024-09-26
+616,Gabriela Ortiz,Pasto,Diseño UX/UI,Semi-Senior,2,Sketch|Figma,5987791,Sí,2024-01-31
+617,Javier Castro,Medellín,QA,Semi-Senior,5,Pytest|Cypress,4577980,Sí,2024-07-12
+618,Miguel García,Bucaramanga,Diseño UX/UI,Lead,9,CSS|Figma|HTML|Adobe XD,11185121,Sí,2024-05-05
+619,Camila García,Ibagué,Machine Learning,Lead,10,MLflow|PyTorch|Scikit-learn|TensorFlow,12405593,Sí,2024-03-20
+620,Santiago Vega,Neiva,Full Stack,Junior,2,SQL|Docker,3162149,Sí,2024-12-29
+621,Felipe Jiménez,Villavicencio,Frontend,Senior,6,CSS|JavaScript|React,7647678,No,2024-09-01
+622,Sara Mendoza,Barranquilla,Full Stack,Lead,13,SQL|React|Node.js|JavaScript,10235290,Sí,2024-05-24
+623,Sebastián Romero,Santa Marta,Backend,Junior,0,Java|FastAPI|Python|Spring Boot,2178340,No,2024-01-24
+624,Santiago Vargas,Cartagena,Backend,Senior,7,Java|Node.js|SQL|FastAPI,7816881,No,2024-09-14
+625,Andrés Medina,Cali,Frontend,Junior,2,React|HTML|TypeScript,3856407,Sí,2024-04-20
+626,Carlos Guerrero,Pasto,Full Stack,Semi-Senior,3,React|Node.js|Python,5807331,No,2024-05-02
+627,María Suárez,Cali,Machine Learning,Junior,0,PyTorch|MLflow,3046294,Sí,2024-05-31
+628,Sebastián Martínez,Neiva,Mobile,Senior,5,React Native|Kotlin|Swift|Dart,8039904,No,2024-01-21
+629,David Molina,Montería,Mobile,Lead,13,Dart|Kotlin|Swift|Flutter,17360236,Sí,2024-11-13
+630,Natalia Rodríguez,Cali,Diseño UX/UI,Semi-Senior,2,HTML|Sketch|Prototyping,5628325,Sí,2024-06-27
+631,Isabella Ruiz,Ibagué,Full Stack,Lead,9,SQL|React|Docker,15069818,No,2024-04-18
+632,Ana Cruz,Medellín,Ciberseguridad,Junior,1,Linux|OWASP|Kali,3260550,Sí,2024-08-08
+633,Mateo Sánchez,Santa Marta,Data Science,Semi-Senior,5,R|Python|TensorFlow|Scikit-learn,4342712,No,2024-08-02
+634,Paula Sánchez,Pasto,Full Stack,Senior,5,Node.js|React|Python,11040165,Sí,2024-12-22
+635,Nicolás Castro,Cartagena,Diseño UX/UI,Lead,10,Prototyping|Adobe XD|Figma,14189653,Sí,2024-02-28
+636,Carlos Guerrero,Pereira,BI & Analytics,Senior,8,Python|Excel|SQL|DAX,10524692,Sí,2024-11-03
+637,Daniela Sánchez,Popayán,QA,Semi-Senior,2,Postman|Cypress,4523219,No,2024-07-30
+638,Nicolás Castro,Tunja,QA,Lead,10,JMeter|Postman|Selenium,13656394,No,2024-05-25
+639,Diego Guerrero,Bogotá,Diseño UX/UI,Lead,9,Figma|Prototyping,14164146,Sí,2024-11-20
+640,Isabella Medina,Villavicencio,Machine Learning,Junior,2,Scikit-learn|MLflow,2240126,Sí,2024-06-28
+641,Carlos Ríos,Santa Marta,Ciberseguridad,Lead,13,Wireshark|Kali,12578630,No,2024-12-10
+642,Felipe García,Bucaramanga,BI & Analytics,Junior,0,DAX|Excel|Tableau|Power BI,3199964,No,2024-04-08
+643,Alejandro Mendoza,Bucaramanga,BI & Analytics,Junior,2,Power BI|Python|Tableau|Excel,2917297,Sí,2024-09-15
+644,Andrés Mendoza,Bogotá,Machine Learning,Lead,10,TensorFlow|Python|MLflow,11283864,Sí,2024-11-12
+645,Ana Romero,Manizales,Backend,Lead,13,Java|FastAPI,17050262,Sí,2024-07-12
+646,Luisa Torres,Barranquilla,Full Stack,Junior,1,Python|JavaScript|Docker|React,2224556,Sí,2024-02-17
+647,Camila Herrera,Cali,QA,Semi-Senior,2,Selenium|JMeter|Postman,6882897,Sí,2024-11-20
+648,Javier Ruiz,Armenia,Frontend,Semi-Senior,2,Vue.js|HTML,6516552,Sí,2024-09-24
+649,Miguel Torres,Barranquilla,Backend,Semi-Senior,2,Django|Java|FastAPI|Node.js,4909986,Sí,2024-04-22
+650,Camila Cruz,Cúcuta,Diseño UX/UI,Semi-Senior,4,Adobe XD|CSS,6079543,No,2024-04-08
+651,Juliana Pérez,Montería,DevOps,Senior,9,Kubernetes|AWS,10554566,Sí,2024-06-12
+652,Alejandro López,Bucaramanga,Machine Learning,Lead,13,SQL|Python|Scikit-learn,12122851,No,2024-05-30
+653,Alejandro Ramos,Manizales,Full Stack,Senior,5,SQL|React|Node.js,10117712,Sí,2024-06-09
+654,Andrés García,Villavicencio,QA,Junior,2,Postman|Pytest|Cypress|Selenium,2594782,Sí,2024-02-22
+655,Juan Torres,Medellín,Diseño UX/UI,Junior,2,Adobe XD|Sketch|CSS,3683436,Sí,2024-08-03
+656,Andrés López,Cúcuta,Ciberseguridad,Semi-Senior,4,Wireshark|Python,6699733,No,2024-05-25
+657,Laura Ramos,Montería,BI & Analytics,Junior,2,Python|SQL,3516772,Sí,2024-07-23
+658,Camila Romero,Pasto,QA,Lead,12,JMeter|Cypress|Postman|Selenium,10245687,Sí,2024-01-25
+659,Mariana García,Tunja,Frontend,Junior,1,React|Vue.js,2010362,Sí,2024-02-26
+660,Santiago Flores,Barranquilla,Backend,Senior,7,Django|SQL,8241526,No,2024-11-22
+661,Isabella Guerrero,Manizales,Backend,Semi-Senior,5,Node.js|FastAPI|SQL,5106507,Sí,2024-06-29
+662,Juan Ramos,Pereira,DevOps,Semi-Senior,2,Kubernetes|Docker,5615059,Sí,2024-06-23
+663,María Ramos,Villavicencio,Machine Learning,Senior,10,Python|TensorFlow|MLflow|Scikit-learn,11307248,No,2024-04-06
+664,Camila Torres,Barranquilla,BI & Analytics,Semi-Senior,4,Python|SQL,4069574,Sí,2024-01-15
+665,Mateo Guerrero,Villavicencio,Cloud,Lead,9,Terraform|Azure|Docker,12799609,Sí,2024-08-13
+666,Juliana Castro,Villavicencio,Backend,Junior,2,Node.js|Java,2370451,No,2024-09-22
+667,Nicolás López,Santa Marta,Full Stack,Junior,2,JavaScript|Docker,2500730,Sí,2024-04-25
+668,Carolina Suárez,Bucaramanga,Diseño UX/UI,Lead,11,Prototyping|Adobe XD|HTML|Figma,15342697,Sí,2024-12-27
+669,Alejandro Flores,Cali,Diseño UX/UI,Junior,0,Adobe XD|Sketch|CSS|HTML,2349480,No,2024-03-13
+670,Valentina Guerrero,Pasto,Ciberseguridad,Lead,12,Linux|Python,14096218,Sí,2024-08-29
+671,Andrés Rodríguez,Neiva,Data Science,Senior,6,SQL|TensorFlow,11577789,No,2024-05-09
+672,David Ruiz,Bogotá,Data Science,Senior,9,SQL|Scikit-learn,8847637,Sí,2024-07-01
+673,Mateo García,Santa Marta,DevOps,Lead,9,AWS|Docker,17543215,No,2024-09-26
+674,Sebastián Torres,Popayán,Full Stack,Senior,9,Node.js|React|JavaScript,8031473,No,2024-10-17
+675,Carlos Navarro,Tunja,QA,Senior,8,Pytest|Postman|JMeter,9547163,Sí,2024-02-03
+676,Carlos Flores,Bogotá,Data Science,Lead,9,Pandas|SQL,10418608,Sí,2024-03-11
+677,David Vega,Manizales,Mobile,Semi-Senior,4,Dart|Flutter|Swift,5984651,No,2024-08-04
+678,Daniela Vega,Santa Marta,Backend,Senior,6,Node.js|Django|Java|FastAPI,11649669,Sí,2024-06-05
+679,Camila Flores,Neiva,Machine Learning,Lead,14,TensorFlow|MLflow,17842340,Sí,2024-08-27
+680,David Jiménez,Manizales,Ciberseguridad,Lead,8,Python|Linux|Kali,11067658,Sí,2024-01-28
+681,Luisa Molina,Santa Marta,BI & Analytics,Semi-Senior,2,SQL|DAX,6725794,Sí,2024-05-28
+682,Gabriela Herrera,Armenia,Diseño UX/UI,Senior,10,Sketch|CSS|Prototyping|Adobe XD,8298350,Sí,2024-01-04
+683,Carlos Herrera,Pereira,Machine Learning,Semi-Senior,2,Python|MLflow|SQL|Scikit-learn,5987019,No,2024-07-19
+684,Santiago Ríos,Montería,Backend,Senior,6,Node.js|Django|SQL|Python,7181679,Sí,2024-12-02
+685,Felipe Pérez,Santa Marta,Cloud,Semi-Senior,5,AWS|Docker|Terraform|Azure,5618249,No,2024-08-05
+686,Laura García,Medellín,Mobile,Lead,12,Dart|React Native,13925089,No,2024-05-21
+687,Valentina Pérez,Ibagué,QA,Semi-Senior,5,Pytest|Postman,6999692,Sí,2024-07-20
+688,Camila Ríos,Ibagué,Full Stack,Lead,10,Docker|Python|Node.js|JavaScript,14903084,No,2024-02-04
+689,Santiago García,Manizales,Diseño UX/UI,Semi-Senior,2,Prototyping|HTML|Adobe XD,4992444,Sí,2024-07-15
+690,Luisa Jiménez,Bucaramanga,Backend,Junior,2,Python|SQL|Node.js|Spring Boot,2673519,Sí,2024-11-22
+691,Gabriela Romero,Montería,DevOps,Semi-Senior,5,Kubernetes|Linux,6216813,Sí,2024-11-18
+692,Cristian López,Popayán,DevOps,Junior,0,Terraform|Docker|Jenkins|Linux,3040555,No,2024-09-13
+693,David Castro,Cartagena,Machine Learning,Semi-Senior,5,MLflow|Python,6169490,Sí,2024-09-12
+694,Felipe Rodríguez,Bucaramanga,Machine Learning,Senior,7,SQL|PyTorch|Python,11483071,Sí,2024-09-22
+695,Javier Suárez,Ibagué,Cloud,Senior,9,Terraform|GCP|AWS|Kubernetes,8682010,Sí,2024-03-12
+696,María Romero,Medellín,Diseño UX/UI,Senior,6,CSS|Prototyping,10491675,Sí,2024-10-09
+697,Mateo González,Manizales,Mobile,Junior,0,Kotlin|React Native|Swift|Dart,2044969,Sí,2024-09-30
+698,Alejandro Molina,Montería,BI & Analytics,Junior,2,DAX|Power BI|Python,3152479,Sí,2024-11-11
+699,Carolina Castro,Manizales,QA,Semi-Senior,5,Selenium|Cypress,6249059,Sí,2024-05-07
+700,Mariana Rodríguez,Manizales,Backend,Junior,0,Node.js|Spring Boot,2613233,Sí,2024-12-02
+701,Camila Martínez,Manizales,Mobile,Semi-Senior,4,Kotlin|Dart|React Native|Swift,5122124,Sí,2024-01-28
+702,David Vega,Pasto,BI & Analytics,Lead,10,Power BI|Tableau|DAX|SQL,11972205,No,2024-11-28
+703,Luisa Ruiz,Santa Marta,Backend,Junior,1,SQL|Node.js|Python|Django,3792172,Sí,2024-07-14
+704,Daniela Ruiz,Pasto,Data Science,Semi-Senior,5,Python|SQL|TensorFlow|Scikit-learn,4109018,Sí,2024-10-29
+705,María Ortiz,Cúcuta,Data Science,Senior,8,Scikit-learn|Pandas,10888141,Sí,2024-03-24
+706,Daniela Ruiz,Cúcuta,Diseño UX/UI,Semi-Senior,2,Sketch|CSS,6395294,Sí,2024-07-04
+707,Juliana Guerrero,Bogotá,Mobile,Junior,0,Swift|React Native|Dart,2922556,Sí,2024-09-02
+708,Natalia Molina,Cali,Cloud,Semi-Senior,2,Docker|Kubernetes|GCP,4754152,Sí,2024-05-12
+709,Diego Herrera,Bucaramanga,Frontend,Semi-Senior,3,JavaScript|HTML,6125334,Sí,2024-01-22
+710,Juan Reyes,Manizales,DevOps,Junior,2,Jenkins|Terraform|Docker|Linux,2733436,No,2024-02-27
+711,Paula Martínez,Cúcuta,DevOps,Semi-Senior,4,Linux|AWS,4103576,Sí,2024-06-20
+712,Nicolás Vega,Cúcuta,Full Stack,Senior,9,Node.js|JavaScript,11959575,Sí,2024-11-07
+713,María Navarro,Cali,QA,Senior,9,Pytest|JMeter|Postman|Selenium,11742938,No,2024-10-02
+714,Miguel López,Manizales,Cloud,Junior,2,GCP|Azure|Kubernetes,2689301,No,2024-06-10
+715,Miguel López,Pasto,Diseño UX/UI,Semi-Senior,5,CSS|Prototyping|Figma,6030691,No,2024-04-27
+716,Gabriela Ramos,Cali,Frontend,Semi-Senior,3,Vue.js|HTML|JavaScript,5765896,No,2024-11-19
+717,Carolina Ortiz,Barranquilla,DevOps,Semi-Senior,2,Jenkins|Terraform|AWS,4142923,Sí,2024-02-07
+718,Laura Medina,Ibagué,Cloud,Lead,14,Docker|Azure|GCP|AWS,15106627,Sí,2024-01-24
+719,Camila Cruz,Bucaramanga,QA,Lead,14,JMeter|Pytest|Postman,10702877,Sí,2024-01-04
+720,Gabriela Alvarado,Cúcuta,QA,Lead,10,Cypress|Postman|Selenium|JMeter,14732276,No,2024-05-26
+721,Sara Moreno,Ibagué,QA,Semi-Senior,2,Cypress|Postman|JMeter,5456873,Sí,2024-05-27
+722,Juliana Herrera,Cartagena,Ciberseguridad,Semi-Senior,4,OWASP|Kali,4867562,Sí,2024-01-15
+723,Alejandro Vega,Montería,Data Science,Semi-Senior,5,SQL|Scikit-learn,5865729,No,2024-05-31
+724,Javier López,Barranquilla,Diseño UX/UI,Junior,1,Sketch|Adobe XD,2741807,Sí,2024-06-16
+725,Sebastián Medina,Popayán,QA,Senior,10,JMeter|Selenium,11682271,Sí,2024-11-20
+726,Natalia García,Bucaramanga,DevOps,Semi-Senior,5,AWS|Kubernetes|Linux,6083421,Sí,2024-11-21
+727,Carolina Martínez,Montería,Cloud,Semi-Senior,5,Docker|Azure|Kubernetes|AWS,5103411,Sí,2024-11-22
+728,David Herrera,Tunja,Cloud,Semi-Senior,3,Kubernetes|Terraform|GCP,5239069,Sí,2024-05-27
+729,Nicolás Ruiz,Villavicencio,QA,Semi-Senior,5,Postman|Selenium|Pytest,4537113,No,2024-11-03
+730,Nicolás Guerrero,Santa Marta,DevOps,Junior,1,Docker|Terraform|Jenkins,3415554,No,2024-08-05
+731,Daniela Torres,Bucaramanga,Data Science,Senior,7,Pandas|TensorFlow|R,7925394,Sí,2024-03-07
+732,Alejandro Romero,Popayán,Data Science,Junior,1,Scikit-learn|Python|TensorFlow,2441373,Sí,2024-10-01
+733,Daniela Molina,Bogotá,Diseño UX/UI,Semi-Senior,3,Sketch|CSS|Prototyping,4084005,No,2024-09-05
+734,Santiago Pérez,Villavicencio,Mobile,Senior,10,Kotlin|Flutter,8100528,Sí,2024-02-13
+735,Camila Martínez,Villavicencio,Cloud,Lead,10,Kubernetes|Docker,16583142,Sí,2024-08-05
+736,Paula Cruz,Villavicencio,Data Science,Senior,6,TensorFlow|Scikit-learn|Pandas,7780663,No,2024-10-14
+737,Juliana Herrera,Manizales,Mobile,Semi-Senior,2,Dart|Flutter|Swift,4104404,Sí,2024-08-16
+738,David Herrera,Armenia,Machine Learning,Junior,2,Python|SQL|TensorFlow|MLflow,3244469,No,2024-11-11
+739,Mariana Herrera,Medellín,Cloud,Semi-Senior,5,Kubernetes|GCP|Azure,6889865,No,2024-01-03
+740,Juliana Reyes,Barranquilla,DevOps,Lead,11,AWS|Linux|Docker,13151483,Sí,2024-01-07
+741,Sebastián Medina,Bucaramanga,Diseño UX/UI,Junior,0,HTML|Prototyping,3313162,No,2024-07-23
+742,Valentina Flores,Cúcuta,Backend,Lead,13,Node.js|Django|Java|FastAPI,16734489,Sí,2024-09-22
+743,Alejandro Torres,Bogotá,Ciberseguridad,Lead,10,Wireshark|Burp Suite,11261219,No,2024-02-04
+744,Valentina Flores,Bucaramanga,Diseño UX/UI,Semi-Senior,2,Figma|Prototyping|HTML,5469905,Sí,2024-06-25
+745,Natalia García,Tunja,DevOps,Senior,9,Terraform|AWS|Jenkins,8699432,Sí,2024-02-22
+746,Miguel Sánchez,Armenia,Mobile,Semi-Senior,2,Dart|Kotlin|React Native,4705059,Sí,2024-04-20
+747,Camila Ríos,Popayán,Machine Learning,Semi-Senior,3,Python|SQL|TensorFlow,5844189,No,2024-06-16
+748,Daniel Medina,Popayán,Backend,Semi-Senior,5,SQL|Node.js|FastAPI|Django,6539151,Sí,2024-12-30
+749,Laura Ramos,Pasto,BI & Analytics,Lead,9,Python|Tableau|Power BI|SQL,16111029,No,2024-04-19
+750,Alejandro Romero,Popayán,DevOps,Lead,8,AWS|Jenkins,12603745,Sí,2024-02-18
+751,Javier Castro,Santa Marta,Mobile,Junior,2,React Native|Dart|Flutter|Swift,3311287,Sí,2024-08-29
+752,Alejandro Mendoza,Cartagena,Ciberseguridad,Lead,9,Kali|Python,10694783,No,2024-03-02
+753,Santiago Ruiz,Bogotá,Full Stack,Junior,1,Docker|Python,2697649,Sí,2024-10-27
+754,Miguel Castro,Cartagena,Cloud,Junior,2,Azure|Docker,3528733,No,2024-01-23
+755,Juliana Suárez,Cali,DevOps,Lead,12,Jenkins|Docker|Linux|Kubernetes,10975273,Sí,2024-04-03
+756,Miguel Martínez,Neiva,Frontend,Senior,6,HTML|Vue.js,9581865,Sí,2024-03-08
+757,Daniel Rodríguez,Pereira,BI & Analytics,Senior,6,Power BI|DAX|Tableau,9175619,No,2024-05-15
+758,Camila Herrera,Cartagena,QA,Senior,10,Cypress|JMeter,8767167,No,2024-06-26
+759,Natalia Navarro,Santa Marta,Full Stack,Senior,10,Python|React,9188134,Sí,2024-09-21
+760,Cristian Mendoza,Ibagué,Frontend,Lead,13,CSS|TypeScript|JavaScript,17292461,Sí,2024-03-22
+761,Nicolás Herrera,Bucaramanga,QA,Senior,6,Pytest|JMeter|Postman,10682671,No,2024-10-30
+762,Gabriela Reyes,Medellín,BI & Analytics,Lead,13,Tableau|Python|Excel|Power BI,10904755,No,2024-08-06
+763,Luisa Torres,Cartagena,Machine Learning,Lead,10,MLflow|SQL|TensorFlow,16614999,Sí,2024-02-16
+764,Daniel Navarro,Pereira,Frontend,Senior,6,HTML|React,9527339,Sí,2024-04-04
+765,Felipe Molina,Pasto,DevOps,Lead,13,AWS|Kubernetes,15761182,No,2024-12-23
+766,María Ríos,Villavicencio,Ciberseguridad,Lead,14,Kali|Linux,16876905,No,2024-11-01
+767,Daniela Romero,Ibagué,Backend,Senior,6,Node.js|Spring Boot,10340182,Sí,2024-11-26
+768,Felipe González,Bucaramanga,Ciberseguridad,Semi-Senior,3,Kali|Burp Suite,4632281,No,2024-12-11
+769,Mariana Herrera,Pasto,Data Science,Senior,6,Scikit-learn|Python|Pandas|TensorFlow,10392970,Sí,2024-03-23
+770,Sara González,Cúcuta,Machine Learning,Lead,15,SQL|Scikit-learn|MLflow|Python,15063666,No,2024-09-14
+771,David Ortiz,Cartagena,Ciberseguridad,Senior,5,Wireshark|Burp Suite|Python,11950562,Sí,2024-09-20
+772,Mariana Suárez,Neiva,Diseño UX/UI,Lead,12,Figma|HTML,12116670,No,2024-06-21
+773,Cristian Flores,Cúcuta,Data Science,Senior,7,Pandas|SQL,11997755,Sí,2024-01-19
+774,Juan Cruz,Armenia,BI & Analytics,Semi-Senior,2,DAX|Power BI,5152159,Sí,2024-09-25
+775,Gabriela Ruiz,Cali,Data Science,Junior,1,TensorFlow|Python|Pandas|SQL,2708360,No,2024-01-12
+776,Sebastián Cruz,Medellín,Mobile,Junior,1,Dart|Swift|Kotlin,2784830,No,2024-05-20
+777,Miguel Reyes,Santa Marta,Frontend,Senior,9,HTML|Vue.js,8737585,No,2024-12-02
+778,Laura Torres,Manizales,Mobile,Lead,11,Flutter|Kotlin,16108282,No,2024-10-28
+779,Nicolás Mendoza,Neiva,Machine Learning,Senior,8,PyTorch|SQL|MLflow,11185702,Sí,2024-12-10
+780,Daniela Torres,Popayán,BI & Analytics,Junior,2,Tableau|SQL|Power BI|DAX,2774250,Sí,2024-08-19
+781,Cristian Ruiz,Tunja,Data Science,Semi-Senior,3,Pandas|TensorFlow|Python|R,6058383,Sí,2024-07-12
+782,Alejandro Molina,Tunja,Backend,Junior,1,Node.js|Java|FastAPI|SQL,2856720,Sí,2024-06-12
+783,Luisa Castro,Neiva,Full Stack,Junior,2,SQL|Docker,2600379,Sí,2024-07-23
+784,Daniel García,Montería,Cloud,Senior,10,Docker|Terraform|Kubernetes,7243613,Sí,2024-03-11
+785,Alejandro Suárez,Cali,Cloud,Junior,2,Azure|Kubernetes|Terraform|GCP,3996165,No,2024-10-09
+786,Paula Molina,Ibagué,DevOps,Semi-Senior,4,AWS|Kubernetes,5228855,Sí,2024-04-15
+787,Gabriela Ruiz,Bucaramanga,Ciberseguridad,Semi-Senior,5,Wireshark|Python|Kali,5938658,Sí,2024-12-15
+788,Cristian Jiménez,Armenia,Cloud,Lead,12,Docker|AWS|Kubernetes|Azure,16808717,No,2024-01-21
+789,David Moreno,Pasto,Diseño UX/UI,Lead,10,CSS|Figma|Sketch,11190763,Sí,2024-09-04
+790,María Torres,Ibagué,Backend,Senior,8,Spring Boot|Node.js,10730179,No,2024-12-24
+791,Juliana Alvarado,Pasto,Mobile,Junior,0,Swift|Kotlin,3496953,Sí,2024-10-17
+792,Natalia Flores,Villavicencio,Ciberseguridad,Lead,10,Wireshark|Kali,10234920,Sí,2024-10-25
+793,Daniel González,Cartagena,Machine Learning,Junior,1,MLflow|TensorFlow|PyTorch,3231312,Sí,2024-07-12
+794,Diego Ríos,Manizales,Ciberseguridad,Semi-Senior,5,Python|OWASP|Kali,4865827,Sí,2024-11-07
+795,Luisa Cruz,Pasto,Backend,Semi-Senior,5,Spring Boot|Django|Java|FastAPI,4137743,Sí,2024-06-17
+796,Paula Martínez,Manizales,Mobile,Junior,0,Kotlin|Swift,2478863,Sí,2024-11-07
+797,Juliana Romero,Medellín,Mobile,Junior,2,Dart|Kotlin,2435645,No,2024-08-25
+798,Andrés Romero,Armenia,Data Science,Senior,6,Pandas|Python,11549719,Sí,2024-11-02
+799,Mateo Flores,Santa Marta,Machine Learning,Junior,2,TensorFlow|MLflow|Scikit-learn|Python,3582427,Sí,2024-06-17
+800,Paula Herrera,Neiva,Cloud,Senior,7,GCP|Docker|Kubernetes,11090121,Sí,2024-09-17
+801,Mateo Herrera,Tunja,Frontend,Semi-Senior,5,TypeScript|Vue.js,4766113,Sí,2024-04-28
+802,María Flores,Bucaramanga,Cloud,Senior,5,Azure|Docker|Kubernetes|Terraform,8440972,Sí,2024-11-08
+803,Cristian Pérez,Cúcuta,QA,Lead,12,Postman|JMeter,12799464,Sí,2024-06-10
+804,Isabella Flores,Santa Marta,BI & Analytics,Lead,8,Tableau|Power BI|Python,11749939,Sí,2024-05-30
+805,Mariana Castro,Neiva,Data Science,Senior,7,Scikit-learn|TensorFlow,7896193,Sí,2024-03-23
+806,Sara Cruz,Villavicencio,Ciberseguridad,Lead,15,Kali|Wireshark,15365594,Sí,2024-05-21
+807,Juan Castro,Cartagena,Ciberseguridad,Senior,6,OWASP|Burp Suite|Linux,11815800,Sí,2024-08-12
+808,Felipe Vargas,Pasto,Machine Learning,Senior,10,Python|PyTorch,8801980,Sí,2024-08-27
+809,Felipe Ruiz,Montería,QA,Senior,7,Selenium|JMeter,7402913,Sí,2024-09-19
+810,David García,Cali,Machine Learning,Lead,15,MLflow|PyTorch|Python,16548048,Sí,2024-09-29
+811,Sebastián Navarro,Santa Marta,Cloud,Junior,2,Kubernetes|Terraform,2976675,Sí,2024-02-07
+812,Sebastián Mendoza,Bogotá,Machine Learning,Senior,5,PyTorch|Python|Scikit-learn|MLflow,10583190,Sí,2024-04-24
+813,Gabriela Guerrero,Pereira,QA,Lead,13,Cypress|Pytest|Selenium|Postman,10219986,Sí,2024-03-06
+814,Juan Castro,Montería,Backend,Senior,10,Node.js|Java,8822306,Sí,2024-01-14
+815,Laura Vega,Villavicencio,Ciberseguridad,Junior,1,Python|Burp Suite|Wireshark,2416573,Sí,2024-02-17
+816,Sebastián Medina,Pereira,Machine Learning,Junior,0,MLflow|PyTorch|SQL|TensorFlow,2441088,No,2024-05-10
+817,Paula López,Cúcuta,Ciberseguridad,Junior,0,Kali|OWASP,3754340,Sí,2024-04-27
+818,Ana Martínez,Bucaramanga,Full Stack,Lead,13,React|Docker,14350516,Sí,2024-03-12
+819,Ana Herrera,Montería,Data Science,Junior,2,Scikit-learn|Pandas|R,2361590,Sí,2024-07-05
+820,Carolina Ríos,Ibagué,Backend,Semi-Senior,5,FastAPI|Node.js|Spring Boot,4108339,No,2024-01-18
+821,Miguel Molina,Pasto,Frontend,Lead,10,JavaScript|HTML,13522232,Sí,2024-02-27
+822,Mateo Ruiz,Tunja,BI & Analytics,Lead,15,Tableau|Power BI|DAX,14007991,No,2024-10-19
+823,María González,Barranquilla,DevOps,Semi-Senior,3,Docker|AWS|Jenkins|Terraform,4948849,Sí,2024-06-17
+824,Ana Ruiz,Villavicencio,Full Stack,Senior,8,React|Python|JavaScript|Node.js,8660073,Sí,2024-03-14
+825,Natalia Rodríguez,Neiva,DevOps,Semi-Senior,4,Jenkins|Kubernetes|AWS,5900831,No,2024-03-01
+826,Miguel Torres,Ibagué,Full Stack,Senior,7,Python|SQL|JavaScript,9205057,Sí,2024-08-06
+827,Natalia García,Cartagena,Cloud,Semi-Senior,3,Docker|GCP,5458041,No,2024-10-10
+828,Camila Molina,Popayán,Cloud,Semi-Senior,3,Azure|GCP,4636574,Sí,2024-09-29
+829,David Romero,Cartagena,DevOps,Semi-Senior,3,Linux|Terraform|Kubernetes|Jenkins,6557122,Sí,2024-05-22
+830,Santiago Moreno,Cali,Mobile,Lead,15,Swift|Kotlin|Flutter,15604598,Sí,2024-04-16
+831,Javier Cruz,Bucaramanga,Machine Learning,Junior,0,TensorFlow|SQL|Scikit-learn,3354937,Sí,2024-05-07
+832,Mariana Castro,Neiva,Backend,Semi-Senior,3,FastAPI|Django|Java|Spring Boot,6819570,Sí,2024-01-06
+833,Natalia López,Cúcuta,Cloud,Senior,10,Kubernetes|Terraform,11540413,No,2024-03-19
+834,Camila Vega,Montería,Diseño UX/UI,Senior,8,Prototyping|HTML,11087803,Sí,2024-04-25
+835,Paula López,Santa Marta,Backend,Senior,10,Python|FastAPI|Spring Boot,9111167,Sí,2024-08-02
+836,Cristian Ramos,Manizales,Mobile,Senior,5,Dart|React Native,9229307,No,2024-10-14
+837,Alejandro Ramos,Manizales,Machine Learning,Lead,9,SQL|Python|MLflow|Scikit-learn,16839094,No,2024-01-21
+838,David Mendoza,Ibagué,Ciberseguridad,Lead,14,Python|Linux|Wireshark|OWASP,16726784,Sí,2024-08-21
+839,Diego Vega,Neiva,Mobile,Senior,7,React Native|Flutter|Swift,9207660,Sí,2024-04-17
+840,Juan Ortiz,Tunja,Cloud,Senior,7,AWS|GCP|Docker,9655280,Sí,2024-02-21
+841,Javier Cruz,Pasto,Backend,Lead,10,Java|Node.js|SQL,16331476,Sí,2024-03-27
+842,Sara García,Pereira,Backend,Semi-Senior,4,Django|Java|SQL|Python,4379761,Sí,2024-03-15
+843,Ana Vargas,Manizales,Cloud,Senior,8,GCP|Docker|AWS|Azure,9062788,Sí,2024-12-07
+844,Juliana García,Bogotá,Ciberseguridad,Semi-Senior,3,OWASP|Linux|Wireshark,5022068,No,2024-08-12
+845,Nicolás Romero,Pasto,Cloud,Semi-Senior,3,Docker|Terraform|GCP|Kubernetes,5105439,Sí,2024-04-30
+846,Sara Romero,Tunja,QA,Junior,2,Cypress|Pytest|Selenium|JMeter,2657425,Sí,2024-12-25
+847,Natalia Romero,Bucaramanga,DevOps,Lead,15,Terraform|AWS|Docker,14689198,Sí,2024-06-26
+848,Mateo Molina,Cartagena,Diseño UX/UI,Semi-Senior,4,Adobe XD|Figma|HTML|Sketch,4902631,Sí,2024-06-18
+849,Felipe Alvarado,Cali,Cloud,Lead,8,GCP|Docker|AWS|Terraform,16145127,Sí,2024-05-07
+850,Alejandro Ortiz,Villavicencio,Frontend,Semi-Senior,5,JavaScript|HTML|TypeScript,5709490,No,2024-03-11
+851,Diego Vargas,Santa Marta,Frontend,Junior,1,TypeScript|JavaScript|React,2841855,Sí,2024-06-22
+852,Isabella Ortiz,Popayán,Backend,Senior,9,Node.js|Python|Java|FastAPI,9741897,Sí,2024-01-15
+853,Carlos Vega,Pasto,Machine Learning,Senior,6,MLflow|TensorFlow,8297475,Sí,2024-10-20
+854,Sebastián Vega,Cúcuta,Ciberseguridad,Semi-Senior,3,Python|Wireshark|OWASP|Linux,5464038,Sí,2024-02-21
+855,Mateo Sánchez,Ibagué,Machine Learning,Semi-Senior,4,Python|MLflow|SQL,5533829,No,2024-04-06
+856,Carlos Moreno,Pereira,Data Science,Senior,10,Python|SQL|Pandas|Scikit-learn,8136452,Sí,2024-05-29
+857,Natalia Jiménez,Villavicencio,BI & Analytics,Lead,8,SQL|Tableau|Python,16466297,Sí,2024-09-27
+858,Mariana Rodríguez,Cúcuta,DevOps,Junior,1,Docker|Terraform|Linux|AWS,2807196,Sí,2024-12-16
+859,Diego Jiménez,Bucaramanga,Diseño UX/UI,Semi-Senior,4,Figma|HTML,4929319,Sí,2024-09-10
+860,María Alvarado,Bucaramanga,Full Stack,Junior,0,JavaScript|React|Node.js,2817712,No,2024-01-23
+861,Laura González,Montería,Machine Learning,Semi-Senior,4,SQL|PyTorch,4042896,No,2024-07-12
+862,Juliana Ramos,Cartagena,DevOps,Lead,14,Linux|AWS,10591601,Sí,2024-02-29
+863,Sebastián Vega,Cúcuta,Ciberseguridad,Junior,0,OWASP|Burp Suite|Kali|Wireshark,2597069,Sí,2024-07-21
+864,Mariana Vega,Barranquilla,DevOps,Junior,2,Docker|AWS|Terraform|Linux,2479503,Sí,2024-12-21
+865,Carlos Martínez,Pereira,DevOps,Lead,10,Terraform|Docker|Kubernetes,14771451,Sí,2024-03-19
+866,Sara Molina,Popayán,Mobile,Semi-Senior,5,React Native|Swift|Dart,4944706,Sí,2024-06-20
+867,Cristian Cruz,Barranquilla,Ciberseguridad,Junior,1,Linux|OWASP|Kali|Python,3436051,Sí,2024-11-12
+868,Miguel Pérez,Medellín,Diseño UX/UI,Senior,6,Sketch|Figma|HTML|CSS,11755961,Sí,2024-11-17
+869,Santiago Alvarado,Neiva,Cloud,Junior,0,Kubernetes|Docker|Terraform,3908913,Sí,2024-06-25
+870,Natalia Ruiz,Santa Marta,Ciberseguridad,Semi-Senior,4,OWASP|Linux|Burp Suite,4672416,Sí,2024-08-09
+871,Carlos Flores,Villavicencio,Frontend,Junior,1,React|Vue.js|HTML,2883195,No,2024-08-15
+872,Daniela Ruiz,Pereira,QA,Senior,6,Pytest|Cypress,10048545,No,2024-10-07
+873,Diego Ortiz,Tunja,BI & Analytics,Senior,6,Python|SQL,9519269,No,2024-01-27
+874,María Sánchez,Pereira,QA,Semi-Senior,5,JMeter|Selenium,6379818,Sí,2024-11-24
+875,Daniela Alvarado,Popayán,DevOps,Semi-Senior,4,Kubernetes|AWS|Jenkins|Terraform,6634382,Sí,2024-02-03
+876,Camila García,Pereira,Data Science,Junior,1,TensorFlow|R,2645003,Sí,2024-10-25
+877,Carolina Ramos,Cartagena,Ciberseguridad,Lead,12,Wireshark|Linux,14465299,No,2024-03-22
+878,Juan Romero,Neiva,Full Stack,Lead,11,Docker|React,17383919,No,2024-08-30
+879,Daniela Herrera,Ibagué,Frontend,Junior,2,JavaScript|TypeScript|Vue.js,2178279,Sí,2024-11-15
+880,Daniel Guerrero,Armenia,BI & Analytics,Semi-Senior,3,DAX|SQL|Tableau,6608279,Sí,2024-07-05
+881,Diego Torres,Cúcuta,DevOps,Senior,8,Docker|Kubernetes,10631845,Sí,2024-05-19
+882,Miguel Ortiz,Bogotá,Full Stack,Lead,8,Python|JavaScript,17587788,No,2024-07-13
+883,Daniela Rodríguez,Pasto,Diseño UX/UI,Senior,7,HTML|Prototyping|Adobe XD|Figma,11633721,No,2024-05-24
+884,Juliana Martínez,Manizales,Ciberseguridad,Junior,2,Linux|Python,2156058,Sí,2024-10-19
+885,Carlos Ramírez,Ibagué,Backend,Junior,0,Python|Java|Django|SQL,3648637,Sí,2024-01-29
+886,Ana González,Pereira,DevOps,Junior,0,AWS|Kubernetes,2104854,Sí,2024-08-31
+887,Mariana Sánchez,Bucaramanga,Diseño UX/UI,Lead,12,Prototyping|CSS|Figma|Sketch,11475144,Sí,2024-05-14
+888,Laura Vega,Manizales,Cloud,Semi-Senior,2,Azure|GCP,5655357,No,2024-09-16
+889,Natalia Flores,Cali,DevOps,Lead,11,Docker|Jenkins|Terraform|Linux,12887553,Sí,2024-11-13
+890,Luisa Ramos,Santa Marta,BI & Analytics,Junior,2,Excel|Tableau|SQL,3524941,No,2024-07-08
+891,Mateo Flores,Montería,Ciberseguridad,Senior,6,OWASP|Kali,9720994,No,2024-08-25
+892,Diego Vega,Villavicencio,Ciberseguridad,Lead,14,Python|Linux|Kali,13350563,Sí,2024-01-08
+893,Nicolás Navarro,Cartagena,Full Stack,Semi-Senior,3,SQL|Docker,5414802,No,2024-07-19
+894,Sebastián Flores,Medellín,Cloud,Senior,8,Terraform|Azure|Kubernetes,7561248,Sí,2024-12-27
+895,Mateo Suárez,Bucaramanga,Mobile,Semi-Senior,5,Flutter|Kotlin|React Native,6644336,No,2024-11-09
+896,Andrés Suárez,Bogotá,Frontend,Senior,10,CSS|TypeScript|JavaScript,10498054,Sí,2024-06-16
+897,Ana Ramírez,Manizales,QA,Lead,13,Pytest|Cypress|JMeter|Selenium,14725286,No,2024-01-10
+898,Sara Medina,Cali,Backend,Lead,15,Django|FastAPI|Node.js,16637750,Sí,2024-12-30
+899,Laura Castro,Tunja,Data Science,Lead,8,SQL|Scikit-learn|Pandas,14065939,Sí,2024-11-05
+900,Carolina Romero,Villavicencio,DevOps,Semi-Senior,2,Kubernetes|Terraform|Jenkins|Docker,6938722,Sí,2024-04-14
+901,Laura Flores,Tunja,Data Science,Junior,2,R|Pandas|Scikit-learn,2329207,Sí,2024-02-25
+902,Javier Torres,Medellín,Ciberseguridad,Senior,7,Linux|Kali|Python|Burp Suite,11635336,Sí,2024-03-13
+903,Sara Ramos,Medellín,Diseño UX/UI,Lead,14,Adobe XD|HTML|Sketch|CSS,14744738,Sí,2024-09-18
+904,Santiago Cruz,Bucaramanga,Diseño UX/UI,Semi-Senior,2,Figma|CSS,6994119,Sí,2024-07-01
+905,Sara Martínez,Cali,BI & Analytics,Senior,8,Python|DAX|Power BI|Tableau,10762275,Sí,2024-05-13
+906,Felipe Ramírez,Cartagena,Data Science,Junior,0,R|TensorFlow,3825535,Sí,2024-07-17
+907,Luisa Mendoza,Pereira,Full Stack,Lead,8,Docker|SQL|JavaScript|Python,11925235,No,2024-01-04
+908,David Reyes,Cúcuta,Backend,Senior,8,Django|Python,10139860,No,2024-03-22
+909,Mariana Sánchez,Bogotá,Machine Learning,Senior,7,Python|PyTorch|Scikit-learn,11293332,No,2024-04-14
+910,Sebastián López,Neiva,Data Science,Lead,12,TensorFlow|R|SQL|Scikit-learn,14755053,Sí,2024-04-21
+911,Paula García,Villavicencio,Mobile,Junior,0,React Native|Kotlin|Swift,3262093,Sí,2024-12-07
+912,Diego Ramírez,Cúcuta,Backend,Junior,0,Node.js|Python,2933359,Sí,2024-01-28
+913,David Sánchez,Medellín,Full Stack,Semi-Senior,4,Docker|JavaScript|Node.js,4503637,Sí,2024-08-21
+914,Javier Ríos,Manizales,DevOps,Junior,2,Docker|Linux,2954717,Sí,2024-01-12
+915,Ana Alvarado,Medellín,Ciberseguridad,Junior,2,OWASP|Burp Suite|Python,3043172,Sí,2024-01-07
+916,Gabriela Vega,Santa Marta,Data Science,Junior,1,SQL|Python,3828698,No,2024-01-01
+917,Natalia Rodríguez,Neiva,Machine Learning,Lead,8,PyTorch|Python|SQL,11374848,Sí,2024-12-03
+918,Carolina Castro,Cúcuta,Diseño UX/UI,Semi-Senior,4,HTML|Adobe XD|Prototyping|Sketch,6821331,No,2024-07-03
+919,Nicolás Martínez,Ibagué,Machine Learning,Senior,7,MLflow|TensorFlow|Python,8216771,Sí,2024-10-03
+920,Natalia Ramos,Popayán,Diseño UX/UI,Semi-Senior,3,HTML|Figma,4176070,Sí,2024-05-10
+921,Javier Romero,Tunja,Full Stack,Semi-Senior,3,JavaScript|Node.js|Python,5656584,No,2024-04-22
+922,Gabriela Castro,Bogotá,Diseño UX/UI,Lead,15,Prototyping|Sketch,14154063,Sí,2024-02-06
+923,Ana Flores,Bogotá,DevOps,Lead,9,Docker|Linux,11557882,Sí,2024-02-04
+924,Juliana Ruiz,Cúcuta,Backend,Lead,12,SQL|Node.js|Java,17713792,No,2024-11-21
+925,Alejandro Alvarado,Villavicencio,Data Science,Lead,13,SQL|Pandas,13545878,Sí,2024-12-16
+926,Mateo García,Barranquilla,BI & Analytics,Junior,1,SQL|DAX|Power BI|Tableau,2953546,No,2024-01-18
+927,Sara Flores,Neiva,Cloud,Lead,8,Azure|Docker|AWS|GCP,13885435,Sí,2024-12-22
+928,Gabriela Moreno,Bucaramanga,Cloud,Junior,1,Terraform|GCP,2083501,Sí,2024-12-17
+929,Laura Ramos,Villavicencio,Backend,Semi-Senior,5,Spring Boot|FastAPI|Java,5267840,Sí,2024-12-15
+930,Gabriela Molina,Cartagena,Ciberseguridad,Semi-Senior,5,Linux|OWASP,6538417,No,2024-09-11
+931,David Navarro,Montería,Diseño UX/UI,Lead,9,HTML|Figma|Adobe XD,10561521,Sí,2024-02-14
+932,Juliana Vega,Bucaramanga,Full Stack,Senior,9,JavaScript|Docker,8566914,Sí,2024-08-16
+933,Cristian Romero,Manizales,QA,Senior,10,JMeter|Selenium|Postman|Cypress,9519460,No,2024-01-06
+934,David Rodríguez,Armenia,Cloud,Junior,0,Azure|GCP|Kubernetes,3680291,No,2024-09-01
+935,Mateo Sánchez,Bucaramanga,Backend,Semi-Senior,2,Java|Python|SQL|FastAPI,6629580,Sí,2024-04-25
+936,Mariana Torres,Villavicencio,BI & Analytics,Junior,1,Power BI|Tableau,2943358,Sí,2024-09-02
+937,Alejandro Navarro,Montería,Cloud,Lead,12,AWS|Terraform|Kubernetes,15909559,Sí,2024-11-24
+938,Santiago Castro,Armenia,Mobile,Lead,13,Dart|Kotlin|Swift,16353680,Sí,2024-08-28
+939,Sara Martínez,Ibagué,Diseño UX/UI,Lead,12,Adobe XD|CSS|Sketch,14748077,Sí,2024-06-27
+940,Daniel Sánchez,Pereira,QA,Lead,14,Pytest|Cypress|Postman|JMeter,15977898,Sí,2024-04-14
+941,Carlos Ruiz,Bucaramanga,Machine Learning,Semi-Senior,4,MLflow|PyTorch,6715716,Sí,2024-07-19
+942,Mateo Reyes,Tunja,Mobile,Lead,12,Flutter|Kotlin|Dart|Swift,11584843,Sí,2024-09-10
+943,Isabella Ríos,Barranquilla,Cloud,Senior,6,Terraform|Kubernetes,10245424,Sí,2024-03-12
+944,Sebastián López,Montería,QA,Junior,0,Cypress|Postman|Selenium|JMeter,2429691,Sí,2024-02-27
+945,Sara Suárez,Santa Marta,Diseño UX/UI,Senior,6,CSS|Prototyping,9965804,Sí,2024-03-18
+946,Valentina Romero,Santa Marta,Machine Learning,Senior,8,MLflow|Python|TensorFlow|SQL,8044912,Sí,2024-07-27
+947,Felipe Ramírez,Montería,Ciberseguridad,Semi-Senior,3,Linux|Kali,6515392,Sí,2024-04-28
+948,Andrés Molina,Tunja,Backend,Lead,10,SQL|Django|Spring Boot|Python,17397127,No,2024-08-11
+949,Carlos Vega,Cartagena,Cloud,Senior,8,Docker|Azure|GCP,10168077,No,2024-04-16
+950,María Vargas,Bogotá,QA,Lead,12,JMeter|Cypress,15414655,Sí,2024-08-19
+951,Ana Navarro,Neiva,Data Science,Lead,14,Pandas|TensorFlow,13668861,Sí,2024-06-27
+952,Felipe Torres,Pasto,QA,Senior,6,Cypress|Pytest|Selenium|JMeter,7754744,Sí,2024-02-17
+953,Alejandro Reyes,Montería,Cloud,Junior,1,Azure|GCP|Kubernetes,2584085,Sí,2024-03-26
+954,Paula Martínez,Bucaramanga,DevOps,Junior,2,Terraform|AWS|Linux,2495442,Sí,2024-02-04
+955,Luisa López,Manizales,Mobile,Semi-Senior,2,Swift|Dart|Kotlin|Flutter,4036685,Sí,2024-05-19
+956,Paula Ramos,Pasto,Data Science,Junior,1,R|TensorFlow|Scikit-learn,3203481,No,2024-03-30
+957,Ana López,Neiva,Diseño UX/UI,Semi-Senior,2,Figma|Adobe XD,6055026,No,2024-09-25
+958,Isabella Mendoza,Cartagena,Cloud,Senior,7,Docker|Terraform,8735544,Sí,2024-06-01
+959,Andrés Suárez,Pereira,BI & Analytics,Lead,8,Python|Power BI|SQL,13774373,Sí,2024-11-28
+960,Carlos Flores,Neiva,BI & Analytics,Semi-Senior,2,Python|DAX|Excel,4858542,No,2024-01-27
+961,Felipe González,Cúcuta,Full Stack,Junior,1,SQL|Docker|JavaScript,2744015,Sí,2024-09-02
+962,Camila Castro,Medellín,QA,Semi-Senior,3,Cypress|Postman,6137026,Sí,2024-01-13
+963,Isabella Moreno,Neiva,QA,Lead,13,Cypress|Selenium,16405873,Sí,2024-12-07
+964,Luisa Romero,Pereira,Diseño UX/UI,Junior,0,Prototyping|Adobe XD|Sketch|Figma,2195432,No,2024-04-22
+965,Santiago Rodríguez,Santa Marta,Mobile,Junior,0,Swift|React Native|Kotlin,3921140,Sí,2024-01-20
+966,Juliana Cruz,Ibagué,Ciberseguridad,Junior,0,Python|Burp Suite,3293519,Sí,2024-11-19
+967,Cristian Vargas,Armenia,Cloud,Semi-Senior,4,AWS|Terraform,5376376,No,2024-07-26
+968,Santiago Alvarado,Cartagena,Mobile,Senior,9,Swift|React Native,11548381,Sí,2024-07-30
+969,Miguel Moreno,Montería,BI & Analytics,Senior,6,Python|SQL|Tableau|Excel,8292231,No,2024-01-16
+970,Sara Castro,Cúcuta,Backend,Senior,8,Java|SQL|FastAPI|Spring Boot,8383234,Sí,2024-11-02
+971,Sara Alvarado,Armenia,BI & Analytics,Junior,0,Excel|Python,3880267,Sí,2024-08-29
+972,Sebastián Rodríguez,Ibagué,Frontend,Senior,10,React|Vue.js,11889413,Sí,2024-11-10
+973,Valentina Ramos,Cúcuta,DevOps,Semi-Senior,5,Jenkins|Terraform|Docker|Linux,4272388,Sí,2024-03-21
+974,Natalia Ortiz,Bucaramanga,Diseño UX/UI,Junior,1,HTML|Adobe XD,3457329,Sí,2024-05-30
+975,Natalia Reyes,Cartagena,BI & Analytics,Lead,13,Power BI|Python,10666501,Sí,2024-10-27
+976,Carolina López,Armenia,Frontend,Junior,1,Vue.js|HTML|React,2912963,Sí,2024-12-29
+977,María Vega,Santa Marta,Ciberseguridad,Junior,1,Python|OWASP|Wireshark,2816964,No,2024-12-29
+978,Diego Vargas,Santa Marta,Ciberseguridad,Semi-Senior,5,OWASP|Linux|Python|Burp Suite,4390977,Sí,2024-03-16
+979,Santiago Vega,Pasto,Frontend,Semi-Senior,5,React|TypeScript|JavaScript|CSS,5438491,Sí,2024-02-23
+980,Mateo Ortiz,Medellín,Cloud,Semi-Senior,3,Terraform|Docker|Azure|Kubernetes,6478729,No,2024-01-23
+981,Daniel Vargas,Ibagué,Data Science,Lead,14,Scikit-learn|TensorFlow|R,13768761,Sí,2024-06-02
+982,Carolina Mendoza,Medellín,Data Science,Semi-Senior,4,Scikit-learn|R,5884290,Sí,2024-08-08
+983,Santiago Martínez,Tunja,Mobile,Lead,8,Dart|Swift|Kotlin,17764740,No,2024-10-14
+984,Miguel Vargas,Cartagena,Frontend,Semi-Senior,5,React|TypeScript|JavaScript|CSS,5082940,Sí,2024-12-09
+985,Juliana Jiménez,Cali,Frontend,Lead,9,Vue.js|CSS|JavaScript,17999255,Sí,2024-02-03
+986,Luisa Ortiz,Armenia,Mobile,Semi-Senior,5,Dart|React Native|Kotlin|Flutter,6576837,Sí,2024-07-01
+987,Carlos Martínez,Cartagena,QA,Semi-Senior,3,Selenium|Cypress|JMeter|Postman,4672513,Sí,2024-09-02
+988,Javier Ortiz,Pereira,Full Stack,Senior,8,Python|SQL,11055247,Sí,2024-04-26
+989,Mariana Guerrero,Neiva,Ciberseguridad,Lead,13,Python|OWASP,12981491,Sí,2024-12-06
+990,Javier Castro,Popayán,Full Stack,Senior,7,React|JavaScript,11973484,No,2024-09-10
+991,Juan Romero,Montería,Diseño UX/UI,Senior,10,Adobe XD|CSS,7894009,Sí,2024-12-06
+992,Laura Reyes,Cali,Mobile,Lead,14,Dart|Kotlin,13413080,Sí,2024-01-14
+993,Daniel Vargas,Ibagué,Frontend,Junior,0,Vue.js|HTML,3863127,Sí,2024-10-25
+994,Carlos Martínez,Cúcuta,DevOps,Junior,1,Terraform|Linux|Jenkins|AWS,2210628,No,2024-02-17
+995,Cristian Vargas,Armenia,Mobile,Junior,0,React Native|Flutter,3697645,Sí,2024-05-15
+996,Sebastián Alvarado,Pereira,Cloud,Semi-Senior,4,Docker|AWS|Kubernetes|Azure,6970244,Sí,2024-07-27
+997,Valentina Guerrero,Villavicencio,Cloud,Senior,8,Terraform|Azure,9455398,Sí,2024-07-26
+998,Gabriela Jiménez,Barranquilla,Machine Learning,Senior,9,Scikit-learn|PyTorch|SQL|Python,8603607,Sí,2024-12-19
+999,Laura Alvarado,Cali,Frontend,Junior,2,React|JavaScript,3434594,Sí,2024-02-27
+1000,Gabriela García,Neiva,Full Stack,Semi-Senior,2,JavaScript|Node.js|React,4616510,Sí,2024-06-15
+1001,Nicolás Moreno,Pereira,Full Stack,Senior,10,SQL|Node.js,9036489,No,2024-05-20
+1002,Nicolás Rodríguez,Pereira,Mobile,Junior,1,React Native|Kotlin,2866971,Sí,2024-05-23
+1003,Sebastián Jiménez,Pereira,Data Science,Lead,15,SQL|R|Pandas,13276547,Sí,2024-03-23
+1004,Mateo Ramírez,Barranquilla,Ciberseguridad,Semi-Senior,3,Linux|Wireshark|OWASP,5555390,Sí,2024-05-19
+1005,Diego Guerrero,Manizales,Cloud,Senior,5,AWS|Azure|GCP|Docker,11663715,Sí,2024-11-17
+1006,Mateo Medina,Bucaramanga,Data Science,Semi-Senior,4,SQL|Python|Pandas|Scikit-learn,5284874,Sí,2024-10-27
+1007,María Mendoza,Ibagué,BI & Analytics,Senior,8,Tableau|SQL,9023056,Sí,2024-09-09
+1008,Felipe Jiménez,Pereira,Cloud,Junior,2,Terraform|AWS,2979543,Sí,2024-02-22
+1009,Cristian Romero,Bogotá,Ciberseguridad,Semi-Senior,3,Python|Kali,6464152,Sí,2024-11-25
+1010,Gabriela Vega,Tunja,Ciberseguridad,Semi-Senior,4,Kali|Wireshark,6638665,No,2024-12-18
+1011,Juliana Romero,Manizales,Frontend,Junior,1,JavaScript|CSS,3939469,No,2024-12-22
+1012,David Ríos,Pereira,QA,Lead,9,Cypress|Selenium|Postman|Pytest,16186388,Sí,2024-04-01
+1013,María Ramos,Barranquilla,DevOps,Semi-Senior,4,AWS|Kubernetes|Terraform|Docker,4856324,Sí,2024-12-17
+1014,Nicolás González,Tunja,Diseño UX/UI,Junior,0,Adobe XD|Figma,2367202,Sí,2024-03-21
+1015,María Martínez,Neiva,Frontend,Lead,10,HTML|CSS|Vue.js,15540815,Sí,2024-08-17
+1016,Nicolás Pérez,Villavicencio,Machine Learning,Lead,11,Python|TensorFlow|Scikit-learn|MLflow,17778316,Sí,2024-10-24
+1017,Andrés Navarro,Popayán,Diseño UX/UI,Semi-Senior,3,HTML|Prototyping|Sketch|Figma,6260836,Sí,2024-05-03
+1018,Javier Rodríguez,Bucaramanga,Cloud,Junior,0,GCP|Kubernetes|Azure,2092313,Sí,2024-03-12
+1019,Carlos Navarro,Cali,DevOps,Junior,2,AWS|Terraform,3547155,Sí,2024-06-21
+1020,Valentina Rodríguez,Cali,Data Science,Junior,2,SQL|R,2173293,Sí,2024-08-12
+1021,Carlos Vega,Popayán,Cloud,Senior,10,GCP|Terraform|AWS,9450630,Sí,2024-02-13
+1022,Juan Ramos,Popayán,Frontend,Lead,9,React|Vue.js,13183017,No,2024-01-21
+1023,Paula Jiménez,Ibagué,Ciberseguridad,Junior,0,Burp Suite|Kali,2185993,Sí,2024-07-26
+1024,Daniela Alvarado,Pasto,Backend,Semi-Senior,3,Node.js|FastAPI|Python,4714020,Sí,2024-10-09
+1025,Ana Rodríguez,Pasto,Full Stack,Lead,11,Python|Docker|SQL,11549933,Sí,2024-02-03
+1026,Santiago Torres,Santa Marta,Data Science,Junior,1,Scikit-learn|Python|SQL|Pandas,3797145,No,2024-09-12
+1027,Carolina Ríos,Cali,DevOps,Semi-Senior,3,Jenkins|Kubernetes|Terraform,6921938,Sí,2024-03-28
+1028,Paula Alvarado,Pasto,Full Stack,Senior,6,SQL|React,10614559,Sí,2024-06-07
+1029,Luisa Torres,Cúcuta,Backend,Lead,14,Node.js|Spring Boot,13382950,Sí,2024-12-11
+1030,David Vargas,Montería,Cloud,Semi-Senior,3,AWS|Terraform|Docker|Azure,5173514,Sí,2024-04-25
+1031,Miguel López,Ibagué,QA,Semi-Senior,3,Pytest|JMeter|Postman|Selenium,5215073,Sí,2024-05-02
+1032,María Ríos,Manizales,DevOps,Semi-Senior,3,Jenkins|Docker|AWS|Linux,4593142,Sí,2024-12-30
+1033,Alejandro Ruiz,Pereira,Cloud,Lead,8,Azure|Kubernetes|AWS|GCP,13397340,Sí,2024-04-25
+1034,Santiago Vega,Popayán,BI & Analytics,Junior,2,Python|SQL|DAX,3800150,Sí,2024-01-06
+1035,Javier Pérez,Popayán,DevOps,Junior,0,Terraform|Kubernetes,3938453,No,2024-06-19
+1036,Mateo Mendoza,Pasto,Diseño UX/UI,Lead,9,HTML|Figma|Sketch|Prototyping,17431333,Sí,2024-02-09
+1037,Daniel Suárez,Popayán,Backend,Junior,2,Java|SQL,3001068,Sí,2024-07-27
+1038,María Pérez,Montería,Diseño UX/UI,Semi-Senior,3,Adobe XD|Prototyping|CSS,4386818,Sí,2024-12-22
+1039,Miguel Molina,Manizales,Diseño UX/UI,Senior,10,Prototyping|Figma|Adobe XD,10595940,Sí,2024-09-22
+1040,Ana López,Pasto,Backend,Semi-Senior,2,Django|Java,5668621,Sí,2024-07-16
+1041,Laura Guerrero,Pasto,Ciberseguridad,Junior,1,Kali|OWASP,2109161,Sí,2024-08-11
+1042,Gabriela López,Manizales,Ciberseguridad,Lead,11,Kali|OWASP|Python|Burp Suite,16658972,No,2024-04-09
+1043,Sara Flores,Barranquilla,DevOps,Lead,8,Kubernetes|Jenkins,13787740,Sí,2024-11-06
+1044,Mariana Rodríguez,Bucaramanga,Cloud,Senior,7,Azure|AWS|Terraform|Kubernetes,11804888,No,2024-11-15
+1045,Gabriela Navarro,Villavicencio,BI & Analytics,Senior,5,Excel|Tableau,9082059,Sí,2024-10-16
+1046,Andrés Flores,Cúcuta,Data Science,Senior,6,R|TensorFlow,10606049,Sí,2024-07-27
+1047,Alejandro Reyes,Bucaramanga,Data Science,Lead,9,Pandas|Python|TensorFlow,14711542,Sí,2024-09-23
+1048,Alejandro Ramírez,Pasto,QA,Senior,9,Cypress|Selenium|Pytest|JMeter,7988222,No,2024-06-23
+1049,Valentina Romero,Tunja,Frontend,Lead,10,HTML|Vue.js|JavaScript,12891699,No,2024-11-18
+1050,Camila Ríos,Ibagué,DevOps,Junior,2,Linux|Kubernetes|Terraform|Jenkins,3198537,Sí,2024-05-16
+1051,Daniela Romero,Manizales,Frontend,Semi-Senior,4,JavaScript|HTML|React|TypeScript,4027318,No,2024-07-18
+1052,Camila Rodríguez,Medellín,Backend,Lead,9,Java|Django|Node.js|Python,14427611,Sí,2024-11-09
+1053,Natalia Torres,Bucaramanga,Backend,Senior,10,SQL|Spring Boot,11377240,No,2024-11-24
+1054,Nicolás Mendoza,Neiva,Frontend,Junior,2,JavaScript|TypeScript|CSS,3255849,Sí,2024-08-17
+1055,Carolina González,Armenia,Diseño UX/UI,Lead,10,Figma|CSS|Prototyping,17741249,No,2024-01-25
+1056,Sebastián Alvarado,Pereira,Diseño UX/UI,Junior,1,Sketch|Prototyping,2951826,Sí,2024-06-09
+1057,David Reyes,Bucaramanga,Frontend,Semi-Senior,5,JavaScript|TypeScript|HTML|CSS,4426378,Sí,2024-01-01
+1058,Daniela López,Villavicencio,DevOps,Lead,15,Terraform|Linux|Jenkins,13753812,Sí,2024-12-07
+1059,Juan Flores,Cúcuta,Mobile,Senior,10,Kotlin|Flutter|React Native|Swift,7792859,Sí,2024-05-25
+1060,Santiago Ramírez,Neiva,Ciberseguridad,Semi-Senior,4,Wireshark|Python|Linux,6095718,Sí,2024-02-08
+1061,Valentina Ramos,Tunja,Frontend,Junior,1,CSS|TypeScript|React,2713320,No,2024-04-28
+1062,Diego Ramos,Neiva,Cloud,Semi-Senior,3,AWS|GCP|Azure,4096127,No,2024-07-25
+1063,Cristian Ríos,Cartagena,Backend,Lead,15,SQL|Django,16413393,Sí,2024-07-11
+1064,Juan González,Villavicencio,Backend,Semi-Senior,3,FastAPI|Java|Python,6766374,Sí,2024-10-03
+1065,Isabella Ríos,Ibagué,Backend,Senior,10,FastAPI|Java|Python|Spring Boot,10831293,Sí,2024-10-12
+1066,Gabriela Romero,Ibagué,Full Stack,Senior,9,JavaScript|React|Python|Docker,8927694,No,2024-11-02
+1067,Ana Reyes,Cúcuta,Mobile,Senior,7,Dart|Flutter|Kotlin|React Native,11577599,No,2024-01-19
+1068,Ana Mendoza,Tunja,Ciberseguridad,Junior,1,Burp Suite|OWASP|Linux,3612934,No,2024-05-20
+1069,Daniela Ortiz,Montería,Backend,Junior,2,Django|Java|Spring Boot,3060751,Sí,2024-06-12
+1070,Paula Alvarado,Bucaramanga,DevOps,Lead,13,Terraform|Docker|AWS|Jenkins,13092719,Sí,2024-12-22
+1071,Juliana Vega,Barranquilla,Data Science,Senior,10,Pandas|Scikit-learn|Python|TensorFlow,11544696,Sí,2024-07-10
+1072,Juliana Torres,Manizales,Frontend,Lead,10,CSS|Vue.js|React,16202205,Sí,2024-07-19
+1073,Mariana Molina,Ibagué,DevOps,Semi-Senior,2,Jenkins|Docker,6235732,No,2024-04-01
+1074,Javier Vargas,Manizales,BI & Analytics,Semi-Senior,3,Power BI|Tableau|Excel|SQL,6115947,No,2024-07-08
+1075,David García,Armenia,Full Stack,Lead,13,Python|Node.js,16919443,Sí,2024-04-24
+1076,Valentina Sánchez,Popayán,Mobile,Junior,2,React Native|Swift|Flutter|Kotlin,3746979,Sí,2024-05-17
+1077,Carlos Rodríguez,Ibagué,Backend,Senior,7,Node.js|SQL|Python,8696991,Sí,2024-03-29
+1078,David Suárez,Santa Marta,DevOps,Lead,14,Jenkins|Docker|Terraform,12377992,Sí,2024-01-19
+1079,Luisa Castro,Bogotá,Frontend,Lead,15,JavaScript|CSS|React|TypeScript,11971406,Sí,2024-07-24
+1080,Sebastián Vega,Neiva,Frontend,Senior,8,CSS|HTML|TypeScript,9344935,Sí,2024-03-11
+1081,Mateo Reyes,Cúcuta,QA,Senior,9,Cypress|JMeter|Pytest|Postman,8081265,Sí,2024-02-12
+1082,Carlos Reyes,Pasto,BI & Analytics,Senior,5,Power BI|Tableau,11918503,Sí,2024-02-07
+1083,Felipe González,Armenia,Full Stack,Junior,1,Node.js|Docker,2070861,No,2024-10-11
+1084,Miguel Pérez,Cartagena,Full Stack,Junior,1,Python|Docker|SQL,3047704,No,2024-11-22
+1085,Carlos Ruiz,Bucaramanga,Diseño UX/UI,Senior,6,Adobe XD|CSS,9415191,Sí,2024-09-26
+1086,María Navarro,Cartagena,Frontend,Junior,2,React|CSS,3842692,Sí,2024-11-15
+1087,Camila Rodríguez,Pasto,BI & Analytics,Junior,0,Power BI|DAX|Python,2050804,No,2024-07-25
+1088,Paula Reyes,Tunja,Backend,Lead,15,Node.js|Spring Boot|FastAPI,11138054,No,2024-03-20
+1089,Diego Alvarado,Barranquilla,Data Science,Senior,9,TensorFlow|Scikit-learn|R,11608483,Sí,2024-08-13
+1090,Andrés Mendoza,Bucaramanga,Ciberseguridad,Semi-Senior,5,Burp Suite|Linux,4122752,Sí,2024-03-20
+1091,Gabriela Alvarado,Cúcuta,Machine Learning,Semi-Senior,5,Scikit-learn|PyTorch|Python|MLflow,6320022,Sí,2024-03-26
+1092,Sara Mendoza,Neiva,QA,Semi-Senior,3,JMeter|Selenium|Pytest,6068218,No,2024-05-28
+1093,Felipe García,Neiva,Machine Learning,Senior,9,SQL|Python|TensorFlow|Scikit-learn,11790257,No,2024-02-05
+1094,Sebastián Rodríguez,Cartagena,QA,Semi-Senior,5,Selenium|Pytest|JMeter|Postman,6341731,Sí,2024-03-17
+1095,Valentina Navarro,Santa Marta,Full Stack,Junior,0,React|Docker|JavaScript|SQL,3595925,No,2024-09-22
+1096,Paula Medina,Tunja,Machine Learning,Lead,13,MLflow|PyTorch|TensorFlow|Python,11694458,Sí,2024-05-22
+1097,Daniel Ramírez,Pereira,BI & Analytics,Junior,2,Tableau|Power BI,3828730,Sí,2024-11-25
+1098,Gabriela Pérez,Popayán,Diseño UX/UI,Senior,5,HTML|Adobe XD,8646957,Sí,2024-10-22
+1099,Nicolás Herrera,Cartagena,Backend,Semi-Senior,5,SQL|Python,4636642,Sí,2024-03-01
+1100,Diego Guerrero,Cali,Diseño UX/UI,Lead,10,Figma|CSS,13378061,Sí,2024-03-07
+1101,Javier Pérez,Pereira,Data Science,Junior,2,SQL|Scikit-learn|Pandas|Python,3940878,Sí,2024-10-19
+1102,María Jiménez,Cartagena,BI & Analytics,Senior,10,DAX|Tableau|SQL,8477545,Sí,2024-05-25
+1103,Valentina Navarro,Cúcuta,Cloud,Lead,8,Kubernetes|GCP|Azure|AWS,17046358,Sí,2024-12-24
+1104,Diego Castro,Bogotá,QA,Lead,13,Cypress|JMeter,13806199,Sí,2024-03-13
+1105,Juliana Sánchez,Bogotá,BI & Analytics,Senior,9,Tableau|Power BI|Excel,8310053,Sí,2024-09-03
+1106,Javier Rodríguez,Medellín,BI & Analytics,Junior,1,Python|Tableau|SQL|DAX,2929278,Sí,2024-07-30
+1107,Felipe González,Cúcuta,Frontend,Senior,7,React|JavaScript|HTML,7491973,Sí,2024-11-11
+1108,David Ríos,Neiva,BI & Analytics,Lead,14,Excel|SQL|Tableau,13120308,Sí,2024-08-05
+1109,Mariana Pérez,Medellín,DevOps,Senior,6,AWS|Docker|Terraform,7994130,Sí,2024-01-20
+1110,María García,Bucaramanga,Diseño UX/UI,Lead,15,Adobe XD|Figma|HTML,14566528,Sí,2024-09-21
+1111,Andrés Navarro,Cali,Diseño UX/UI,Senior,6,Figma|Adobe XD|Prototyping|Sketch,7356101,No,2024-02-22
+1112,Felipe Rodríguez,Cúcuta,Ciberseguridad,Semi-Senior,2,Wireshark|Kali|Burp Suite,5680310,Sí,2024-01-13
+1113,Valentina Alvarado,Bogotá,BI & Analytics,Semi-Senior,4,Python|Excel|Tableau|Power BI,4505398,Sí,2024-04-11
+1114,Cristian Navarro,Pasto,DevOps,Lead,14,AWS|Kubernetes|Docker,12017861,Sí,2024-12-24
+1115,Diego Herrera,Bogotá,Data Science,Junior,0,Python|SQL|Scikit-learn,3583551,No,2024-10-28
+1116,Mateo Guerrero,Santa Marta,Ciberseguridad,Junior,1,Linux|Wireshark|Python|Kali,3204119,Sí,2024-06-11
+1117,Carlos Pérez,Popayán,Data Science,Senior,9,Scikit-learn|Pandas|TensorFlow|SQL,8876369,Sí,2024-04-11
+1118,Isabella Alvarado,Barranquilla,Ciberseguridad,Junior,1,Burp Suite|OWASP,2311300,Sí,2024-09-05
+1119,Mateo Alvarado,Barranquilla,Mobile,Semi-Senior,3,Swift|Kotlin,5870944,Sí,2024-03-25
+1120,Carolina Jiménez,Cali,Full Stack,Semi-Senior,3,SQL|Python|React|JavaScript,4230361,Sí,2024-11-18
+1121,Carlos Guerrero,Barranquilla,Full Stack,Senior,6,Docker|Python|SQL|JavaScript,7188015,Sí,2024-12-04
+1122,Paula García,Neiva,Backend,Lead,10,Spring Boot|Python,14304575,Sí,2024-10-19
+1123,Isabella Medina,Armenia,QA,Lead,8,Cypress|Selenium|Pytest,16952567,Sí,2024-04-06
+1124,Daniela Alvarado,Santa Marta,Backend,Senior,5,Django|SQL,10552361,Sí,2024-08-25
+1125,Miguel Ortiz,Cali,BI & Analytics,Lead,8,Tableau|Power BI|SQL|Excel,10943659,Sí,2024-08-06
+1126,Santiago Herrera,Barranquilla,Cloud,Semi-Senior,5,Kubernetes|Terraform|GCP,5930384,No,2024-04-03
+1127,Daniel Mendoza,Montería,Data Science,Lead,14,Scikit-learn|R|SQL,14292455,Sí,2024-03-18
+1128,Camila Ruiz,Manizales,Data Science,Semi-Senior,4,R|SQL,6643737,Sí,2024-01-01
+1129,Paula Alvarado,Villavicencio,DevOps,Senior,9,Docker|AWS|Kubernetes|Terraform,11422552,Sí,2024-08-05
+1130,Valentina Suárez,Bucaramanga,Backend,Junior,1,Spring Boot|FastAPI|Java|Node.js,3721234,Sí,2024-04-19
+1131,Mateo Cruz,Villavicencio,BI & Analytics,Junior,1,Tableau|Excel|SQL,2697199,Sí,2024-07-03
+1132,Javier Torres,Cúcuta,Mobile,Lead,9,Kotlin|Flutter|React Native,13492939,No,2024-02-02
+1133,Mateo Ortiz,Tunja,Diseño UX/UI,Lead,10,Adobe XD|CSS|Figma|Prototyping,13873230,Sí,2024-02-19
+1134,Juliana Martínez,Tunja,Ciberseguridad,Senior,6,Linux|Burp Suite|Wireshark|OWASP,11516458,Sí,2024-12-23
+1135,Gabriela Moreno,Santa Marta,Diseño UX/UI,Lead,12,Figma|Adobe XD|CSS|HTML,10928165,Sí,2024-11-10
+1136,Laura Cruz,Cali,Machine Learning,Semi-Senior,5,Scikit-learn|Python|PyTorch|MLflow,4329698,Sí,2024-04-26
+1137,Mariana Suárez,Popayán,Cloud,Lead,11,Kubernetes|Azure|AWS,13123820,Sí,2024-07-13
+1138,Mateo García,Cúcuta,Data Science,Junior,2,Scikit-learn|SQL|R|Python,3930446,Sí,2024-10-12
+1139,Alejandro Jiménez,Ibagué,BI & Analytics,Lead,14,Power BI|SQL|Tableau,16344021,No,2024-06-23
+1140,Juan Vega,Manizales,Data Science,Lead,11,Scikit-learn|Python|Pandas|TensorFlow,16701910,No,2024-07-14
+1141,Carlos González,Ibagué,Full Stack,Semi-Senior,4,JavaScript|SQL,6551144,Sí,2024-01-05
+1142,Ana Ríos,Neiva,Full Stack,Lead,10,Node.js|React,12605638,No,2024-03-09
+1143,Luisa Vargas,Cali,Machine Learning,Junior,1,PyTorch|Python,2781208,No,2024-01-31
+1144,Valentina Ortiz,Pereira,Cloud,Junior,0,Kubernetes|Terraform|Azure,3834208,Sí,2024-08-15
+1145,Javier Navarro,Cartagena,Data Science,Senior,10,R|Pandas|Python,8380965,Sí,2024-09-27
+1146,Juliana Ramírez,Tunja,Diseño UX/UI,Lead,13,CSS|HTML|Figma|Sketch,13091166,Sí,2024-09-20
+1147,Sebastián Flores,Medellín,Frontend,Junior,2,Vue.js|HTML|JavaScript,3417298,Sí,2024-05-26
+1148,Natalia Ruiz,Cúcuta,QA,Semi-Senior,2,Pytest|JMeter,6253460,Sí,2024-08-18
+1149,Isabella Vega,Tunja,BI & Analytics,Semi-Senior,4,Power BI|SQL|DAX,5591767,Sí,2024-08-31
+1150,David Reyes,Villavicencio,Data Science,Junior,0,SQL|R|Python,3276915,Sí,2024-05-16
+1151,Alejandro Vega,Villavicencio,DevOps,Senior,5,Linux|Docker|Terraform|Jenkins,11237559,Sí,2024-08-05
+1152,David Pérez,Pasto,Mobile,Senior,7,Flutter|Swift|Kotlin,10985523,Sí,2024-08-18
+1153,Ana Navarro,Popayán,Cloud,Junior,0,Docker|Terraform,3074774,No,2024-11-14
+1154,Gabriela Alvarado,Barranquilla,BI & Analytics,Semi-Senior,2,Excel|Power BI|Python,5884979,No,2024-04-29
+1155,Santiago Navarro,Manizales,Backend,Lead,12,Java|Django,14374352,Sí,2024-05-01
+1156,Gabriela Navarro,Bucaramanga,Backend,Semi-Senior,5,Django|Java,6158740,Sí,2024-03-26
+1157,Laura López,Popayán,Data Science,Junior,0,Python|TensorFlow,2809374,Sí,2024-01-24
+1158,Javier García,Villavicencio,Cloud,Lead,8,AWS|GCP|Azure|Terraform,10517676,Sí,2024-10-10
+1159,Daniel Ríos,Cartagena,QA,Semi-Senior,2,Postman|JMeter|Cypress,5320626,Sí,2024-12-12
+1160,Carlos López,Santa Marta,Data Science,Junior,0,Python|SQL,3978575,No,2024-02-08
+1161,Sara García,Bogotá,Diseño UX/UI,Junior,1,Adobe XD|Figma|CSS,3897895,Sí,2024-06-02
+1162,Diego Martínez,Villavicencio,Diseño UX/UI,Junior,2,CSS|Adobe XD|Figma,3287899,No,2024-01-22
+1163,Paula Suárez,Tunja,Data Science,Senior,8,R|SQL|TensorFlow|Pandas,11736222,No,2024-03-22
+1164,Daniela Suárez,Popayán,Ciberseguridad,Junior,2,Wireshark|OWASP|Python|Linux,3430526,Sí,2024-07-05
+1165,Valentina Castro,Manizales,Machine Learning,Lead,9,Scikit-learn|SQL|Python|PyTorch,11113177,No,2024-12-25
+1166,Luisa Castro,Cali,Ciberseguridad,Semi-Senior,2,Python|Wireshark|Kali|OWASP,5933513,Sí,2024-03-01
+1167,Isabella Herrera,Cali,Ciberseguridad,Senior,10,Kali|Burp Suite|Linux,11625695,Sí,2024-02-17
+1168,Alejandro Reyes,Armenia,Machine Learning,Lead,10,TensorFlow|MLflow,10624516,No,2024-01-28
+1169,Carlos Reyes,Ibagué,Mobile,Senior,5,Kotlin|Dart|Swift|Flutter,8060479,Sí,2024-03-05
+1170,Diego Molina,Ibagué,QA,Lead,8,JMeter|Pytest,13853375,Sí,2024-04-18
+1171,Mariana González,Armenia,Mobile,Lead,13,Kotlin|Flutter|React Native|Dart,11533170,Sí,2024-12-18
+1172,Juliana Reyes,Armenia,Ciberseguridad,Semi-Senior,3,Wireshark|Kali|Python,4247117,Sí,2024-02-16
+1173,Andrés Alvarado,Cali,QA,Junior,2,Selenium|Postman|Cypress|Pytest,3567687,No,2024-01-28
+1174,Mariana Alvarado,Bogotá,Frontend,Semi-Senior,2,CSS|Vue.js|JavaScript,5075527,Sí,2024-10-14
+1175,Ana Vargas,Montería,Diseño UX/UI,Senior,9,CSS|Prototyping|Sketch,11992714,Sí,2024-08-29
+1176,Luisa López,Cali,BI & Analytics,Junior,2,Excel|SQL|Power BI,2074494,Sí,2024-06-29
+1177,Luisa Romero,Santa Marta,Full Stack,Lead,15,React|Node.js|SQL,17309473,Sí,2024-08-03
+1178,Paula Rodríguez,Santa Marta,BI & Analytics,Senior,5,Power BI|Excel|DAX,11546139,Sí,2024-10-07
+1179,Daniel Pérez,Neiva,QA,Semi-Senior,4,Selenium|Postman|Pytest|Cypress,5863669,Sí,2024-07-20
+1180,David Ruiz,Bucaramanga,Machine Learning,Senior,7,TensorFlow|MLflow,11983392,Sí,2024-06-15
+1181,Andrés Rodríguez,Barranquilla,Ciberseguridad,Senior,10,Python|OWASP,10253943,Sí,2024-03-13
+1182,Sara Navarro,Pasto,Mobile,Lead,10,Flutter|React Native,16858296,Sí,2024-12-23
+1183,Camila Guerrero,Bogotá,Frontend,Junior,0,CSS|Vue.js|JavaScript,2331158,Sí,2024-02-26
+1184,Sara Sánchez,Medellín,Diseño UX/UI,Semi-Senior,4,HTML|Adobe XD,6064909,No,2024-12-26
+1185,María Molina,Bogotá,Frontend,Lead,13,JavaScript|React|HTML|TypeScript,12550660,Sí,2024-04-14
+1186,Ana Vega,Medellín,Machine Learning,Junior,0,TensorFlow|Scikit-learn,3062170,Sí,2024-10-04
+1187,Daniel Mendoza,Ibagué,Machine Learning,Junior,0,PyTorch|SQL|TensorFlow|Scikit-learn,2307249,Sí,2024-01-18
+1188,Santiago Jiménez,Neiva,Ciberseguridad,Junior,2,Python|OWASP|Burp Suite|Kali,3001391,Sí,2024-09-02
+1189,Paula Torres,Bogotá,Diseño UX/UI,Semi-Senior,3,Adobe XD|Prototyping|CSS|Figma,5646811,No,2024-03-21
+1190,Sara Vargas,Santa Marta,Data Science,Semi-Senior,4,R|Pandas|SQL,5640656,Sí,2024-08-23
+1191,Juan Torres,Ibagué,Frontend,Junior,2,React|Vue.js,3795186,Sí,2024-10-19
+1192,Santiago Mendoza,Barranquilla,BI & Analytics,Junior,1,Tableau|Power BI|SQL|Python,2185359,Sí,2024-03-10
+1193,Alejandro Ríos,Bucaramanga,Data Science,Senior,8,Scikit-learn|TensorFlow|Pandas|R,11977960,No,2024-06-08
+1194,Sebastián Moreno,Neiva,Data Science,Semi-Senior,5,TensorFlow|R,5483622,Sí,2024-05-10
+1195,Isabella Ruiz,Bucaramanga,Data Science,Semi-Senior,5,R|TensorFlow|Python,5809628,Sí,2024-02-04
+1196,David Ríos,Barranquilla,Cloud,Junior,2,GCP|Docker|AWS|Azure,3620684,Sí,2024-10-01
+1197,David Vargas,Tunja,Cloud,Junior,2,Terraform|Azure|AWS|Docker,3083732,Sí,2024-05-01
+1198,Mateo Romero,Santa Marta,Diseño UX/UI,Semi-Senior,5,CSS|HTML|Sketch|Adobe XD,5304393,Sí,2024-09-20
+1199,Laura Pérez,Cartagena,Diseño UX/UI,Lead,10,Sketch|CSS|Adobe XD|HTML,15557329,Sí,2024-01-31
+1200,Juliana Martínez,Pasto,Mobile,Senior,10,Swift|Flutter|React Native|Dart,8646541,Sí,2024-12-10
