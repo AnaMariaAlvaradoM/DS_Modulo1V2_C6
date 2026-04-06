@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clase 3 · SQL para la Exploración de Datos</title>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { width: 100%; height: 100%; overflow: hidden; background: #0a0a12; font-family: 'Sora', sans-serif; }
+
+:root {
+  --bg:    #0a0a12;
+  --bg2:   #12121e;
+  --card:  #1a1a2e;
+  --gold:  #f5c842;
+  --blue:  #5ba4f5;
+  --green: #4ecb8d;
+  --red:   #f56b6b;
+  --white: #f0f0f8;
+  --dim:   #9090b0;
+  --navy:  #1e3a6e;
+  --teal:  #1a4a3a;
+}
+
+.deck { width: 100vw; height: 100vh; position: relative; }
+.slide { position: absolute; inset: 0; opacity: 0; pointer-events: none; transition: opacity .5s; display: flex; flex-direction: column; }
+.slide.active { opacity: 1; pointer-events: all; }
+
+/* ══════════════════════════════════════════
+   SLIDE 1 — PORTADA
+══════════════════════════════════════════ */
+.s1 {
+  background: var(--bg);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+.s1 .left {
+  padding: 0 6vw;
+  display: flex; flex-direction: column; gap: 24px;
+  animation: fadeUp .8s ease both;
+}
+.s1 .eyebrow {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px; letter-spacing: .18em;
+  color: var(--gold); text-transform: uppercase;
+}
+.s1 h1 {
+  font-size: clamp(38px, 5.5vw, 72px);
+  font-weight: 700; line-height: 1.05; color: var(--white);
+}
+.s1 h1 span { color: var(--gold); font-style: italic; font-weight: 300; }
+.s1 .sub {
+  font-size: clamp(16px, 1.8vw, 20px);
+  color: var(--dim); line-height: 1.6; max-width: 440px;
+}
+.s1 .tags { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 8px; }
+.s1 .tags span {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px; padding: 6px 16px;
+  border: 1px solid rgba(245,200,66,.4);
+  border-radius: 100px; color: var(--gold);
+}
+.s1 .right {
+  display: flex; align-items: center; justify-content: center;
+  padding: 4vw;
+}
+.s1 .right svg { width: 100%; max-width: 400px; }
+
+/* ══════════════════════════════════════════
+   SLIDE 2 — QUÉ ES SQL + POR QUÉ
+══════════════════════════════════════════ */
+.s2 {
+  background: var(--bg);
+  display: grid; grid-template-columns: 1fr 1fr;
+}
+.s2 .left {
+  background: var(--navy);
+  padding: 5vw;
+  display: flex; flex-direction: column; justify-content: center; gap: 20px;
+  position: relative; overflow: hidden;
+}
+.s2 .left::after {
+  content: 'SQL';
+  position: absolute; bottom: -4%; right: -6%;
+  font-size: 24vw; font-weight: 700;
+  color: rgba(255,255,255,.04); pointer-events: none;
+  font-family: 'JetBrains Mono', monospace;
+}
+.s2 .left .badge {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px; letter-spacing: .2em;
+  color: var(--gold); text-transform: uppercase;
+}
+.s2 .left h2 { font-size: clamp(28px, 4vw, 52px); color: #fff; line-height: 1.1; }
+.s2 .left p { font-size: clamp(15px, 1.6vw, 18px); color: #b8ccee; line-height: 1.7; }
+.s2 .left .quote-box {
+  background: rgba(255,255,255,.08);
+  border-left: 4px solid var(--gold);
+  padding: 16px 20px; border-radius: 0 10px 10px 0;
+  font-size: clamp(14px, 1.4vw, 17px);
+  color: #e0ecff; font-style: italic; line-height: 1.6;
+}
+.s2 .right {
+  padding: 5vw;
+  display: flex; flex-direction: column; justify-content: center; gap: 24px;
+}
+.s2 .right h3 { font-size: clamp(18px, 2vw, 26px); color: var(--white); margin-bottom: 4px; }
+.reason { display: flex; align-items: flex-start; gap: 18px; }
+.reason .num {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: clamp(28px, 4vw, 48px);
+  color: var(--gold); line-height: 1; flex-shrink: 0; width: 56px;
+}
+.reason .txt { display: flex; flex-direction: column; gap: 4px; }
+.reason .txt strong {
+  font-size: clamp(15px, 1.6vw, 18px); font-weight: 600; color: var(--white);
+}
+.reason .txt span { font-size: clamp(13px, 1.4vw, 16px); color: var(--dim); line-height: 1.5; }
+
+/* ══════════════════════════════════════════
+   SLIDE 3 — BASE DE DATOS RELACIONAL
+══════════════════════════════════════════ */
+.s3 { background: var(--bg); padding: 4vw 5vw; align-items: center; justify-content: center; }
+.s3 .slide-title {
+  font-size: clamp(28px, 4vw, 52px); font-weight: 700; color: var(--white);
+  text-align: center; margin-bottom: 12px;
+}
+.s3 .slide-title span { color: var(--gold); }
+.s3 .slide-sub { font-size: 17px; color: var(--dim); text-align: center; margin-bottom: 3rem; }
+.db-diagram {
+  display: flex; align-items: center; justify-content: center;
+  gap: 0; width: 100%; max-width: 900px; margin: 0 auto;
+}
+.db-table {
+  background: var(--card);
+  border: 2px solid rgba(255,255,255,.14);
+  border-radius: 14px; overflow: hidden;
+  flex: 1; max-width: 260px;
+}
+.db-table.highlight { border-color: var(--gold); }
+.db-table .tbl-header {
+  padding: 12px 18px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 15px; font-weight: 600; color: var(--white);
+  display: flex; align-items: center; justify-content: space-between;
+}
+.db-table.highlight .tbl-header { background: rgba(245,200,66,.15); }
+.db-table:not(.highlight) .tbl-header { background: rgba(255,255,255,.06); }
+.tbl-count {
+  font-size: 12px; padding: 3px 10px;
+  border-radius: 100px; font-weight: 400;
+  background: var(--gold); color: #111;
+}
+.db-table .tbl-col {
+  padding: 8px 18px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px; color: var(--dim);
+  border-top: 1px solid rgba(255,255,255,.06);
+  display: flex; align-items: center; gap: 8px;
+}
+.db-table .tbl-col.pk { color: var(--gold); }
+.db-table .tbl-col.fk { color: var(--blue); }
+.key-badge {
+  font-size: 10px; padding: 1px 6px;
+  border-radius: 4px; font-weight: 600;
+}
+.key-badge.pk { background: rgba(245,200,66,.2); color: var(--gold); }
+.key-badge.fk { background: rgba(91,164,245,.2); color: var(--blue); }
+.db-arrow {
+  flex: 0 0 60px; display: flex; flex-direction: column;
+  align-items: center; justify-content: center; gap: 6px;
+}
+.db-arrow .arr-line {
+  width: 100%; height: 2px;
+  background: linear-gradient(90deg, var(--blue), var(--gold));
+}
+.db-arrow .arr-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px; color: var(--dim); text-align: center;
+  white-space: nowrap;
+}
+.s3 .analogy {
+  margin-top: 2rem;
+  background: rgba(245,200,66,.08);
+  border: 1px solid rgba(245,200,66,.25);
+  border-radius: 12px; padding: 16px 24px;
+  text-align: center; max-width: 900px; margin-left: auto; margin-right: auto;
+}
+.s3 .analogy p { font-size: 16px; color: #e0d090; line-height: 1.6; }
+
+/* ══════════════════════════════════════════
+   SLIDE 4 — EL ENTORNO (PIPELINE)
+══════════════════════════════════════════ */
+.s4 { background: var(--bg); padding: 4vw 5vw; }
+.s4 .top {
+  display: flex; align-items: center; gap: 16px; margin-bottom: 2.5rem;
+}
+.s4 .top h2 { font-size: clamp(28px, 4.5vw, 54px); color: var(--white); }
+.s4 .top .chip {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px; background: var(--green); color: #0a1a12;
+  padding: 6px 16px; border-radius: 100px; font-weight: 600;
+}
+.pipeline {
+  display: flex; align-items: stretch; gap: 0; width: 100%;
+  flex: 1; max-height: calc(100vh - 220px);
+}
+.pipe-step {
+  flex: 1; border-radius: 14px; padding: 20px 16px;
+  background: var(--card); border: 2px solid rgba(255,255,255,.1);
+  display: flex; flex-direction: column; gap: 8px;
+}
+.pipe-step.hl { border-color: var(--gold); background: rgba(245,200,66,.08); }
+.pipe-step.hl2 { border-color: var(--green); background: rgba(78,203,141,.06); }
+.pipe-step .icon { font-size: 28px; }
+.pipe-step .lbl {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px; color: var(--gold); text-transform: uppercase; letter-spacing: .15em;
+}
+.pipe-step h4 { font-size: 18px; font-weight: 600; color: var(--white); }
+.pipe-step p { font-size: 14px; color: var(--dim); line-height: 1.5; }
+.pipe-arr {
+  width: 36px; flex-shrink: 0;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 22px; color: var(--gold);
+}
+.s4 .note {
+  margin-top: 1.5rem; display: flex; align-items: center; gap: 12px;
+  font-size: 15px; color: var(--dim);
+}
+.s4 .note::before { content: ''; width: 32px; height: 2px; background: var(--gold); flex-shrink: 0; }
+
+/* ══════════════════════════════════════════
+   SLIDE 5 — FILTROS WHERE
+══════════════════════════════════════════ */
+.s5 { background: var(--bg); padding: 4vw 5vw; }
+.s5 h2 { font-size: clamp(28px, 4.5vw, 56px); color: var(--white); margin-bottom: 8px; }
+.s5 h2 em { font-style: italic; color: var(--gold); }
+.s5 .order-bar {
+  background: var(--card); border: 1px solid rgba(255,255,255,.1);
+  border-radius: 10px; padding: 14px 20px;
+  display: flex; align-items: center; gap: 8px; margin-bottom: 1.8rem;
+  flex-wrap: wrap;
+}
+.s5 .order-bar .ow {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 14px; font-weight: 600; color: var(--blue);
+}
+.s5 .order-bar .osep { font-size: 14px; color: var(--dim); }
+.s5 .order-bar .ow.active { color: var(--gold); font-size: 16px; }
+.s5 .order-bar .label { font-size: 13px; color: var(--dim); margin-left: auto; }
+.ops { display: grid; grid-template-columns: repeat(2,1fr); gap: 14px; }
+.op {
+  background: var(--card); border: 1px solid rgba(255,255,255,.1);
+  border-radius: 12px; padding: 18px 20px;
+}
+.op:hover { border-color: var(--gold); }
+.op .op-kw {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 20px; font-weight: 600; color: var(--gold); margin-bottom: 8px;
+}
+.op .op-txt { font-size: 15px; color: #c0c0d8; line-height: 1.5; margin-bottom: 10px; }
+.op .op-ex {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px; color: var(--blue);
+  background: rgba(91,164,245,.08);
+  padding: 8px 12px; border-radius: 7px; line-height: 1.6;
+}
+.op .op-ex .kw { color: var(--gold); }
+.s5 .warn {
+  margin-top: 1.4rem;
+  background: rgba(245,200,66,.1); border: 1px solid rgba(245,200,66,.3);
+  border-radius: 10px; padding: 14px 20px;
+  display: flex; align-items: center; gap: 14px;
+}
+.s5 .warn .ico { font-size: 22px; flex-shrink: 0; }
+.s5 .warn p { font-size: 15px; color: #f0e0a0; line-height: 1.5; }
+.s5 .warn strong { color: var(--gold); }
+
+/* ══════════════════════════════════════════
+   SLIDE 6 — AGREGACIONES
+══════════════════════════════════════════ */
+.s6 { background: var(--bg); display: grid; grid-template-columns: 5fr 7fr; }
+.s6 .left {
+  background: var(--teal); padding: 5vw;
+  display: flex; flex-direction: column; justify-content: center; gap: 18px;
+  position: relative; overflow: hidden;
+}
+.s6 .left::after {
+  content: 'AGG'; position: absolute; bottom: -5%; right: -10%;
+  font-size: 20vw; font-weight: 700; font-family: 'JetBrains Mono', monospace;
+  color: rgba(255,255,255,.04); pointer-events: none;
+}
+.s6 .left .badge { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: .2em; color: var(--green); text-transform: uppercase; }
+.s6 .left h2 { font-size: clamp(24px, 3.5vw, 46px); color: #fff; line-height: 1.1; }
+.s6 .left p { font-size: clamp(14px, 1.5vw, 17px); color: #a8dfc0; line-height: 1.7; }
+.s6 .right { padding: 4vw; display: flex; flex-direction: column; justify-content: center; gap: 14px; }
+.s6 .right h3 { font-size: clamp(18px, 2vw, 26px); color: var(--white); margin-bottom: 4px; }
+.func-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 10px; }
+.func-card {
+  background: var(--card); border-radius: 10px; padding: 14px 16px; text-align: center;
+  border: 1px solid rgba(255,255,255,.08);
+}
+.func-card .fn { font-family: 'JetBrains Mono', monospace; font-size: 18px; font-weight: 600; color: var(--gold); margin-bottom: 6px; }
+.func-card .fd { font-size: 13px; color: var(--dim); line-height: 1.4; }
+.gb-box {
+  background: rgba(91,164,245,.08); border: 1px solid rgba(91,164,245,.25);
+  border-radius: 10px; padding: 14px 18px;
+}
+.gb-box h4 { font-family: 'JetBrains Mono', monospace; font-size: 17px; color: var(--blue); margin-bottom: 6px; }
+.gb-box p { font-size: 14px; color: #a0a8cc; line-height: 1.5; }
+.hv-row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.hv-card { border-radius: 8px; padding: 14px 16px; border: 1px solid; }
+.hv-card.wh { border-color: rgba(245,107,107,.4); background: rgba(245,107,107,.07); }
+.hv-card.hv { border-color: rgba(245,200,66,.4); background: rgba(245,200,66,.07); }
+.hv-card .hk { font-family: 'JetBrains Mono', monospace; font-size: 17px; font-weight: 600; margin-bottom: 6px; }
+.hv-card.wh .hk { color: var(--red); }
+.hv-card.hv .hk { color: var(--gold); }
+.hv-card p { font-size: 13px; color: #9090b0; line-height: 1.4; }
+
+/* ══════════════════════════════════════════
+   SLIDE 7 — JOINS
+══════════════════════════════════════════ */
+.s7 { background: var(--bg); padding: 4vw 5vw; }
+.s7 .top { margin-bottom: 1.6rem; }
+.s7 .top h2 { font-size: clamp(28px, 4.5vw, 56px); color: var(--white); line-height: 1.05; }
+.s7 .top h2 em { font-style: italic; color: var(--gold); }
+.s7 .top p { font-size: 16px; color: var(--dim); margin-top: 6px; }
+.join-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: start; }
+.venn { display: flex; align-items: center; justify-content: center; }
+.venn svg { width: 100%; max-width: 340px; }
+.join-cards { display: flex; flex-direction: column; gap: 12px; }
+.jcard {
+  background: var(--card); border: 1px solid rgba(255,255,255,.12);
+  border-radius: 12px; padding: 16px 20px;
+}
+.jcard.active { border-color: var(--gold); background: rgba(245,200,66,.07); }
+.jcard .jt { font-family: 'JetBrains Mono', monospace; font-size: 16px; font-weight: 600; color: var(--gold); margin-bottom: 6px; }
+.jcard p { font-size: 14px; color: #a0a0c8; line-height: 1.5; }
+.jcard .jex {
+  margin-top: 10px; font-family: 'JetBrains Mono', monospace;
+  font-size: 13px; color: var(--blue);
+  background: rgba(91,164,245,.08);
+  padding: 10px 14px; border-radius: 7px; line-height: 1.8;
+}
+.jex .kj { color: var(--gold); }
+
+/* ══════════════════════════════════════════
+   CONTROLES
+══════════════════════════════════════════ */
+.controls {
+  position: fixed; bottom: 1.5rem; right: 2rem;
+  display: flex; align-items: center; gap: 12px; z-index: 100;
+}
+.btn {
+  width: 44px; height: 44px; border-radius: 50%;
+  background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.2);
+  color: #fff; font-size: 18px; cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  transition: all .2s;
+}
+.btn:hover { background: rgba(245,200,66,.25); border-color: var(--gold); }
+.counter { font-family: 'JetBrains Mono', monospace; font-size: 14px; color: rgba(255,255,255,.5); }
+.progress { position: fixed; bottom: 0; left: 0; right: 0; height: 3px; background: rgba(255,255,255,.08); z-index: 100; }
+.pbar { height: 100%; background: var(--gold); transition: width .4s ease; }
+
+@keyframes fadeUp { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: none; } }
+</style>
+</head>
+<body>
+<div class="deck">
+
+<!-- ══ SLIDE 1: PORTADA ══ -->
+<div class="slide s1 active">
+  <div class="left">
+    <div class="eyebrow">Módulo 1 · Unidad 1 · Clase 3</div>
+    <h1>SQL para la<br><span>Exploración</span><br>de Datos</h1>
+    <p class="sub">El lenguaje que usan los profesionales para hacer preguntas a los datos antes de que lleguen al modelo de IA.</p>
+    <div class="tags">
+      <span>Data Discovery</span>
+      <span>SQLite en Python</span>
+      <span>DataJobs</span>
+      <span>3 horas</span>
+    </div>
+  </div>
+  <div class="right">
+    <svg viewBox="0 0 400 380" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="200" cy="190" r="170" stroke="rgba(245,200,66,.12)" stroke-width="1" fill="none"/>
+      <circle cx="200" cy="190" r="120" stroke="rgba(245,200,66,.09)" stroke-width="1" fill="none"/>
+      <circle cx="200" cy="190" r="70" stroke="rgba(245,200,66,.07)" stroke-width="1" fill="none"/>
+      <!-- tabla central -->
+      <rect x="130" y="130" width="140" height="120" rx="10" fill="rgba(245,200,66,.08)" stroke="rgba(245,200,66,.4)" stroke-width="1.5"/>
+      <line x1="130" y1="155" x2="270" y2="155" stroke="rgba(245,200,66,.4)" stroke-width="1"/>
+      <line x1="130" y1="175" x2="270" y2="175" stroke="rgba(255,255,255,.1)" stroke-width=".8"/>
+      <line x1="130" y1="195" x2="270" y2="195" stroke="rgba(255,255,255,.1)" stroke-width=".8"/>
+      <line x1="130" y1="215" x2="270" y2="215" stroke="rgba(255,255,255,.1)" stroke-width=".8"/>
+      <line x1="185" y1="130" x2="185" y2="250" stroke="rgba(255,255,255,.1)" stroke-width=".8"/>
+      <rect x="140" y="138" width="32" height="10" rx="3" fill="rgba(245,200,66,.5)"/>
+      <rect x="195" y="138" width="60" height="10" rx="3" fill="rgba(245,200,66,.5)"/>
+      <rect x="140" y="162" width="28" height="7" rx="2" fill="rgba(255,255,255,.2)"/>
+      <rect x="195" y="162" width="50" height="7" rx="2" fill="rgba(255,255,255,.2)"/>
+      <rect x="140" y="182" width="36" height="7" rx="2" fill="rgba(255,255,255,.15)"/>
+      <rect x="195" y="182" width="44" height="7" rx="2" fill="rgba(255,255,255,.15)"/>
+      <rect x="140" y="202" width="24" height="7" rx="2" fill="rgba(255,255,255,.12)"/>
+      <rect x="195" y="202" width="54" height="7" rx="2" fill="rgba(255,255,255,.12)"/>
+      <!-- texto SELECT -->
+      <text x="200" y="310" text-anchor="middle" font-family="JetBrains Mono" font-size="16" fill="rgba(245,200,66,.6)" font-weight="600">SELECT * FROM datos</text>
+    </svg>
+  </div>
+</div>
+
+<!-- ══ SLIDE 2: QUÉ ES SQL ══ -->
+<div class="slide s2">
+  <div class="left">
+    <div class="badge">Definición · ISO/IEC 9075</div>
+    <h2>¿Qué es SQL?</h2>
+    <p><strong style="color:#fff">Structured Query Language</strong> — el lenguaje estándar para gestionar y consultar bases de datos relacionales. Creado en IBM en los años 70 por Chamberlin y Boyce.</p>
+    <div class="quote-box">
+      SQL es el idioma que hablan las bases de datos. Así como le dicen "dame un café" a un barista, con SQL le dicen a la base de datos exactamente qué datos quieren — y ella los entrega.
+    </div>
+  </div>
+  <div class="right">
+    <h3>¿Por qué SQL y no solo Python?</h3>
+    <div class="reason">
+      <div class="num">01</div>
+      <div class="txt">
+        <strong>Los datos no siempre están en un CSV</strong>
+        <span>En empresas viven en bases de datos: PostgreSQL, MySQL, BigQuery. SQL es el único idioma para llegar a ellos.</span>
+      </div>
+    </div>
+    <div class="reason">
+      <div class="num">02</div>
+      <div class="txt">
+        <strong>Trabaja sin cargar todo a memoria</strong>
+        <span>Con 50 millones de filas, Pandas colapsa. SQL filtra en la fuente — solo llega lo que pediste.</span>
+      </div>
+    </div>
+    <div class="reason">
+      <div class="num">03</div>
+      <div class="txt">
+        <strong>Lenguaje universal del dato</strong>
+        <span>Data Analyst, Data Scientist, ML Engineer — todos escriben SQL todos los días. No es opcional.</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ SLIDE 3: MODELO DE DATOS DATAJOBS ══ -->
+<div class="slide s3">
+  <div class="slide-title">El caso <span>DataJobs</span></div>
+  <p class="slide-sub">Una startup colombiana con un año de datos sin analizar. Tres tablas, miles de preguntas sin respuesta.</p>
+  <div class="db-diagram">
+    <div class="db-table">
+      <div class="tbl-header">candidatos <span class="tbl-count">1.200</span></div>
+      <div class="tbl-col pk"><span class="key-badge pk">PK</span> candidato_id</div>
+      <div class="tbl-col">nombre</div>
+      <div class="tbl-col">ciudad</div>
+      <div class="tbl-col">area_interes</div>
+      <div class="tbl-col">nivel</div>
+      <div class="tbl-col">anos_experiencia</div>
+      <div class="tbl-col">salario_esperado_cop</div>
+      <div class="tbl-col">disponible</div>
+    </div>
+    <div class="db-arrow">
+      <div class="arr-line"></div>
+      <div class="arr-label">candidato_id</div>
+    </div>
+    <div class="db-table highlight">
+      <div class="tbl-header">postulaciones <span class="tbl-count">2.000</span></div>
+      <div class="tbl-col pk"><span class="key-badge pk">PK</span> postulacion_id</div>
+      <div class="tbl-col fk"><span class="key-badge fk">FK</span> candidato_id</div>
+      <div class="tbl-col fk"><span class="key-badge fk">FK</span> oferta_id</div>
+      <div class="tbl-col">fecha_postulacion</div>
+      <div class="tbl-col">estado_postulacion</div>
+      <div class="tbl-col">dias_hasta_respuesta</div>
+    </div>
+    <div class="db-arrow">
+      <div class="arr-line"></div>
+      <div class="arr-label">oferta_id</div>
+    </div>
+    <div class="db-table">
+      <div class="tbl-header">ofertas <span class="tbl-count">400</span></div>
+      <div class="tbl-col pk"><span class="key-badge pk">PK</span> oferta_id</div>
+      <div class="tbl-col">empresa</div>
+      <div class="tbl-col">area</div>
+      <div class="tbl-col">nivel_requerido</div>
+      <div class="tbl-col">ciudad</div>
+      <div class="tbl-col">modalidad</div>
+      <div class="tbl-col">salario_minimo_cop</div>
+      <div class="tbl-col">estado</div>
+    </div>
+  </div>
+  <div class="analogy">
+    <p>💡 ¿Por qué 3 tablas separadas y no una sola? Para no repetir datos. Si Globant tiene 47 postulaciones, su nombre se guarda <strong>una sola vez</strong> en ofertas — no 47 veces. Eso se llama <strong>normalización</strong>.</p>
+  </div>
+</div>
+
+<!-- ══ SLIDE 4: EL ENTORNO ══ -->
+<div class="slide s4">
+  <div class="top">
+    <h2>El entorno de hoy</h2>
+    <span class="chip">✓ Sin instalación nueva</span>
+  </div>
+  <div class="pipeline">
+    <div class="pipe-step">
+      <div class="icon">📄</div>
+      <div class="lbl">Origen</div>
+      <h4>CSV DataJobs</h4>
+      <p>candidatos.csv<br>ofertas.csv<br>postulaciones.csv</p>
+    </div>
+    <div class="pipe-arr">→</div>
+    <div class="pipe-step">
+      <div class="icon">🐼</div>
+      <div class="lbl">Intermediario</div>
+      <h4>Pandas</h4>
+      <p>Lee los CSV y los pasa a SQLite con <code style="color:var(--blue);font-family:'JetBrains Mono'">.to_sql()</code></p>
+    </div>
+    <div class="pipe-arr">→</div>
+    <div class="pipe-step hl">
+      <div class="icon">🗄️</div>
+      <div class="lbl">Hoy · Base de datos</div>
+      <h4>SQLite</h4>
+      <p>Ya viene con Python. Motor sin servidor. BD en memoria RAM con <code style="color:var(--gold);font-family:'JetBrains Mono'">:memory:</code></p>
+    </div>
+    <div class="pipe-arr">→</div>
+    <div class="pipe-step hl">
+      <div class="icon">💬</div>
+      <div class="lbl">Hoy · Lenguaje</div>
+      <h4>SQL Puro</h4>
+      <p>SELECT, WHERE, GROUP BY, JOIN — misma sintaxis que PostgreSQL o BigQuery</p>
+    </div>
+    <div class="pipe-arr">→</div>
+    <div class="pipe-step hl2">
+      <div class="icon">🤖</div>
+      <div class="lbl">Clase 4 en adelante</div>
+      <h4>Modelo de IA</h4>
+      <p><code style="color:var(--green);font-family:'JetBrains Mono'">read_sql()</code> trae el resultado como DataFrame listo para ML</p>
+    </div>
+  </div>
+  <div class="note">Lo que aprendan hoy en SQL funciona igual en PostgreSQL, MySQL o BigQuery — la sintaxis es estándar.</div>
+</div>
+
+<!-- ══ SLIDE 5: FILTROS WHERE ══ -->
+<div class="slide s5">
+  <h2>Filtrar datos con <em>WHERE</em></h2>
+  <div class="order-bar">
+    <span class="ow">SELECT</span><span class="osep">→</span>
+    <span class="ow">FROM</span><span class="osep">→</span>
+    <span class="ow active">WHERE</span><span class="osep">→</span>
+    <span class="ow">GROUP BY</span><span class="osep">→</span>
+    <span class="ow">HAVING</span><span class="osep">→</span>
+    <span class="ow">ORDER BY</span><span class="osep">→</span>
+    <span class="ow">LIMIT</span>
+    <span class="label">← orden obligatorio en SQL</span>
+  </div>
+  <div class="ops">
+    <div class="op">
+      <div class="op-kw">WHERE</div>
+      <div class="op-txt">El filtro fundamental. Solo pasan las filas que cumplen la condición. Se evalúa <strong style="color:#fff">antes</strong> de SELECT.</div>
+      <div class="op-ex"><span class="kw">WHERE</span> ciudad = 'Bogotá' <span class="kw">AND</span> disponible = 'Sí'</div>
+    </div>
+    <div class="op">
+      <div class="op-kw">IN</div>
+      <div class="op-txt">Comprueba si un valor está en una lista. Equivale a múltiples OR pero más legible y menos propenso a errores.</div>
+      <div class="op-ex"><span class="kw">WHERE</span> ciudad <span class="kw">IN</span> ('Bogotá', 'Medellín', 'Cali')</div>
+    </div>
+    <div class="op">
+      <div class="op-kw">BETWEEN</div>
+      <div class="op-txt">Rango <strong style="color:#fff">inclusivo</strong> en ambos extremos. Funciona con números, fechas y texto.</div>
+      <div class="op-ex"><span class="kw">WHERE</span> anos_experiencia <span class="kw">BETWEEN</span> 3 <span class="kw">AND</span> 6</div>
+    </div>
+    <div class="op">
+      <div class="op-kw">AND / OR</div>
+      <div class="op-txt">Combinan condiciones. AND exige ambas. OR acepta cualquiera. Los paréntesis definen la precedencia.</div>
+      <div class="op-ex"><span class="kw">WHERE</span> ciudad = 'Bogotá' <span class="kw">AND</span> (nivel = 'Senior' <span class="kw">OR</span> nivel = 'Lead')</div>
+    </div>
+  </div>
+  <div class="warn">
+    <div class="ico">⚠️</div>
+    <p>Textos siempre entre <strong>comillas simples</strong> ' ' — nunca dobles. Los paréntesis con AND/OR importan igual que en matemáticas.</p>
+  </div>
+</div>
+
+<!-- ══ SLIDE 6: AGREGACIONES ══ -->
+<div class="slide s6">
+  <div class="left">
+    <div class="badge">Bloque 5</div>
+    <h2>Agregaciones para descubrir patrones</h2>
+    <p>Funciones que toman muchas filas y devuelven un único número resumen. La herramienta más poderosa para responder preguntas de negocio sin salir de la base de datos.</p>
+  </div>
+  <div class="right">
+    <h3>Funciones de agregación</h3>
+    <div class="func-grid">
+      <div class="func-card"><div class="fn">COUNT()</div><div class="fd">Cuenta filas o valores no nulos</div></div>
+      <div class="func-card"><div class="fn">AVG()</div><div class="fd">Promedio aritmético de una columna numérica</div></div>
+      <div class="func-card"><div class="fn">SUM()</div><div class="fd">Suma todos los valores de una columna</div></div>
+      <div class="func-card"><div class="fn">MAX()</div><div class="fd">Valor más alto de la columna</div></div>
+      <div class="func-card"><div class="fn">MIN()</div><div class="fd">Valor más bajo de la columna</div></div>
+      <div class="func-card"><div class="fn">ROUND()</div><div class="fd">Redondea decimales para presentación limpia</div></div>
+    </div>
+    <div class="gb-box">
+      <h4>GROUP BY</h4>
+      <p>Divide las filas en grupos según el valor de una columna y aplica la función de agregación a cada grupo. "Cuántos candidatos hay <em>por cada ciudad</em>."</p>
+    </div>
+    <div class="hv-row">
+      <div class="hv-card wh">
+        <div class="hk">WHERE</div>
+        <p>Filtra filas <strong>antes</strong> de agrupar. No puede usar COUNT(), AVG(), etc.</p>
+      </div>
+      <div class="hv-card hv">
+        <div class="hk">HAVING</div>
+        <p>Filtra grupos <strong>después</strong> de agrupar. Sí puede usar COUNT(), AVG(), etc.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ SLIDE 7: JOINS ══ -->
+<div class="slide s7">
+  <div class="top">
+    <h2>JOINs: cruzar<br>información de <em>negocio</em></h2>
+    <p>La operación que conecta tablas a través de sus llaves para responder preguntas que ninguna tabla puede responder sola.</p>
+  </div>
+  <div class="join-grid">
+    <div class="venn">
+      <svg viewBox="0 0 340 230" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="130" cy="110" r="90" fill="rgba(30,58,110,.5)" stroke="rgba(91,164,245,.5)" stroke-width="1.5"/>
+        <circle cx="210" cy="110" r="90" fill="rgba(26,74,58,.5)" stroke="rgba(78,203,141,.4)" stroke-width="1.5"/>
+        <path d="M170,27 A90,90 0 0,1 170,193 A90,90 0 0,1 170,27" fill="rgba(245,200,66,.22)"/>
+        <text x="95" y="105" text-anchor="middle" font-family="Sora" font-size="13" fill="rgba(255,255,255,.8)">candidatos</text>
+        <text x="245" y="105" text-anchor="middle" font-family="Sora" font-size="13" fill="rgba(255,255,255,.8)">postulaciones</text>
+        <text x="170" y="105" text-anchor="middle" font-family="JetBrains Mono" font-size="11" fill="#f5c842" font-weight="600">INNER</text>
+        <text x="170" y="120" text-anchor="middle" font-family="JetBrains Mono" font-size="11" fill="#f5c842" font-weight="600">JOIN</text>
+        <rect x="85" y="175" width="170" height="36" rx="6" fill="rgba(245,200,66,.1)" stroke="rgba(245,200,66,.35)" stroke-width="1"/>
+        <text x="170" y="189" text-anchor="middle" font-family="JetBrains Mono" font-size="10" fill="rgba(245,200,66,.9)">candidato_id coincide</text>
+        <text x="170" y="203" text-anchor="middle" font-family="Sora" font-size="11" fill="rgba(255,255,255,.5)">en ambas tablas → aparece</text>
+      </svg>
+    </div>
+    <div class="join-cards">
+      <div class="jcard active">
+        <div class="jt">INNER JOIN ← usamos hoy</div>
+        <p>Solo las filas con coincidencia en AMBAS tablas. Si un candidato_id no existe en postulaciones, ese candidato no aparece en el resultado.</p>
+        <div class="jex">
+          <span class="kj">FROM</span> postulaciones p<br>
+          <span class="kj">INNER JOIN</span> candidatos c<br>
+          &nbsp;&nbsp;<span class="kj">ON</span> p.candidato_id = c.candidato_id
+        </div>
+      </div>
+      <div class="jcard">
+        <div class="jt">LEFT JOIN ← próximas clases</div>
+        <p>Todas las filas de la tabla izquierda, con o sin coincidencia. Las columnas sin match aparecen como NULL.</p>
+      </div>
+      <div class="jcard">
+        <div class="jt">Llave Primaria (PK) · Llave Foránea (FK)</div>
+        <p>PK: ID único de cada fila en su tabla. FK: ese mismo ID referenciado en otra tabla. El JOIN se hace donde PK = FK.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div><!-- /deck -->
+
+<div class="controls">
+  <button class="btn" onclick="go(-1)">←</button>
+  <span class="counter" id="ctr">1 / 7</span>
+  <button class="btn" onclick="go(1)">→</button>
+</div>
+<div class="progress"><div class="pbar" id="pb"></div></div>
+
+<script>
+  let cur = 0;
+  const slides = document.querySelectorAll('.slide');
+  const n = slides.length;
+  function go(d) {
+    slides[cur].classList.remove('active');
+    cur = (cur + d + n) % n;
+    slides[cur].classList.add('active');
+    document.getElementById('ctr').textContent = `${cur+1} / ${n}`;
+    document.getElementById('pb').style.width = `${(cur+1)/n*100}%`;
+  }
+  document.addEventListener('keydown', e => {
+    if (e.key === 'ArrowRight' || e.key === 'ArrowDown') go(1);
+    if (e.key === 'ArrowLeft'  || e.key === 'ArrowUp')   go(-1);
+  });
+  document.getElementById('pb').style.width = `${1/n*100}%`;
+</script>
+</body>
+</html>
