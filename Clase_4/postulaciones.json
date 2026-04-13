@@ -1,0 +1,122 @@
+[
+  {
+    "postulacion_id": 1001,
+    "candidato_id": 1,
+    "empresa_id": 101,
+    "fecha_postulacion": "2024-02-01",
+    "estado": "Seleccionado",
+    "puntaje_match": 92.5
+  },
+  {
+    "postulacion_id": 1002,
+    "candidato_id": 2,
+    "empresa_id": 103,
+    "fecha_postulacion": "2024-02-05",
+    "estado": "Pendiente",
+    "puntaje_match": 78.0
+  },
+  {
+    "postulacion_id": 1003,
+    "candidato_id": 4,
+    "empresa_id": 101,
+    "fecha_postulacion": "2024-02-10",
+    "estado": "Seleccionado",
+    "puntaje_match": 95.1
+  },
+  {
+    "postulacion_id": 1004,
+    "candidato_id": 6,
+    "empresa_id": 107,
+    "fecha_postulacion": "2024-02-15",
+    "estado": "Rechazado",
+    "puntaje_match": 61.3
+  },
+  {
+    "postulacion_id": 1005,
+    "candidato_id": 7,
+    "empresa_id": 102,
+    "fecha_postulacion": "2024-02-20",
+    "estado": "Seleccionado",
+    "puntaje_match": 88.7
+  },
+  {
+    "postulacion_id": 1006,
+    "candidato_id": 8,
+    "empresa_id": 104,
+    "fecha_postulacion": "2024-02-22",
+    "estado": "Rechazado",
+    "puntaje_match": 55.0
+  },
+  {
+    "postulacion_id": 1007,
+    "candidato_id": 10,
+    "empresa_id": 110,
+    "fecha_postulacion": "2024-03-01",
+    "estado": "Seleccionado",
+    "puntaje_match": 97.2
+  },
+  {
+    "postulacion_id": 1008,
+    "candidato_id": 11,
+    "empresa_id": 105,
+    "fecha_postulacion": "2024-03-05",
+    "estado": "Pendiente",
+    "puntaje_match": 74.5
+  },
+  {
+    "postulacion_id": 1009,
+    "candidato_id": 13,
+    "empresa_id": 103,
+    "fecha_postulacion": "2024-03-12",
+    "estado": "Pendiente",
+    "puntaje_match": 83.3
+  },
+  {
+    "postulacion_id": 1010,
+    "candidato_id": 14,
+    "empresa_id": 108,
+    "fecha_postulacion": "2024-03-18",
+    "estado": "Rechazado",
+    "puntaje_match": 67.8
+  },
+  {
+    "postulacion_id": 1011,
+    "candidato_id": 16,
+    "empresa_id": 102,
+    "fecha_postulacion": "2024-03-25",
+    "estado": "Seleccionado",
+    "puntaje_match": 91.0
+  },
+  {
+    "postulacion_id": 1012,
+    "candidato_id": 20,
+    "empresa_id": 106,
+    "fecha_postulacion": "2024-04-02",
+    "estado": "Pendiente",
+    "puntaje_match": 80.4
+  },
+  {
+    "postulacion_id": 1013,
+    "candidato_id": 2,
+    "empresa_id": 109,
+    "fecha_postulacion": "2024-04-05",
+    "estado": "Rechazado",
+    "puntaje_match": 58.2
+  },
+  {
+    "postulacion_id": 1014,
+    "candidato_id": 7,
+    "empresa_id": 110,
+    "fecha_postulacion": "2024-04-10",
+    "estado": "Seleccionado",
+    "puntaje_match": 89.9
+  },
+  {
+    "postulacion_id": 1015,
+    "candidato_id": 1,
+    "empresa_id": 104,
+    "fecha_postulacion": "2024-04-15",
+    "estado": "Pendiente",
+    "puntaje_match": 76.1
+  }
+]

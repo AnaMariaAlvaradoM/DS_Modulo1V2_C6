@@ -1,0 +1,21 @@
+candidato_id;nombre;ciudad;departamento;nivel_ingles;tecnologia_principal;salario_esperado;fecha_registro;activo
+1;Valentina Torres;Bogotá;Cundinamarca;Avanzado;Python;4500000;15/01/2024;True
+2;Camilo Ríos;Medellín;Antioquia;Intermedio;JavaScript;3800000;22/01/2024;True
+3;Laura Méndez;Cali;Valle del Cauca;Básico;;5200000;30/01/2024;False
+4;Andrés Guzmán;Bogotá;Cundinamarca;Avanzado;Python;6100000;05/02/2024;True
+5;Daniela Ospina;Barranquilla;Atlántico;Intermedio;Java;;12/02/2024;True
+6;Felipe Moreno;Medellín;Antioquia;Básico;React;3200000;18/02/2024;True
+7;María José Parra;Bogotá;Cundinamarca;Avanzado;Data Science;5800000;25/02/2024;True
+8;Sebastián Vargas;Bucaramanga;Santander;Intermedio;Python;4200000;01/03/2024;False
+9;Carolina Díaz;Cali;Valle del Cauca;Básico;;3600000;08/03/2024;True
+10;Juan Pablo Herrera;Bogotá;Cundinamarca;Avanzado;DevOps;7200000;15/03/2024;True
+11;Luisa Fernanda Castro;Medellín;Antioquia;Intermedio;JavaScript;4100000;20/03/2024;True
+12;Nicolás Ramírez;Pereira;Risaralda;Básico;Java;;28/03/2024;False
+13;Alejandra Muñoz;Bogotá;Cundinamarca;Avanzado;Python;5500000;02/04/2024;True
+14;David Lozano;Cartagena;Bolívar;Intermedio;React;3900000;10/04/2024;True
+15;Natalia Suárez;Manizales;Caldas;Básico;;4000000;16/04/2024;True
+16;Esteban Jiménez;Bogotá;Cundinamarca;Avanzado;Data Science;6800000;22/04/2024;True
+17;Paula Restrepo;Medellín;Antioquia;Intermedio;DevOps;5100000;29/04/2024;False
+18;Tomás Guerrero;Cali;Valle del Cauca;Básico;JavaScript;3400000;06/05/2024;True
+19;Isabella Molina;Bogotá;Cundinamarca;Avanzado;Python;;13/05/2024;True
+20;Mateo Salcedo;Medellín;Antioquia;Intermedio;Java;4700000;20/05/2024;True
