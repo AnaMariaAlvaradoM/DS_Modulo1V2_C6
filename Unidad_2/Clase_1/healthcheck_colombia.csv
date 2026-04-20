@@ -1,0 +1,351 @@
+id_trabajador,edad,ciudad,cargo,sector,nivel,anios_experiencia,horas_semana,salario_cop,nivel_estres,dias_ausencia_anio,satisfaccion_laboral,fecha_ingreso
+1001,28,Bogotá,QA Engineer,Fintech,Junior,1,48.0,10859922.0,2.0,10.0,6.0,01/01/2018
+1002,41,Barranquilla,UX Designer,Consultoría,Junior,9,56.0,6190583.0,8.0,6.0,8.0,04/01/2018
+1003,50,Barranquilla,Desarrollador Junior,E-commerce,Lead,11,50.0,4099908.0,6.0,4.0,6.0,07/01/2018
+1004,36,Bogotá,UX Designer,Healthtech,Senior,16,46.0,4664412.0,4.0,16.0,9.0,10/01/2018
+1005,32,Medellín,Desarrollador Junior,Healthtech,Mid,7,53.0,7809792.0,5.0,19.0,9.0,13/01/2018
+1006,29,Bogotá,Data Analyst,Edtech,Mid,10,58.0,4853847.0,8.0,8.0,2.0,16/01/2018
+1007,50,Barranquilla,QA Engineer,Edtech,Mid,2,43.0,5392478.0,3.0,13.0,10.0,19/01/2018
+1008,42,Bucaramanga,DevOps,Consultoría,Junior,5,45.0,,,11.0,1.0,22/01/2018
+1009,28,Bucaramanga,Product Manager,Consultoría,Lead,8,49.0,8449852.0,4.0,5.0,2.0,25/01/2018
+1010,47,Cali,Desarrollador Junior,Fintech,Mid,5,46.0,2529725.0,1.0,16.0,5.0,28/01/2018
+1011,40,Bogotá,UX Designer,Fintech,Mid,8,52.0,11684536.0,9.0,18.0,4.0,31/01/2018
+1012,44,Bogotá,DevOps,Consultoría,Mid,6,53.0,3388036.0,8.0,18.0,4.0,03/02/2018
+1013,32,Cali,Desarrollador Junior,Consultoría,Junior,8,97.0,5471783.0,8.0,15.0,9.0,06/02/2018
+1014,32,Cali,Desarrollador Junior,E-commerce,Junior,17,47.0,5162761.0,10.0,11.0,8.0,09/02/2018
+1015,45,,Desarrollador Junior,Edtech,Senior,11,44.0,9024559.0,6.0,11.0,6.0,12/02/2018
+1016,42,Barranquilla,Product Manager,Fintech,Junior,7,40.0,5013024.0,7.0,19.0,,15/02/2018
+1017,25,Bogotá,QA Engineer,Edtech,Mid,7,43.0,4898083.0,6.0,5.0,2.0,18/02/2018
+1018,29,Barranquilla,Product Manager,Edtech,Junior,17,42.0,9036295.0,9.0,3.0,6.0,21/02/2018
+1019,45,Cali,Desarrollador Senior,Consultoría,Mid,14,48.0,6409439.0,3.0,5.0,2.0,24/02/2018
+1020,24,Bogotá,DevOps,E-commerce,Junior,6,47.0,8127745.0,3.0,10.0,10.0,27/02/2018
+1021,43,Barranquilla,QA Engineer,Healthtech,Mid,10,40.0,6411146.0,,0.0,5.0,02/03/2018
+1022,42,Barranquilla,QA Engineer,E-commerce,Senior,15,45.0,4207017.0,10.0,14.0,5.0,03-05-2018
+1023,23,Cali,QA Engineer,E-commerce,Junior,3,48.0,3189556.0,3.0,10.0,6.0,08/03/2018
+1024,45,Bogotá,UX Designer,Edtech,Mid,5,46.0,9788538.0,9.0,18.0,6.0,11/03/2018
+1025,33,Cali,QA Engineer,E-commerce,Mid,2,43.0,4753722.0,,17.0,,14/03/2018
+1026,51,Bogotá,Product Manager,Fintech,Mid,8,52.0,4149729.0,,16.0,2.0,17/03/2018
+1027,27,Bucaramanga,QA Engineer,Edtech,Lead,9,56.0,3616271.0,9.0,18.0,10.0,20/03/2018
+1028,23,Medellín,Data Analyst,Fintech,Senior,13,41.0,5599555.0,7.0,13.0,3.0,23/03/2018
+1029,49,Medellín,DevOps,Healthtech,Junior,10,44.0,8183797.0,9.0,17.0,6.0,26/03/2018
+1030,42,Medellín,QA Engineer,Edtech,Junior,17,51.0,,3.0,18.0,8.0,29/03/2018
+1031,22,Cali,DevOps,Healthtech,Junior,11,47.0,3016409.0,4.0,14.0,1.0,01/04/2018
+1032,33,Bucaramanga,Data Analyst,Edtech,Mid,11,45.0,3166165.0,8.0,14.0,,04/04/2018
+1033,47,Bogotá,Data Analyst,Consultoría,Junior,12,47.0,5288363.0,6.0,3.0,2.0,07/04/2018
+1034,43,Barranquilla,DevOps,E-commerce,Mid,12,57.0,6976321.0,5.0,6.0,6.0,10/04/2018
+1035,50,,Desarrollador Junior,Consultoría,Mid,13,42.0,6210388.0,4.0,12.0,9.0,13/04/2018
+1036,33,Barranquilla,Desarrollador Senior,Healthtech,Junior,3,51.0,5735192.0,8.0,2.0,4.0,16/04/2018
+1037,46,Bogotá,UX Designer,E-commerce,Senior,12,42.0,4435090.0,1.0,15.0,3.0,19/04/2018
+1038,38,Bucaramanga,Desarrollador Junior,Edtech,Junior,7,45.0,11633790.0,9.0,8.0,,22/04/2018
+1039,48,Barranquilla,Desarrollador Junior,E-commerce,Junior,11,41.0,6437270.0,1.0,7.0,10.0,25/04/2018
+1040,48,Cali,Product Manager,Fintech,Senior,17,51.0,9239013.0,8.0,19.0,9.0,28/04/2018
+1041,31,Bogotá,UX Designer,E-commerce,Mid,5,41.0,9589975.0,4.0,12.0,5.0,01/05/2018
+1042,49,Bogotá,UX Designer,Fintech,Mid,17,45.0,11305586.0,9.0,16.0,9.0,04/05/2018
+1043,49,Barranquilla,Desarrollador Junior,E-commerce,Mid,4,56.0,3533316.0,5.0,16.0,2.0,07/05/2018
+1044,37,Cali,QA Engineer,Fintech,Junior,8,42.0,7319075.0,3.0,16.0,3.0,05-10-2018
+1045,36,Cali,Product Manager,Healthtech,Senior,2,41.0,7242297.0,9.0,0.0,7.0,13/05/2018
+1046,51,Bucaramanga,Product Manager,Consultoría,Senior,9,59.0,95000000.0,9.0,7.0,7.0,16/05/2018
+1047,51,Cali,Data Analyst,Edtech,Mid,2,47.0,10574037.0,4.0,18.0,6.0,19/05/2018
+1048,36,Cali,UX Designer,E-commerce,Junior,14,51.0,,4.0,5.0,6.0,05-22-2018
+1049,51,Cali,Desarrollador Junior,Consultoría,Mid,0,43.0,9920105.0,8.0,2.0,2.0,05-25-2018
+1050,40,Medellín,Data Analyst,Edtech,Mid,6,44.0,2604195.0,2.0,4.0,10.0,28/05/2018
+1051,33,Bucaramanga,DevOps,Edtech,Junior,11,52.0,9508443.0,9.0,12.0,6.0,05-31-2018
+1052,44,Bogotá,Desarrollador Senior,Fintech,Lead,16,54.0,7776728.0,6.0,14.0,4.0,03/06/2018
+1053,41,Barranquilla,Product Manager,Healthtech,Junior,4,55.0,6601036.0,9.0,13.0,3.0,06/06/2018
+1054,46,Bogotá,DevOps,Healthtech,Lead,3,49.0,4665251.0,8.0,15.0,2.0,06-09-2018
+1055,24,Bucaramanga,DevOps,Consultoría,Mid,11,55.0,9803693.0,7.0,17.0,1.0,12/06/2018
+1056,26,Barranquilla,QA Engineer,Healthtech,Junior,17,51.0,5714850.0,,10.0,5.0,06-15-2018
+1057,40,Bucaramanga,Desarrollador Senior,E-commerce,Mid,16,56.0,10483439.0,3.0,2.0,2.0,18/06/2018
+1058,28,Cali,DevOps,Healthtech,Senior,8,55.0,11374883.0,2.0,9.0,2.0,21/06/2018
+1059,42,Barranquilla,DevOps,Consultoría,Senior,3,51.0,11187479.0,5.0,9.0,7.0,24/06/2018
+1060,30,Cali,Desarrollador Senior,Healthtech,Senior,1,47.0,10768541.0,5.0,15.0,8.0,27/06/2018
+1061,28,Bogotá,Desarrollador Senior,E-commerce,Mid,3,59.0,5449281.0,5.0,11.0,10.0,06-30-2018
+1062,39,Bogotá,DevOps,Fintech,Mid,1,42.0,9856061.0,4.0,1.0,,03/07/2018
+1063,25,Barranquilla,Desarrollador Senior,Consultoría,Senior,14,55.0,3794929.0,5.0,8.0,4.0,07-06-2018
+1064,46,,DevOps,Fintech,Junior,1,52.0,5004594.0,3.0,2.0,1.0,09/07/2018
+1065,49,Bucaramanga,DevOps,Fintech,Mid,3,58.0,3743294.0,1.0,14.0,7.0,12/07/2018
+1066,35,Bucaramanga,QA Engineer,Fintech,Junior,5,47.0,6067675.0,5.0,2.0,1.0,15/07/2018
+1067,39,Cali,Desarrollador Junior,Edtech,Lead,6,44.0,10211634.0,9.0,18.0,,18/07/2018
+1068,47,Barranquilla,DevOps,Edtech,Lead,9,59.0,11785424.0,9.0,17.0,8.0,21/07/2018
+1069,30,Bogotá,Data Analyst,Fintech,Junior,11,47.0,4914802.0,,7.0,2.0,24/07/2018
+1070,47,Bucaramanga,Product Manager,Consultoría,Senior,2,51.0,2943031.0,,16.0,6.0,27/07/2018
+1071,42,Bucaramanga,UX Designer,E-commerce,Lead,12,40.0,11979276.0,1.0,7.0,6.0,30/07/2018
+1072,23,Bogotá,Desarrollador Junior,E-commerce,Junior,17,59.0,8944345.0,2.0,6.0,9.0,08-02-2018
+1073,41,,Desarrollador Junior,Healthtech,Mid,7,45.0,5290373.0,8.0,6.0,5.0,05/08/2018
+1074,49,Cali,Desarrollador Junior,Consultoría,Lead,14,57.0,6416643.0,1.0,2.0,10.0,08/08/2018
+1075,36,Barranquilla,QA Engineer,Edtech,Junior,0,47.0,9561183.0,8.0,0.0,4.0,11/08/2018
+1076,49,Bogotá,DevOps,Fintech,Mid,2,46.0,5787058.0,7.0,3.0,5.0,08-14-2018
+1077,28,Barranquilla,QA Engineer,Healthtech,Junior,7,40.0,8010493.0,8.0,4.0,10.0,17/08/2018
+1078,33,Bucaramanga,DevOps,E-commerce,Lead,3,55.0,2790998.0,,0.0,5.0,20/08/2018
+1079,50,Bucaramanga,QA Engineer,Edtech,Lead,54,51.0,7355920.0,9.0,14.0,8.0,23/08/2018
+1080,29,Bogotá,QA Engineer,Edtech,Lead,9,45.0,4328022.0,3.0,4.0,10.0,26/08/2018
+1081,36,Cali,Product Manager,Fintech,Mid,11,59.0,8867712.0,10.0,12.0,8.0,29/08/2018
+1082,24,Medellín,Data Analyst,E-commerce,Senior,13,41.0,3909854.0,4.0,7.0,2.0,01/09/2018
+1083,35,Bogotá,QA Engineer,Consultoría,Senior,13,53.0,10497043.0,6.0,7.0,7.0,04/09/2018
+1084,38,Medellín,Product Manager,Edtech,Junior,1,43.0,2681360.0,8.0,4.0,8.0,07/09/2018
+1085,25,Medellín,Desarrollador Senior,Fintech,Senior,4,40.0,4944026.0,,8.0,,10/09/2018
+1086,39,Cali,Data Analyst,Consultoría,Junior,4,57.0,5015419.0,3.0,0.0,5.0,13/09/2018
+1087,29,Medellín,QA Engineer,E-commerce,Mid,5,52.0,8032410.0,6.0,3.0,9.0,16/09/2018
+1088,25,Medellín,UX Designer,Edtech,Junior,12,41.0,6638286.0,4.0,2.0,3.0,19/09/2018
+1089,23,Cali,Desarrollador Junior,Consultoría,Junior,8,48.0,10833100.0,9.0,1.0,10.0,22/09/2018
+1090,51,Medellín,Desarrollador Senior,Consultoría,Junior,14,41.0,,3.0,7.0,4.0,25/09/2018
+1091,27,Medellín,Desarrollador Senior,Consultoría,Mid,13,48.0,6084197.0,4.0,8.0,9.0,28/09/2018
+1092,43,Medellín,Product Manager,Edtech,Junior,6,40.0,2811955.0,7.0,1.0,6.0,01/10/2018
+1093,31,Bogotá,Desarrollador Senior,Edtech,Senior,1,50.0,4627599.0,7.0,13.0,8.0,04/10/2018
+1094,25,Bogotá,Data Analyst,Healthtech,Junior,6,42.0,,4.0,13.0,7.0,07/10/2018
+1095,43,Bogotá,QA Engineer,E-commerce,Junior,5,59.0,7335451.0,6.0,3.0,2.0,10/10/2018
+1096,50,Cali,QA Engineer,Fintech,Mid,16,43.0,6882794.0,3.0,5.0,3.0,13/10/2018
+1097,39,Bucaramanga,UX Designer,Consultoría,Senior,1,57.0,9823494.0,6.0,10.0,1.0,16/10/2018
+1098,47,Medellín,Desarrollador Junior,Healthtech,Junior,2,45.0,,2.0,2.0,9.0,19/10/2018
+1099,33,Medellín,Product Manager,Fintech,Mid,4,42.0,7198713.0,8.0,7.0,7.0,10-22-2018
+1100,23,Cali,Desarrollador Junior,Healthtech,Senior,4,50.0,10367791.0,2.0,2.0,1.0,10-25-2018
+1101,31,Medellín,Desarrollador Senior,Edtech,Mid,0,54.0,6290328.0,7.0,13.0,3.0,28/10/2018
+1102,51,Bogotá,UX Designer,Consultoría,Junior,7,44.0,7789730.0,9.0,12.0,,31/10/2018
+1103,25,Bucaramanga,Desarrollador Junior,Fintech,Junior,11,59.0,6937610.0,1.0,12.0,4.0,03/11/2018
+1104,35,Barranquilla,Data Analyst,Fintech,Senior,3,49.0,5739536.0,8.0,1.0,5.0,06/11/2018
+1105,37,Medellín,QA Engineer,Fintech,Junior,12,51.0,4826133.0,7.0,12.0,3.0,09/11/2018
+1106,36,Bogotá,Desarrollador Senior,Fintech,Senior,14,54.0,10448140.0,6.0,18.0,3.0,12/11/2018
+1107,29,Barranquilla,UX Designer,Fintech,Mid,10,56.0,8220626.0,6.0,5.0,1.0,15/11/2018
+1108,35,Bucaramanga,Desarrollador Junior,Healthtech,Lead,9,49.0,8721714.0,6.0,15.0,7.0,18/11/2018
+1109,44,Barranquilla,Product Manager,Consultoría,Senior,2,45.0,8874825.0,9.0,1.0,10.0,11-21-2018
+1110,49,Bogotá,Data Analyst,Edtech,Lead,13,57.0,7505858.0,2.0,7.0,1.0,24/11/2018
+1111,46,Barranquilla,Data Analyst,Edtech,Mid,15,52.0,9528722.0,1.0,16.0,2.0,27/11/2018
+1112,51,Cali,Desarrollador Junior,Edtech,Senior,9,42.0,10721252.0,6.0,1.0,4.0,30/11/2018
+1113,29,Barranquilla,QA Engineer,Edtech,Mid,9,49.0,11475708.0,10.0,9.0,4.0,03/12/2018
+1114,42,Medellín,Desarrollador Junior,Healthtech,Mid,11,53.0,5915871.0,8.0,15.0,5.0,06/12/2018
+1115,37,Medellín,Desarrollador Senior,E-commerce,Mid,8,45.0,4377971.0,3.0,5.0,2.0,09/12/2018
+1116,34,Cali,Desarrollador Junior,Consultoría,Senior,0,42.0,10497488.0,10.0,1.0,4.0,12/12/2018
+1117,39,Bogotá,Data Analyst,Fintech,Lead,4,55.0,9314612.0,1.0,1.0,1.0,15/12/2018
+1118,36,Medellín,UX Designer,E-commerce,Senior,7,46.0,7463401.0,9.0,12.0,2.0,18/12/2018
+1119,42,Bucaramanga,Desarrollador Junior,Edtech,Mid,10,59.0,5366757.0,1.0,14.0,1.0,21/12/2018
+1120,45,Medellín,QA Engineer,E-commerce,Mid,11,53.0,8413318.0,3.0,1.0,10.0,24/12/2018
+1121,47,Medellín,UX Designer,Consultoría,Senior,0,48.0,9241286.0,8.0,6.0,10.0,27/12/2018
+1122,46,Bogotá,Product Manager,Fintech,Junior,10,54.0,4077969.0,3.0,2.0,,30/12/2018
+1123,49,Barranquilla,DevOps,Fintech,Junior,4,42.0,6151387.0,4.0,7.0,4.0,02/01/2019
+1124,49,Medellín,Desarrollador Junior,Consultoría,Mid,14,41.0,4211672.0,8.0,13.0,7.0,05/01/2019
+1125,49,Cali,QA Engineer,Consultoría,Junior,4,41.0,8405950.0,1.0,6.0,10.0,08/01/2019
+1126,34,Barranquilla,UX Designer,Edtech,Junior,11,42.0,,6.0,6.0,9.0,11/01/2019
+1127,30,Bucaramanga,QA Engineer,Fintech,Junior,4,57.0,5528631.0,1.0,0.0,9.0,14/01/2019
+1128,50,Bogotá,Product Manager,E-commerce,Junior,16,53.0,,1.0,16.0,5.0,01-17-2019
+1129,36,,Data Analyst,Healthtech,Junior,16,59.0,8923959.0,8.0,8.0,10.0,20/01/2019
+1130,34,Barranquilla,QA Engineer,Healthtech,Lead,11,57.0,9484297.0,4.0,12.0,1.0,23/01/2019
+1131,22,,UX Designer,Consultoría,Mid,14,49.0,6524733.0,1.0,18.0,1.0,26/01/2019
+1132,46,Barranquilla,QA Engineer,Edtech,Mid,14,41.0,7359221.0,10.0,18.0,6.0,29/01/2019
+1133,28,Bucaramanga,QA Engineer,Healthtech,Mid,5,40.0,6301250.0,7.0,16.0,2.0,01/02/2019
+1134,30,Barranquilla,QA Engineer,Fintech,Junior,11,43.0,,5.0,9.0,8.0,04/02/2019
+1135,45,Bucaramanga,Desarrollador Senior,Consultoría,Lead,17,53.0,2519675.0,5.0,9.0,9.0,07/02/2019
+1136,22,Barranquilla,Desarrollador Senior,E-commerce,Senior,13,40.0,10962605.0,1.0,3.0,4.0,10/02/2019
+1137,33,Cali,Data Analyst,Consultoría,Junior,1,53.0,11856169.0,10.0,7.0,5.0,13/02/2019
+1138,29,,Desarrollador Junior,E-commerce,Mid,8,55.0,2986799.0,6.0,19.0,8.0,16/02/2019
+1139,45,Bucaramanga,QA Engineer,Consultoría,Senior,4,53.0,9310805.0,9.0,19.0,3.0,02-19-2019
+1140,32,Medellín,Product Manager,Consultoría,Lead,0,59.0,4738057.0,9.0,17.0,5.0,22/02/2019
+1141,40,Barranquilla,Desarrollador Junior,Consultoría,Mid,2,42.0,6964344.0,8.0,13.0,3.0,25/02/2019
+1142,38,Medellín,Product Manager,E-commerce,Mid,5,42.0,3066088.0,5.0,17.0,10.0,28/02/2019
+1143,29,Cali,Desarrollador Junior,E-commerce,Junior,4,48.0,,1.0,13.0,,03/03/2019
+1144,24,Bogotá,Data Analyst,Consultoría,Lead,4,45.0,3158003.0,9.0,19.0,3.0,06/03/2019
+1145,24,Cali,QA Engineer,Healthtech,Junior,0,52.0,3305113.0,1.0,14.0,7.0,09/03/2019
+1146,22,Barranquilla,QA Engineer,Edtech,Lead,16,41.0,11822004.0,8.0,3.0,7.0,12/03/2019
+1147,48,Medellín,DevOps,Edtech,Mid,13,47.0,7528035.0,5.0,12.0,7.0,15/03/2019
+1148,26,Medellín,Product Manager,Edtech,Mid,11,41.0,6534464.0,3.0,7.0,10.0,18/03/2019
+1149,31,Bucaramanga,Desarrollador Junior,E-commerce,Mid,9,43.0,4592101.0,7.0,17.0,8.0,21/03/2019
+1150,28,Medellín,Desarrollador Junior,E-commerce,Junior,17,54.0,8495134.0,7.0,11.0,5.0,03-24-2019
+1151,47,Bucaramanga,Desarrollador Senior,Healthtech,Junior,10,43.0,11003967.0,9.0,13.0,5.0,27/03/2019
+1152,30,Bogotá,DevOps,Edtech,Junior,1,52.0,8708714.0,7.0,1.0,4.0,30/03/2019
+1153,49,Barranquilla,UX Designer,Edtech,Junior,17,51.0,9262126.0,3.0,17.0,7.0,02/04/2019
+1154,28,Bucaramanga,UX Designer,Consultoría,Senior,6,52.0,8842057.0,1.0,1.0,,05/04/2019
+1155,30,,Desarrollador Senior,E-commerce,Mid,14,53.0,6041483.0,8.0,10.0,4.0,08/04/2019
+1156,29,Medellín,Desarrollador Senior,Edtech,Junior,10,59.0,,3.0,8.0,2.0,11/04/2019
+1157,33,Medellín,Desarrollador Senior,Healthtech,Lead,17,57.0,6057689.0,,11.0,4.0,04-14-2019
+1158,23,Bogotá,Product Manager,Healthtech,Senior,11,45.0,4363236.0,8.0,16.0,8.0,04-17-2019
+1159,22,Medellín,Product Manager,Edtech,Lead,5,50.0,10363426.0,5.0,14.0,9.0,20/04/2019
+1160,37,Bogotá,Data Analyst,E-commerce,Lead,12,41.0,2950930.0,1.0,16.0,,23/04/2019
+1161,44,Bucaramanga,Data Analyst,Healthtech,Junior,15,58.0,9902324.0,,17.0,7.0,26/04/2019
+1162,44,Bucaramanga,Desarrollador Senior,Consultoría,Mid,17,58.0,10446232.0,7.0,5.0,9.0,29/04/2019
+1163,51,Bogotá,DevOps,Healthtech,Senior,9,44.0,5998408.0,10.0,16.0,4.0,02/05/2019
+1164,45,Bucaramanga,Desarrollador Junior,Fintech,Mid,7,58.0,7903252.0,5.0,17.0,10.0,05/05/2019
+1165,26,Bucaramanga,Product Manager,Fintech,Junior,17,41.0,,8.0,7.0,3.0,08/05/2019
+1166,24,Bucaramanga,DevOps,E-commerce,Senior,0,49.0,6651785.0,9.0,8.0,5.0,11/05/2019
+1167,33,,QA Engineer,Edtech,Junior,7,41.0,3188725.0,7.0,5.0,1.0,14/05/2019
+1168,29,Barranquilla,Product Manager,E-commerce,Junior,5,50.0,,7.0,4.0,3.0,17/05/2019
+1169,43,Medellín,Product Manager,E-commerce,Mid,4,57.0,2706487.0,1.0,11.0,8.0,05-20-2019
+1170,48,Cali,Data Analyst,E-commerce,Mid,14,54.0,8889308.0,4.0,10.0,8.0,23/05/2019
+1171,24,Bucaramanga,Desarrollador Junior,E-commerce,Mid,14,48.0,6137820.0,2.0,0.0,4.0,26/05/2019
+1172,22,Bogotá,Desarrollador Junior,Consultoría,Junior,1,58.0,,2.0,10.0,2.0,29/05/2019
+1173,24,Bucaramanga,UX Designer,Consultoría,Senior,0,48.0,9518523.0,2.0,18.0,8.0,01/06/2019
+1174,26,Barranquilla,UX Designer,Healthtech,Junior,10,42.0,3178841.0,4.0,8.0,8.0,04/06/2019
+1175,36,Bucaramanga,UX Designer,Fintech,Junior,9,48.0,7920712.0,1.0,1.0,10.0,06-07-2019
+1176,35,Bogotá,UX Designer,E-commerce,Senior,17,53.0,5952501.0,4.0,11.0,4.0,10/06/2019
+1177,24,Barranquilla,QA Engineer,Healthtech,Lead,17,58.0,10933840.0,2.0,3.0,3.0,06-13-2019
+1178,22,Bucaramanga,QA Engineer,Fintech,Senior,16,46.0,4945840.0,5.0,3.0,2.0,16/06/2019
+1179,26,Barranquilla,Product Manager,Edtech,Senior,7,55.0,7951973.0,3.0,17.0,9.0,19/06/2019
+1180,47,Medellín,Desarrollador Senior,Consultoría,Mid,14,55.0,3879904.0,,14.0,1.0,22/06/2019
+1181,44,Medellín,Data Analyst,Fintech,Mid,7,40.0,9853172.0,4.0,18.0,7.0,25/06/2019
+1182,35,Bucaramanga,Data Analyst,Edtech,Junior,16,43.0,,1.0,12.0,5.0,06-28-2019
+1183,28,Barranquilla,UX Designer,Fintech,Mid,11,43.0,4156321.0,1.0,18.0,8.0,01/07/2019
+1184,48,Bogotá,Product Manager,Consultoría,Mid,7,46.0,3038645.0,10.0,16.0,4.0,04/07/2019
+1185,30,Bucaramanga,DevOps,Consultoría,Junior,13,47.0,7854552.0,3.0,5.0,7.0,07/07/2019
+1186,36,Medellín,Desarrollador Senior,Healthtech,Senior,3,56.0,7025121.0,9.0,15.0,5.0,07-10-2019
+1187,36,Medellín,Product Manager,E-commerce,Mid,0,44.0,8332801.0,,11.0,5.0,13/07/2019
+1188,47,Bucaramanga,Desarrollador Senior,Fintech,Junior,0,46.0,9411855.0,2.0,18.0,9.0,16/07/2019
+1189,31,Barranquilla,Desarrollador Senior,Fintech,Junior,15,59.0,9050091.0,9.0,4.0,9.0,19/07/2019
+1190,49,Medellín,Desarrollador Senior,Edtech,Mid,13,59.0,10290574.0,10.0,16.0,,22/07/2019
+1191,34,Barranquilla,Product Manager,Consultoría,Junior,15,43.0,,2.0,0.0,,25/07/2019
+1192,40,Medellín,UX Designer,Fintech,Senior,4,45.0,9870683.0,3.0,9.0,6.0,28/07/2019
+1193,28,Medellín,Data Analyst,Consultoría,Mid,8,46.0,4667354.0,10.0,14.0,5.0,31/07/2019
+1194,38,Cali,Data Analyst,Fintech,Mid,1,57.0,11985961.0,2.0,10.0,9.0,03/08/2019
+1195,41,Medellín,UX Designer,Healthtech,Mid,17,44.0,8939522.0,3.0,12.0,10.0,06/08/2019
+1196,50,,Desarrollador Senior,E-commerce,Senior,5,59.0,7547999.0,6.0,4.0,8.0,09/08/2019
+1197,25,Bucaramanga,DevOps,Fintech,Junior,8,42.0,,9.0,0.0,7.0,12/08/2019
+1198,51,Bucaramanga,Desarrollador Junior,Consultoría,Mid,0,46.0,7318750.0,9.0,11.0,7.0,15/08/2019
+1199,26,Barranquilla,Product Manager,Healthtech,Mid,8,53.0,7491536.0,7.0,10.0,6.0,18/08/2019
+1200,44,Medellín,Desarrollador Junior,Fintech,Junior,15,46.0,11712863.0,3.0,16.0,5.0,21/08/2019
+1201,28,Bogotá,UX Designer,Edtech,Senior,12,44.0,5971750.0,4.0,3.0,4.0,24/08/2019
+1202,34,Barranquilla,DevOps,E-commerce,Senior,8,44.0,6975156.0,0.0,14.0,3.0,08-27-2019
+1203,36,Cali,Product Manager,Fintech,Mid,12,41.0,5265331.0,5.0,8.0,3.0,30/08/2019
+1204,32,Barranquilla,UX Designer,Healthtech,Senior,8,45.0,10570297.0,2.0,19.0,6.0,02/09/2019
+1205,50,,Desarrollador Senior,Edtech,Senior,10,54.0,11476766.0,6.0,18.0,4.0,05/09/2019
+1206,25,Medellín,Data Analyst,Healthtech,Senior,3,49.0,5130723.0,3.0,18.0,,08/09/2019
+1207,34,Cali,Desarrollador Junior,Healthtech,Senior,1,46.0,3365139.0,8.0,11.0,3.0,11/09/2019
+1208,28,Barranquilla,QA Engineer,Edtech,Mid,5,44.0,10043159.0,2.0,4.0,4.0,14/09/2019
+1209,48,Bogotá,QA Engineer,Healthtech,Mid,13,40.0,7884935.0,1.0,9.0,9.0,17/09/2019
+1210,40,Bogotá,DevOps,Edtech,Mid,3,52.0,5401717.0,9.0,16.0,5.0,20/09/2019
+1211,43,Bucaramanga,Desarrollador Senior,Fintech,Senior,5,57.0,8785939.0,3.0,4.0,7.0,23/09/2019
+1212,49,Cali,Desarrollador Junior,Edtech,Junior,5,52.0,9316525.0,1.0,15.0,10.0,26/09/2019
+1213,23,Cali,Desarrollador Senior,Edtech,Senior,1,57.0,4711738.0,7.0,6.0,2.0,29/09/2019
+1214,31,Bucaramanga,Desarrollador Junior,E-commerce,Senior,17,44.0,8192796.0,10.0,8.0,,02/10/2019
+1215,34,Barranquilla,DevOps,Edtech,Junior,12,52.0,11178376.0,,2.0,9.0,05/10/2019
+1216,51,Cali,DevOps,Edtech,Senior,8,43.0,9322567.0,5.0,14.0,3.0,08/10/2019
+1217,46,Bogotá,QA Engineer,Fintech,Junior,12,56.0,5139929.0,,15.0,9.0,11/10/2019
+1218,42,Bogotá,Desarrollador Senior,E-commerce,Junior,10,42.0,5633211.0,9.0,17.0,,14/10/2019
+1219,27,Medellín,Product Manager,Consultoría,Senior,0,56.0,9940449.0,7.0,13.0,4.0,17/10/2019
+1220,49,Cali,QA Engineer,Fintech,Junior,6,50.0,,8.0,2.0,7.0,20/10/2019
+1221,49,Barranquilla,Desarrollador Senior,Fintech,Senior,14,59.0,7571915.0,9.0,11.0,8.0,23/10/2019
+1222,33,Bucaramanga,QA Engineer,Consultoría,Senior,0,43.0,2943945.0,6.0,8.0,6.0,26/10/2019
+1223,33,Bucaramanga,Product Manager,Edtech,Mid,11,41.0,9882003.0,5.0,6.0,5.0,10-29-2019
+1224,41,Barranquilla,Data Analyst,Healthtech,Junior,6,59.0,8810114.0,6.0,8.0,6.0,01/11/2019
+1225,51,Medellín,Data Analyst,E-commerce,Junior,14,55.0,2521253.0,2.0,12.0,5.0,04/11/2019
+1226,51,Bucaramanga,Data Analyst,Healthtech,Mid,0,57.0,6103110.0,4.0,17.0,8.0,07/11/2019
+1227,32,Cali,Data Analyst,Consultoría,Lead,16,47.0,4776787.0,3.0,4.0,1.0,10/11/2019
+1228,47,Medellín,UX Designer,Fintech,Mid,16,42.0,10190840.0,7.0,12.0,,13/11/2019
+1229,44,Cali,Desarrollador Junior,Fintech,Junior,2,48.0,9001553.0,9.0,3.0,10.0,16/11/2019
+1230,49,Bogotá,UX Designer,E-commerce,Mid,11,59.0,11838770.0,5.0,1.0,10.0,19/11/2019
+1231,46,Medellín,UX Designer,Fintech,Mid,5,45.0,3774634.0,,15.0,2.0,22/11/2019
+1232,28,Bucaramanga,UX Designer,Fintech,Senior,10,49.0,5255063.0,10.0,8.0,9.0,25/11/2019
+1233,51,Medellín,Data Analyst,E-commerce,Junior,2,49.0,,,8.0,1.0,28/11/2019
+1234,22,Medellín,Product Manager,E-commerce,Senior,7,52.0,11011383.0,3.0,5.0,10.0,01/12/2019
+1235,22,Medellín,DevOps,Consultoría,Mid,13,56.0,7663515.0,3.0,10.0,6.0,04/12/2019
+1236,46,Medellín,DevOps,Fintech,Lead,13,48.0,10101748.0,9.0,0.0,9.0,07/12/2019
+1237,48,Cali,Desarrollador Junior,Fintech,Junior,9,56.0,6963158.0,7.0,3.0,1.0,10/12/2019
+1238,51,Bogotá,Data Analyst,Consultoría,Mid,1,48.0,11303208.0,,12.0,4.0,13/12/2019
+1239,46,Barranquilla,Data Analyst,Edtech,Lead,13,48.0,8681422.0,10.0,12.0,4.0,16/12/2019
+1240,41,Medellín,Data Analyst,Edtech,Junior,8,40.0,4769070.0,9.0,12.0,9.0,19/12/2019
+1241,34,Bucaramanga,QA Engineer,Edtech,Lead,2,41.0,6913359.0,6.0,1.0,5.0,22/12/2019
+1242,30,Medellín,Desarrollador Senior,Consultoría,Mid,7,55.0,10140167.0,4.0,8.0,5.0,25/12/2019
+1243,24,Bucaramanga,QA Engineer,Fintech,Junior,15,40.0,5331569.0,1.0,7.0,6.0,28/12/2019
+1244,28,Cali,Desarrollador Senior,Consultoría,Junior,1,49.0,9822153.0,,6.0,1.0,31/12/2019
+1245,27,Bucaramanga,Data Analyst,Consultoría,Senior,5,57.0,5019507.0,7.0,3.0,1.0,03/01/2020
+1246,29,Barranquilla,Data Analyst,Edtech,Junior,11,47.0,,2.0,17.0,9.0,06/01/2020
+1247,48,Bogotá,QA Engineer,Healthtech,Mid,4,50.0,10968865.0,8.0,2.0,3.0,09/01/2020
+1248,30,Bucaramanga,QA Engineer,Fintech,Junior,1,41.0,4026534.0,5.0,5.0,4.0,12/01/2020
+1249,51,Bucaramanga,Desarrollador Senior,Edtech,Mid,15,47.0,3324143.0,7.0,11.0,1.0,15/01/2020
+1250,26,Bogotá,DevOps,Healthtech,Junior,4,47.0,9846562.0,4.0,11.0,9.0,18/01/2020
+1251,22,Barranquilla,Desarrollador Senior,Healthtech,Senior,14,56.0,6302986.0,5.0,7.0,,21/01/2020
+1252,40,Medellín,QA Engineer,E-commerce,Lead,11,54.0,2871616.0,8.0,0.0,2.0,24/01/2020
+1253,31,Bucaramanga,Product Manager,Fintech,Lead,3,56.0,4460155.0,1.0,3.0,8.0,27/01/2020
+1254,33,Bogotá,QA Engineer,Healthtech,Senior,14,52.0,11663766.0,,10.0,7.0,30/01/2020
+1255,45,Cali,Product Manager,Edtech,Junior,10,58.0,5210527.0,4.0,2.0,6.0,02/02/2020
+1256,36,Bogotá,Desarrollador Junior,E-commerce,Senior,15,44.0,4268967.0,3.0,12.0,1.0,05/02/2020
+1257,48,Cali,QA Engineer,Fintech,Junior,5,51.0,11804991.0,10.0,16.0,7.0,08/02/2020
+1258,43,Barranquilla,Desarrollador Junior,Consultoría,Junior,13,40.0,10870043.0,2.0,9.0,10.0,02-11-2020
+1259,45,Medellín,DevOps,Edtech,Junior,17,44.0,,3.0,11.0,7.0,14/02/2020
+1260,30,Bogotá,Desarrollador Senior,Healthtech,Mid,11,47.0,5343236.0,1.0,14.0,9.0,17/02/2020
+1261,41,Bucaramanga,Product Manager,Healthtech,Senior,10,52.0,9879933.0,1.0,9.0,1.0,20/02/2020
+1262,38,Barranquilla,Desarrollador Senior,Edtech,Mid,12,47.0,11161957.0,6.0,13.0,2.0,23/02/2020
+1263,51,Bogotá,Desarrollador Junior,Healthtech,Mid,10,50.0,8653973.0,5.0,12.0,9.0,26/02/2020
+1264,38,,Product Manager,E-commerce,Junior,15,40.0,8535218.0,8.0,4.0,9.0,29/02/2020
+1265,47,Bogotá,Desarrollador Senior,Fintech,Lead,14,52.0,4460584.0,2.0,5.0,6.0,03/03/2020
+1266,41,Cali,QA Engineer,E-commerce,Mid,14,58.0,8723754.0,4.0,1.0,6.0,06/03/2020
+1267,33,Bogotá,Data Analyst,Healthtech,Mid,3,42.0,8085709.0,,16.0,4.0,09/03/2020
+1268,51,Bogotá,Desarrollador Junior,Consultoría,Junior,10,56.0,3078688.0,,3.0,4.0,12/03/2020
+1269,28,Bogotá,Desarrollador Senior,Fintech,Senior,14,44.0,6726156.0,1.0,13.0,5.0,15/03/2020
+1270,23,Barranquilla,Desarrollador Junior,Fintech,Mid,3,59.0,8255892.0,4.0,9.0,3.0,18/03/2020
+1271,24,Bogotá,UX Designer,Edtech,Junior,12,47.0,10483372.0,1.0,2.0,1.0,21/03/2020
+1272,38,Bucaramanga,Desarrollador Junior,Edtech,Junior,1,53.0,10627747.0,2.0,2.0,1.0,24/03/2020
+1273,26,Cali,Product Manager,Consultoría,Mid,13,43.0,6727995.0,5.0,14.0,7.0,27/03/2020
+1274,38,Cali,UX Designer,Fintech,Mid,3,50.0,9837694.0,8.0,5.0,1.0,30/03/2020
+1275,45,Bogotá,Product Manager,Consultoría,Junior,15,59.0,,8.0,16.0,1.0,02/04/2020
+1276,38,Barranquilla,Data Analyst,Edtech,Lead,13,54.0,6452255.0,3.0,11.0,3.0,05/04/2020
+1277,48,Barranquilla,UX Designer,Edtech,Junior,14,58.0,6317242.0,4.0,19.0,10.0,04-08-2020
+1278,38,Bucaramanga,QA Engineer,Fintech,Mid,2,46.0,7490488.0,10.0,10.0,4.0,11/04/2020
+1279,23,Bogotá,Desarrollador Junior,E-commerce,Lead,7,58.0,2739968.0,6.0,3.0,,14/04/2020
+1280,23,Cali,Desarrollador Senior,Healthtech,Mid,15,58.0,11177571.0,,5.0,2.0,17/04/2020
+1281,49,Barranquilla,DevOps,Edtech,Mid,9,50.0,5092536.0,,0.0,1.0,04-20-2020
+1282,43,Bogotá,Desarrollador Junior,Edtech,Mid,3,44.0,8004381.0,2.0,19.0,3.0,23/04/2020
+1283,44,Barranquilla,Desarrollador Junior,E-commerce,Junior,17,44.0,3019165.0,6.0,15.0,,26/04/2020
+1284,26,Barranquilla,Data Analyst,E-commerce,Lead,1,47.0,6914084.0,5.0,14.0,3.0,29/04/2020
+1285,22,Cali,QA Engineer,Consultoría,Mid,16,49.0,5940866.0,10.0,16.0,8.0,05-02-2020
+1286,22,Medellín,DevOps,Consultoría,Senior,12,45.0,6378363.0,5.0,7.0,10.0,05/05/2020
+1287,40,Bucaramanga,UX Designer,Healthtech,Junior,3,54.0,,10.0,11.0,1.0,08/05/2020
+1288,51,Bucaramanga,UX Designer,Healthtech,Junior,10,55.0,,5.0,9.0,2.0,11/05/2020
+1289,23,Cali,UX Designer,Fintech,Junior,6,56.0,,10.0,14.0,7.0,05-14-2020
+1290,42,Barranquilla,Product Manager,Consultoría,Mid,11,47.0,10101723.0,5.0,187.0,4.0,17/05/2020
+1291,33,,Product Manager,Edtech,Mid,9,47.0,10446155.0,3.0,1.0,8.0,05-20-2020
+1292,47,Barranquilla,Desarrollador Senior,Consultoría,Senior,6,48.0,8188238.0,7.0,4.0,3.0,23/05/2020
+1293,27,Cali,DevOps,Edtech,Mid,12,41.0,9203560.0,6.0,5.0,6.0,26/05/2020
+1294,44,Bucaramanga,UX Designer,E-commerce,Lead,6,54.0,4285559.0,4.0,6.0,9.0,29/05/2020
+1295,25,Barranquilla,Product Manager,Consultoría,Junior,16,57.0,,2.0,0.0,1.0,01/06/2020
+1296,44,Bucaramanga,Desarrollador Senior,E-commerce,Senior,9,42.0,3033634.0,9.0,6.0,1.0,04/06/2020
+1297,32,Bogotá,QA Engineer,Healthtech,Senior,9,56.0,6432747.0,1.0,19.0,8.0,07/06/2020
+1298,45,Bucaramanga,Desarrollador Senior,Healthtech,Senior,3,43.0,11078845.0,4.0,11.0,3.0,10/06/2020
+1299,48,Bucaramanga,Product Manager,Fintech,Senior,3,43.0,10602873.0,1.0,15.0,5.0,13/06/2020
+1300,38,Medellín,Data Analyst,Consultoría,Senior,6,53.0,11744655.0,6.0,15.0,1.0,16/06/2020
+1301,27,Medellín,Data Analyst,E-commerce,Mid,0,48.0,7123636.0,4.0,10.0,5.0,19/06/2020
+1302,45,Medellín,UX Designer,Edtech,Junior,11,48.0,,5.0,3.0,6.0,22/06/2020
+1303,26,Bucaramanga,Data Analyst,Healthtech,Junior,12,57.0,7834233.0,5.0,12.0,8.0,25/06/2020
+1304,41,Cali,UX Designer,Healthtech,Lead,9,49.0,3906368.0,9.0,6.0,3.0,28/06/2020
+1305,23,Bucaramanga,UX Designer,Edtech,Mid,14,43.0,9341300.0,1.0,3.0,3.0,01/07/2020
+1306,27,Cali,Product Manager,E-commerce,Senior,12,51.0,11734082.0,2.0,14.0,10.0,04/07/2020
+1307,43,Cali,Data Analyst,E-commerce,Mid,8,47.0,8285267.0,6.0,18.0,9.0,07/07/2020
+1308,32,Medellín,UX Designer,Consultoría,Junior,8,41.0,3724744.0,5.0,8.0,4.0,07-10-2020
+1309,37,Barranquilla,DevOps,Consultoría,Junior,14,52.0,,7.0,10.0,4.0,13/07/2020
+1310,37,Bogotá,QA Engineer,Fintech,Mid,9,55.0,7362894.0,3.0,7.0,7.0,16/07/2020
+1311,22,Medellín,Desarrollador Senior,Healthtech,Mid,9,41.0,4631018.0,3.0,0.0,2.0,07-19-2020
+1312,30,Medellín,Desarrollador Senior,Consultoría,Junior,7,50.0,,10.0,7.0,8.0,22/07/2020
+1313,49,Barranquilla,Product Manager,E-commerce,Mid,15,49.0,5989429.0,2.0,12.0,6.0,25/07/2020
+1314,48,Bogotá,Data Analyst,Edtech,Junior,16,54.0,9388260.0,3.0,3.0,3.0,28/07/2020
+1315,27,Bucaramanga,Data Analyst,E-commerce,Mid,4,56.0,8978443.0,10.0,7.0,9.0,31/07/2020
+1316,37,Bucaramanga,UX Designer,Healthtech,Junior,3,47.0,2794746.0,1.0,2.0,5.0,03/08/2020
+1317,50,Medellín,Desarrollador Junior,E-commerce,Senior,17,57.0,8210754.0,5.0,8.0,8.0,06/08/2020
+1318,24,Bogotá,UX Designer,Fintech,Junior,3,48.0,7932019.0,5.0,1.0,7.0,09/08/2020
+1319,41,Medellín,QA Engineer,Healthtech,Mid,6,47.0,6852892.0,,1.0,8.0,12/08/2020
+1320,49,Cali,DevOps,Edtech,Junior,9,53.0,4202159.0,4.0,12.0,7.0,08-15-2020
+1321,48,Medellín,Desarrollador Senior,Fintech,Junior,17,57.0,,3.0,14.0,3.0,18/08/2020
+1322,25,Medellín,UX Designer,Healthtech,Mid,3,59.0,6302177.0,,11.0,2.0,21/08/2020
+1323,40,Bucaramanga,Desarrollador Junior,Edtech,Mid,9,59.0,11012558.0,8.0,3.0,7.0,24/08/2020
+1324,47,Bucaramanga,Desarrollador Junior,Fintech,Mid,0,51.0,3653224.0,3.0,7.0,3.0,27/08/2020
+1325,24,Bucaramanga,UX Designer,Fintech,Junior,17,58.0,5150235.0,2.0,8.0,3.0,08-30-2020
+1326,40,Cali,Product Manager,Healthtech,Mid,4,53.0,7240039.0,4.0,4.0,2.0,02/09/2020
+1327,41,Bucaramanga,Desarrollador Senior,Consultoría,Senior,14,56.0,10799350.0,3.0,19.0,4.0,05/09/2020
+1328,28,Bogotá,Product Manager,Fintech,Senior,16,42.0,4803554.0,1.0,17.0,8.0,08/09/2020
+1329,41,Barranquilla,DevOps,Fintech,Junior,2,46.0,6520120.0,3.0,10.0,1.0,11/09/2020
+1330,30,Bogotá,Desarrollador Junior,Edtech,Mid,11,56.0,5446862.0,2.0,14.0,1.0,14/09/2020
+1331,22,,Desarrollador Junior,E-commerce,Junior,1,51.0,5176517.0,,8.0,5.0,17/09/2020
+1332,29,Bucaramanga,QA Engineer,Healthtech,Junior,0,48.0,,6.0,16.0,5.0,09-20-2020
+1333,28,Barranquilla,DevOps,Healthtech,Lead,16,54.0,9831006.0,9.0,11.0,1.0,09-23-2020
+1334,39,Barranquilla,Desarrollador Junior,Consultoría,Junior,15,57.0,,8.0,6.0,6.0,26/09/2020
+1335,29,Barranquilla,DevOps,Consultoría,Mid,4,52.0,10829442.0,10.0,9.0,1.0,29/09/2020
+1336,22,Cali,Desarrollador Senior,Healthtech,Mid,14,47.0,8669912.0,3.0,9.0,5.0,02/10/2020
+1337,32,Bucaramanga,Data Analyst,Consultoría,Senior,2,53.0,11331924.0,5.0,12.0,9.0,05/10/2020
+1338,49,Barranquilla,Desarrollador Junior,Edtech,Mid,6,47.0,6017741.0,7.0,18.0,5.0,08/10/2020
+1339,46,Cali,QA Engineer,Healthtech,Junior,10,53.0,,5.0,10.0,6.0,11/10/2020
+1340,46,Medellín,Desarrollador Senior,Consultoría,Junior,9,46.0,5956653.0,8.0,12.0,8.0,14/10/2020
+1341,39,Medellín,UX Designer,Healthtech,Mid,8,51.0,7929219.0,5.0,7.0,1.0,17/10/2020
+1342,44,Cali,DevOps,E-commerce,Junior,13,50.0,2975595.0,1.0,7.0,2.0,20/10/2020
+1343,51,,UX Designer,Fintech,Mid,12,50.0,4388806.0,5.0,3.0,9.0,10-23-2020
+1344,31,Bucaramanga,Product Manager,Healthtech,Junior,1,52.0,,4.0,14.0,3.0,10-26-2020
+1345,24,Bucaramanga,Desarrollador Senior,Fintech,Junior,2,57.0,,6.0,10.0,,29/10/2020
+1346,28,Medellín,UX Designer,Consultoría,Mid,6,41.0,4260462.0,3.0,10.0,5.0,01/11/2020
+1347,49,Barranquilla,Desarrollador Junior,Fintech,Junior,17,54.0,6558848.0,5.0,0.0,2.0,04/11/2020
+1348,37,Medellín,DevOps,Healthtech,Mid,2,59.0,3309178.0,2.0,16.0,7.0,07/11/2020
+1349,47,Barranquilla,Data Analyst,E-commerce,Mid,9,57.0,10432310.0,,14.0,4.0,10/11/2020
+1350,37,Barranquilla,Desarrollador Senior,Consultoría,Senior,6,54.0,7277402.0,6.0,19.0,1.0,13/11/2020
