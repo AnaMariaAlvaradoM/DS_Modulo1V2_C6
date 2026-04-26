@@ -1,0 +1,601 @@
+cancion,artista,genero,region,popularidad,duracion_seg,streams_millones
+Me Llamas,Carlos Vives,Vallenato,Barranquilla,88.0,255,4.42
+Mi Libertad,Peter Manjarrés,Vallenato,Cali,63.0,183,3.58
+Latinoamérica,Maluma,Reggaeton,Bucaramanga,81.0,194,3.84
+Antes,Systema Solar,Afrobeat,Cartagena,47.0,210,3.16
+Ojos Así,Jorge Celedón,Vallenato,Barranquilla,80.0,205,2.73
+Hawái,Piso 21,Pop,Bogotá,93.0,222,5.82
+Vida de Rico,Silvestre Dangond,Vallenato,Manizales,68.0,238,4.55
+La Bicicleta,La 33,Salsa,Barranquilla,64.0,243,4.55
+Tacones Rojos,Maluma,Reggaeton,Bucaramanga,,173,5.05
+To' Bien,Jorge Celedón,Vallenato,Barranquilla,67.0,144,2.92
+Ojos Así,Karol G,Reggaeton,Bucaramanga,91.0,154,5.45
+Vida de Rico,ChocQuibTown,Afrobeat,Cartagena,55.0,280,
+Me Llamas,Grupo Niche,Salsa,Bogotá,54.0,168,4.61
+2:50,Maluma,Reggaeton,Bogotá,70.0,216,4.97
+Volví a Nacer,Carlos Vives,Vallenato,Bogotá,45.0,206,5.69
+Antes,Ryan Castro,Reggaeton,Cali,69.0,235,4.58
+2:50,Bad Bunny,Reggaeton,Cali,70.0,233,3.51
+La Bicicleta,Grupo Niche,Salsa,Cali,92.0,289,3.57
+2:50,Karol G,Reggaeton,Bucaramanga,81.0,165,3.58
+Chocolate,Carlos Vives,Vallenato,Cali,70.0,225,5.64
+Antes,Feid,Reggaeton,Barranquilla,93.0,215,4.45
+Resistencia,Bad Bunny,Reggaeton,Bogotá,83.0,169,3.35
+Cariñito,Feid,Reggaeton,Cali,93.0,205,3.74
+Resistencia,Systema Solar,Afrobeat,Bogotá,48.0,217,3.61
+La Bicicleta,Piso 21,Pop,Barranquilla,56.0,209,3.97
+2:50,Systema Solar,Afrobeat,Manizales,74.0,247,2.64
+Antes,J Balvin,Reggaeton,Cartagena,93.0,151,3.91
+Tacones Rojos,Monsieur Periné,Jazz/Bossa,Cali,46.0,185,5.31
+Felices los 4,Piso 21,Pop,Medellín,87.0,198,4.14
+Hawái,Feid,Reggaeton,Cartagena,81.0,261,5.57
+Hawái,Camilo,Pop,Medellín,73.0,242,4.84
+Querer Mejor,Carlos Vives,Vallenato,Bogotá,33.0,186,3.24
+La Rebelión,Bomba Estéreo,Electrónica,Manizales,56.0,173,4.17
+Tití Me Preguntó,Shakira,Pop,Medellín,88.0,217,5.64
+Hawái,Silvestre Dangond,Vallenato,Bogotá,71.0,224,3.93
+Querer Mejor,Bad Bunny,Reggaeton,Barranquilla,91.0,235,6.92
+Hawái,Fruko y sus Tesos,Salsa,Bucaramanga,68.0,151,4.38
+Provenza,Karol G,Reggaeton,Bogotá,77.0,187,3.07
+Hawái,Piso 21,Pop,Manizales,83.0,266,4.28
+Con Mil Amores,Bomba Estéreo,Electrónica,Bucaramanga,43.0,219,3.65
+Volví a Nacer,Camilo,Pop,Bucaramanga,81.0,226,
+Ojos Así,Bad Bunny,Reggaeton,Cartagena,78.0,177,5.03
+Felices los 4,Celia Cruz,Salsa,Cartagena,79.0,232,3.93
+Tití Me Preguntó,ChocQuibTown,Afrobeat,Manizales,61.0,182,3.41
+To' Bien,Jorge Celedón,Vallenato,Manizales,78.0,262,4.73
+Safari,Systema Solar,Afrobeat,Manizales,48.0,184,2.47
+Cariñito,Shakira,Pop,Bogotá,74.0,251,5.44
+Mi Libertad,Maluma,Reggaeton,Medellín,85.0,210,5.67
+Resistencia,Karol G,Reggaeton,Cartagena,88.0,239,4.98
+Safari,Bomba Estéreo,Electrónica,Manizales,51.0,214,2.75
+To' Bien,Systema Solar,Afrobeat,Cali,59.0,212,2.9
+Antes,Bad Bunny,Reggaeton,Cartagena,75.0,208,5.0
+Resistencia,Feid,Reggaeton,Cartagena,91.0,187,4.65
+Nuestra Canción,Camilo,Pop,Barranquilla,68.0,188,3.51
+Cariñito,Bomba Estéreo,Electrónica,Manizales,47.0,214,3.54
+Volví a Nacer,Systema Solar,Afrobeat,Bogotá,61.0,215,4.72
+2:50,Carlos Vives,Vallenato,Manizales,,265,3.17
+Con Mil Amores,Ryan Castro,Reggaeton,Bucaramanga,75.0,230,5.09
+2:50,Karol G,Reggaeton,Bogotá,91.0,167,4.25
+Chocolate,Jorge Celedón,Vallenato,Medellín,66.0,244,4.16
+Provenza,Ryan Castro,Reggaeton,Cartagena,82.0,214,5.96
+Hawái,Joe Arroyo,Salsa,Medellín,74.0,191,6.88
+2:50,Camilo,Pop,Cali,81.0,223,3.15
+Con Mil Amores,Grupo Niche,Salsa,Barranquilla,74.0,195,4.6
+La Rebelión,Carlos Vives,Vallenato,Cartagena,75.0,199,5.52
+Latinoamérica,Monsieur Periné,Jazz/Bossa,Barranquilla,56.0,211,4.49
+Mi Libertad,Ryan Castro,Reggaeton,Bogotá,63.0,173,3.27
+Tacones Rojos,Ryan Castro,Reggaeton,Barranquilla,92.0,244,5.83
+Tacones Rojos,Maluma,Reggaeton,Bogotá,75.0,307,2.52
+Provenza,Camilo,Pop,Bogotá,75.0,201,3.64
+Resistencia,Celia Cruz,Salsa,Manizales,85.0,241,2.47
+Latinoamérica,Piso 21,Pop,Cali,68.0,233,5.0
+Latinoamérica,Carlos Vives,Vallenato,Cartagena,74.0,209,1.84
+Querer Mejor,Bomba Estéreo,Electrónica,Cartagena,64.0,236,
+Felices los 4,Shakira,Pop,Cartagena,73.0,194,3.76
+Chocolate,Ryan Castro,Reggaeton,Bucaramanga,87.0,241,4.96
+Tacones Rojos,Systema Solar,Afrobeat,Barranquilla,49.0,250,1.28
+Hawái,Camilo,Pop,Manizales,89.0,192,2.93
+Volví a Nacer,Piso 21,Pop,Barranquilla,74.0,185,4.97
+Mi Libertad,Shakira,Pop,Bogotá,94.0,133,6.22
+La Negra Tiene Tumbao,Joe Arroyo,Salsa,Cartagena,81.0,210,4.64
+Vida de Rico,Piso 21,Pop,Bogotá,75.0,195,3.71
+Tití Me Preguntó,La 33,Salsa,Manizales,79.0,264,4.34
+Provenza,ChocQuibTown,Afrobeat,Medellín,62.0,146,3.42
+2:50,Sebastián Yatra,Pop,Barranquilla,74.0,266,
+La Negra Tiene Tumbao,Fruko y sus Tesos,Salsa,Cartagena,75.0,170,6.57
+Vida de Rico,Monsieur Periné,Jazz/Bossa,Bucaramanga,35.0,215,5.05
+Tacones Rojos,Sebastián Yatra,Pop,Manizales,73.0,251,3.51
+Tacones Rojos,Systema Solar,Afrobeat,Cali,62.0,247,2.14
+Felices los 4,Fruko y sus Tesos,Salsa,Manizales,65.0,220,6.42
+Hawái,Ryan Castro,Reggaeton,Bucaramanga,98.0,219,4.57
+Chocolate,Celia Cruz,Salsa,Bogotá,57.0,183,3.12
+Volví a Nacer,Bad Bunny,Reggaeton,Bogotá,65.0,248,4.52
+To' Bien,J Balvin,Reggaeton,Bucaramanga,80.0,194,5.57
+Antes,Bad Bunny,Reggaeton,Bucaramanga,94.0,214,3.63
+Me Llamas,La 33,Salsa,Manizales,67.0,227,5.63
+La Bicicleta,Peter Manjarrés,Vallenato,Cali,73.0,157,2.91
+Felices los 4,J Balvin,Reggaeton,Barranquilla,66.0,235,4.03
+Chocolate,Bomba Estéreo,Electrónica,Medellín,57.0,229,5.38
+Resistencia,Shakira,Pop,Barranquilla,85.0,221,8.84
+La Negra Tiene Tumbao,ChocQuibTown,Afrobeat,Medellín,58.0,168,4.53
+Ojos Así,Bomba Estéreo,Electrónica,Manizales,33.0,176,3.91
+Hawái,Monsieur Periné,Jazz/Bossa,Bogotá,55.0,242,3.97
+Latinoamérica,Camilo,Pop,Cali,74.0,194,3.4
+Felices los 4,Systema Solar,Afrobeat,Cartagena,54.0,178,3.19
+La Negra Tiene Tumbao,Celia Cruz,Salsa,Medellín,60.0,191,3.67
+To' Bien,La 33,Salsa,Bogotá,76.0,191,3.52
+Mi Libertad,La 33,Salsa,Manizales,74.0,281,3.98
+Mi Libertad,Bomba Estéreo,Electrónica,Bucaramanga,47.0,213,4.72
+La Negra Tiene Tumbao,Peter Manjarrés,Vallenato,Manizales,76.0,199,5.48
+Nuestra Canción,Camilo,Pop,Manizales,75.0,208,3.1
+Tacones Rojos,Joe Arroyo,Salsa,Bogotá,64.0,199,1.57
+Cariñito,Jorge Celedón,Vallenato,Cali,58.0,209,6.8
+Antes,Carlos Vives,Vallenato,Bogotá,61.0,198,3.52
+Safari,Feid,Reggaeton,Barranquilla,82.0,160,5.15
+Latinoamérica,ChocQuibTown,Afrobeat,Bucaramanga,53.0,196,3.07
+Querer Mejor,Karol G,Reggaeton,Bucaramanga,87.0,237,4.66
+Safari,Feid,Reggaeton,Cali,81.0,271,6.47
+Antes,Camilo,Pop,Cartagena,64.0,229,4.36
+Con Mil Amores,Bad Bunny,Reggaeton,Medellín,100.0,229,3.01
+Provenza,Peter Manjarrés,Vallenato,Manizales,80.0,159,3.6
+La Rebelión,Ryan Castro,Reggaeton,Manizales,60.0,191,4.91
+Tacones Rojos,Ryan Castro,Reggaeton,Bogotá,77.0,179,5.97
+Antes,Shakira,Pop,Cartagena,75.0,230,4.2
+Safari,Peter Manjarrés,Vallenato,Bogotá,68.0,257,4.06
+Con Mil Amores,Silvestre Dangond,Vallenato,Cartagena,80.0,225,5.07
+Chocolate,Ryan Castro,Reggaeton,Cartagena,80.0,272,5.55
+Volví a Nacer,Sebastián Yatra,Pop,Manizales,74.0,189,1.67
+Nuestra Canción,Feid,Reggaeton,Bogotá,93.0,162,3.37
+Latinoamérica,J Balvin,Reggaeton,Bucaramanga,73.0,217,5.25
+Felices los 4,Camilo,Pop,Bucaramanga,81.0,183,3.47
+Tití Me Preguntó,La 33,Salsa,Cartagena,84.0,238,4.7
+Felices los 4,Karol G,Reggaeton,Cartagena,84.0,240,4.0
+Safari,Karol G,Reggaeton,Bucaramanga,89.0,224,5.13
+Felices los 4,Bad Bunny,Reggaeton,Bucaramanga,68.0,230,6.91
+Volví a Nacer,La 33,Salsa,Cartagena,72.0,197,3.64
+Safari,Joe Arroyo,Salsa,Cartagena,80.0,205,6.55
+Querer Mejor,Ryan Castro,Reggaeton,Barranquilla,87.0,206,5.07
+Me Llamas,Feid,Reggaeton,Manizales,84.0,164,4.28
+Querer Mejor,Carlos Vives,Vallenato,Barranquilla,79.0,213,5.35
+Mi Libertad,Karol G,Reggaeton,Cartagena,73.0,249,3.57
+Nuestra Canción,Karol G,Reggaeton,Bucaramanga,82.0,286,5.18
+Cariñito,ChocQuibTown,Afrobeat,Manizales,48.0,229,4.27
+Resistencia,Maluma,Reggaeton,Manizales,88.0,234,4.79
+Vida de Rico,J Balvin,Reggaeton,Manizales,84.0,208,4.07
+Mi Libertad,Camilo,Pop,Bucaramanga,72.0,174,4.63
+Tacones Rojos,ChocQuibTown,Afrobeat,Bogotá,49.0,237,2.92
+Tacones Rojos,Shakira,Pop,Manizales,71.0,186,4.08
+La Bicicleta,Carlos Vives,Vallenato,Bogotá,47.0,214,3.04
+Tacones Rojos,Camilo,Pop,Bucaramanga,77.0,209,3.77
+Vida de Rico,Carlos Vives,Vallenato,Cali,73.0,179,7.24
+Felices los 4,Shakira,Pop,Medellín,93.0,199,5.11
+Nuestra Canción,Carlos Vives,Vallenato,Cartagena,78.0,225,5.45
+Nuestra Canción,Bad Bunny,Reggaeton,Manizales,67.0,224,3.25
+Nuestra Canción,Carlos Vives,Vallenato,Bogotá,46.0,191,7.04
+Hawái,La 33,Salsa,Cartagena,81.0,214,5.7
+Hawái,Carlos Vives,Vallenato,Medellín,71.0,181,4.56
+2:50,Karol G,Reggaeton,Barranquilla,85.0,201,3.36
+La Bicicleta,Bomba Estéreo,Electrónica,Medellín,60.0,233,4.4
+Tití Me Preguntó,Sebastián Yatra,Pop,Medellín,84.0,194,5.86
+Safari,Jorge Celedón,Vallenato,Manizales,70.0,207,3.68
+Latinoamérica,Silvestre Dangond,Vallenato,Medellín,73.0,216,4.21
+Mi Libertad,Systema Solar,Afrobeat,Barranquilla,56.0,180,3.88
+Chocolate,Shakira,Pop,Medellín,80.0,261,4.61
+La Bicicleta,J Balvin,Reggaeton,Cartagena,,173,3.3
+Nuestra Canción,Grupo Niche,Salsa,Medellín,68.0,238,4.85
+Provenza,ChocQuibTown,Afrobeat,Medellín,48.0,209,3.62
+Latinoamérica,Joe Arroyo,Salsa,Manizales,49.0,258,5.61
+La Rebelión,ChocQuibTown,Afrobeat,Manizales,53.0,234,4.29
+To' Bien,J Balvin,Reggaeton,Barranquilla,64.0,199,4.34
+Latinoamérica,Karol G,Reggaeton,Cali,76.0,246,4.68
+To' Bien,Carlos Vives,Vallenato,Cali,,272,3.83
+2:50,Systema Solar,Afrobeat,Bucaramanga,40.0,206,2.02
+Tacones Rojos,Piso 21,Pop,Cali,73.0,286,4.21
+Safari,J Balvin,Reggaeton,Bogotá,77.0,263,3.67
+Hawái,Carlos Vives,Vallenato,Cali,79.0,200,3.68
+Tacones Rojos,Shakira,Pop,Cartagena,71.0,228,4.49
+Volví a Nacer,Monsieur Periné,Jazz/Bossa,Cali,34.0,248,4.18
+Ojos Así,Ryan Castro,Reggaeton,Bucaramanga,82.0,228,2.72
+Me Llamas,Silvestre Dangond,Vallenato,Cartagena,79.0,213,3.83
+Latinoamérica,Shakira,Pop,Manizales,61.0,201,4.45
+Nuestra Canción,Camilo,Pop,Medellín,73.0,229,5.27
+Hawái,Piso 21,Pop,Manizales,84.0,194,4.72
+La Negra Tiene Tumbao,Maluma,Reggaeton,Barranquilla,79.0,216,3.9
+Nuestra Canción,Carlos Vives,Vallenato,Medellín,76.0,152,4.61
+La Negra Tiene Tumbao,Systema Solar,Afrobeat,Bogotá,66.0,236,4.49
+Safari,Jorge Celedón,Vallenato,Barranquilla,88.0,211,6.17
+Ojos Así,ChocQuibTown,Afrobeat,Barranquilla,49.0,196,5.47
+2:50,Carlos Vives,Vallenato,Barranquilla,68.0,201,4.75
+Ojos Así,Ryan Castro,Reggaeton,Bogotá,83.0,151,3.13
+Antes,Monsieur Periné,Jazz/Bossa,Barranquilla,49.0,164,4.72
+La Bicicleta,J Balvin,Reggaeton,Bogotá,79.0,214,5.07
+La Negra Tiene Tumbao,ChocQuibTown,Afrobeat,Cali,59.0,206,4.59
+Cariñito,Bomba Estéreo,Electrónica,Bogotá,67.0,198,2.77
+Tacones Rojos,Sebastián Yatra,Pop,Medellín,80.0,198,3.65
+Cariñito,La 33,Salsa,Bogotá,64.0,142,3.05
+Safari,Silvestre Dangond,Vallenato,Cali,67.0,220,4.97
+Me Llamas,J Balvin,Reggaeton,Barranquilla,99.0,211,4.22
+Ojos Así,Ryan Castro,Reggaeton,Barranquilla,78.0,216,4.43
+Hawái,Camilo,Pop,Medellín,87.0,249,3.32
+Tití Me Preguntó,Grupo Niche,Salsa,Cartagena,81.0,219,5.64
+La Negra Tiene Tumbao,Fruko y sus Tesos,Salsa,Bogotá,73.0,225,5.35
+Felices los 4,Jorge Celedón,Vallenato,Barranquilla,84.0,205,4.55
+La Rebelión,Bomba Estéreo,Electrónica,Medellín,54.0,193,4.62
+Vida de Rico,Carlos Vives,Vallenato,Manizales,76.0,222,4.13
+Tacones Rojos,Grupo Niche,Salsa,Bucaramanga,70.0,180,4.44
+Mi Libertad,J Balvin,Reggaeton,Barranquilla,81.0,215,5.95
+2:50,La 33,Salsa,Bucaramanga,68.0,196,4.43
+To' Bien,Shakira,Pop,Barranquilla,85.0,265,7.46
+Antes,Maluma,Reggaeton,Barranquilla,98.0,206,2.51
+Nuestra Canción,Camilo,Pop,Cali,58.0,197,2.47
+Querer Mejor,Bomba Estéreo,Electrónica,Cartagena,48.0,243,5.27
+Antes,Maluma,Reggaeton,Bogotá,63.0,192,5.47
+Hawái,J Balvin,Reggaeton,Cartagena,70.0,212,3.97
+Me Llamas,Joe Arroyo,Salsa,Medellín,90.0,160,4.25
+Con Mil Amores,ChocQuibTown,Afrobeat,Manizales,51.0,198,3.8
+Mi Libertad,Joe Arroyo,Salsa,Cartagena,81.0,231,4.42
+Tacones Rojos,Celia Cruz,Salsa,Manizales,81.0,167,5.25
+Ojos Así,Silvestre Dangond,Vallenato,Bucaramanga,69.0,209,2.32
+La Negra Tiene Tumbao,Monsieur Periné,Jazz/Bossa,Cali,49.0,206,2.31
+Me Llamas,Sebastián Yatra,Pop,Bucaramanga,59.0,232,4.92
+Volví a Nacer,Feid,Reggaeton,Bogotá,81.0,238,5.54
+Antes,Silvestre Dangond,Vallenato,Bogotá,84.0,209,5.23
+Tití Me Preguntó,Sebastián Yatra,Pop,Barranquilla,86.0,183,4.7
+Tití Me Preguntó,Grupo Niche,Salsa,Bucaramanga,66.0,242,4.91
+La Rebelión,La 33,Salsa,Medellín,62.0,251,5.16
+Felices los 4,Feid,Reggaeton,Bogotá,89.0,255,5.17
+Resistencia,Carlos Vives,Vallenato,Medellín,63.0,241,3.43
+Resistencia,Carlos Vives,Vallenato,Cali,82.0,245,4.43
+La Rebelión,Silvestre Dangond,Vallenato,Barranquilla,94.0,260,4.3
+Antes,Joe Arroyo,Salsa,Manizales,61.0,194,4.77
+Vida de Rico,Camilo,Pop,Barranquilla,81.0,225,2.13
+La Rebelión,Maluma,Reggaeton,Barranquilla,72.0,195,2.69
+Tacones Rojos,Carlos Vives,Vallenato,Barranquilla,80.0,221,5.28
+2:50,Monsieur Periné,Jazz/Bossa,Barranquilla,35.0,166,3.64
+Latinoamérica,Karol G,Reggaeton,Medellín,98.0,257,3.1
+Provenza,La 33,Salsa,Medellín,56.0,192,4.86
+La Negra Tiene Tumbao,Joe Arroyo,Salsa,Cali,91.0,247,4.62
+Volví a Nacer,Bad Bunny,Reggaeton,Cali,91.0,163,3.11
+2:50,J Balvin,Reggaeton,Manizales,89.0,209,6.13
+Me Llamas,Systema Solar,Afrobeat,Barranquilla,67.0,264,3.35
+Safari,Shakira,Pop,Cali,74.0,261,6.2
+Nuestra Canción,Karol G,Reggaeton,Cartagena,65.0,201,1.61
+2:50,Silvestre Dangond,Vallenato,Bogotá,67.0,229,2.5
+To' Bien,Bad Bunny,Reggaeton,Bogotá,84.0,246,6.06
+Me Llamas,Joe Arroyo,Salsa,Barranquilla,69.0,200,4.68
+Con Mil Amores,Piso 21,Pop,Medellín,78.0,189,4.29
+2:50,ChocQuibTown,Afrobeat,Cali,54.0,215,2.78
+Resistencia,Joe Arroyo,Salsa,Medellín,77.0,220,5.62
+Antes,Sebastián Yatra,Pop,Manizales,53.0,178,3.94
+Ojos Así,Grupo Niche,Salsa,Barranquilla,70.0,213,3.78
+Felices los 4,Bomba Estéreo,Electrónica,Cartagena,46.0,204,3.91
+Nuestra Canción,J Balvin,Reggaeton,Bogotá,77.0,215,4.65
+Volví a Nacer,Shakira,Pop,Barranquilla,88.0,228,9.43
+Ojos Así,Celia Cruz,Salsa,Cartagena,73.0,218,5.53
+La Negra Tiene Tumbao,Silvestre Dangond,Vallenato,Cartagena,77.0,191,4.03
+Felices los 4,J Balvin,Reggaeton,Cartagena,87.0,173,5.39
+Chocolate,Silvestre Dangond,Vallenato,Manizales,78.0,200,5.59
+Latinoamérica,Systema Solar,Afrobeat,Manizales,46.0,166,5.56
+Tacones Rojos,Bad Bunny,Reggaeton,Bogotá,71.0,200,4.23
+Volví a Nacer,Peter Manjarrés,Vallenato,Cali,73.0,256,1.63
+Felices los 4,Carlos Vives,Vallenato,Medellín,59.0,161,4.18
+Querer Mejor,Karol G,Reggaeton,Manizales,83.0,227,4.27
+Me Llamas,Peter Manjarrés,Vallenato,Cali,68.0,207,2.51
+Con Mil Amores,Camilo,Pop,Medellín,64.0,207,2.91
+Hawái,La 33,Salsa,Barranquilla,61.0,185,4.22
+Tacones Rojos,Sebastián Yatra,Pop,Medellín,69.0,211,4.62
+Mi Libertad,Carlos Vives,Vallenato,Manizales,76.0,192,5.03
+Resistencia,Monsieur Periné,Jazz/Bossa,Barranquilla,56.0,207,3.21
+La Negra Tiene Tumbao,Jorge Celedón,Vallenato,Manizales,73.0,246,4.79
+Cariñito,Systema Solar,Afrobeat,Barranquilla,59.0,244,3.42
+2:50,Jorge Celedón,Vallenato,Bogotá,56.0,242,2.8
+La Bicicleta,Karol G,Reggaeton,Barranquilla,77.0,218,3.42
+Me Llamas,Sebastián Yatra,Pop,Cartagena,89.0,225,4.29
+Latinoamérica,Bad Bunny,Reggaeton,Manizales,87.0,258,2.83
+Safari,Celia Cruz,Salsa,Cartagena,82.0,230,2.69
+La Rebelión,Sebastián Yatra,Pop,Cali,85.0,193,5.31
+Con Mil Amores,Carlos Vives,Vallenato,Cartagena,93.0,234,3.25
+Cariñito,Karol G,Reggaeton,Cali,69.0,188,3.52
+Safari,Shakira,Pop,Barranquilla,85.0,194,9.45
+Volví a Nacer,ChocQuibTown,Afrobeat,Bucaramanga,58.0,273,2.54
+Nuestra Canción,Feid,Reggaeton,Medellín,80.0,165,2.9
+Nuestra Canción,Maluma,Reggaeton,Medellín,84.0,208,5.27
+Me Llamas,Grupo Niche,Salsa,Cartagena,80.0,215,
+Tacones Rojos,Bomba Estéreo,Electrónica,Barranquilla,31.0,195,2.37
+Felices los 4,ChocQuibTown,Afrobeat,Barranquilla,61.0,234,3.2
+Ojos Así,Bad Bunny,Reggaeton,Cartagena,68.0,210,3.38
+Safari,Silvestre Dangond,Vallenato,Cartagena,70.0,212,5.1
+Resistencia,Peter Manjarrés,Vallenato,Cali,66.0,207,4.59
+La Rebelión,Ryan Castro,Reggaeton,Barranquilla,94.0,134,4.88
+La Negra Tiene Tumbao,Feid,Reggaeton,Medellín,97.0,201,5.25
+Resistencia,Fruko y sus Tesos,Salsa,Manizales,72.0,193,5.48
+Safari,Maluma,Reggaeton,Medellín,95.0,213,4.01
+Con Mil Amores,Bad Bunny,Reggaeton,Barranquilla,100.0,194,6.12
+Felices los 4,Maluma,Reggaeton,Bogotá,75.0,180,4.98
+Con Mil Amores,Grupo Niche,Salsa,Manizales,70.0,198,5.01
+Querer Mejor,Feid,Reggaeton,Cartagena,90.0,246,4.49
+Querer Mejor,J Balvin,Reggaeton,Bucaramanga,97.0,229,6.57
+Nuestra Canción,La 33,Salsa,Bogotá,65.0,197,3.68
+Ojos Así,Camilo,Pop,Manizales,71.0,238,6.1
+Volví a Nacer,Karol G,Reggaeton,Manizales,81.0,245,5.66
+Vida de Rico,Feid,Reggaeton,Manizales,66.0,168,3.88
+To' Bien,Carlos Vives,Vallenato,Cali,69.0,232,3.53
+Me Llamas,Systema Solar,Afrobeat,Bucaramanga,34.0,262,
+2:50,Monsieur Periné,Jazz/Bossa,Manizales,37.0,209,1.07
+Latinoamérica,Piso 21,Pop,Manizales,93.0,174,4.78
+Vida de Rico,Piso 21,Pop,Barranquilla,53.0,196,2.78
+La Negra Tiene Tumbao,ChocQuibTown,Afrobeat,Medellín,36.0,223,3.6
+Ojos Así,J Balvin,Reggaeton,Barranquilla,88.0,195,7.29
+To' Bien,J Balvin,Reggaeton,Cali,73.0,249,6.2
+Chocolate,Bomba Estéreo,Electrónica,Cartagena,45.0,207,4.94
+2:50,Maluma,Reggaeton,Bogotá,82.0,136,4.77
+Querer Mejor,Celia Cruz,Salsa,Barranquilla,65.0,245,5.62
+Felices los 4,Systema Solar,Afrobeat,Medellín,37.0,210,2.41
+Volví a Nacer,Shakira,Pop,Manizales,81.0,249,3.02
+Provenza,Shakira,Pop,Barranquilla,82.0,229,11.84
+Vida de Rico,Bomba Estéreo,Electrónica,Bucaramanga,43.0,198,2.36
+Ojos Así,Grupo Niche,Salsa,Cartagena,79.0,226,5.76
+Me Llamas,Peter Manjarrés,Vallenato,Medellín,66.0,182,3.86
+Vida de Rico,Celia Cruz,Salsa,Barranquilla,63.0,203,3.74
+Mi Libertad,Celia Cruz,Salsa,Bogotá,75.0,199,4.74
+Latinoamérica,ChocQuibTown,Afrobeat,Cartagena,41.0,171,3.81
+To' Bien,Peter Manjarrés,Vallenato,Bucaramanga,78.0,190,3.82
+Mi Libertad,Camilo,Pop,Manizales,81.0,180,2.4
+Tití Me Preguntó,Ryan Castro,Reggaeton,Cartagena,62.0,212,6.22
+Me Llamas,Carlos Vives,Vallenato,Barranquilla,87.0,204,5.9
+Ojos Así,Carlos Vives,Vallenato,Medellín,69.0,233,3.8
+Safari,Maluma,Reggaeton,Medellín,94.0,217,3.17
+Safari,Celia Cruz,Salsa,Manizales,79.0,191,4.31
+Tacones Rojos,Systema Solar,Afrobeat,Barranquilla,55.0,233,5.22
+Nuestra Canción,Fruko y sus Tesos,Salsa,Cali,91.0,120,4.43
+La Rebelión,Karol G,Reggaeton,Barranquilla,75.0,216,5.49
+Latinoamérica,Ryan Castro,Reggaeton,Bucaramanga,82.0,174,5.73
+Mi Libertad,Celia Cruz,Salsa,Cali,87.0,203,4.29
+Mi Libertad,Piso 21,Pop,Barranquilla,85.0,238,3.88
+Con Mil Amores,Camilo,Pop,Bogotá,88.0,223,3.72
+Felices los 4,Joe Arroyo,Salsa,Bucaramanga,74.0,195,1.59
+Nuestra Canción,Bomba Estéreo,Electrónica,Bogotá,60.0,190,2.43
+Me Llamas,Shakira,Pop,Cali,63.0,265,5.54
+Me Llamas,La 33,Salsa,Bucaramanga,74.0,198,5.66
+Ojos Así,Silvestre Dangond,Vallenato,Medellín,67.0,168,
+Felices los 4,Systema Solar,Afrobeat,Cartagena,68.0,153,4.4
+La Rebelión,ChocQuibTown,Afrobeat,Cali,59.0,225,3.15
+Latinoamérica,Piso 21,Pop,Bogotá,64.0,174,0.65
+Provenza,Feid,Reggaeton,Medellín,90.0,214,4.19
+Provenza,Piso 21,Pop,Bogotá,79.0,181,3.33
+Ojos Así,Celia Cruz,Salsa,Medellín,61.0,151,3.45
+Provenza,Silvestre Dangond,Vallenato,Cartagena,85.0,137,5.69
+Me Llamas,Carlos Vives,Vallenato,Bucaramanga,75.0,225,2.5
+Latinoamérica,Ryan Castro,Reggaeton,Medellín,85.0,233,3.12
+Chocolate,Ryan Castro,Reggaeton,Bogotá,80.0,206,3.51
+Tití Me Preguntó,Systema Solar,Afrobeat,Manizales,53.0,179,3.9
+Querer Mejor,J Balvin,Reggaeton,Barranquilla,84.0,198,3.61
+Tití Me Preguntó,Feid,Reggaeton,Medellín,90.0,177,4.49
+Safari,Systema Solar,Afrobeat,Bogotá,68.0,202,5.33
+La Rebelión,Feid,Reggaeton,Barranquilla,77.0,146,4.38
+Provenza,ChocQuibTown,Afrobeat,Barranquilla,55.0,258,4.26
+Con Mil Amores,Systema Solar,Afrobeat,Barranquilla,52.0,201,1.92
+Safari,Shakira,Pop,Manizales,76.0,187,4.5
+Felices los 4,Piso 21,Pop,Cali,79.0,185,1.92
+Chocolate,Sebastián Yatra,Pop,Cali,,202,5.55
+Volví a Nacer,Ryan Castro,Reggaeton,Cartagena,72.0,196,5.84
+Volví a Nacer,Fruko y sus Tesos,Salsa,Bucaramanga,47.0,241,2.2
+La Negra Tiene Tumbao,Fruko y sus Tesos,Salsa,Cali,91.0,202,5.36
+Tití Me Preguntó,Carlos Vives,Vallenato,Bucaramanga,71.0,212,5.9
+2:50,Fruko y sus Tesos,Salsa,Cali,83.0,271,3.29
+Cariñito,Systema Solar,Afrobeat,Cali,63.0,252,3.98
+Latinoamérica,Bomba Estéreo,Electrónica,Cartagena,53.0,182,5.23
+Nuestra Canción,Feid,Reggaeton,Medellín,93.0,186,4.22
+Cariñito,Ryan Castro,Reggaeton,Cali,82.0,215,6.13
+Antes,Camilo,Pop,Barranquilla,61.0,242,4.91
+Ojos Así,Joe Arroyo,Salsa,Barranquilla,65.0,235,4.78
+Hawái,Bad Bunny,Reggaeton,Cartagena,74.0,182,6.29
+Tacones Rojos,Bomba Estéreo,Electrónica,Bucaramanga,47.0,206,5.15
+Hawái,La 33,Salsa,Cali,87.0,189,5.24
+Nuestra Canción,Bad Bunny,Reggaeton,Manizales,69.0,203,3.51
+Me Llamas,La 33,Salsa,Bucaramanga,78.0,170,5.32
+Vida de Rico,Grupo Niche,Salsa,Manizales,75.0,235,4.79
+Safari,Bomba Estéreo,Electrónica,Cali,36.0,141,3.57
+Con Mil Amores,Maluma,Reggaeton,Cali,86.0,198,4.63
+Felices los 4,Carlos Vives,Vallenato,Bucaramanga,80.0,196,5.12
+Cariñito,Jorge Celedón,Vallenato,Cali,62.0,240,6.52
+Chocolate,Bomba Estéreo,Electrónica,Bogotá,60.0,265,3.73
+Con Mil Amores,Bad Bunny,Reggaeton,Barranquilla,80.0,161,5.44
+Cariñito,Celia Cruz,Salsa,Bucaramanga,73.0,236,5.41
+Tacones Rojos,Bomba Estéreo,Electrónica,Cartagena,51.0,193,1.74
+Vida de Rico,Peter Manjarrés,Vallenato,Bucaramanga,89.0,235,3.76
+Latinoamérica,Joe Arroyo,Salsa,Bogotá,64.0,239,4.7
+Volví a Nacer,Monsieur Periné,Jazz/Bossa,Bogotá,33.0,230,2.54
+Cariñito,La 33,Salsa,Manizales,55.0,180,3.31
+Chocolate,Systema Solar,Afrobeat,Cartagena,66.0,201,5.83
+Antes,Karol G,Reggaeton,Bucaramanga,94.0,275,4.64
+Nuestra Canción,J Balvin,Reggaeton,Medellín,97.0,203,5.89
+La Rebelión,Camilo,Pop,Barranquilla,73.0,167,4.23
+Resistencia,Maluma,Reggaeton,Cartagena,78.0,166,4.08
+Tacones Rojos,ChocQuibTown,Afrobeat,Cartagena,48.0,195,2.09
+Cariñito,Systema Solar,Afrobeat,Bucaramanga,48.0,204,2.64
+La Bicicleta,Camilo,Pop,Cali,74.0,196,4.43
+Chocolate,Peter Manjarrés,Vallenato,Bucaramanga,81.0,207,4.08
+Volví a Nacer,Camilo,Pop,Barranquilla,63.0,218,4.69
+Ojos Así,Joe Arroyo,Salsa,Cartagena,88.0,180,5.67
+Resistencia,Shakira,Pop,Manizales,81.0,188,4.94
+Provenza,Bad Bunny,Reggaeton,Manizales,70.0,200,6.08
+Chocolate,Bad Bunny,Reggaeton,Barranquilla,79.0,225,4.27
+Safari,Silvestre Dangond,Vallenato,Medellín,66.0,237,2.78
+La Bicicleta,Silvestre Dangond,Vallenato,Bogotá,65.0,221,4.89
+Felices los 4,ChocQuibTown,Afrobeat,Medellín,59.0,237,1.03
+Me Llamas,Bomba Estéreo,Electrónica,Cartagena,62.0,151,4.93
+Felices los 4,Bomba Estéreo,Electrónica,Bogotá,61.0,235,6.23
+Latinoamérica,Bomba Estéreo,Electrónica,Bogotá,52.0,217,5.06
+Hawái,Joe Arroyo,Salsa,Medellín,87.0,168,4.24
+To' Bien,Peter Manjarrés,Vallenato,Medellín,66.0,240,5.5
+Mi Libertad,Carlos Vives,Vallenato,Medellín,68.0,179,4.01
+Vida de Rico,Jorge Celedón,Vallenato,Barranquilla,86.0,167,6.11
+Tacones Rojos,Peter Manjarrés,Vallenato,Bogotá,72.0,258,2.82
+Tití Me Preguntó,Joe Arroyo,Salsa,Bucaramanga,65.0,210,4.63
+Con Mil Amores,Grupo Niche,Salsa,Barranquilla,69.0,198,3.91
+2:50,Jorge Celedón,Vallenato,Cartagena,92.0,207,5.07
+Provenza,Bomba Estéreo,Electrónica,Bucaramanga,50.0,214,3.99
+La Negra Tiene Tumbao,Piso 21,Pop,Bogotá,75.0,209,4.85
+La Negra Tiene Tumbao,Grupo Niche,Salsa,Medellín,75.0,225,2.21
+Tacones Rojos,Grupo Niche,Salsa,Cali,85.0,270,4.73
+Querer Mejor,ChocQuibTown,Afrobeat,Barranquilla,39.0,232,2.19
+Me Llamas,Maluma,Reggaeton,Cartagena,79.0,194,5.15
+Vida de Rico,Shakira,Pop,Cali,80.0,268,3.02
+2:50,ChocQuibTown,Afrobeat,Barranquilla,58.0,289,2.15
+Latinoamérica,Camilo,Pop,Manizales,63.0,244,3.42
+La Bicicleta,Systema Solar,Afrobeat,Cali,62.0,218,3.64
+Con Mil Amores,Piso 21,Pop,Bogotá,82.0,229,4.81
+Nuestra Canción,Feid,Reggaeton,Manizales,75.0,166,3.36
+Mi Libertad,Bad Bunny,Reggaeton,Bucaramanga,100.0,175,4.73
+Latinoamérica,Shakira,Pop,Cali,77.0,208,4.77
+Me Llamas,Camilo,Pop,Manizales,81.0,212,4.29
+Tacones Rojos,Piso 21,Pop,Cartagena,70.0,168,5.41
+Felices los 4,Carlos Vives,Vallenato,Cali,72.0,233,4.39
+Safari,ChocQuibTown,Afrobeat,Barranquilla,63.0,246,3.03
+Chocolate,La 33,Salsa,Cali,89.0,199,3.99
+Cariñito,Grupo Niche,Salsa,Cartagena,81.0,227,5.06
+Volví a Nacer,J Balvin,Reggaeton,Manizales,90.0,189,5.9
+Hawái,Feid,Reggaeton,Cali,68.0,273,5.14
+Safari,Grupo Niche,Salsa,Cartagena,83.0,233,4.41
+La Negra Tiene Tumbao,J Balvin,Reggaeton,Medellín,77.0,176,5.19
+Hawái,J Balvin,Reggaeton,Manizales,84.0,204,4.28
+Cariñito,Bad Bunny,Reggaeton,Bogotá,61.0,197,2.37
+Tacones Rojos,Systema Solar,Afrobeat,Manizales,60.0,222,5.56
+Resistencia,Systema Solar,Afrobeat,Barranquilla,53.0,176,4.76
+Latinoamérica,Celia Cruz,Salsa,Barranquilla,71.0,251,2.89
+Antes,Bomba Estéreo,Electrónica,Medellín,50.0,154,3.72
+Querer Mejor,Sebastián Yatra,Pop,Medellín,72.0,163,5.15
+Tacones Rojos,Systema Solar,Afrobeat,Bucaramanga,62.0,184,5.4
+Tití Me Preguntó,Peter Manjarrés,Vallenato,Bogotá,66.0,178,4.4
+Chocolate,Sebastián Yatra,Pop,Manizales,85.0,235,4.46
+Chocolate,Fruko y sus Tesos,Salsa,Barranquilla,72.0,192,1.37
+La Rebelión,Monsieur Periné,Jazz/Bossa,Manizales,43.0,197,2.84
+2:50,Peter Manjarrés,Vallenato,Cartagena,80.0,215,3.76
+Antes,Camilo,Pop,Cali,69.0,137,4.19
+Me Llamas,Silvestre Dangond,Vallenato,Cali,67.0,184,3.83
+Provenza,Ryan Castro,Reggaeton,Cartagena,80.0,198,5.08
+Querer Mejor,Silvestre Dangond,Vallenato,Bucaramanga,81.0,249,5.3
+Cariñito,Grupo Niche,Salsa,Medellín,76.0,221,3.32
+Felices los 4,Sebastián Yatra,Pop,Cali,62.0,259,2.97
+Querer Mejor,Karol G,Reggaeton,Cartagena,83.0,193,4.38
+La Rebelión,Systema Solar,Afrobeat,Bucaramanga,47.0,213,2.38
+To' Bien,Feid,Reggaeton,Medellín,96.0,215,5.0
+Hawái,Maluma,Reggaeton,Bogotá,84.0,137,4.51
+Provenza,Peter Manjarrés,Vallenato,Bogotá,65.0,206,3.54
+Nuestra Canción,Bad Bunny,Reggaeton,Barranquilla,88.0,231,5.23
+La Rebelión,Systema Solar,Afrobeat,Cartagena,55.0,230,4.59
+Felices los 4,J Balvin,Reggaeton,Cartagena,62.0,188,5.54
+Antes,Carlos Vives,Vallenato,Barranquilla,76.0,214,4.46
+Cariñito,La 33,Salsa,Cali,100.0,215,3.14
+Provenza,Grupo Niche,Salsa,Bucaramanga,76.0,218,5.08
+La Negra Tiene Tumbao,J Balvin,Reggaeton,Medellín,88.0,259,4.73
+To' Bien,La 33,Salsa,Barranquilla,71.0,172,3.54
+La Rebelión,Joe Arroyo,Salsa,Manizales,60.0,181,4.03
+Querer Mejor,Karol G,Reggaeton,Manizales,81.0,185,3.02
+Mi Libertad,Piso 21,Pop,Bucaramanga,74.0,262,4.55
+2:50,Shakira,Pop,Medellín,74.0,162,4.33
+Tití Me Preguntó,Monsieur Periné,Jazz/Bossa,Bucaramanga,45.0,227,3.63
+2:50,ChocQuibTown,Afrobeat,Bucaramanga,41.0,229,3.75
+La Rebelión,Sebastián Yatra,Pop,Bucaramanga,70.0,170,5.55
+La Negra Tiene Tumbao,Carlos Vives,Vallenato,Barranquilla,84.0,197,5.31
+Ojos Así,Feid,Reggaeton,Bogotá,77.0,278,5.08
+2:50,Joe Arroyo,Salsa,Cali,89.0,270,3.09
+To' Bien,Bomba Estéreo,Electrónica,Bucaramanga,54.0,232,5.48
+Ojos Así,Peter Manjarrés,Vallenato,Cartagena,72.0,207,2.81
+Tití Me Preguntó,Karol G,Reggaeton,Manizales,89.0,203,5.09
+Provenza,Ryan Castro,Reggaeton,Medellín,98.0,228,4.7
+Querer Mejor,Jorge Celedón,Vallenato,Manizales,73.0,170,3.6
+La Negra Tiene Tumbao,Maluma,Reggaeton,Barranquilla,89.0,209,5.46
+Hawái,Carlos Vives,Vallenato,Bogotá,64.0,191,2.16
+Resistencia,Sebastián Yatra,Pop,Cartagena,80.0,247,2.2
+Tití Me Preguntó,Sebastián Yatra,Pop,Barranquilla,66.0,192,2.32
+Tití Me Preguntó,Silvestre Dangond,Vallenato,Cartagena,80.0,216,4.27
+Provenza,Grupo Niche,Salsa,Bogotá,57.0,269,4.58
+La Negra Tiene Tumbao,Camilo,Pop,Cali,93.0,233,4.48
+Volví a Nacer,Carlos Vives,Vallenato,Medellín,76.0,193,2.7
+Ojos Así,Carlos Vives,Vallenato,Bogotá,54.0,236,3.65
+Provenza,Celia Cruz,Salsa,Bogotá,75.0,199,3.29
+Provenza,Carlos Vives,Vallenato,Manizales,72.0,241,5.19
+Hawái,Jorge Celedón,Vallenato,Barranquilla,59.0,247,3.77
+Cariñito,ChocQuibTown,Afrobeat,Bucaramanga,60.0,189,4.04
+La Bicicleta,Jorge Celedón,Vallenato,Manizales,64.0,177,4.92
+2:50,La 33,Salsa,Bogotá,60.0,227,5.68
+Ojos Así,Ryan Castro,Reggaeton,Bogotá,74.0,223,5.29
+La Bicicleta,Systema Solar,Afrobeat,Barranquilla,52.0,231,2.9
+Volví a Nacer,Systema Solar,Afrobeat,Cartagena,50.0,216,5.91
+Cariñito,J Balvin,Reggaeton,Manizales,81.0,233,2.85
+Tacones Rojos,Systema Solar,Afrobeat,Bogotá,42.0,233,4.71
+Tití Me Preguntó,Feid,Reggaeton,Bogotá,84.0,184,5.25
+Mi Libertad,Shakira,Pop,Bogotá,79.0,198,3.97
+Cariñito,J Balvin,Reggaeton,Cali,85.0,193,3.3
+Resistencia,Feid,Reggaeton,Barranquilla,88.0,244,6.66
+Me Llamas,Shakira,Pop,Cali,54.0,136,4.02
+Tacones Rojos,Karol G,Reggaeton,Medellín,89.0,223,5.65
+Tití Me Preguntó,Camilo,Pop,Bucaramanga,63.0,264,4.12
+Ojos Así,Feid,Reggaeton,Cartagena,79.0,251,3.28
+Resistencia,Jorge Celedón,Vallenato,Bogotá,62.0,241,5.84
+Chocolate,J Balvin,Reggaeton,Bucaramanga,79.0,210,4.99
+Chocolate,Sebastián Yatra,Pop,Manizales,75.0,169,5.19
+Tití Me Preguntó,Carlos Vives,Vallenato,Barranquilla,68.0,222,2.96
+Tití Me Preguntó,Shakira,Pop,Bucaramanga,61.0,240,
+Mi Libertad,Ryan Castro,Reggaeton,Bucaramanga,80.0,237,6.68
+Safari,Ryan Castro,Reggaeton,Cali,72.0,194,2.8
+Resistencia,Bad Bunny,Reggaeton,Cartagena,86.0,253,4.22
+Mi Libertad,Systema Solar,Afrobeat,Cartagena,44.0,209,3.28
+Safari,Jorge Celedón,Vallenato,Bogotá,77.0,191,3.65
+La Bicicleta,Shakira,Pop,Barranquilla,100.0,185,8.04
+Mi Libertad,Maluma,Reggaeton,Medellín,91.0,212,3.91
+Resistencia,La 33,Salsa,Bucaramanga,71.0,193,3.95
+Resistencia,Joe Arroyo,Salsa,Cali,90.0,183,6.4
+La Rebelión,Feid,Reggaeton,Manizales,85.0,268,3.95
+Provenza,Feid,Reggaeton,Bogotá,95.0,180,3.14
+Tití Me Preguntó,Grupo Niche,Salsa,Barranquilla,81.0,211,4.22
+Provenza,Shakira,Pop,Bogotá,88.0,253,3.7
+La Rebelión,Feid,Reggaeton,Bogotá,,209,4.37
+Latinoamérica,Maluma,Reggaeton,Barranquilla,81.0,234,4.0
+Chocolate,Silvestre Dangond,Vallenato,Cali,52.0,262,5.46
+Vida de Rico,Silvestre Dangond,Vallenato,Medellín,,217,4.35
+Tití Me Preguntó,Piso 21,Pop,Manizales,,189,3.33
+Volví a Nacer,Fruko y sus Tesos,Salsa,Medellín,62.0,153,4.6
+Ojos Así,Fruko y sus Tesos,Salsa,Medellín,59.0,233,3.58
+La Negra Tiene Tumbao,Camilo,Pop,Barranquilla,68.0,249,2.19
+Con Mil Amores,Celia Cruz,Salsa,Cali,90.0,230,4.5
+La Bicicleta,Feid,Reggaeton,Cali,71.0,168,4.64
+Latinoamérica,Monsieur Periné,Jazz/Bossa,Cali,50.0,239,3.47
+Volví a Nacer,Feid,Reggaeton,Medellín,100.0,187,4.34
+La Negra Tiene Tumbao,Peter Manjarrés,Vallenato,Medellín,71.0,210,1.97
+Mi Libertad,Peter Manjarrés,Vallenato,Bucaramanga,71.0,253,2.77
+Ojos Así,Feid,Reggaeton,Cartagena,84.0,254,4.7
+La Bicicleta,ChocQuibTown,Afrobeat,Medellín,61.0,226,5.66
+Antes,Bad Bunny,Reggaeton,Barranquilla,81.0,212,2.53
+Latinoamérica,Bomba Estéreo,Electrónica,Bogotá,55.0,214,4.01
+2:50,Celia Cruz,Salsa,Manizales,71.0,175,2.64
+La Bicicleta,Jorge Celedón,Vallenato,Medellín,59.0,177,3.41
+2:50,Silvestre Dangond,Vallenato,Bucaramanga,83.0,237,5.15
+To' Bien,Bomba Estéreo,Electrónica,Cali,47.0,154,
+Ojos Así,Piso 21,Pop,Manizales,71.0,213,6.37
+Tití Me Preguntó,Systema Solar,Afrobeat,Bucaramanga,47.0,156,4.36
+Chocolate,Jorge Celedón,Vallenato,Manizales,75.0,213,2.54
+La Bicicleta,Peter Manjarrés,Vallenato,Bucaramanga,73.0,192,3.44
+Cariñito,Monsieur Periné,Jazz/Bossa,Cali,39.0,162,1.22
+La Rebelión,Camilo,Pop,Cali,83.0,194,3.83
+Tití Me Preguntó,Grupo Niche,Salsa,Bucaramanga,61.0,226,6.69
+Latinoamérica,Grupo Niche,Salsa,Bogotá,67.0,186,4.7
+2:50,Carlos Vives,Vallenato,Cartagena,73.0,232,5.66
+Latinoamérica,Shakira,Pop,Manizales,81.0,250,5.03
+Latinoamérica,Maluma,Reggaeton,Manizales,84.0,231,3.47
+To' Bien,Fruko y sus Tesos,Salsa,Bogotá,72.0,262,4.75
+Chocolate,Fruko y sus Tesos,Salsa,Bogotá,73.0,198,3.52
+Chocolate,Carlos Vives,Vallenato,Bucaramanga,72.0,246,3.91
+Volví a Nacer,Celia Cruz,Salsa,Bucaramanga,69.0,169,4.12
+Me Llamas,Carlos Vives,Vallenato,Barranquilla,84.0,193,4.37
+Me Llamas,Grupo Niche,Salsa,Bucaramanga,64.0,207,3.41
+Con Mil Amores,Maluma,Reggaeton,Bucaramanga,81.0,204,3.8
+Querer Mejor,Piso 21,Pop,Cali,54.0,204,4.63
+Tacones Rojos,J Balvin,Reggaeton,Bucaramanga,97.0,168,5.05
+2:50,Silvestre Dangond,Vallenato,Medellín,60.0,145,4.37
+Hawái,Piso 21,Pop,Bogotá,90.0,255,3.89
+Felices los 4,Silvestre Dangond,Vallenato,Manizales,77.0,220,4.69
+Hawái,Bomba Estéreo,Electrónica,Manizales,61.0,199,4.19
+La Rebelión,Jorge Celedón,Vallenato,Barranquilla,92.0,259,4.01
+Volví a Nacer,Fruko y sus Tesos,Salsa,Cali,98.0,218,5.43
+Ojos Así,Peter Manjarrés,Vallenato,Manizales,78.0,216,3.87
+Nuestra Canción,Joe Arroyo,Salsa,Cali,98.0,227,6.06
+Felices los 4,La 33,Salsa,Cali,81.0,185,5.41
+Latinoamérica,Grupo Niche,Salsa,Barranquilla,61.0,231,2.19
+Me Llamas,Carlos Vives,Vallenato,Cartagena,84.0,205,6.17
+Mi Libertad,Bomba Estéreo,Electrónica,Bucaramanga,52.0,193,2.59
+To' Bien,Bad Bunny,Reggaeton,Cartagena,62.0,220,
+Vida de Rico,Monsieur Periné,Jazz/Bossa,Bucaramanga,42.0,252,3.63
+Felices los 4,Carlos Vives,Vallenato,Cartagena,68.0,217,3.74
+Felices los 4,Bad Bunny,Reggaeton,Bucaramanga,95.0,185,5.32
+Hawái,Grupo Niche,Salsa,Cali,92.0,157,5.57
+Hawái,Grupo Niche,Salsa,Bogotá,69.0,205,4.63
+Hawái,Fruko y sus Tesos,Salsa,Cartagena,91.0,217,5.36
+Me Llamas,Karol G,Reggaeton,Manizales,76.0,210,4.25
+Provenza,Jorge Celedón,Vallenato,Cali,70.0,263,3.66
+Resistencia,Peter Manjarrés,Vallenato,Bogotá,73.0,215,2.54
+2:50,Ryan Castro,Reggaeton,Manizales,66.0,243,4.81
