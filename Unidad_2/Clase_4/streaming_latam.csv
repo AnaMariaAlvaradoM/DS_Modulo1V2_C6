@@ -1,0 +1,401 @@
+pais,ciudad,edad,genero_usuario,estrato,dispositivo,genero_contenido,horas_semana,titulos_semana,meses_suscriptor,comparte_cuenta,cancelo_suscripcion,uso_intensivo,poder_adquisitivo
+Colombia,Barranquilla,45,Hombre,4,Smart TV,Comedia,5.8,3,13,No,1,17.4,4.0
+Venezuela,Maracaibo,41,Hombre,2,Computador,Documental,2.8,2,6,No,0,5.6,2.0
+México,Guadalajara,28,Hombre,2,Smart TV,Documental,3.4,2,30,No,0,6.8,2.0
+Colombia,Cali,35,Mujer,3,Celular,Romance,5.1,4,25,No,1,20.4,3.0
+Colombia,Bucaramanga,39,Mujer,2,Smart TV,Comedia,3.7,3,18,Sí,1,11.100000000000001,1.0
+Argentina,Córdoba,26,Mujer,1,Celular,Acción,4.3,3,44,No,1,12.899999999999999,1.0
+Argentina,Buenos Aires,28,Hombre,3,Celular,Comedia,4.4,2,18,Sí,0,8.8,1.5
+Venezuela,Caracas,21,Hombre,4,Celular,Crimen,5.7,4,31,No,0,22.8,4.0
+Argentina,Córdoba,48,Mujer,2,Smart TV,Crimen,1.6,2,23,No,0,3.2,2.0
+Venezuela,Maracaibo,20,Hombre,5,Celular,Comedia,8.6,6,39,No,1,51.599999999999994,5.0
+Venezuela,Caracas,18,Mujer,4,Computador,Comedia,4.3,2,27,No,0,8.6,4.0
+Perú,Arequipa,54,Mujer,4,Smart TV,Romance,4.8,3,13,Sí,0,14.399999999999999,2.0
+Perú,Arequipa,39,Hombre,5,Celular,Acción,5.0,2,2,Sí,0,10.0,2.5
+Venezuela,Caracas,51,Hombre,1,Computador,Comedia,2.4,2,8,No,1,4.8,1.0
+Argentina,Córdoba,41,Mujer,2,Celular,Acción,4.2,2,38,No,0,8.4,2.0
+México,Monterrey,23,Hombre,6,Celular,Terror,5.6,3,24,No,1,16.799999999999997,6.0
+Colombia,Cali,37,No binario,6,Tablet,Crimen,6.8,4,40,No,0,27.2,6.0
+Colombia,Bogotá,20,Hombre,1,Smart TV,Comedia,1.1,1,30,No,1,1.1,1.0
+Argentina,Córdoba,44,Hombre,5,Tablet,Documental,7.5,3,59,No,0,22.5,5.0
+Colombia,Barranquilla,23,Mujer,1,Celular,Romance,2.5,2,30,No,0,5.0,1.0
+Perú,Lima,29,Hombre,2,Celular,Anime,1.8,2,8,No,1,3.6,2.0
+Argentina,Córdoba,51,No binario,2,Tablet,Comedia,2.0,3,8,No,1,6.0,2.0
+Perú,Lima,38,Hombre,2,Smart TV,Comedia,5.0,4,18,No,1,20.0,2.0
+México,Monterrey,21,Hombre,3,Celular,Anime,6.7,3,37,No,1,20.1,3.0
+Colombia,Bucaramanga,22,Hombre,6,Celular,Acción,9.1,4,56,No,0,36.4,6.0
+México,CDMX,24,Mujer,3,Smart TV,Comedia,3.9,3,52,No,0,11.7,3.0
+Venezuela,Caracas,41,Mujer,2,Smart TV,Comedia,3.1,1,12,Sí,1,3.1,1.0
+Venezuela,Maracaibo,33,Hombre,2,Tablet,Acción,5.5,3,8,No,0,16.5,2.0
+Argentina,Buenos Aires,47,Hombre,1,Computador,Acción,1.2,1,38,No,1,1.2,1.0
+México,Monterrey,54,Mujer,1,Computador,Crimen,1.4,1,13,No,0,1.4,1.0
+Colombia,Bogotá,25,Mujer,3,Celular,Romance,3.7,2,28,No,0,7.4,3.0
+Perú,Lima,24,Mujer,3,Celular,Romance,3.4,2,43,Sí,1,6.8,1.5
+Colombia,Bogotá,29,Hombre,2,Computador,Documental,5.2,3,43,Sí,0,15.600000000000001,1.0
+Colombia,Cali,23,Hombre,3,Celular,Anime,5.6,3,46,Sí,0,16.799999999999997,1.5
+Venezuela,Caracas,42,Mujer,2,Tablet,Documental,3.8,3,17,Sí,1,11.399999999999999,1.0
+Venezuela,Maracaibo,47,Mujer,4,Celular,Comedia,5.5,3,48,Sí,0,16.5,2.0
+México,CDMX,28,Hombre,3,Smart TV,Comedia,5.9,4,14,No,0,23.6,3.0
+Colombia,Bogotá,47,No binario,2,Celular,Documental,4.8,2,6,No,1,9.6,2.0
+Venezuela,Caracas,54,Hombre,3,Celular,Comedia,3.6,2,56,Sí,0,7.2,1.5
+Argentina,Córdoba,43,Mujer,2,Smart TV,Crimen,2.8,1,56,Sí,0,2.8,1.0
+Colombia,Bucaramanga,28,Mujer,2,Smart TV,Comedia,2.6,1,27,No,0,2.6,2.0
+Colombia,Bucaramanga,40,Mujer,2,Computador,Comedia,4.6,3,56,Sí,1,13.799999999999999,1.0
+Venezuela,Maracaibo,34,Mujer,5,Celular,Crimen,5.6,3,21,Sí,0,16.799999999999997,2.5
+Colombia,Medellín,34,Hombre,2,Celular,Documental,1.7,0,33,No,1,0.0,2.0
+Colombia,Bogotá,52,Mujer,6,Smart TV,Romance,6.1,2,54,Sí,0,12.2,3.0
+Colombia,Medellín,34,Mujer,3,Tablet,Romance,4.5,2,36,Sí,0,9.0,1.5
+Colombia,Bogotá,30,Mujer,2,Celular,Romance,4.7,3,57,No,0,14.100000000000001,2.0
+Colombia,Cali,21,Mujer,4,Celular,Comedia,7.1,5,39,Sí,0,35.5,2.0
+México,Monterrey,44,Hombre,4,Celular,Documental,4.1,3,34,No,0,12.299999999999999,4.0
+Argentina,Buenos Aires,46,Mujer,5,Tablet,Romance,4.8,4,18,No,0,19.2,5.0
+Argentina,Buenos Aires,43,Mujer,2,Smart TV,Romance,2.8,2,46,Sí,1,5.6,1.0
+Perú,Lima,53,Mujer,5,Computador,Comedia,4.0,2,44,No,0,8.0,5.0
+Venezuela,Caracas,40,Hombre,5,Computador,Comedia,5.9,4,51,No,0,23.6,5.0
+Colombia,Bucaramanga,26,Mujer,3,Computador,Acción,5.3,4,38,Sí,1,21.2,1.5
+Colombia,Bucaramanga,19,Hombre,3,Smart TV,Comedia,5.1,3,39,Sí,0,15.299999999999999,1.5
+Argentina,Córdoba,49,Mujer,4,Computador,Crimen,2.8,2,41,No,0,5.6,4.0
+Argentina,Buenos Aires,48,Hombre,2,Smart TV,Comedia,1.5,1,44,No,1,1.5,2.0
+Argentina,Buenos Aires,46,Hombre,5,Smart TV,Crimen,7.3,4,15,No,0,29.2,5.0
+Colombia,Bogotá,22,Hombre,4,Celular,Documental,4.6,3,37,No,0,13.799999999999999,4.0
+México,Monterrey,53,Hombre,5,Computador,Documental,6.4,3,1,No,0,19.200000000000003,5.0
+Colombia,Barranquilla,45,Mujer,3,Celular,Anime,4.8,4,44,No,0,19.2,3.0
+Colombia,Bucaramanga,54,Hombre,3,Tablet,Documental,3.3,2,58,Sí,1,6.6,1.5
+Colombia,Medellín,44,Mujer,2,Celular,Terror,1.9,1,32,Sí,0,1.9,1.0
+Colombia,Barranquilla,27,Hombre,3,Computador,Documental,5.0,3,42,Sí,1,15.0,1.5
+Perú,Arequipa,44,Hombre,4,Smart TV,Crimen,3.9,1,22,No,1,3.9,4.0
+Perú,Lima,47,Hombre,6,Tablet,Crimen,6.4,3,41,No,0,19.200000000000003,6.0
+Colombia,Bogotá,37,Hombre,2,Computador,Acción,3.5,2,11,Sí,0,7.0,1.0
+Colombia,Bucaramanga,22,Mujer,1,Smart TV,Documental,2.3,1,24,No,1,2.3,1.0
+Perú,Lima,46,Hombre,1,Smart TV,Crimen,1.9,2,46,Sí,1,3.8,0.5
+Colombia,Bucaramanga,33,Hombre,3,Celular,Comedia,4.1,3,49,No,0,12.299999999999999,3.0
+Colombia,Barranquilla,46,Mujer,5,Smart TV,Romance,4.3,4,26,No,0,17.2,5.0
+Colombia,Barranquilla,33,Hombre,2,Computador,Documental,3.4,1,25,Sí,0,3.4,1.0
+Perú,Lima,42,No binario,3,Tablet,Terror,3.4,2,51,Sí,0,6.8,1.5
+Venezuela,Maracaibo,47,Hombre,3,Celular,Crimen,1.7,2,25,Sí,0,3.4,1.5
+México,Guadalajara,19,No binario,5,Tablet,Comedia,6.4,4,23,No,0,25.6,5.0
+Venezuela,Caracas,37,Hombre,2,Computador,Romance,3.1,2,22,Sí,0,6.2,1.0
+Colombia,Bucaramanga,50,No binario,1,Celular,Crimen,1.3,0,14,Sí,1,0.0,0.5
+Colombia,Bucaramanga,36,Hombre,3,Smart TV,Comedia,1.9,3,6,Sí,0,5.699999999999999,1.5
+Colombia,Cali,21,Hombre,3,Celular,Comedia,5.9,4,21,Sí,1,23.6,1.5
+Colombia,Medellín,50,Hombre,2,Celular,Comedia,3.7,2,51,No,0,7.4,2.0
+Colombia,Cali,42,Mujer,5,Celular,Acción,6.7,4,44,No,0,26.8,5.0
+México,Monterrey,53,Hombre,4,Smart TV,Crimen,5.0,3,10,Sí,0,15.0,2.0
+Argentina,Buenos Aires,18,Hombre,1,Celular,Romance,1.8,3,20,Sí,1,5.4,0.5
+Colombia,Cali,33,Mujer,3,Celular,Documental,4.6,2,11,Sí,1,9.2,1.5
+Perú,Arequipa,42,Hombre,5,Smart TV,Crimen,4.8,3,14,Sí,0,14.399999999999999,2.5
+Perú,Lima,52,Mujer,6,Tablet,Romance,9.0,5,4,Sí,0,45.0,3.0
+Colombia,Bogotá,28,Hombre,1,Computador,Terror,2.3,1,11,Sí,1,2.3,0.5
+Perú,Arequipa,41,Hombre,5,Celular,Terror,6.8,4,8,No,1,27.2,5.0
+Venezuela,Caracas,52,Mujer,1,Smart TV,Comedia,0.5,1,33,No,0,0.5,1.0
+Venezuela,Caracas,38,Hombre,4,Celular,Documental,3.8,1,10,No,0,3.8,4.0
+Colombia,Barranquilla,21,Hombre,4,Smart TV,Crimen,5.2,3,53,No,0,15.600000000000001,4.0
+Colombia,Bogotá,31,Mujer,6,Computador,Romance,8.1,4,49,No,0,32.4,6.0
+México,Monterrey,44,Mujer,4,Tablet,Comedia,5.6,3,4,No,0,16.799999999999997,4.0
+Perú,Lima,50,Hombre,1,Tablet,Crimen,2.3,0,12,No,0,0.0,1.0
+Colombia,Bucaramanga,33,Hombre,4,Smart TV,Acción,3.2,2,51,Sí,1,6.4,2.0
+Colombia,Bucaramanga,19,No binario,2,Celular,Comedia,5.5,3,14,No,0,16.5,2.0
+Colombia,Bogotá,50,Hombre,5,Tablet,Acción,4.5,2,33,No,0,9.0,5.0
+Perú,Lima,19,Mujer,1,Celular,Comedia,5.2,3,48,Sí,1,15.600000000000001,0.5
+Venezuela,Caracas,40,Hombre,3,Smart TV,Terror,6.4,4,12,No,0,25.6,3.0
+Perú,Arequipa,19,Mujer,4,Celular,Romance,6.9,4,35,No,0,27.6,4.0
+Perú,Arequipa,39,Hombre,2,Computador,Acción,4.5,2,47,No,0,9.0,2.0
+México,CDMX,54,Mujer,4,Smart TV,Crimen,3.0,0,18,Sí,1,0.0,2.0
+Perú,Lima,32,Mujer,4,Computador,Comedia,8.5,7,30,No,0,59.5,4.0
+Argentina,Córdoba,26,Hombre,4,Computador,Comedia,5.9,4,53,No,0,23.6,4.0
+Colombia,Barranquilla,46,Mujer,5,Smart TV,Romance,7.0,3,28,No,0,21.0,5.0
+Argentina,Buenos Aires,37,Mujer,3,Smart TV,Comedia,3.3,1,12,No,0,3.3,3.0
+Colombia,Bucaramanga,21,Mujer,2,Celular,Crimen,4.0,2,36,No,1,8.0,2.0
+Venezuela,Maracaibo,27,Hombre,2,Celular,Crimen,2.4,1,43,Sí,0,2.4,1.0
+México,Guadalajara,44,Hombre,3,Computador,Romance,3.8,3,25,No,0,11.399999999999999,3.0
+México,Guadalajara,41,Mujer,1,Smart TV,Comedia,2.4,2,59,Sí,0,4.8,0.5
+México,CDMX,19,Hombre,4,Celular,Romance,6.2,4,50,No,0,24.8,4.0
+México,Guadalajara,41,Hombre,1,Smart TV,Romance,4.0,4,35,Sí,1,16.0,0.5
+México,Guadalajara,45,Hombre,1,Celular,Crimen,2.8,3,20,Sí,0,8.399999999999999,0.5
+Perú,Lima,36,Hombre,6,Computador,Acción,7.4,5,27,No,0,37.0,6.0
+Argentina,Buenos Aires,45,Hombre,5,Celular,Comedia,5.8,4,59,No,0,23.2,5.0
+Colombia,Barranquilla,28,Hombre,2,Celular,Documental,6.2,4,38,No,0,24.8,2.0
+Perú,Lima,49,Hombre,3,Computador,Documental,3.1,1,15,Sí,0,3.1,1.5
+México,Guadalajara,38,Hombre,5,Celular,Acción,7.5,4,44,Sí,1,30.0,2.5
+Colombia,Medellín,21,Hombre,4,Celular,Acción,3.5,3,58,Sí,0,10.5,2.0
+Colombia,Bucaramanga,44,Hombre,2,Smart TV,Comedia,2.1,1,24,Sí,1,2.1,1.0
+Venezuela,Maracaibo,50,Mujer,3,Smart TV,Anime,4.3,3,39,Sí,1,12.899999999999999,1.5
+Venezuela,Caracas,31,Hombre,5,Computador,Acción,6.2,2,38,No,1,12.4,5.0
+Perú,Lima,25,Mujer,1,Celular,Crimen,6.6,4,20,Sí,0,26.4,0.5
+Colombia,Cali,44,Mujer,6,Smart TV,Romance,9.8,7,45,Sí,0,68.60000000000001,3.0
+México,Monterrey,42,Mujer,4,Smart TV,Romance,3.2,1,8,No,1,3.2,4.0
+Colombia,Barranquilla,45,Mujer,2,Computador,Documental,1.8,1,8,Sí,0,1.8,1.0
+México,Guadalajara,35,Mujer,5,Smart TV,Terror,6.0,3,54,No,0,18.0,5.0
+Venezuela,Caracas,47,Mujer,1,Celular,Romance,4.2,3,7,No,1,12.600000000000001,1.0
+Colombia,Bogotá,47,Hombre,3,Smart TV,Documental,5.3,3,48,No,0,15.899999999999999,3.0
+Perú,Lima,39,Hombre,4,Celular,Romance,5.5,4,49,Sí,0,22.0,2.0
+Perú,Lima,29,Hombre,2,Celular,Documental,2.0,2,43,No,1,4.0,2.0
+Colombia,Bogotá,52,Hombre,5,Celular,Documental,4.5,2,28,No,0,9.0,5.0
+Colombia,Cali,24,Mujer,4,Celular,Crimen,2.5,1,26,No,0,2.5,4.0
+México,Guadalajara,23,Mujer,2,Tablet,Comedia,2.1,1,3,Sí,1,2.1,1.0
+Perú,Lima,27,Hombre,2,Smart TV,Documental,4.3,3,32,No,0,12.899999999999999,2.0
+Colombia,Medellín,28,Mujer,1,Computador,Romance,3.8,3,41,Sí,1,11.399999999999999,0.5
+México,Monterrey,31,Hombre,4,Computador,Acción,3.9,3,20,No,1,11.7,4.0
+Colombia,Cali,19,Mujer,2,Celular,Romance,4.3,2,31,No,0,8.6,2.0
+México,CDMX,53,Hombre,3,Smart TV,Documental,5.6,3,18,No,0,16.799999999999997,3.0
+Venezuela,Maracaibo,23,Mujer,5,Computador,Crimen,6.9,4,13,Sí,0,27.6,2.5
+Venezuela,Caracas,22,Hombre,5,Celular,Acción,6.4,4,12,No,0,25.6,5.0
+México,Guadalajara,29,Hombre,2,Smart TV,Romance,4.5,2,37,No,1,9.0,2.0
+México,Monterrey,36,Hombre,3,Smart TV,Documental,5.0,4,57,Sí,1,20.0,1.5
+Venezuela,Maracaibo,27,Mujer,3,Celular,Documental,4.8,3,13,Sí,0,14.399999999999999,1.5
+Argentina,Buenos Aires,22,Mujer,3,Celular,Terror,4.3,2,19,No,1,8.6,3.0
+México,CDMX,45,Mujer,3,Celular,Acción,3.5,2,52,Sí,1,7.0,1.5
+Colombia,Bucaramanga,43,Hombre,3,Tablet,Documental,4.2,3,29,No,1,12.600000000000001,3.0
+Perú,Lima,20,Mujer,4,Celular,Romance,5.2,4,15,Sí,0,20.8,2.0
+Venezuela,Maracaibo,34,Hombre,3,Celular,Acción,6.0,4,2,No,1,24.0,3.0
+Perú,Arequipa,19,Mujer,3,Computador,Acción,6.1,2,47,Sí,0,12.2,1.5
+México,Guadalajara,52,Mujer,3,Smart TV,Romance,5.0,3,44,Sí,1,15.0,1.5
+Venezuela,Maracaibo,48,Mujer,2,Smart TV,Documental,5.4,2,17,Sí,0,10.8,1.0
+Colombia,Bogotá,23,Mujer,4,Celular,Terror,7.7,6,55,No,0,46.2,4.0
+México,Guadalajara,44,Mujer,3,Smart TV,Terror,5.7,4,27,No,1,22.8,3.0
+México,CDMX,29,Hombre,6,Smart TV,Comedia,7.8,4,16,No,0,31.2,6.0
+Perú,Arequipa,21,Mujer,5,Tablet,Romance,6.5,4,43,No,0,26.0,5.0
+Venezuela,Caracas,51,Mujer,2,Celular,Romance,5.6,3,25,Sí,0,16.799999999999997,1.0
+Colombia,Bucaramanga,42,Mujer,2,Tablet,Terror,2.4,2,44,Sí,0,4.8,1.0
+Argentina,Buenos Aires,32,Mujer,5,Tablet,Comedia,5.6,5,49,No,0,28.0,5.0
+Argentina,Córdoba,35,Hombre,4,Celular,Acción,4.3,2,49,No,0,8.6,4.0
+Venezuela,Caracas,50,Hombre,1,Computador,Acción,2.3,2,19,Sí,1,4.6,0.5
+Colombia,Barranquilla,19,Mujer,4,Computador,Romance,6.4,5,54,Sí,0,32.0,2.0
+Argentina,Córdoba,54,Hombre,3,Smart TV,Crimen,4.9,4,18,Sí,1,19.6,1.5
+México,CDMX,42,Mujer,5,Smart TV,Romance,5.7,3,4,No,0,17.1,5.0
+Perú,Lima,43,Hombre,4,Smart TV,Acción,2.9,2,33,No,0,5.8,4.0
+Venezuela,Maracaibo,38,Hombre,6,Computador,Anime,7.4,5,3,No,1,37.0,6.0
+México,Monterrey,39,Mujer,4,Smart TV,Terror,6.3,3,54,Sí,0,18.9,2.0
+Perú,Arequipa,39,Hombre,6,Celular,Acción,7.0,4,35,No,0,28.0,6.0
+Perú,Arequipa,32,Hombre,2,Smart TV,Documental,3.5,4,51,No,0,14.0,2.0
+Colombia,Barranquilla,44,Hombre,3,Tablet,Acción,4.7,3,46,No,1,14.100000000000001,3.0
+Colombia,Barranquilla,31,Mujer,1,Celular,Romance,4.5,3,7,Sí,1,13.5,0.5
+México,Monterrey,46,Mujer,5,Computador,Romance,5.7,2,47,Sí,0,11.4,2.5
+Colombia,Bucaramanga,18,Mujer,2,Celular,Romance,2.5,1,52,No,0,2.5,2.0
+Colombia,Medellín,29,Mujer,4,Computador,Romance,4.9,3,32,No,0,14.700000000000001,4.0
+México,Guadalajara,19,No binario,3,Smart TV,Anime,4.8,5,1,Sí,1,24.0,1.5
+Argentina,Córdoba,26,Hombre,5,Celular,Terror,4.4,4,17,Sí,0,17.6,2.5
+Colombia,Medellín,53,Mujer,3,Smart TV,Romance,4.6,1,54,Sí,1,4.6,1.5
+Venezuela,Caracas,43,Hombre,2,Computador,Acción,2.3,2,49,Sí,0,4.6,1.0
+Colombia,Cali,28,Mujer,3,Smart TV,Romance,5.3,2,58,No,0,10.6,3.0
+Perú,Lima,42,Hombre,1,Smart TV,Comedia,2.6,1,57,Sí,1,2.6,0.5
+Venezuela,Maracaibo,50,Hombre,3,Smart TV,Acción,3.4,2,14,Sí,0,6.8,1.5
+Perú,Lima,23,Mujer,4,Smart TV,Romance,7.7,4,36,Sí,0,30.8,2.0
+Colombia,Medellín,28,Hombre,1,Celular,Comedia,2.2,2,39,Sí,1,4.4,0.5
+Colombia,Bogotá,22,No binario,6,Celular,Comedia,6.8,4,30,No,0,27.2,6.0
+Colombia,Barranquilla,18,Mujer,3,Celular,Documental,5.4,2,22,Sí,0,10.8,1.5
+Argentina,Buenos Aires,36,Mujer,3,Smart TV,Comedia,5.4,4,21,Sí,0,21.6,1.5
+México,Monterrey,42,Mujer,5,Smart TV,Terror,5.9,4,56,Sí,0,23.6,2.5
+Colombia,Barranquilla,18,No binario,2,Smart TV,Anime,3.0,1,25,No,1,3.0,2.0
+Venezuela,Caracas,18,Hombre,3,Computador,Anime,5.9,3,28,No,0,17.700000000000003,3.0
+Venezuela,Caracas,43,No binario,6,Celular,Acción,7.5,4,9,No,0,30.0,6.0
+México,Monterrey,27,Hombre,2,Celular,Acción,6.3,4,20,Sí,0,25.2,1.0
+Perú,Arequipa,44,Hombre,4,Computador,Crimen,4.7,3,7,No,1,14.100000000000001,4.0
+Colombia,Medellín,52,Mujer,1,Computador,Romance,2.2,2,16,Sí,1,4.4,0.5
+Colombia,Bucaramanga,27,Hombre,3,Computador,Comedia,4.0,3,43,No,0,12.0,3.0
+Colombia,Medellín,37,Mujer,4,Computador,Acción,3.4,3,27,No,1,10.2,4.0
+Venezuela,Caracas,34,Mujer,2,Computador,Terror,3.6,3,42,Sí,0,10.8,1.0
+Colombia,Medellín,39,Hombre,3,Celular,Comedia,5.3,3,16,No,0,15.899999999999999,3.0
+Colombia,Barranquilla,48,Mujer,4,Celular,Romance,3.6,1,46,Sí,0,3.6,2.0
+México,Guadalajara,23,Mujer,4,Computador,Crimen,5.0,3,34,No,0,15.0,4.0
+Colombia,Cali,45,Mujer,2,Computador,Documental,1.7,1,23,Sí,0,1.7,1.0
+Colombia,Barranquilla,23,Hombre,3,Celular,Crimen,6.5,4,42,No,0,26.0,3.0
+Colombia,Bogotá,31,Mujer,6,Smart TV,Documental,6.5,3,51,No,0,19.5,6.0
+Perú,Arequipa,21,Mujer,3,Celular,Romance,5.7,2,21,No,1,11.4,3.0
+Perú,Lima,37,Hombre,5,Computador,Terror,5.1,3,53,No,0,15.299999999999999,5.0
+Colombia,Bogotá,27,No binario,2,Smart TV,Comedia,3.9,3,4,Sí,1,11.7,1.0
+Perú,Lima,28,No binario,3,Computador,Documental,3.9,2,22,No,0,7.8,3.0
+Perú,Lima,43,Hombre,3,Tablet,Acción,1.3,0,43,Sí,0,0.0,1.5
+Venezuela,Caracas,54,No binario,4,Smart TV,Documental,4.6,2,50,No,0,9.2,4.0
+Argentina,Córdoba,25,Mujer,4,Tablet,Romance,6.3,3,49,Sí,0,18.9,2.0
+Colombia,Bucaramanga,20,Hombre,5,Computador,Crimen,4.3,1,57,Sí,0,4.3,2.5
+Colombia,Bucaramanga,46,Mujer,4,Computador,Comedia,4.7,4,12,No,0,18.8,4.0
+Venezuela,Caracas,30,No binario,5,Celular,Crimen,5.9,5,6,No,0,29.5,5.0
+Colombia,Bogotá,34,Mujer,5,Celular,Documental,4.9,3,11,No,0,14.700000000000001,5.0
+México,CDMX,48,Hombre,3,Smart TV,Terror,3.6,2,1,Sí,0,7.2,1.5
+Perú,Arequipa,44,Hombre,5,Computador,Anime,3.5,3,30,Sí,1,10.5,2.5
+Argentina,Buenos Aires,26,Mujer,3,Celular,Terror,5.1,4,48,Sí,1,20.4,1.5
+Colombia,Bogotá,36,Hombre,2,Celular,Comedia,4.9,3,20,No,0,14.700000000000001,2.0
+Colombia,Barranquilla,52,Hombre,2,Tablet,Terror,1.3,1,1,No,1,1.3,2.0
+Colombia,Barranquilla,34,Hombre,4,Smart TV,Documental,5.3,4,40,No,0,21.2,4.0
+Argentina,Córdoba,41,Hombre,4,Smart TV,Romance,6.8,4,11,No,1,27.2,4.0
+Colombia,Bogotá,41,Hombre,1,Smart TV,Comedia,2.5,1,59,No,0,2.5,1.0
+Colombia,Bogotá,21,Hombre,4,Celular,Crimen,5.2,3,22,No,0,15.600000000000001,4.0
+Venezuela,Maracaibo,39,Mujer,1,Celular,Comedia,1.3,2,58,No,0,2.6,1.0
+Venezuela,Caracas,46,No binario,3,Smart TV,Crimen,4.2,2,10,No,0,8.4,3.0
+Colombia,Bucaramanga,35,Hombre,4,Tablet,Crimen,5.1,3,3,No,1,15.299999999999999,4.0
+Colombia,Barranquilla,38,Hombre,4,Tablet,Documental,5.9,4,6,No,0,23.6,4.0
+Perú,Lima,23,Mujer,2,Celular,Crimen,2.2,3,49,Sí,0,6.6000000000000005,1.0
+México,Monterrey,37,Mujer,1,Smart TV,Documental,3.8,3,12,No,0,11.399999999999999,1.0
+México,Monterrey,50,Hombre,4,Smart TV,Crimen,4.2,3,17,No,0,12.600000000000001,4.0
+Colombia,Medellín,52,Mujer,5,Computador,Romance,6.3,3,15,No,1,18.9,5.0
+Venezuela,Caracas,53,Hombre,5,Computador,Crimen,4.6,3,16,No,0,13.799999999999999,5.0
+Perú,Arequipa,46,No binario,3,Computador,Acción,2.4,0,11,No,0,0.0,3.0
+Perú,Lima,32,Hombre,4,Tablet,Comedia,4.7,2,43,No,0,9.4,4.0
+Colombia,Barranquilla,28,Mujer,4,Computador,Documental,4.4,2,56,No,0,8.8,4.0
+Venezuela,Maracaibo,22,Mujer,5,Computador,Romance,6.3,4,44,No,1,25.2,5.0
+Colombia,Cali,25,Mujer,3,Celular,Terror,5.6,4,46,Sí,1,22.4,1.5
+México,Guadalajara,18,Hombre,5,Celular,Acción,8.2,5,30,No,1,41.0,5.0
+Perú,Lima,43,Hombre,3,Tablet,Documental,4.3,1,16,No,0,4.3,3.0
+Colombia,Bucaramanga,20,Hombre,2,Celular,Acción,3.5,3,54,Sí,0,10.5,1.0
+Perú,Lima,35,Mujer,2,Tablet,Terror,3.0,1,21,No,0,3.0,2.0
+Colombia,Medellín,46,Hombre,4,Smart TV,Acción,5.6,3,24,No,1,16.799999999999997,4.0
+Colombia,Medellín,46,Mujer,5,Smart TV,Documental,7.1,3,53,No,1,21.299999999999997,5.0
+Argentina,Córdoba,35,Mujer,3,Tablet,Acción,4.0,1,38,Sí,0,4.0,1.5
+Perú,Lima,44,Mujer,4,Celular,Crimen,4.8,3,50,No,0,14.399999999999999,4.0
+Colombia,Medellín,43,No binario,2,Tablet,Acción,2.3,1,7,No,1,2.3,2.0
+Colombia,Cali,44,Mujer,3,Smart TV,Comedia,4.3,3,57,Sí,0,12.899999999999999,1.5
+Colombia,Medellín,36,Mujer,3,Celular,Crimen,5.5,1,50,Sí,1,5.5,1.5
+Venezuela,Maracaibo,20,Mujer,3,Smart TV,Romance,1.5,0,13,Sí,1,0.0,1.5
+Venezuela,Caracas,18,Mujer,2,Celular,Romance,4.5,2,17,No,1,9.0,2.0
+Colombia,Medellín,34,Hombre,4,Computador,Acción,4.7,2,38,No,0,9.4,4.0
+Argentina,Buenos Aires,18,Hombre,4,Computador,Comedia,3.2,3,40,No,0,9.600000000000001,4.0
+Colombia,Bogotá,42,Mujer,4,Computador,Acción,5.4,2,51,No,1,10.8,4.0
+Perú,Lima,36,Hombre,4,Celular,Documental,5.2,2,40,No,0,10.4,4.0
+Colombia,Bogotá,34,Mujer,3,Smart TV,Romance,4.9,2,2,Sí,1,9.8,1.5
+Colombia,Barranquilla,18,Mujer,5,Smart TV,Comedia,5.2,3,21,No,1,15.600000000000001,5.0
+Perú,Lima,24,Mujer,4,Computador,Romance,8.3,6,49,Sí,0,49.800000000000004,2.0
+Perú,Arequipa,48,Mujer,5,Computador,Crimen,5.8,3,16,No,0,17.4,5.0
+Colombia,Bogotá,37,Hombre,3,Smart TV,Documental,3.9,2,51,No,0,7.8,3.0
+México,CDMX,25,Hombre,4,Celular,Acción,7.5,5,25,Sí,0,37.5,2.0
+Perú,Arequipa,46,Hombre,2,Smart TV,Documental,3.8,2,31,No,0,7.6,2.0
+Colombia,Bucaramanga,45,Mujer,1,Celular,Crimen,3.2,2,1,Sí,1,6.4,0.5
+Perú,Arequipa,33,Hombre,6,Computador,Acción,8.6,5,20,Sí,0,43.0,3.0
+Colombia,Bucaramanga,29,Hombre,3,Celular,Terror,2.2,2,42,Sí,0,4.4,1.5
+Colombia,Bucaramanga,49,No binario,1,Smart TV,Documental,4.0,3,33,Sí,0,12.0,0.5
+Perú,Lima,43,Hombre,4,Computador,Comedia,4.6,3,14,No,0,13.799999999999999,4.0
+Perú,Arequipa,53,Hombre,6,Computador,Terror,6.7,5,33,No,0,33.5,6.0
+Colombia,Cali,40,Mujer,4,Tablet,Crimen,6.2,3,4,No,0,18.6,4.0
+Perú,Arequipa,35,Mujer,6,Tablet,Romance,6.2,4,36,No,0,24.8,6.0
+Colombia,Medellín,21,Hombre,6,Celular,Terror,8.0,5,11,No,0,40.0,6.0
+Venezuela,Caracas,43,Hombre,3,Smart TV,Anime,5.0,1,59,No,0,5.0,3.0
+Colombia,Barranquilla,24,Mujer,2,Celular,Romance,3.9,3,18,Sí,1,11.7,1.0
+Colombia,Bucaramanga,24,Hombre,1,Celular,Documental,3.6,2,23,No,1,7.2,1.0
+México,Monterrey,24,Mujer,2,Celular,Terror,2.0,2,28,Sí,0,4.0,1.0
+Venezuela,Caracas,30,Mujer,4,Smart TV,Anime,4.1,3,13,No,1,12.299999999999999,4.0
+México,CDMX,47,Hombre,6,Tablet,Comedia,5.2,2,41,Sí,0,10.4,3.0
+Colombia,Barranquilla,40,Mujer,1,Tablet,Romance,2.8,0,2,No,1,0.0,1.0
+Colombia,Barranquilla,39,Mujer,5,Smart TV,Anime,10.5,7,48,Sí,0,73.5,2.5
+Argentina,Córdoba,28,Mujer,4,Tablet,Romance,5.9,3,45,Sí,1,17.700000000000003,2.0
+Colombia,Bogotá,28,Hombre,4,Celular,Crimen,5.4,3,25,Sí,1,16.200000000000003,2.0
+Perú,Lima,21,Hombre,2,Celular,Comedia,4.0,3,6,Sí,1,12.0,1.0
+Colombia,Bogotá,35,Hombre,1,Tablet,Acción,3.8,1,36,Sí,1,3.8,0.5
+Colombia,Bucaramanga,54,Hombre,4,Celular,Acción,5.4,3,46,No,1,16.200000000000003,4.0
+Venezuela,Caracas,39,Mujer,4,Smart TV,Anime,3.8,3,56,No,0,11.399999999999999,4.0
+México,CDMX,49,Mujer,3,Celular,Documental,5.1,1,46,No,0,5.1,3.0
+Colombia,Cali,43,Hombre,3,Tablet,Documental,4.1,0,10,No,0,0.0,3.0
+Venezuela,Maracaibo,31,Mujer,1,Computador,Documental,3.7,3,42,No,0,11.100000000000001,1.0
+México,Guadalajara,27,Hombre,6,Tablet,Comedia,5.0,3,4,Sí,0,15.0,3.0
+Colombia,Bogotá,34,Mujer,5,Celular,Acción,4.4,3,34,No,0,13.200000000000001,5.0
+México,CDMX,27,Mujer,6,Celular,Terror,8.1,4,36,Sí,0,32.4,3.0
+Argentina,Córdoba,37,Hombre,5,Celular,Documental,4.0,3,12,No,0,12.0,5.0
+Argentina,Córdoba,31,Mujer,3,Smart TV,Romance,5.0,2,24,No,0,10.0,3.0
+México,Monterrey,51,Mujer,5,Computador,Comedia,6.0,3,43,No,0,18.0,5.0
+México,Guadalajara,48,Hombre,2,Smart TV,Romance,3.2,1,5,Sí,0,3.2,1.0
+México,CDMX,35,Hombre,4,Smart TV,Terror,5.7,3,51,No,0,17.1,4.0
+Colombia,Barranquilla,28,Hombre,2,Smart TV,Documental,4.1,2,56,No,0,8.2,2.0
+Perú,Lima,39,Mujer,3,Celular,Romance,4.8,2,44,Sí,0,9.6,1.5
+México,CDMX,18,Mujer,5,Computador,Documental,6.4,3,51,No,0,19.200000000000003,5.0
+Colombia,Cali,26,No binario,3,Tablet,Crimen,4.7,5,4,No,0,23.5,3.0
+México,CDMX,53,Mujer,5,Smart TV,Terror,9.0,6,49,No,0,54.0,5.0
+Colombia,Medellín,51,Mujer,4,Computador,Comedia,6.0,4,19,No,1,24.0,4.0
+México,Guadalajara,44,Hombre,2,Tablet,Terror,3.9,3,57,Sí,1,11.7,1.0
+Venezuela,Maracaibo,52,Mujer,2,Smart TV,Terror,3.3,2,59,Sí,1,6.6,1.0
+Perú,Arequipa,36,Hombre,1,Celular,Terror,1.7,0,4,Sí,0,0.0,0.5
+Perú,Lima,36,Mujer,4,Celular,Comedia,5.5,4,21,Sí,0,22.0,2.0
+Argentina,Córdoba,37,Mujer,5,Computador,Crimen,5.8,2,42,Sí,0,11.6,2.5
+Colombia,Medellín,54,Mujer,2,Smart TV,Crimen,3.9,4,24,Sí,0,15.6,1.0
+México,Monterrey,42,Hombre,3,Tablet,Comedia,3.0,1,38,No,1,3.0,3.0
+Venezuela,Maracaibo,49,Mujer,6,Computador,Comedia,3.7,2,18,Sí,1,7.4,3.0
+Venezuela,Maracaibo,18,Mujer,3,Celular,Anime,4.4,1,8,Sí,0,4.4,1.5
+Argentina,Córdoba,33,Mujer,6,Tablet,Terror,8.0,5,47,No,0,40.0,6.0
+Argentina,Buenos Aires,52,Hombre,5,Tablet,Crimen,8.5,6,17,No,1,51.0,5.0
+México,Monterrey,23,Hombre,3,Celular,Terror,6.1,4,59,No,0,24.4,3.0
+Colombia,Bucaramanga,47,Mujer,4,Computador,Romance,3.6,2,57,Sí,0,7.2,2.0
+México,CDMX,28,Mujer,1,Tablet,Terror,2.6,1,29,Sí,1,2.6,0.5
+México,CDMX,47,Hombre,3,Smart TV,Documental,2.8,1,31,No,0,2.8,3.0
+Colombia,Cali,54,Mujer,4,Tablet,Crimen,4.3,3,8,Sí,0,12.899999999999999,2.0
+Venezuela,Maracaibo,48,No binario,2,Smart TV,Comedia,1.9,2,43,Sí,1,3.8,1.0
+Colombia,Bucaramanga,48,Hombre,1,Computador,Comedia,0.5,0,40,Sí,0,0.0,0.5
+Colombia,Barranquilla,28,Mujer,1,Computador,Romance,3.4,3,18,No,0,10.2,1.0
+Colombia,Cali,21,Hombre,2,Celular,Acción,4.3,4,13,No,1,17.2,2.0
+Colombia,Bucaramanga,44,Hombre,2,Smart TV,Acción,2.9,4,16,No,1,11.6,2.0
+México,Guadalajara,23,Hombre,5,Celular,Anime,7.1,4,5,No,1,28.4,5.0
+México,CDMX,35,Hombre,3,Celular,Acción,6.8,4,43,No,1,27.2,3.0
+Colombia,Cali,46,Hombre,3,Smart TV,Documental,4.1,2,38,Sí,0,8.2,1.5
+Colombia,Medellín,22,Mujer,3,Smart TV,Crimen,4.5,3,48,No,0,13.5,3.0
+Colombia,Medellín,47,Hombre,2,Celular,Comedia,4.1,2,11,No,1,8.2,2.0
+Colombia,Bucaramanga,18,Hombre,4,Computador,Comedia,4.0,3,2,No,0,12.0,4.0
+México,Monterrey,40,Mujer,4,Computador,Comedia,6.0,4,41,No,1,24.0,4.0
+Colombia,Barranquilla,35,No binario,2,Tablet,Documental,2.6,2,4,No,1,5.2,2.0
+Perú,Arequipa,20,Hombre,3,Celular,Terror,4.0,1,13,No,1,4.0,3.0
+Perú,Lima,19,Hombre,4,Celular,Crimen,6.1,4,23,No,0,24.4,4.0
+Colombia,Bucaramanga,19,Mujer,6,Computador,Romance,9.7,6,16,No,0,58.199999999999996,6.0
+Venezuela,Maracaibo,22,Hombre,2,Tablet,Anime,3.1,2,50,No,0,6.2,2.0
+Perú,Arequipa,53,Mujer,3,Computador,Comedia,4.8,3,41,Sí,0,14.399999999999999,1.5
+Argentina,Córdoba,53,Hombre,4,Celular,Crimen,5.0,3,57,No,0,15.0,4.0
+México,CDMX,38,Hombre,2,Celular,Comedia,1.7,1,21,Sí,1,1.7,1.0
+Argentina,Buenos Aires,49,Hombre,4,Celular,Documental,5.8,4,15,Sí,0,23.2,2.0
+México,CDMX,42,Hombre,6,Computador,Documental,5.8,3,21,No,0,17.4,6.0
+Colombia,Medellín,19,Hombre,2,Celular,Comedia,2.4,1,41,No,1,2.4,2.0
+Argentina,Buenos Aires,25,Mujer,3,Celular,Romance,3.9,4,50,No,0,15.6,3.0
+México,Monterrey,43,Mujer,2,Tablet,Comedia,2.3,2,54,Sí,1,4.6,1.0
+Colombia,Barranquilla,24,Mujer,3,Tablet,Comedia,5.6,3,37,Sí,0,16.799999999999997,1.5
+Colombia,Bogotá,22,No binario,6,Celular,Anime,6.7,4,7,No,1,26.8,6.0
+Colombia,Barranquilla,18,Mujer,3,Celular,Crimen,6.9,4,18,Sí,0,27.6,1.5
+Colombia,Bogotá,48,Mujer,2,Tablet,Anime,3.2,2,27,No,0,6.4,2.0
+Venezuela,Caracas,36,Hombre,3,Celular,Crimen,3.5,1,11,No,1,3.5,3.0
+Colombia,Medellín,18,Hombre,4,Celular,Anime,5.0,2,4,Sí,0,10.0,2.0
+Perú,Lima,29,Mujer,5,Celular,Acción,6.7,5,55,No,0,33.5,5.0
+Colombia,Medellín,38,Mujer,3,Smart TV,Comedia,1.8,2,12,No,0,3.6,3.0
+Perú,Arequipa,45,Hombre,3,Tablet,Documental,1.4,2,17,No,0,2.8,3.0
+Perú,Arequipa,51,Hombre,5,Celular,Documental,4.5,3,20,Sí,1,13.5,2.5
+Colombia,Barranquilla,20,Hombre,2,Celular,Documental,4.9,3,46,Sí,1,14.700000000000001,1.0
+Perú,Arequipa,48,Hombre,6,Tablet,Anime,6.8,4,56,No,0,27.2,6.0
+Argentina,Buenos Aires,53,Mujer,3,Tablet,Comedia,3.7,2,33,Sí,1,7.4,1.5
+Colombia,Medellín,49,Mujer,3,Computador,Romance,3.6,1,36,Sí,1,3.6,1.5
+Venezuela,Maracaibo,22,No binario,5,Celular,Romance,4.1,2,18,Sí,0,8.2,2.5
+Venezuela,Maracaibo,26,Mujer,2,Celular,Romance,3.5,3,6,No,0,10.5,2.0
+Colombia,Cali,37,Hombre,2,Smart TV,Crimen,1.3,1,44,No,0,1.3,2.0
+Colombia,Medellín,19,Hombre,2,Computador,Anime,5.1,4,39,Sí,1,20.4,1.0
+Colombia,Barranquilla,48,Mujer,4,Smart TV,Crimen,4.8,3,4,Sí,1,14.399999999999999,2.0
+Colombia,Medellín,22,Mujer,2,Celular,Comedia,3.9,4,28,Sí,1,15.6,1.0
+Perú,Arequipa,24,Hombre,3,Celular,Terror,5.3,2,15,Sí,0,10.6,1.5
+Colombia,Medellín,48,Mujer,2,Smart TV,Romance,3.4,0,57,Sí,1,0.0,1.0
+Perú,Lima,25,Mujer,3,Computador,Comedia,5.1,3,5,Sí,1,15.299999999999999,1.5
+Colombia,Medellín,45,Hombre,2,Tablet,Documental,3.5,1,52,Sí,1,3.5,1.0
+México,Guadalajara,44,Mujer,5,Tablet,Romance,5.1,3,35,No,0,15.299999999999999,5.0
+México,Monterrey,27,Mujer,6,Smart TV,Terror,5.8,4,44,No,0,23.2,6.0
+México,Monterrey,46,Mujer,3,Smart TV,Comedia,4.4,3,11,Sí,0,13.200000000000001,1.5
+Colombia,Bogotá,26,Mujer,3,Computador,Comedia,6.5,4,21,No,1,26.0,3.0
+Venezuela,Maracaibo,54,Mujer,4,Smart TV,Crimen,5.8,4,14,No,0,23.2,4.0
+Perú,Lima,28,Mujer,4,Celular,Romance,5.3,2,51,Sí,0,10.6,2.0
+Colombia,Bogotá,48,Mujer,1,Smart TV,Terror,2.8,3,12,No,1,8.399999999999999,1.0
+Perú,Lima,39,Hombre,4,Celular,Comedia,4.6,1,53,No,0,4.6,4.0
+Colombia,Medellín,49,Hombre,5,Smart TV,Crimen,6.1,4,22,Sí,0,24.4,2.5
+Colombia,Bucaramanga,43,No binario,5,Computador,Documental,5.2,5,2,No,0,26.0,5.0
+Colombia,Bucaramanga,23,Hombre,3,Celular,Terror,5.0,3,14,Sí,0,15.0,1.5
+Venezuela,Caracas,48,Hombre,5,Smart TV,Comedia,8.1,5,20,No,1,40.5,5.0
+Perú,Lima,49,Hombre,3,Computador,Crimen,4.8,4,43,Sí,1,19.2,1.5
+Colombia,Bucaramanga,46,Hombre,2,Smart TV,Comedia,4.9,4,15,Sí,0,19.6,1.0
+Venezuela,Caracas,37,Mujer,2,Celular,Comedia,2.5,1,33,No,0,2.5,2.0
+Colombia,Medellín,52,Hombre,4,Tablet,Acción,3.8,1,58,No,0,3.8,4.0
+Perú,Arequipa,47,Hombre,4,Smart TV,Comedia,4.8,2,46,Sí,1,9.6,2.0
+Colombia,Barranquilla,41,Mujer,5,Tablet,Comedia,6.6,3,58,No,0,19.799999999999997,5.0
+Perú,Lima,41,Hombre,4,Smart TV,Crimen,4.8,4,27,No,1,19.2,4.0
+Colombia,Bogotá,41,Mujer,2,Smart TV,Romance,4.5,2,26,Sí,0,9.0,1.0
+México,Guadalajara,20,Mujer,3,Smart TV,Crimen,4.3,3,23,No,1,12.899999999999999,3.0
+Colombia,Cali,36,Hombre,5,Computador,Crimen,7.8,5,58,No,0,39.0,5.0
+Venezuela,Caracas,31,Mujer,3,Celular,Acción,5.7,4,10,No,0,22.8,3.0
+México,Guadalajara,24,Mujer,2,Tablet,Acción,2.6,3,33,Sí,0,7.800000000000001,1.0
+Colombia,Bogotá,26,Hombre,6,Computador,Documental,8.2,4,56,No,0,32.8,6.0
+México,Monterrey,34,Hombre,3,Computador,Acción,4.2,0,13,No,0,0.0,3.0
+Venezuela,Maracaibo,24,No binario,3,Computador,Romance,6.1,4,33,Sí,0,24.4,1.5
+Venezuela,Caracas,44,Hombre,3,Tablet,Romance,3.4,1,11,Sí,0,3.4,1.5
+Venezuela,Caracas,42,Hombre,3,Smart TV,Documental,4.5,4,4,No,1,18.0,3.0
+Colombia,Cali,30,Mujer,2,Tablet,Documental,4.4,2,30,Sí,0,8.8,1.0
+Venezuela,Maracaibo,19,Mujer,4,Celular,Documental,2.6,2,14,No,0,5.2,4.0
+Colombia,Bogotá,26,Hombre,5,Celular,Comedia,4.3,2,42,Sí,1,8.6,2.5
+Colombia,Medellín,26,Hombre,3,Celular,Comedia,4.9,3,26,Sí,0,14.700000000000001,1.5
+México,CDMX,23,Mujer,2,Celular,Crimen,3.8,2,58,No,1,7.6,2.0
+México,Guadalajara,50,No binario,3,Computador,Comedia,5.0,3,24,Sí,0,15.0,1.5
