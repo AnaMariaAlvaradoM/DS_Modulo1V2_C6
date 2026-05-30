@@ -1,0 +1,1501 @@
+viajero_id,ciudad_origen,destino_preferido,tipo_viaje,canal_reserva,edad,gasto_promedio_cop,frecuencia_anual,noches_promedio,satisfaccion
+VCO0001,Manizales,Eje Cafetero,Aventura,App móvil,18,345617,2.7,4.1,3.7
+VCO0002,Bogotá,Medellín,Cultural,Reserva directa,46,1940263,1.2,2.2,5.0
+VCO0003,Barranquilla,San Andrés,Descanso,Agencia tradicional,40,1309613,3.2,3.2,4.6
+VCO0004,Barranquilla,Cartagena,Descanso,Reserva directa,33,932102,1.7,6.6,4.0
+VCO0005,Bogotá,Santa Marta,Aventura,Recomendación,30,310989,2.0,4.3,3.0
+VCO0006,Manizales,Eje Cafetero,Aventura,App móvil,35,235099,5.1,4.3,4.8
+VCO0007,Pereira,Eje Cafetero,Aventura,App móvil,31,405513,6.3,3.6,4.0
+VCO0008,Bogotá,Cartagena,Gastronómico,Reserva directa,42,2225307,1.0,5.6,5.0
+VCO0009,Bogotá,San Andrés,Gastronómico,Reserva directa,40,1417044,2.0,8.0,3.8
+VCO0010,Medellín,Santa Marta,Gastronómico,Reserva directa,41,1207711,1.0,4.6,3.9
+VCO0011,Manizales,Eje Cafetero,Ecoturismo,App móvil,29,549793,6.6,3.9,3.9
+VCO0012,Cali,Villa de Leyva,Descanso,Reserva directa,43,3127851,2.0,5.2,4.2
+VCO0013,Bogotá,Cartagena,Cultural,Agencia tradicional,41,2473021,1.1,4.5,4.6
+VCO0014,Cali,Amazonas,Cultural,App móvil,25,575946,4.9,2.7,4.5
+VCO0015,Manizales,Amazonas,Ecoturismo,App móvil,22,244482,3.7,3.1,3.6
+VCO0016,Bogotá,Eje Cafetero,Aventura,Recomendación,24,351608,4.3,5.4,3.8
+VCO0017,Medellín,Santa Marta,Cultural,Reserva directa,19,364369,4.4,3.1,4.4
+VCO0018,Bogotá,Cartagena,Cultural,Agencia tradicional,30,1007042,1.8,8.1,4.3
+VCO0019,Bogotá,Cartagena,Descanso,App móvil,38,1117073,1.3,6.4,4.5
+VCO0020,Manizales,Santa Marta,Aventura,App móvil,21,310109,5.8,2.4,4.6
+VCO0021,Cúcuta,Eje Cafetero,Gastronómico,Agencia tradicional,41,1262888,1.4,5.5,4.2
+VCO0022,Cali,Villa de Leyva,Ecoturismo,App móvil,31,322654,4.8,4.1,3.3
+VCO0023,Manizales,Eje Cafetero,Cultural,Recomendación,29,269445,5.4,4.4,4.8
+VCO0024,Bogotá,Eje Cafetero,Ecoturismo,Recomendación,19,353826,5.2,4.7,4.8
+VCO0025,Bogotá,Cartagena,Cultural,Agencia tradicional,39,1208606,2.9,6.0,4.7
+VCO0026,Bogotá,Medellín,Gastronómico,Reserva directa,46,2630868,2.6,4.8,4.8
+VCO0027,Medellín,Santa Marta,Aventura,App móvil,22,450411,3.0,3.0,3.9
+VCO0028,Bogotá,Cartagena,Gastronómico,Agencia tradicional,30,1624326,1.0,5.7,4.0
+VCO0029,Medellín,Eje Cafetero,Cultural,App móvil,41,1143369,1.9,5.5,4.6
+VCO0030,Cali,Eje Cafetero,Ecoturismo,Recomendación,22,336539,7.0,3.0,5.0
+VCO0031,Barranquilla,Cartagena,Cultural,App móvil,32,1231618,1.7,6.2,4.4
+VCO0032,Pereira,Santa Marta,Aventura,Reserva directa,20,210282,4.2,3.7,5.0
+VCO0033,Cali,Eje Cafetero,Ecoturismo,Reserva directa,23,376531,5.8,2.4,3.9
+VCO0034,Bogotá,Cartagena,Cultural,Reserva directa,30,2452176,1.0,3.3,4.4
+VCO0035,Bogotá,Cartagena,Gastronómico,Reserva directa,30,2486174,1.0,4.8,4.4
+VCO0036,Bogotá,Cartagena,Gastronómico,Reserva directa,41,2862287,1.0,3.1,4.5
+VCO0037,Bogotá,Eje Cafetero,Ecoturismo,Recomendación,25,318008,4.8,3.8,4.5
+VCO0038,Bogotá,Amazonas,Aventura,App móvil,28,290386,5.7,2.7,5.0
+VCO0039,Bogotá,Cartagena,Descanso,App móvil,41,1555098,2.4,4.7,4.6
+VCO0040,Bogotá,Santa Marta,Cultural,App móvil,44,904160,1.1,5.8,4.5
+VCO0041,Bogotá,Eje Cafetero,Cultural,App móvil,26,347960,4.9,3.1,3.9
+VCO0042,Bogotá,Cartagena,Cultural,Reserva directa,43,1213004,2.5,6.2,3.9
+VCO0043,Medellín,Villa de Leyva,Cultural,Reserva directa,26,354669,5.1,3.6,3.9
+VCO0044,Medellín,Medellín,Descanso,Reserva directa,38,2755274,1.5,5.1,4.6
+VCO0045,Bogotá,Eje Cafetero,Ecoturismo,Recomendación,26,322543,4.5,2.0,4.2
+VCO0046,Bogotá,Cartagena,Descanso,Agencia tradicional,43,1231364,2.6,4.6,3.7
+VCO0047,Manizales,Eje Cafetero,Cultural,Reserva directa,23,427898,6.3,4.0,4.1
+VCO0048,Medellín,Cartagena,Descanso,Agencia tradicional,38,1497919,2.5,4.8,4.2
+VCO0049,Bogotá,San Andrés,Descanso,Reserva directa,36,945927,2.9,8.0,4.1
+VCO0050,Manizales,Villa de Leyva,Ecoturismo,Reserva directa,32,501898,3.7,3.5,4.6
+VCO0051,Barranquilla,Cartagena,Descanso,App móvil,42,2455261,1.9,5.7,4.9
+VCO0052,Bogotá,San Andrés,Gastronómico,Reserva directa,40,2318923,1.4,4.8,4.5
+VCO0053,Medellín,San Andrés,Cultural,Agencia tradicional,48,2032853,1.5,5.5,4.5
+VCO0054,Bogotá,Villa de Leyva,Cultural,Reserva directa,32,2368649,1.0,2.8,4.2
+VCO0055,Medellín,Cartagena,Gastronómico,Agencia tradicional,39,1202800,2.5,3.8,4.3
+VCO0056,Bogotá,San Andrés,Gastronómico,Reserva directa,47,2726640,1.7,4.5,5.0
+VCO0057,Manizales,Villa de Leyva,Ecoturismo,Recomendación,23,386039,5.6,3.3,5.0
+VCO0058,Manizales,Santa Marta,Ecoturismo,Reserva directa,27,329059,2.0,3.2,3.0
+VCO0059,Cali,Amazonas,Cultural,Reserva directa,22,394475,5.9,3.3,4.5
+VCO0060,Manizales,Eje Cafetero,Cultural,Recomendación,34,197604,5.1,4.0,4.5
+VCO0061,Bogotá,San Andrés,Descanso,Reserva directa,47,1421342,2.0,5.5,4.7
+VCO0062,Bogotá,Amazonas,Aventura,Recomendación,27,487772,4.3,4.5,4.2
+VCO0063,Bogotá,Cartagena,Cultural,Reserva directa,43,2611006,1.8,2.9,5.0
+VCO0064,Bogotá,Amazonas,Ecoturismo,Recomendación,27,301692,5.0,1.7,4.5
+VCO0065,Cali,Eje Cafetero,Aventura,Reserva directa,25,314163,6.0,3.2,3.7
+VCO0066,Medellín,Cartagena,Cultural,App móvil,38,975846,1.6,7.1,4.8
+VCO0067,Bogotá,Amazonas,Cultural,Recomendación,26,173337,3.7,3.9,4.0
+VCO0068,Bogotá,Cartagena,Gastronómico,Reserva directa,46,2862714,1.0,4.9,3.9
+VCO0069,Pereira,Eje Cafetero,Cultural,Reserva directa,29,360868,3.9,3.9,4.5
+VCO0070,Bogotá,Medellín,Descanso,App móvil,44,2406716,1.7,3.8,4.4
+VCO0071,Bogotá,San Andrés,Cultural,Agencia tradicional,34,2319512,1.0,2.1,4.4
+VCO0072,Cali,Amazonas,Ecoturismo,Reserva directa,20,353443,3.1,3.3,3.8
+VCO0073,Pereira,Amazonas,Ecoturismo,App móvil,25,431827,3.4,3.5,3.7
+VCO0074,Medellín,San Andrés,Cultural,Agencia tradicional,47,1747825,2.2,5.6,4.4
+VCO0075,Bogotá,Cartagena,Descanso,Agencia tradicional,47,1074370,1.6,3.7,4.8
+VCO0076,Medellín,San Andrés,Cultural,Agencia tradicional,35,1457276,2.0,3.3,4.3
+VCO0077,Barranquilla,Medellín,Cultural,Reserva directa,52,2582855,1.0,5.9,4.6
+VCO0078,Bogotá,Santa Marta,Aventura,App móvil,23,462962,4.3,2.7,4.5
+VCO0079,Medellín,Santa Marta,Aventura,App móvil,28,299748,2.7,2.3,5.0
+VCO0080,Manizales,Eje Cafetero,Cultural,App móvil,32,357914,5.5,2.7,4.3
+VCO0081,Bogotá,Villa de Leyva,Gastronómico,Reserva directa,32,2199461,1.0,6.4,4.4
+VCO0082,Cúcuta,Eje Cafetero,Descanso,Reserva directa,40,1111278,2.0,5.3,4.7
+VCO0083,Medellín,Santa Marta,Aventura,App móvil,23,351633,3.9,4.0,3.4
+VCO0084,Medellín,Eje Cafetero,Cultural,App móvil,21,232746,5.1,4.1,4.4
+VCO0085,Pereira,Amazonas,Ecoturismo,App móvil,23,208475,6.4,4.0,4.3
+VCO0086,Manizales,Eje Cafetero,Aventura,Recomendación,21,379339,3.9,3.6,4.0
+VCO0087,Medellín,San Andrés,Descanso,Agencia tradicional,39,1176469,2.4,7.8,3.9
+VCO0088,Cúcuta,Cartagena,Descanso,App móvil,32,1203005,1.0,4.3,4.0
+VCO0089,Bogotá,Medellín,Gastronómico,Agencia tradicional,46,1718162,2.0,5.7,4.5
+VCO0090,Cúcuta,Eje Cafetero,Descanso,App móvil,36,905774,1.0,7.1,4.8
+VCO0091,Medellín,Eje Cafetero,Aventura,App móvil,27,346379,3.8,4.7,4.2
+VCO0092,Bogotá,San Andrés,Descanso,App móvil,45,1052594,3.1,3.0,3.7
+VCO0093,Medellín,Villa de Leyva,Cultural,Agencia tradicional,45,2747633,1.0,6.3,4.0
+VCO0094,Cúcuta,Santa Marta,Descanso,App móvil,37,1393361,1.9,6.6,4.1
+VCO0095,Medellín,Cartagena,Gastronómico,Reserva directa,45,2237561,1.3,2.9,4.6
+VCO0096,Barranquilla,San Andrés,Descanso,Agencia tradicional,35,1563954,3.0,5.1,4.6
+VCO0097,Cúcuta,San Andrés,Gastronómico,App móvil,38,1183382,2.2,3.8,4.3
+VCO0098,Bogotá,Cartagena,Descanso,Reserva directa,34,1329776,3.3,3.0,4.4
+VCO0099,Bogotá,Eje Cafetero,Ecoturismo,App móvil,23,308506,4.0,2.7,4.3
+VCO0100,Manizales,Eje Cafetero,Aventura,App móvil,25,418256,4.5,3.7,3.8
+VCO0101,Medellín,Santa Marta,Ecoturismo,Reserva directa,28,352354,4.5,2.8,3.5
+VCO0102,Barranquilla,San Andrés,Cultural,App móvil,33,1202376,2.7,6.8,4.6
+VCO0103,Bogotá,Santa Marta,Aventura,App móvil,28,271493,5.2,1.3,4.0
+VCO0104,Cúcuta,Cartagena,Descanso,Reserva directa,34,1471859,2.2,5.4,4.5
+VCO0105,Cali,Cartagena,Cultural,Reserva directa,43,2474264,2.0,5.1,4.3
+VCO0106,Manizales,Villa de Leyva,Aventura,Recomendación,20,324492,5.0,3.9,4.7
+VCO0107,Bucaramanga,San Andrés,Gastronómico,App móvil,37,1374797,2.0,6.0,4.4
+VCO0108,Barranquilla,San Andrés,Descanso,Agencia tradicional,32,2574983,1.8,4.1,4.3
+VCO0109,Bogotá,Santa Marta,Cultural,App móvil,23,366406,4.3,1.2,3.9
+VCO0110,Bogotá,Eje Cafetero,Cultural,App móvil,30,220129,5.1,2.7,4.1
+VCO0111,Bogotá,Amazonas,Ecoturismo,App móvil,30,501074,4.1,3.1,3.4
+VCO0112,Bogotá,Villa de Leyva,Ecoturismo,App móvil,28,336860,4.0,4.4,4.9
+VCO0113,Cali,Villa de Leyva,Gastronómico,Agencia tradicional,35,2184780,2.1,2.1,4.4
+VCO0114,Medellín,Cartagena,Descanso,Reserva directa,37,2762771,1.4,4.0,4.5
+VCO0115,Barranquilla,San Andrés,Cultural,Reserva directa,35,1487285,3.0,6.2,3.8
+VCO0116,Cali,Cartagena,Gastronómico,Reserva directa,43,1949081,1.0,5.0,4.7
+VCO0117,Cali,Cartagena,Cultural,App móvil,40,2362665,1.2,4.6,4.4
+VCO0118,Bogotá,Santa Marta,Aventura,App móvil,27,321522,5.0,2.5,3.7
+VCO0119,Bogotá,Villa de Leyva,Gastronómico,Reserva directa,43,2962897,1.0,3.6,4.0
+VCO0120,Medellín,Eje Cafetero,Descanso,App móvil,40,1353993,1.5,7.4,5.0
+VCO0121,Cali,San Andrés,Cultural,Agencia tradicional,56,2206131,1.2,4.0,4.9
+VCO0122,Bogotá,Medellín,Cultural,Reserva directa,34,2882374,1.4,3.1,4.7
+VCO0123,Cali,Amazonas,Aventura,Reserva directa,28,386585,5.8,3.5,4.6
+VCO0124,Medellín,Eje Cafetero,Ecoturismo,App móvil,29,517857,4.8,4.0,3.9
+VCO0125,Bogotá,Santa Marta,Ecoturismo,App móvil,22,338953,4.6,4.0,3.9
+VCO0126,Bogotá,Eje Cafetero,Descanso,App móvil,36,988700,2.3,3.8,4.2
+VCO0127,Cali,Cartagena,Cultural,Agencia tradicional,41,2751744,2.0,4.3,4.4
+VCO0128,Medellín,San Andrés,Descanso,Reserva directa,45,2380372,1.5,4.4,4.7
+VCO0129,Manizales,Eje Cafetero,Ecoturismo,Reserva directa,21,210222,3.8,3.2,4.5
+VCO0130,Barranquilla,San Andrés,Descanso,App móvil,38,1196887,2.6,8.1,4.3
+VCO0131,Barranquilla,Cartagena,Descanso,Agencia tradicional,40,700000,1.0,4.5,4.3
+VCO0132,Medellín,Amazonas,Aventura,Recomendación,35,150000,2.8,3.4,4.2
+VCO0133,Medellín,Amazonas,Ecoturismo,App móvil,25,373796,3.4,3.5,4.0
+VCO0134,Pereira,Santa Marta,Cultural,App móvil,29,361159,4.3,2.0,4.2
+VCO0135,Bogotá,Cartagena,Gastronómico,Reserva directa,51,2036558,2.1,6.6,4.6
+VCO0136,Medellín,Santa Marta,Ecoturismo,App móvil,25,341504,4.2,3.7,3.4
+VCO0137,Bogotá,Cartagena,Descanso,App móvil,40,1035077,1.0,5.2,3.6
+VCO0138,Bogotá,Eje Cafetero,Descanso,Agencia tradicional,29,988239,1.6,4.4,4.6
+VCO0139,Cali,Amazonas,Aventura,Recomendación,27,390809,5.8,1.8,4.4
+VCO0140,Bogotá,San Andrés,Gastronómico,Reserva directa,39,2975085,1.0,3.2,4.9
+VCO0141,Medellín,Cartagena,Gastronómico,Agencia tradicional,41,2173636,1.5,5.4,4.1
+VCO0142,Bogotá,Amazonas,Aventura,Reserva directa,29,330941,3.3,4.2,4.6
+VCO0143,Bogotá,San Andrés,Descanso,App móvil,39,1108660,1.7,4.1,5.0
+VCO0144,Medellín,Santa Marta,Cultural,Reserva directa,22,495511,3.3,3.5,4.0
+VCO0145,Pereira,Amazonas,Cultural,App móvil,28,444174,4.8,4.0,4.5
+VCO0146,Pereira,Villa de Leyva,Aventura,App móvil,22,360939,3.0,2.8,4.3
+VCO0147,Medellín,Santa Marta,Descanso,Agencia tradicional,37,1404327,1.1,4.5,4.5
+VCO0148,Medellín,Santa Marta,Gastronómico,Agencia tradicional,33,1487273,2.3,3.2,3.6
+VCO0149,Manizales,Eje Cafetero,Aventura,App móvil,30,566242,4.3,2.8,4.8
+VCO0150,Bogotá,Amazonas,Aventura,Reserva directa,27,331547,5.4,3.1,3.5
+VCO0151,Cali,Villa de Leyva,Gastronómico,Agencia tradicional,44,2557701,1.1,5.0,4.9
+VCO0152,Manizales,Eje Cafetero,Ecoturismo,Recomendación,29,465355,3.9,4.2,3.7
+VCO0153,Cali,Eje Cafetero,Aventura,Reserva directa,31,367517,3.8,2.8,3.3
+VCO0154,Cúcuta,Eje Cafetero,Descanso,App móvil,36,810694,3.2,5.6,4.4
+VCO0155,Medellín,San Andrés,Descanso,Agencia tradicional,41,2625146,1.7,4.6,4.5
+VCO0156,Bogotá,Santa Marta,Cultural,App móvil,20,404733,5.6,4.5,4.1
+VCO0157,Medellín,Santa Marta,Descanso,Reserva directa,40,1014356,2.7,6.1,5.0
+VCO0158,Bogotá,Villa de Leyva,Gastronómico,Reserva directa,50,2532516,1.6,2.8,4.8
+VCO0159,Medellín,Villa de Leyva,Aventura,Recomendación,23,250014,5.9,3.7,4.2
+VCO0160,Barranquilla,San Andrés,Descanso,Reserva directa,28,838146,2.6,7.7,4.9
+VCO0161,Bogotá,Eje Cafetero,Aventura,Reserva directa,26,352697,4.8,2.0,4.7
+VCO0162,Barranquilla,Santa Marta,Descanso,Reserva directa,42,1176466,1.1,3.6,4.4
+VCO0163,Bogotá,Cartagena,Gastronómico,Agencia tradicional,37,1108906,2.6,5.6,4.1
+VCO0164,Bogotá,Cartagena,Gastronómico,Reserva directa,30,1248991,3.0,5.7,4.3
+VCO0165,Medellín,Amazonas,Ecoturismo,Recomendación,26,302248,4.7,4.9,5.0
+VCO0166,Medellín,San Andrés,Descanso,Agencia tradicional,50,1953520,2.2,4.8,5.0
+VCO0167,Manizales,Santa Marta,Aventura,Recomendación,22,341278,4.7,3.9,4.4
+VCO0168,Bogotá,Eje Cafetero,Cultural,App móvil,25,352750,5.1,5.1,3.8
+VCO0169,Cali,Eje Cafetero,Cultural,Recomendación,21,362847,5.1,4.6,4.7
+VCO0170,Medellín,Cartagena,Gastronómico,Agencia tradicional,36,1105270,2.2,7.7,4.1
+VCO0171,Medellín,Cartagena,Descanso,Agencia tradicional,29,1788609,1.7,6.9,4.7
+VCO0172,Bogotá,Eje Cafetero,Aventura,App móvil,30,340430,3.9,2.8,3.8
+VCO0173,Bogotá,Cartagena,Descanso,App móvil,45,1673857,2.4,3.1,4.3
+VCO0174,Manizales,Eje Cafetero,Cultural,Reserva directa,31,415644,4.3,4.0,3.8
+VCO0175,Bogotá,Eje Cafetero,Gastronómico,Agencia tradicional,36,1248360,1.1,6.5,4.5
+VCO0176,Cali,Eje Cafetero,Aventura,App móvil,24,316397,4.4,3.4,3.6
+VCO0177,Barranquilla,Cartagena,Descanso,Agencia tradicional,47,1192683,2.1,5.9,4.4
+VCO0178,Medellín,San Andrés,Cultural,Agencia tradicional,46,852439,2.3,4.9,4.0
+VCO0179,Medellín,Cartagena,Gastronómico,App móvil,31,3068073,1.0,4.9,4.4
+VCO0180,Cali,Villa de Leyva,Aventura,Reserva directa,26,302697,3.1,4.3,4.1
+VCO0181,Medellín,Santa Marta,Aventura,App móvil,26,378667,4.0,3.5,3.9
+VCO0182,Bogotá,Amazonas,Aventura,Recomendación,26,254275,2.1,3.7,3.4
+VCO0183,Medellín,Cartagena,Descanso,Reserva directa,55,2471910,1.1,3.3,4.8
+VCO0184,Bogotá,Medellín,Descanso,Agencia tradicional,50,2385156,1.3,5.6,4.6
+VCO0185,Cali,Villa de Leyva,Cultural,App móvil,29,407679,5.2,3.7,4.6
+VCO0186,Bogotá,San Andrés,Gastronómico,Reserva directa,32,996417,2.0,6.6,4.7
+VCO0187,Cali,Cartagena,Gastronómico,Agencia tradicional,43,2362497,1.4,3.3,4.7
+VCO0188,Barranquilla,Cartagena,Descanso,Reserva directa,33,942478,1.2,6.0,4.0
+VCO0189,Barranquilla,Cartagena,Gastronómico,Agencia tradicional,34,1019910,1.0,5.5,3.9
+VCO0190,Bogotá,Eje Cafetero,Cultural,Recomendación,25,304768,4.2,3.5,4.3
+VCO0191,Bogotá,Amazonas,Aventura,App móvil,21,369450,4.7,1.7,4.0
+VCO0192,Medellín,San Andrés,Gastronómico,Agencia tradicional,44,2198280,1.6,3.0,4.6
+VCO0193,Medellín,Cartagena,Gastronómico,Reserva directa,42,1833949,1.9,3.7,4.5
+VCO0194,Bogotá,Santa Marta,Descanso,App móvil,39,1435773,2.4,3.0,5.0
+VCO0195,Bogotá,Villa de Leyva,Ecoturismo,App móvil,23,239472,5.3,3.9,4.5
+VCO0196,Medellín,Eje Cafetero,Cultural,App móvil,18,206142,7.6,3.6,4.2
+VCO0197,Bucaramanga,San Andrés,Descanso,App móvil,34,1261226,1.9,4.3,4.5
+VCO0198,Bogotá,Medellín,Gastronómico,Agencia tradicional,42,2553039,1.0,4.7,5.0
+VCO0199,Bogotá,Cartagena,Descanso,Agencia tradicional,47,1858713,1.0,5.0,3.6
+VCO0200,Bogotá,Medellín,Gastronómico,Reserva directa,48,1774046,1.9,4.7,4.9
+VCO0201,Barranquilla,San Andrés,Descanso,Agencia tradicional,35,1048065,2.4,4.1,4.4
+VCO0202,Medellín,Eje Cafetero,Aventura,App móvil,28,448242,3.6,3.1,4.0
+VCO0203,Bogotá,Santa Marta,Aventura,Reserva directa,26,323215,4.8,3.2,4.5
+VCO0204,Bogotá,Villa de Leyva,Cultural,Reserva directa,51,1837142,1.0,3.5,4.3
+VCO0205,Cúcuta,Cartagena,Gastronómico,Agencia tradicional,40,1407602,2.0,5.7,4.1
+VCO0206,Manizales,Villa de Leyva,Aventura,App móvil,25,302014,5.3,3.4,4.1
+VCO0207,Manizales,Eje Cafetero,Ecoturismo,Recomendación,25,297429,3.3,4.5,4.7
+VCO0208,Barranquilla,Santa Marta,Descanso,Agencia tradicional,33,1106130,1.0,4.2,4.8
+VCO0209,Medellín,Eje Cafetero,Ecoturismo,App móvil,24,297722,2.9,4.4,5.0
+VCO0210,Bogotá,Eje Cafetero,Cultural,Recomendación,22,319076,6.6,4.0,3.4
+VCO0211,Bucaramanga,San Andrés,Gastronómico,App móvil,34,1241770,3.3,6.7,4.1
+VCO0212,Bogotá,Cartagena,Descanso,Reserva directa,40,1211642,2.0,5.7,4.7
+VCO0213,Bogotá,Santa Marta,Gastronómico,App móvil,28,1121312,2.4,5.9,4.7
+VCO0214,Cali,Santa Marta,Aventura,App móvil,19,277148,3.8,4.5,3.7
+VCO0215,Cúcuta,Cartagena,Descanso,Agencia tradicional,37,1294096,1.9,4.4,5.0
+VCO0216,Cali,Amazonas,Ecoturismo,Reserva directa,25,271595,5.2,3.1,4.1
+VCO0217,Medellín,Eje Cafetero,Cultural,Reserva directa,23,220575,5.7,4.4,3.6
+VCO0218,Medellín,Santa Marta,Cultural,Agencia tradicional,34,1321827,1.9,5.2,4.2
+VCO0219,Bogotá,Cartagena,Gastronómico,App móvil,39,1314489,2.3,3.6,3.8
+VCO0220,Bogotá,Cartagena,Descanso,Agencia tradicional,39,2240612,1.7,2.8,4.8
+VCO0221,Bogotá,San Andrés,Descanso,App móvil,28,1386333,2.2,4.1,4.4
+VCO0222,Medellín,Cartagena,Cultural,App móvil,28,1279074,1.9,6.0,4.6
+VCO0223,Medellín,Eje Cafetero,Ecoturismo,Recomendación,34,403783,3.4,4.4,4.0
+VCO0224,Bogotá,Eje Cafetero,Aventura,App móvil,23,229961,4.6,3.9,4.6
+VCO0225,Medellín,Eje Cafetero,Aventura,Recomendación,28,231697,4.1,4.1,4.6
+VCO0226,Medellín,Eje Cafetero,Aventura,Recomendación,27,483781,4.3,4.8,2.6
+VCO0227,Bogotá,Villa de Leyva,Gastronómico,Agencia tradicional,39,2635503,1.3,4.1,4.1
+VCO0228,Barranquilla,Cartagena,Descanso,Reserva directa,44,1262867,1.9,5.7,4.1
+VCO0229,Bogotá,Medellín,Gastronómico,Agencia tradicional,44,2472685,1.9,2.0,4.8
+VCO0230,Bucaramanga,San Andrés,Descanso,Reserva directa,39,1366635,1.6,4.5,4.7
+VCO0231,Cali,San Andrés,Gastronómico,Agencia tradicional,47,2379092,1.6,2.0,4.5
+VCO0232,Bucaramanga,San Andrés,Descanso,App móvil,28,1215601,3.5,6.1,4.3
+VCO0233,Bucaramanga,Cartagena,Gastronómico,Agencia tradicional,41,938444,1.5,7.8,5.0
+VCO0234,Bucaramanga,Cartagena,Cultural,App móvil,39,1130979,1.9,5.5,4.1
+VCO0235,Cali,Santa Marta,Cultural,App móvil,24,386077,5.4,2.7,3.7
+VCO0236,Barranquilla,Santa Marta,Descanso,Agencia tradicional,55,832846,1.9,5.0,3.4
+VCO0237,Bogotá,Santa Marta,Ecoturismo,Recomendación,20,224307,3.9,4.2,4.4
+VCO0238,Pereira,Amazonas,Ecoturismo,App móvil,22,436521,6.3,2.8,4.0
+VCO0239,Barranquilla,Santa Marta,Gastronómico,App móvil,36,1276270,1.0,6.9,4.9
+VCO0240,Medellín,Santa Marta,Ecoturismo,Reserva directa,23,437344,2.3,2.6,4.1
+VCO0241,Medellín,Villa de Leyva,Gastronómico,Reserva directa,46,2453371,1.0,3.3,5.0
+VCO0242,Medellín,Cartagena,Descanso,Reserva directa,50,2585667,1.0,3.5,4.8
+VCO0243,Bogotá,Medellín,Cultural,Reserva directa,38,2109351,1.4,2.8,4.9
+VCO0244,Manizales,Eje Cafetero,Cultural,Recomendación,28,434811,4.5,3.3,4.0
+VCO0245,Bogotá,Santa Marta,Ecoturismo,App móvil,29,278500,4.0,2.0,4.1
+VCO0246,Bogotá,Cartagena,Cultural,Agencia tradicional,49,2193755,1.5,4.2,4.4
+VCO0247,Bogotá,Cartagena,Gastronómico,App móvil,35,1124899,2.5,3.5,4.5
+VCO0248,Cali,San Andrés,Cultural,Agencia tradicional,41,1884916,1.0,4.3,4.4
+VCO0249,Bogotá,Villa de Leyva,Descanso,Agencia tradicional,47,2725910,2.4,4.8,4.9
+VCO0250,Bogotá,Villa de Leyva,Cultural,Reserva directa,49,2773794,1.6,5.1,4.5
+VCO0251,Bogotá,Eje Cafetero,Aventura,Recomendación,31,390458,4.5,3.1,4.6
+VCO0252,Barranquilla,Cartagena,Descanso,App móvil,39,1219486,1.2,5.4,4.3
+VCO0253,Medellín,Villa de Leyva,Cultural,Reserva directa,37,2410789,1.7,3.7,4.6
+VCO0254,Bogotá,Villa de Leyva,Ecoturismo,App móvil,34,382484,3.9,3.4,4.2
+VCO0255,Medellín,Eje Cafetero,Aventura,App móvil,23,331206,4.5,4.5,3.7
+VCO0256,Cúcuta,Eje Cafetero,Descanso,Agencia tradicional,47,847352,2.3,4.3,4.0
+VCO0257,Cali,Medellín,Descanso,App móvil,45,3205191,1.0,6.4,4.7
+VCO0258,Cúcuta,San Andrés,Gastronómico,App móvil,41,1017676,2.7,5.2,4.0
+VCO0259,Medellín,Cartagena,Descanso,App móvil,38,1196016,2.5,3.3,4.4
+VCO0260,Bogotá,Eje Cafetero,Cultural,Recomendación,28,262076,4.5,2.5,3.5
+VCO0261,Bogotá,Cartagena,Cultural,Reserva directa,34,1114336,2.6,5.6,4.7
+VCO0262,Medellín,Cartagena,Cultural,Reserva directa,37,2657107,1.5,4.0,4.8
+VCO0263,Manizales,Amazonas,Aventura,App móvil,24,401529,4.5,3.5,4.1
+VCO0264,Bucaramanga,Cartagena,Descanso,App móvil,37,1405836,1.7,6.9,4.4
+VCO0265,Cali,Medellín,Descanso,Reserva directa,38,2052590,1.9,2.5,4.3
+VCO0266,Bucaramanga,Eje Cafetero,Gastronómico,Agencia tradicional,39,1307952,2.2,7.0,4.3
+VCO0267,Medellín,San Andrés,Descanso,Agencia tradicional,37,1134692,3.8,4.9,4.1
+VCO0268,Barranquilla,Cartagena,Descanso,App móvil,39,965815,2.3,3.5,4.0
+VCO0269,Cali,Eje Cafetero,Ecoturismo,Reserva directa,25,444479,5.8,1.8,3.1
+VCO0270,Bogotá,Santa Marta,Aventura,App móvil,24,382261,3.0,3.6,3.2
+VCO0271,Bogotá,San Andrés,Gastronómico,Reserva directa,33,2353463,1.1,2.6,4.1
+VCO0272,Barranquilla,Cartagena,Descanso,Reserva directa,30,2570704,1.9,3.9,4.9
+VCO0273,Medellín,Villa de Leyva,Cultural,Reserva directa,45,2508940,1.6,5.1,4.1
+VCO0274,Medellín,Medellín,Cultural,Reserva directa,40,2105336,1.6,4.0,4.1
+VCO0275,Bucaramanga,Eje Cafetero,Cultural,Agencia tradicional,42,1109801,1.8,3.2,4.3
+VCO0276,Medellín,San Andrés,Descanso,Agencia tradicional,45,1258789,2.3,5.8,4.5
+VCO0277,Bogotá,San Andrés,Cultural,Agencia tradicional,51,2104588,1.0,5.8,4.7
+VCO0278,Medellín,Eje Cafetero,Descanso,App móvil,36,1188407,1.7,3.3,5.0
+VCO0279,Medellín,San Andrés,Cultural,Agencia tradicional,29,897233,1.7,5.2,4.0
+VCO0280,Bogotá,Villa de Leyva,Cultural,App móvil,47,2438695,1.2,4.4,4.6
+VCO0281,Cali,San Andrés,Cultural,Reserva directa,35,3066081,2.0,5.0,4.9
+VCO0282,Bogotá,Eje Cafetero,Ecoturismo,Reserva directa,30,411712,3.9,3.6,4.0
+VCO0283,Bogotá,Amazonas,Cultural,Recomendación,26,350088,4.4,2.8,4.5
+VCO0284,Pereira,Santa Marta,Aventura,App móvil,20,226445,3.8,2.2,4.5
+VCO0285,Medellín,Eje Cafetero,Gastronómico,Reserva directa,39,843874,3.5,4.9,4.8
+VCO0286,Manizales,Santa Marta,Ecoturismo,App móvil,23,416688,4.7,5.2,4.4
+VCO0287,Barranquilla,Santa Marta,Gastronómico,Agencia tradicional,38,1355245,2.5,6.3,4.9
+VCO0288,Bogotá,Santa Marta,Descanso,App móvil,28,1103213,1.1,5.4,4.3
+VCO0289,Medellín,Santa Marta,Cultural,Reserva directa,30,216658,4.1,4.3,4.7
+VCO0290,Bogotá,San Andrés,Gastronómico,App móvil,29,1149104,1.3,7.1,5.0
+VCO0291,Pereira,Villa de Leyva,Aventura,App móvil,27,360927,5.0,5.4,4.4
+VCO0292,Manizales,Villa de Leyva,Aventura,Recomendación,32,352030,3.5,3.5,4.3
+VCO0293,Medellín,Medellín,Cultural,Agencia tradicional,50,2124613,1.0,3.6,4.6
+VCO0294,Bogotá,Santa Marta,Aventura,Reserva directa,35,414767,5.9,2.7,3.3
+VCO0295,Pereira,Eje Cafetero,Ecoturismo,Reserva directa,28,392471,3.3,4.0,3.8
+VCO0296,Bogotá,Cartagena,Descanso,App móvil,46,989989,1.8,6.1,4.6
+VCO0297,Bogotá,Cartagena,Gastronómico,Agencia tradicional,37,2034824,1.0,5.7,4.5
+VCO0298,Cali,Eje Cafetero,Aventura,Recomendación,27,398206,7.7,3.0,4.3
+VCO0299,Bogotá,San Andrés,Descanso,Reserva directa,43,1076644,1.5,5.5,4.1
+VCO0300,Medellín,Santa Marta,Cultural,App móvil,28,514305,6.5,3.8,4.8
+VCO0301,Pereira,Santa Marta,Ecoturismo,App móvil,25,284996,3.0,4.1,3.9
+VCO0302,Bogotá,Cartagena,Gastronómico,Agencia tradicional,34,1193591,2.1,6.9,4.3
+VCO0303,Barranquilla,San Andrés,Descanso,App móvil,35,963805,1.3,6.2,4.2
+VCO0304,Medellín,San Andrés,Descanso,Agencia tradicional,32,969663,1.4,6.9,4.7
+VCO0305,Cúcuta,Cartagena,Gastronómico,Reserva directa,44,1622259,1.5,4.3,4.8
+VCO0306,Bogotá,Cartagena,Gastronómico,Reserva directa,37,1881977,2.1,2.8,4.7
+VCO0307,Barranquilla,Santa Marta,Gastronómico,App móvil,39,1135391,2.2,5.5,4.4
+VCO0308,Manizales,Villa de Leyva,Ecoturismo,App móvil,27,447908,5.9,6.2,4.6
+VCO0309,Barranquilla,Cartagena,Gastronómico,App móvil,44,2713478,1.7,2.6,4.4
+VCO0310,Medellín,Santa Marta,Ecoturismo,App móvil,27,302620,5.6,4.1,4.4
+VCO0311,Bogotá,San Andrés,Descanso,App móvil,28,1389628,2.3,8.2,3.3
+VCO0312,Medellín,Eje Cafetero,Ecoturismo,App móvil,23,350060,4.6,3.2,4.0
+VCO0313,Medellín,Eje Cafetero,Aventura,App móvil,25,404868,3.9,4.8,3.3
+VCO0314,Bogotá,San Andrés,Cultural,App móvil,47,3031458,1.9,5.8,4.7
+VCO0315,Bogotá,Cartagena,Gastronómico,Reserva directa,49,2826986,1.0,3.8,4.4
+VCO0316,Barranquilla,San Andrés,Cultural,App móvil,38,1546064,1.1,5.3,4.7
+VCO0317,Bogotá,Eje Cafetero,Descanso,Agencia tradicional,44,750882,2.2,9.1,4.0
+VCO0318,Cali,Eje Cafetero,Aventura,App móvil,27,399846,5.9,3.9,3.9
+VCO0319,Pereira,Santa Marta,Aventura,App móvil,22,369188,6.8,2.4,4.0
+VCO0320,Bogotá,Santa Marta,Aventura,Recomendación,24,388904,5.0,4.0,4.1
+VCO0321,Bogotá,Cartagena,Descanso,Agencia tradicional,39,1154901,1.2,3.3,5.0
+VCO0322,Bogotá,San Andrés,Gastronómico,App móvil,44,1259102,1.9,6.0,4.9
+VCO0323,Bogotá,Cartagena,Cultural,Agencia tradicional,41,1088240,1.0,5.7,4.4
+VCO0324,Cali,Santa Marta,Aventura,Recomendación,24,381433,5.2,6.3,3.8
+VCO0325,Medellín,Medellín,Gastronómico,Agencia tradicional,43,2409859,1.1,5.3,4.6
+VCO0326,Bogotá,Cartagena,Descanso,App móvil,33,1074515,2.6,3.8,4.4
+VCO0327,Cúcuta,Cartagena,Descanso,Reserva directa,37,1445771,2.2,4.8,4.6
+VCO0328,Cúcuta,Santa Marta,Descanso,Reserva directa,38,1292215,2.7,5.4,5.0
+VCO0329,Barranquilla,Santa Marta,Descanso,Agencia tradicional,32,1250125,3.9,7.3,4.2
+VCO0330,Manizales,Santa Marta,Ecoturismo,App móvil,31,318481,3.6,3.2,4.1
+VCO0331,Manizales,Eje Cafetero,Aventura,Recomendación,23,393021,3.3,4.9,5.0
+VCO0332,Bogotá,Villa de Leyva,Descanso,Reserva directa,38,2856736,1.8,5.2,4.4
+VCO0333,Medellín,Eje Cafetero,Aventura,App móvil,23,270135,3.2,3.7,4.1
+VCO0334,Manizales,Villa de Leyva,Aventura,Recomendación,26,391503,3.7,3.7,4.2
+VCO0335,Medellín,Amazonas,Aventura,App móvil,32,419082,3.7,3.2,3.6
+VCO0336,Pereira,Amazonas,Ecoturismo,Reserva directa,34,363717,4.2,2.6,3.7
+VCO0337,Cali,Cartagena,Gastronómico,App móvil,39,2966887,1.0,3.1,4.2
+VCO0338,Bogotá,Santa Marta,Gastronómico,Agencia tradicional,31,1624911,2.7,6.6,4.9
+VCO0339,Bogotá,Cartagena,Descanso,Agencia tradicional,39,700000,2.0,6.3,4.5
+VCO0340,Bogotá,Amazonas,Cultural,App móvil,28,256377,4.7,3.3,4.9
+VCO0341,Bucaramanga,Cartagena,Gastronómico,App móvil,28,1545138,2.9,4.1,5.0
+VCO0342,Bogotá,Cartagena,Descanso,App móvil,33,1224368,1.0,6.9,4.4
+VCO0343,Bogotá,Amazonas,Aventura,Reserva directa,22,274635,5.4,3.6,3.3
+VCO0344,Barranquilla,Cartagena,Cultural,Agencia tradicional,47,1219965,2.1,4.1,4.2
+VCO0345,Bogotá,Cartagena,Descanso,Agencia tradicional,40,1066533,2.1,6.3,4.6
+VCO0346,Cúcuta,Santa Marta,Descanso,App móvil,31,751616,2.2,7.3,4.6
+VCO0347,Bucaramanga,San Andrés,Gastronómico,App móvil,40,1241091,2.5,6.2,4.8
+VCO0348,Bogotá,Eje Cafetero,Aventura,Recomendación,29,223149,2.2,3.0,4.6
+VCO0349,Manizales,Amazonas,Cultural,App móvil,26,441205,5.1,2.2,3.9
+VCO0350,Barranquilla,Eje Cafetero,Descanso,Reserva directa,35,1100202,1.8,5.7,5.0
+VCO0351,Bucaramanga,Cartagena,Descanso,App móvil,37,1548972,1.7,3.8,4.5
+VCO0352,Medellín,Cartagena,Cultural,Reserva directa,50,1980669,1.2,5.9,5.0
+VCO0353,Barranquilla,Cartagena,Cultural,Agencia tradicional,31,1243441,1.6,5.4,4.0
+VCO0354,Bogotá,Santa Marta,Cultural,Recomendación,18,437534,2.8,4.6,3.3
+VCO0355,Cali,Villa de Leyva,Aventura,Reserva directa,25,388320,4.7,4.3,4.4
+VCO0356,Bogotá,Eje Cafetero,Gastronómico,Agencia tradicional,43,1293708,1.7,6.5,4.7
+VCO0357,Manizales,Villa de Leyva,Ecoturismo,Recomendación,32,524284,3.1,2.8,4.4
+VCO0358,Cúcuta,Cartagena,Descanso,Agencia tradicional,28,1150531,1.6,6.3,4.5
+VCO0359,Medellín,Cartagena,Gastronómico,App móvil,46,2422203,2.7,4.0,4.5
+VCO0360,Barranquilla,San Andrés,Cultural,Agencia tradicional,40,1334009,2.2,8.2,4.8
+VCO0361,Bogotá,Cartagena,Cultural,Reserva directa,44,1397079,1.7,5.6,4.1
+VCO0362,Medellín,Cartagena,Descanso,Reserva directa,35,882830,2.5,9.0,3.4
+VCO0363,Bogotá,Santa Marta,Descanso,Agencia tradicional,35,1235296,2.5,6.0,4.5
+VCO0364,Bucaramanga,San Andrés,Descanso,App móvil,43,1290245,2.9,5.2,4.7
+VCO0365,Bogotá,Cartagena,Gastronómico,App móvil,51,2518919,1.0,5.1,4.5
+VCO0366,Medellín,Cartagena,Cultural,Agencia tradicional,36,1041845,2.4,3.3,4.4
+VCO0367,Bogotá,Cartagena,Cultural,Agencia tradicional,35,2325394,1.0,4.4,4.7
+VCO0368,Bogotá,Cartagena,Cultural,Agencia tradicional,48,2928672,1.7,3.6,4.4
+VCO0369,Cali,Amazonas,Aventura,Recomendación,24,192755,5.9,3.3,3.6
+VCO0370,Manizales,Eje Cafetero,Aventura,App móvil,21,303030,4.5,4.1,4.4
+VCO0371,Pereira,Eje Cafetero,Aventura,App móvil,26,219286,6.3,2.5,3.9
+VCO0372,Manizales,Eje Cafetero,Ecoturismo,App móvil,18,316013,3.9,1.8,3.3
+VCO0373,Medellín,Amazonas,Aventura,Recomendación,27,390199,4.0,4.1,4.8
+VCO0374,Medellín,Cartagena,Descanso,Reserva directa,33,1111945,2.0,8.6,3.9
+VCO0375,Pereira,Amazonas,Cultural,Reserva directa,24,235853,2.6,2.5,3.6
+VCO0376,Cali,Eje Cafetero,Aventura,Recomendación,19,355546,3.0,4.7,3.9
+VCO0377,Bogotá,Villa de Leyva,Gastronómico,Reserva directa,45,2513209,1.0,2.5,4.2
+VCO0378,Pereira,Eje Cafetero,Ecoturismo,App móvil,23,214402,3.1,2.2,3.8
+VCO0379,Cali,Medellín,Gastronómico,Agencia tradicional,42,2809609,1.0,5.1,4.7
+VCO0380,Bogotá,Eje Cafetero,Ecoturismo,Recomendación,18,415384,6.7,3.5,5.0
+VCO0381,Cali,Eje Cafetero,Cultural,App móvil,25,426326,2.8,3.1,3.8
+VCO0382,Bucaramanga,Cartagena,Descanso,Agencia tradicional,38,1192014,2.0,7.8,4.1
+VCO0383,Bogotá,Cartagena,Descanso,App móvil,35,1358984,2.0,5.8,4.2
+VCO0384,Bogotá,Medellín,Cultural,Reserva directa,40,1769736,2.0,5.6,4.6
+VCO0385,Medellín,Santa Marta,Cultural,Agencia tradicional,41,1411634,3.3,3.7,3.9
+VCO0386,Medellín,San Andrés,Descanso,Agencia tradicional,47,1906224,2.0,2.0,4.5
+VCO0387,Bogotá,Santa Marta,Aventura,App móvil,22,350158,4.9,3.0,4.7
+VCO0388,Cali,Eje Cafetero,Cultural,App móvil,27,472629,5.6,3.7,4.4
+VCO0389,Bogotá,San Andrés,Gastronómico,Agencia tradicional,46,2422663,2.5,3.8,4.3
+VCO0390,Medellín,Villa de Leyva,Gastronómico,App móvil,42,2858718,1.8,3.6,4.7
+VCO0391,Medellín,Cartagena,Cultural,Reserva directa,52,2668929,1.8,4.2,4.5
+VCO0392,Bogotá,Eje Cafetero,Descanso,Reserva directa,34,1583451,2.9,4.1,4.1
+VCO0393,Medellín,Santa Marta,Ecoturismo,App móvil,22,320949,2.9,2.5,4.2
+VCO0394,Barranquilla,Cartagena,Cultural,Agencia tradicional,38,2365933,1.8,4.5,4.4
+VCO0395,Manizales,Amazonas,Aventura,App móvil,25,377297,5.7,3.3,3.4
+VCO0396,Bogotá,Cartagena,Descanso,App móvil,42,2223889,1.2,5.4,4.6
+VCO0397,Medellín,Villa de Leyva,Cultural,Reserva directa,37,2426583,1.0,3.5,5.0
+VCO0398,Medellín,Cartagena,Gastronómico,Agencia tradicional,39,1196905,3.2,3.0,4.1
+VCO0399,Cali,Cartagena,Cultural,Reserva directa,40,1907107,1.7,5.4,4.8
+VCO0400,Medellín,Cartagena,Descanso,Reserva directa,47,2960666,1.7,4.2,4.5
+VCO0401,Medellín,Eje Cafetero,Cultural,Reserva directa,25,353946,4.0,5.1,3.7
+VCO0402,Medellín,Cartagena,Descanso,App móvil,54,2515021,1.5,3.2,4.6
+VCO0403,Bucaramanga,San Andrés,Cultural,App móvil,37,1394488,1.7,4.3,4.2
+VCO0404,Cali,San Andrés,Gastronómico,Reserva directa,45,2184769,1.2,5.0,4.5
+VCO0405,Manizales,Eje Cafetero,Cultural,Recomendación,28,364405,7.3,3.7,3.5
+VCO0406,Cali,Villa de Leyva,Gastronómico,App móvil,40,2353170,1.1,4.9,4.5
+VCO0407,Bucaramanga,Eje Cafetero,Gastronómico,Reserva directa,46,1128319,2.3,4.3,5.0
+VCO0408,Cali,Eje Cafetero,Aventura,Recomendación,28,437777,5.3,4.3,4.1
+VCO0409,Cali,Cartagena,Cultural,Reserva directa,52,3096669,1.1,4.2,4.5
+VCO0410,Medellín,Villa de Leyva,Cultural,App móvil,23,310211,6.5,3.0,4.2
+VCO0411,Medellín,Amazonas,Aventura,Recomendación,29,396116,2.3,1.9,4.1
+VCO0412,Bogotá,San Andrés,Cultural,Reserva directa,42,2291747,1.0,3.6,4.9
+VCO0413,Bogotá,Cartagena,Gastronómico,Agencia tradicional,48,1860952,1.4,4.4,4.5
+VCO0414,Barranquilla,Eje Cafetero,Gastronómico,App móvil,46,1496748,1.0,4.6,4.5
+VCO0415,Bogotá,Cartagena,Cultural,Agencia tradicional,34,1053037,1.4,3.3,5.0
+VCO0416,Bucaramanga,San Andrés,Descanso,Agencia tradicional,47,920154,2.4,5.8,4.9
+VCO0417,Pereira,Villa de Leyva,Aventura,Reserva directa,19,247731,4.3,1.8,4.7
+VCO0418,Bogotá,Eje Cafetero,Cultural,Recomendación,30,278365,3.9,4.5,4.5
+VCO0419,Bucaramanga,Cartagena,Cultural,Agencia tradicional,39,1087613,3.3,7.7,5.0
+VCO0420,Cali,Cartagena,Cultural,Reserva directa,48,1826506,1.0,4.1,4.6
+VCO0421,Bogotá,Villa de Leyva,Gastronómico,App móvil,45,2457048,1.4,4.2,4.4
+VCO0422,Medellín,Villa de Leyva,Gastronómico,Agencia tradicional,38,3142271,1.0,2.0,5.0
+VCO0423,Medellín,Eje Cafetero,Aventura,App móvil,21,447703,3.9,3.5,4.3
+VCO0424,Barranquilla,San Andrés,Descanso,Agencia tradicional,32,1472865,2.1,6.8,4.4
+VCO0425,Pereira,Amazonas,Cultural,Recomendación,27,342391,3.5,1.1,5.0
+VCO0426,Bucaramanga,Eje Cafetero,Descanso,Agencia tradicional,39,1035428,3.2,3.0,4.4
+VCO0427,Cúcuta,Cartagena,Descanso,Reserva directa,37,992155,2.7,4.3,4.2
+VCO0428,Medellín,Medellín,Cultural,Reserva directa,49,3296837,1.6,3.9,5.0
+VCO0429,Medellín,Eje Cafetero,Aventura,Recomendación,22,371140,5.0,2.9,5.0
+VCO0430,Cali,Amazonas,Aventura,App móvil,26,346773,4.1,1.3,4.0
+VCO0431,Medellín,Santa Marta,Aventura,App móvil,21,409628,4.2,2.7,4.1
+VCO0432,Medellín,San Andrés,Cultural,Reserva directa,45,2360990,2.2,3.2,4.6
+VCO0433,Bucaramanga,Santa Marta,Descanso,Agencia tradicional,37,1048900,2.1,6.9,4.0
+VCO0434,Bogotá,Eje Cafetero,Aventura,App móvil,29,280304,5.5,3.7,4.4
+VCO0435,Medellín,Villa de Leyva,Ecoturismo,App móvil,18,355772,4.9,3.8,3.7
+VCO0436,Bucaramanga,Cartagena,Descanso,Agencia tradicional,44,1067833,2.3,4.6,4.6
+VCO0437,Medellín,Santa Marta,Aventura,App móvil,28,258532,5.1,3.4,4.3
+VCO0438,Bogotá,Cartagena,Cultural,Reserva directa,51,2008189,1.8,2.6,4.4
+VCO0439,Barranquilla,Santa Marta,Descanso,Agencia tradicional,37,1398859,2.6,5.4,3.8
+VCO0440,Bogotá,Villa de Leyva,Aventura,App móvil,23,292554,4.9,2.2,4.4
+VCO0441,Cali,Eje Cafetero,Cultural,Recomendación,25,302971,5.9,5.0,4.0
+VCO0442,Cali,Medellín,Cultural,App móvil,49,2908785,1.4,3.1,4.7
+VCO0443,Manizales,Amazonas,Cultural,App móvil,23,259326,3.5,4.4,4.0
+VCO0444,Pereira,Eje Cafetero,Aventura,App móvil,22,377993,3.1,2.0,3.8
+VCO0445,Bogotá,Villa de Leyva,Cultural,Reserva directa,37,2103750,1.9,5.1,4.7
+VCO0446,Bogotá,Medellín,Descanso,Reserva directa,42,2362723,1.8,5.5,4.6
+VCO0447,Bogotá,Villa de Leyva,Cultural,Reserva directa,41,2803592,1.7,3.1,4.7
+VCO0448,Cali,San Andrés,Gastronómico,Reserva directa,46,2679231,2.0,2.9,4.2
+VCO0449,Pereira,Villa de Leyva,Cultural,App móvil,27,392736,5.9,4.1,3.9
+VCO0450,Bogotá,Eje Cafetero,Ecoturismo,Recomendación,24,291860,3.7,3.2,3.7
+VCO0451,Bogotá,Villa de Leyva,Gastronómico,Agencia tradicional,44,3239243,1.4,4.1,4.6
+VCO0452,Barranquilla,Cartagena,Gastronómico,Reserva directa,36,700000,2.6,5.0,3.9
+VCO0453,Medellín,Cartagena,Descanso,App móvil,36,1038469,1.8,4.9,4.8
+VCO0454,Bogotá,Cartagena,Gastronómico,Agencia tradicional,40,2370594,1.0,5.7,4.6
+VCO0455,Bogotá,Villa de Leyva,Ecoturismo,Recomendación,25,333441,4.7,2.6,4.5
+VCO0456,Medellín,Cartagena,Cultural,App móvil,39,983999,2.6,3.0,3.7
+VCO0457,Manizales,Eje Cafetero,Aventura,App móvil,27,415788,4.9,3.1,4.2
+VCO0458,Bucaramanga,San Andrés,Cultural,Agencia tradicional,34,1499006,2.4,8.6,5.0
+VCO0459,Medellín,Amazonas,Aventura,App móvil,24,394157,6.0,2.8,4.0
+VCO0460,Manizales,Santa Marta,Ecoturismo,App móvil,30,322472,2.2,5.6,3.6
+VCO0461,Manizales,Amazonas,Aventura,App móvil,26,340842,4.0,2.5,4.9
+VCO0462,Bogotá,Cartagena,Descanso,Reserva directa,34,1099073,2.0,5.8,3.9
+VCO0463,Bogotá,Eje Cafetero,Gastronómico,App móvil,40,1039377,2.3,7.5,4.2
+VCO0464,Barranquilla,Santa Marta,Descanso,Agencia tradicional,36,1053628,1.9,5.0,4.1
+VCO0465,Bogotá,San Andrés,Gastronómico,Agencia tradicional,46,2742205,1.1,6.1,4.3
+VCO0466,Bogotá,Santa Marta,Ecoturismo,App móvil,30,287752,4.2,3.3,4.3
+VCO0467,Manizales,Santa Marta,Ecoturismo,App móvil,24,443744,6.1,4.0,3.3
+VCO0468,Bogotá,Medellín,Gastronómico,Agencia tradicional,39,2174238,2.1,2.9,4.3
+VCO0469,Bogotá,Santa Marta,Aventura,Reserva directa,26,284707,5.6,3.2,3.7
+VCO0470,Medellín,Cartagena,Gastronómico,Reserva directa,46,2897765,1.0,5.0,4.6
+VCO0471,Pereira,Santa Marta,Aventura,Reserva directa,27,374156,6.0,3.0,4.1
+VCO0472,Bogotá,Villa de Leyva,Cultural,App móvil,40,3305421,1.0,3.7,4.2
+VCO0473,Pereira,Villa de Leyva,Aventura,App móvil,23,499488,4.1,2.8,4.6
+VCO0474,Bogotá,Cartagena,Gastronómico,Reserva directa,49,2609564,1.4,5.3,4.5
+VCO0475,Medellín,San Andrés,Descanso,App móvil,38,1570408,1.8,6.5,4.4
+VCO0476,Cali,Villa de Leyva,Cultural,Agencia tradicional,30,2287435,1.6,2.2,4.8
+VCO0477,Pereira,Eje Cafetero,Cultural,App móvil,22,437192,3.5,3.0,4.1
+VCO0478,Bogotá,Cartagena,Gastronómico,App móvil,32,1127674,2.2,4.3,3.9
+VCO0479,Barranquilla,San Andrés,Cultural,Reserva directa,31,2255599,2.2,2.8,4.3
+VCO0480,Bogotá,San Andrés,Cultural,Agencia tradicional,36,834318,2.8,6.3,4.2
+VCO0481,Medellín,San Andrés,Descanso,Agencia tradicional,42,786324,1.3,5.6,3.9
+VCO0482,Medellín,Eje Cafetero,Descanso,Reserva directa,28,1217879,1.3,6.0,4.5
+VCO0483,Bucaramanga,Cartagena,Gastronómico,Agencia tradicional,37,1111482,2.4,5.8,4.2
+VCO0484,Cúcuta,Cartagena,Gastronómico,App móvil,34,1201545,3.2,3.9,4.5
+VCO0485,Medellín,Cartagena,Descanso,Reserva directa,40,1389062,1.9,7.9,4.7
+VCO0486,Cali,Cartagena,Cultural,App móvil,53,1818085,1.2,4.2,4.4
+VCO0487,Bogotá,Eje Cafetero,Aventura,App móvil,25,355091,6.9,2.2,3.7
+VCO0488,Pereira,Amazonas,Aventura,App móvil,29,320257,4.9,3.7,3.4
+VCO0489,Medellín,San Andrés,Cultural,Reserva directa,34,2293607,1.0,5.5,4.3
+VCO0490,Barranquilla,San Andrés,Cultural,Agencia tradicional,42,2666749,1.7,4.6,5.0
+VCO0491,Barranquilla,Cartagena,Gastronómico,Agencia tradicional,42,1420744,1.0,7.2,4.2
+VCO0492,Bucaramanga,San Andrés,Descanso,Reserva directa,36,1123102,1.9,7.2,4.9
+VCO0493,Cali,Villa de Leyva,Cultural,Recomendación,26,288157,4.0,2.2,4.3
+VCO0494,Cali,Villa de Leyva,Aventura,App móvil,24,280341,2.5,4.2,4.1
+VCO0495,Medellín,Cartagena,Descanso,App móvil,32,1416716,2.6,8.2,4.7
+VCO0496,Bogotá,Amazonas,Ecoturismo,Recomendación,24,385878,6.2,3.5,4.0
+VCO0497,Medellín,Santa Marta,Descanso,Agencia tradicional,31,1503990,2.2,4.6,4.1
+VCO0498,Bogotá,Villa de Leyva,Aventura,Recomendación,31,276558,3.4,4.4,3.6
+VCO0499,Medellín,Villa de Leyva,Descanso,Agencia tradicional,45,3059137,1.5,5.1,4.7
+VCO0500,Cali,San Andrés,Gastronómico,Agencia tradicional,39,2976469,1.5,3.9,4.2
+VCO0501,Bogotá,San Andrés,Cultural,Reserva directa,34,1474454,1.8,3.3,3.6
+VCO0502,Bogotá,San Andrés,Descanso,App móvil,40,1228408,2.6,5.2,4.3
+VCO0503,Manizales,Eje Cafetero,Aventura,Recomendación,18,249904,5.6,1.0,4.2
+VCO0504,Medellín,San Andrés,Gastronómico,App móvil,41,2927199,1.0,2.0,4.7
+VCO0505,Bucaramanga,San Andrés,Cultural,Reserva directa,32,1378637,3.2,5.7,4.2
+VCO0506,Cali,Amazonas,Ecoturismo,Recomendación,25,301059,4.5,2.7,4.0
+VCO0507,Medellín,Cartagena,Gastronómico,Reserva directa,40,1998390,2.3,3.2,4.1
+VCO0508,Bogotá,Villa de Leyva,Descanso,Reserva directa,53,2100425,2.2,4.6,4.8
+VCO0509,Cali,Cartagena,Cultural,Reserva directa,38,2609053,1.4,6.0,4.8
+VCO0510,Barranquilla,Cartagena,Cultural,App móvil,35,1191748,2.2,5.2,3.9
+VCO0511,Bogotá,Eje Cafetero,Cultural,Agencia tradicional,33,1349949,3.9,3.0,4.6
+VCO0512,Bogotá,San Andrés,Descanso,App móvil,41,797019,2.4,4.3,5.0
+VCO0513,Bogotá,San Andrés,Descanso,App móvil,46,2752489,2.6,3.0,3.7
+VCO0514,Cali,Cartagena,Cultural,Reserva directa,37,2039509,1.4,5.6,4.3
+VCO0515,Bogotá,Santa Marta,Aventura,App móvil,32,376998,2.7,5.7,2.5
+VCO0516,Pereira,Villa de Leyva,Cultural,App móvil,24,328935,3.9,4.1,4.6
+VCO0517,Bogotá,Amazonas,Ecoturismo,Reserva directa,30,337438,5.8,3.6,3.3
+VCO0518,Bogotá,Villa de Leyva,Cultural,Reserva directa,50,2286619,1.4,4.6,4.6
+VCO0519,Medellín,Villa de Leyva,Cultural,Agencia tradicional,49,2089349,2.1,5.1,4.3
+VCO0520,Pereira,Amazonas,Cultural,Recomendación,24,420137,5.5,4.8,5.0
+VCO0521,Medellín,San Andrés,Cultural,App móvil,42,1306556,2.1,6.1,4.9
+VCO0522,Bogotá,Cartagena,Gastronómico,Agencia tradicional,40,1038894,2.3,5.2,4.5
+VCO0523,Bogotá,San Andrés,Cultural,App móvil,52,2413599,1.1,3.4,4.4
+VCO0524,Bogotá,San Andrés,Cultural,Agencia tradicional,39,2633586,1.8,3.3,4.6
+VCO0525,Bogotá,San Andrés,Cultural,App móvil,37,2431528,1.7,3.7,4.4
+VCO0526,Bogotá,San Andrés,Descanso,Agencia tradicional,44,1380454,3.4,3.8,5.0
+VCO0527,Medellín,Eje Cafetero,Descanso,Agencia tradicional,32,1100025,2.4,4.7,4.9
+VCO0528,Cali,Villa de Leyva,Aventura,App móvil,26,443369,4.2,4.2,3.9
+VCO0529,Medellín,Villa de Leyva,Cultural,Recomendación,27,348155,6.0,3.8,4.3
+VCO0530,Cali,San Andrés,Cultural,Agencia tradicional,41,3144117,1.8,4.8,4.8
+VCO0531,Barranquilla,San Andrés,Descanso,Agencia tradicional,43,2124173,2.4,3.7,4.7
+VCO0532,Medellín,Villa de Leyva,Descanso,Agencia tradicional,45,1776681,1.1,3.6,4.7
+VCO0533,Bogotá,Cartagena,Cultural,Agencia tradicional,49,2747227,2.3,4.1,4.8
+VCO0534,Bogotá,San Andrés,Gastronómico,App móvil,34,1167973,2.7,5.0,4.9
+VCO0535,Barranquilla,Cartagena,Cultural,Reserva directa,42,2096626,1.0,4.5,4.6
+VCO0536,Medellín,Cartagena,Cultural,Reserva directa,42,1888100,1.5,3.6,5.0
+VCO0537,Cali,Cartagena,Gastronómico,App móvil,47,3114958,1.8,5.0,4.2
+VCO0538,Medellín,Amazonas,Aventura,App móvil,23,311875,7.1,3.4,3.7
+VCO0539,Medellín,Cartagena,Cultural,Agencia tradicional,36,1288979,1.5,7.1,4.8
+VCO0540,Bogotá,Villa de Leyva,Aventura,App móvil,26,321340,2.0,4.7,4.0
+VCO0541,Medellín,Cartagena,Gastronómico,Reserva directa,38,3165676,1.1,5.2,4.8
+VCO0542,Bogotá,Cartagena,Descanso,Agencia tradicional,40,977341,3.3,3.0,4.0
+VCO0543,Medellín,Eje Cafetero,Ecoturismo,Reserva directa,28,533352,4.0,2.2,3.9
+VCO0544,Barranquilla,Santa Marta,Gastronómico,Agencia tradicional,44,1398911,2.4,6.4,4.1
+VCO0545,Bogotá,Cartagena,Cultural,Reserva directa,33,1047647,3.1,4.2,4.1
+VCO0546,Cali,Santa Marta,Aventura,App móvil,25,476569,3.7,4.1,3.8
+VCO0547,Pereira,Villa de Leyva,Cultural,App móvil,28,318042,4.5,4.0,4.1
+VCO0548,Barranquilla,Cartagena,Descanso,App móvil,42,1190440,2.5,4.3,3.8
+VCO0549,Medellín,San Andrés,Descanso,Agencia tradicional,42,1054645,3.0,6.2,4.8
+VCO0550,Cali,San Andrés,Descanso,Reserva directa,43,2854631,1.7,5.8,4.4
+VCO0551,Bogotá,Santa Marta,Descanso,Agencia tradicional,43,1266543,1.1,3.9,4.0
+VCO0552,Bogotá,Cartagena,Cultural,Agencia tradicional,47,2130292,1.0,5.3,4.3
+VCO0553,Barranquilla,San Andrés,Cultural,Agencia tradicional,46,1150532,1.0,6.0,4.5
+VCO0554,Bogotá,Santa Marta,Gastronómico,App móvil,45,1266646,3.0,4.3,4.5
+VCO0555,Barranquilla,San Andrés,Gastronómico,Agencia tradicional,44,2253085,1.2,2.0,4.5
+VCO0556,Bogotá,San Andrés,Descanso,Agencia tradicional,46,1333509,1.8,5.3,4.8
+VCO0557,Medellín,Amazonas,Aventura,App móvil,27,350977,4.6,2.6,3.9
+VCO0558,Manizales,Eje Cafetero,Cultural,App móvil,26,254266,5.4,3.0,3.8
+VCO0559,Bogotá,San Andrés,Descanso,App móvil,48,2139935,1.4,3.8,4.4
+VCO0560,Bogotá,Santa Marta,Descanso,Reserva directa,41,952859,2.2,6.5,4.5
+VCO0561,Barranquilla,Cartagena,Descanso,Agencia tradicional,32,1165591,2.5,4.2,4.6
+VCO0562,Manizales,Amazonas,Ecoturismo,Recomendación,24,347417,2.1,4.8,4.2
+VCO0563,Bogotá,Santa Marta,Aventura,Reserva directa,28,343033,4.5,2.8,4.2
+VCO0564,Bogotá,Santa Marta,Cultural,App móvil,28,500389,4.6,2.4,4.8
+VCO0565,Bogotá,Amazonas,Ecoturismo,Recomendación,22,391660,5.3,3.8,4.0
+VCO0566,Medellín,Cartagena,Gastronómico,Agencia tradicional,33,913729,3.0,5.5,4.0
+VCO0567,Bogotá,Cartagena,Gastronómico,Agencia tradicional,33,942880,1.1,4.9,4.0
+VCO0568,Barranquilla,Cartagena,Descanso,App móvil,44,876830,2.0,4.9,4.4
+VCO0569,Barranquilla,San Andrés,Gastronómico,Reserva directa,53,1792777,1.5,5.0,4.7
+VCO0570,Cali,Santa Marta,Aventura,Reserva directa,33,299467,3.2,3.4,4.3
+VCO0571,Barranquilla,Cartagena,Descanso,Agencia tradicional,35,1508547,2.3,5.0,4.8
+VCO0572,Cali,Villa de Leyva,Gastronómico,Reserva directa,43,2761391,1.4,5.1,4.2
+VCO0573,Barranquilla,Cartagena,Gastronómico,Agencia tradicional,32,1119168,1.5,3.5,4.2
+VCO0574,Barranquilla,Cartagena,Descanso,Agencia tradicional,47,1200358,2.0,4.2,4.4
+VCO0575,Medellín,Cartagena,Cultural,App móvil,45,2970800,1.9,3.7,4.5
+VCO0576,Medellín,San Andrés,Gastronómico,Agencia tradicional,49,1975013,1.8,6.0,4.5
+VCO0577,Bogotá,Eje Cafetero,Cultural,App móvil,21,299487,6.3,5.8,5.0
+VCO0578,Bogotá,San Andrés,Gastronómico,Reserva directa,44,1831541,2.0,6.1,5.0
+VCO0579,Barranquilla,Cartagena,Descanso,Reserva directa,38,1242001,2.8,7.9,4.9
+VCO0580,Cali,Eje Cafetero,Aventura,App móvil,32,378835,2.8,6.2,4.0
+VCO0581,Medellín,Eje Cafetero,Descanso,App móvil,38,1341882,1.3,5.9,4.2
+VCO0582,Medellín,Villa de Leyva,Descanso,Reserva directa,46,2473835,1.0,3.2,4.6
+VCO0583,Bogotá,San Andrés,Gastronómico,Agencia tradicional,29,1073751,2.6,5.6,4.5
+VCO0584,Cali,Eje Cafetero,Aventura,Reserva directa,30,424314,4.0,4.1,4.1
+VCO0585,Cúcuta,San Andrés,Gastronómico,App móvil,37,1277142,3.2,3.4,4.2
+VCO0586,Manizales,Santa Marta,Aventura,App móvil,26,389823,4.4,2.4,3.7
+VCO0587,Bogotá,Villa de Leyva,Cultural,App móvil,29,392992,4.3,3.9,3.7
+VCO0588,Bogotá,Amazonas,Aventura,App móvil,28,401384,3.4,2.2,4.6
+VCO0589,Bogotá,Eje Cafetero,Ecoturismo,Reserva directa,26,214459,2.2,3.3,3.3
+VCO0590,Bogotá,Santa Marta,Aventura,Recomendación,30,430528,4.3,2.8,4.3
+VCO0591,Manizales,Amazonas,Cultural,Reserva directa,18,304424,4.9,3.9,4.5
+VCO0592,Cúcuta,Eje Cafetero,Descanso,Reserva directa,39,1263390,1.2,7.2,4.2
+VCO0593,Bogotá,Santa Marta,Cultural,App móvil,23,561030,2.0,4.0,4.1
+VCO0594,Medellín,Santa Marta,Cultural,App móvil,18,374149,3.1,3.8,4.7
+VCO0595,Bogotá,San Andrés,Gastronómico,Reserva directa,40,2587628,1.4,3.6,4.8
+VCO0596,Barranquilla,Cartagena,Gastronómico,App móvil,38,1225109,1.6,4.0,4.3
+VCO0597,Medellín,Cartagena,Gastronómico,Agencia tradicional,33,1008788,2.7,7.1,4.4
+VCO0598,Manizales,Eje Cafetero,Ecoturismo,App móvil,29,242383,4.4,4.6,4.7
+VCO0599,Bogotá,Amazonas,Cultural,App móvil,32,269724,5.0,2.4,4.7
+VCO0600,Cali,Eje Cafetero,Aventura,App móvil,31,323491,3.4,2.0,3.4
+VCO0601,Cali,Villa de Leyva,Aventura,Recomendación,32,463312,5.6,2.8,4.6
+VCO0602,Bogotá,Santa Marta,Cultural,Reserva directa,28,411859,5.0,4.5,4.5
+VCO0603,Bogotá,Amazonas,Aventura,Recomendación,26,337372,4.1,4.7,4.9
+VCO0604,Medellín,Eje Cafetero,Ecoturismo,Recomendación,19,374663,6.4,2.6,4.3
+VCO0605,Medellín,Amazonas,Ecoturismo,Reserva directa,25,301969,6.4,3.8,4.1
+VCO0606,Medellín,Cartagena,Cultural,App móvil,47,1193947,2.2,5.8,4.7
+VCO0607,Bogotá,Santa Marta,Cultural,Reserva directa,34,355866,2.0,3.9,4.4
+VCO0608,Bogotá,Eje Cafetero,Cultural,App móvil,25,427501,6.4,4.9,5.0
+VCO0609,Bogotá,Santa Marta,Descanso,Agencia tradicional,39,1338764,1.5,4.6,4.9
+VCO0610,Barranquilla,Eje Cafetero,Gastronómico,App móvil,41,1433305,1.6,6.8,4.8
+VCO0611,Medellín,Santa Marta,Ecoturismo,Reserva directa,26,321012,6.0,3.3,3.5
+VCO0612,Bogotá,Medellín,Cultural,App móvil,38,3011373,1.0,6.7,4.7
+VCO0613,Medellín,Santa Marta,Gastronómico,App móvil,42,1141911,2.0,3.0,4.5
+VCO0614,Pereira,Eje Cafetero,Ecoturismo,App móvil,26,263446,6.1,4.4,4.0
+VCO0615,Medellín,Medellín,Gastronómico,App móvil,30,2239422,1.3,3.8,4.7
+VCO0616,Medellín,Cartagena,Descanso,Agencia tradicional,48,1753319,1.1,3.8,4.9
+VCO0617,Bogotá,Eje Cafetero,Ecoturismo,App móvil,23,422817,2.6,2.2,4.6
+VCO0618,Bogotá,Villa de Leyva,Ecoturismo,Reserva directa,25,335317,4.1,1.3,4.3
+VCO0619,Cali,Cartagena,Cultural,Reserva directa,37,2314905,1.1,2.5,4.8
+VCO0620,Bogotá,Cartagena,Cultural,Agencia tradicional,40,1011996,1.3,5.4,4.4
+VCO0621,Manizales,Santa Marta,Aventura,Recomendación,20,359076,3.0,3.8,4.3
+VCO0622,Bogotá,Eje Cafetero,Ecoturismo,App móvil,25,364867,2.5,2.5,4.2
+VCO0623,Bogotá,Santa Marta,Ecoturismo,Recomendación,19,423589,3.6,4.2,4.2
+VCO0624,Medellín,Cartagena,Gastronómico,Agencia tradicional,42,1721371,2.6,6.4,4.0
+VCO0625,Bogotá,Santa Marta,Descanso,App móvil,30,1238681,2.0,4.6,4.8
+VCO0626,Bogotá,Eje Cafetero,Aventura,App móvil,20,300708,5.6,2.0,5.0
+VCO0627,Medellín,Cartagena,Gastronómico,Reserva directa,36,1221236,2.3,4.4,4.2
+VCO0628,Medellín,San Andrés,Descanso,App móvil,36,1072438,1.1,7.3,4.3
+VCO0629,Pereira,Villa de Leyva,Aventura,App móvil,27,465905,2.4,5.2,2.9
+VCO0630,Medellín,Santa Marta,Aventura,Recomendación,31,324793,4.0,4.1,4.1
+VCO0631,Bucaramanga,Cartagena,Descanso,App móvil,45,1222794,1.8,6.0,4.0
+VCO0632,Medellín,San Andrés,Gastronómico,Reserva directa,41,2634599,1.6,4.0,4.5
+VCO0633,Medellín,Cartagena,Descanso,App móvil,44,1014983,2.9,5.9,4.5
+VCO0634,Bogotá,Cartagena,Descanso,App móvil,39,1109959,3.2,8.3,4.6
+VCO0635,Manizales,Eje Cafetero,Cultural,App móvil,26,254726,5.5,1.4,4.0
+VCO0636,Bogotá,Cartagena,Descanso,Agencia tradicional,32,1438717,3.0,5.5,4.6
+VCO0637,Barranquilla,Cartagena,Gastronómico,App móvil,46,931902,1.9,3.4,4.2
+VCO0638,Medellín,Santa Marta,Ecoturismo,Recomendación,22,259278,3.9,3.6,4.0
+VCO0639,Manizales,Eje Cafetero,Aventura,Recomendación,30,322258,4.6,1.2,4.4
+VCO0640,Medellín,Villa de Leyva,Aventura,Recomendación,26,303136,6.0,3.7,4.1
+VCO0641,Bogotá,Amazonas,Aventura,Recomendación,33,332272,3.8,1.1,5.0
+VCO0642,Medellín,Villa de Leyva,Aventura,Recomendación,25,234721,5.1,4.6,4.4
+VCO0643,Pereira,Eje Cafetero,Ecoturismo,Reserva directa,23,426705,4.8,4.0,4.4
+VCO0644,Bogotá,Eje Cafetero,Ecoturismo,App móvil,19,440214,4.6,3.2,4.1
+VCO0645,Medellín,Eje Cafetero,Ecoturismo,Recomendación,18,194212,5.6,4.1,4.5
+VCO0646,Cali,Villa de Leyva,Cultural,Reserva directa,34,2874946,1.4,4.4,4.7
+VCO0647,Cúcuta,Cartagena,Descanso,Agencia tradicional,40,1285592,2.6,8.7,5.0
+VCO0648,Barranquilla,San Andrés,Gastronómico,Agencia tradicional,39,1544614,2.8,7.5,4.0
+VCO0649,Cali,Medellín,Cultural,App móvil,52,2588075,2.2,5.3,4.5
+VCO0650,Bogotá,Cartagena,Cultural,Agencia tradicional,37,815445,3.4,3.4,4.0
+VCO0651,Manizales,Villa de Leyva,Aventura,App móvil,24,335192,3.6,3.5,5.0
+VCO0652,Bogotá,Cartagena,Gastronómico,Agencia tradicional,40,1164395,2.4,7.3,4.3
+VCO0653,Medellín,San Andrés,Descanso,App móvil,48,1231031,1.5,6.4,4.0
+VCO0654,Bucaramanga,Cartagena,Gastronómico,Agencia tradicional,32,1120343,1.2,4.0,4.1
+VCO0655,Cúcuta,Cartagena,Descanso,App móvil,36,1223517,1.8,4.5,5.0
+VCO0656,Bogotá,Eje Cafetero,Cultural,Recomendación,22,407307,4.1,1.6,4.6
+VCO0657,Manizales,Eje Cafetero,Cultural,App móvil,18,535975,4.6,5.0,4.2
+VCO0658,Medellín,Santa Marta,Cultural,App móvil,23,307684,4.7,3.3,4.4
+VCO0659,Bogotá,San Andrés,Cultural,Agencia tradicional,43,1110260,2.9,3.0,4.4
+VCO0660,Medellín,San Andrés,Cultural,App móvil,49,1246851,1.9,6.5,4.2
+VCO0661,Cali,Villa de Leyva,Ecoturismo,App móvil,25,448672,3.3,4.1,3.6
+VCO0662,Cali,Cartagena,Cultural,Agencia tradicional,42,2337555,2.2,5.1,4.7
+VCO0663,Bucaramanga,Cartagena,Gastronómico,Agencia tradicional,30,1101161,1.0,3.0,4.2
+VCO0664,Pereira,Santa Marta,Aventura,App móvil,23,454485,4.9,4.0,4.4
+VCO0665,Bogotá,Eje Cafetero,Cultural,Recomendación,26,310675,3.2,3.0,3.7
+VCO0666,Medellín,Amazonas,Aventura,Recomendación,27,236981,4.2,2.9,4.5
+VCO0667,Cali,Eje Cafetero,Ecoturismo,App móvil,21,308652,4.1,3.1,3.5
+VCO0668,Manizales,Santa Marta,Ecoturismo,Recomendación,31,399522,4.8,2.0,3.7
+VCO0669,Cali,Eje Cafetero,Aventura,Recomendación,25,461363,3.8,3.5,4.0
+VCO0670,Bogotá,Santa Marta,Ecoturismo,App móvil,26,358890,3.8,4.3,3.8
+VCO0671,Medellín,Eje Cafetero,Ecoturismo,App móvil,28,455455,6.2,2.9,4.5
+VCO0672,Barranquilla,San Andrés,Gastronómico,Reserva directa,36,2376115,1.5,5.0,4.4
+VCO0673,Bogotá,Amazonas,Ecoturismo,App móvil,29,314538,3.8,5.0,5.0
+VCO0674,Medellín,Cartagena,Gastronómico,Agencia tradicional,40,1145946,2.6,4.3,3.6
+VCO0675,Bucaramanga,San Andrés,Gastronómico,App móvil,44,1243543,1.0,6.4,4.0
+VCO0676,Medellín,San Andrés,Cultural,Reserva directa,44,2425067,2.2,3.4,4.4
+VCO0677,Manizales,Eje Cafetero,Ecoturismo,App móvil,21,405272,3.7,2.0,4.1
+VCO0678,Medellín,San Andrés,Descanso,Reserva directa,37,1184435,2.5,4.5,5.0
+VCO0679,Bogotá,Villa de Leyva,Gastronómico,Reserva directa,52,2513109,1.3,6.6,5.0
+VCO0680,Bogotá,Villa de Leyva,Gastronómico,Reserva directa,40,2508489,1.6,3.6,4.4
+VCO0681,Barranquilla,Villa de Leyva,Cultural,Reserva directa,39,2126162,2.2,4.1,4.1
+VCO0682,Medellín,Santa Marta,Cultural,Recomendación,18,340906,3.2,2.8,4.6
+VCO0683,Medellín,Amazonas,Aventura,App móvil,23,338507,3.5,4.3,4.6
+VCO0684,Medellín,San Andrés,Gastronómico,App móvil,44,1120943,2.6,5.7,4.4
+VCO0685,Cali,San Andrés,Cultural,App móvil,50,2512425,2.3,2.0,5.0
+VCO0686,Bogotá,Cartagena,Descanso,Reserva directa,46,1493042,2.7,6.0,3.9
+VCO0687,Medellín,Cartagena,Descanso,App móvil,36,1021691,2.2,5.1,4.3
+VCO0688,Cali,Santa Marta,Aventura,App móvil,22,451817,6.1,4.4,5.0
+VCO0689,Medellín,San Andrés,Gastronómico,Reserva directa,40,2743695,1.5,4.5,4.5
+VCO0690,Cali,Amazonas,Aventura,Recomendación,27,292322,3.7,1.9,4.1
+VCO0691,Cali,Eje Cafetero,Aventura,App móvil,23,572397,3.5,3.1,4.4
+VCO0692,Bucaramanga,Santa Marta,Gastronómico,App móvil,36,1138485,1.9,5.9,3.7
+VCO0693,Bogotá,Cartagena,Descanso,Reserva directa,40,1272045,1.0,5.6,4.2
+VCO0694,Medellín,Eje Cafetero,Aventura,Reserva directa,29,408758,4.0,3.3,3.8
+VCO0695,Pereira,Santa Marta,Aventura,App móvil,30,183830,3.5,4.2,3.4
+VCO0696,Bucaramanga,San Andrés,Descanso,Agencia tradicional,37,1028980,2.5,6.5,4.6
+VCO0697,Bogotá,Santa Marta,Cultural,Reserva directa,31,521665,4.9,2.7,4.0
+VCO0698,Barranquilla,San Andrés,Cultural,Reserva directa,28,1022805,2.1,6.3,4.6
+VCO0699,Cali,Santa Marta,Aventura,App móvil,27,191442,5.7,2.7,3.1
+VCO0700,Bucaramanga,Cartagena,Descanso,Reserva directa,33,1308916,2.2,6.5,4.0
+VCO0701,Barranquilla,Santa Marta,Cultural,App móvil,32,1610838,3.2,6.9,3.7
+VCO0702,Cali,Villa de Leyva,Aventura,Reserva directa,29,439982,2.9,3.6,4.8
+VCO0703,Pereira,Amazonas,Cultural,App móvil,29,308992,4.5,2.9,4.5
+VCO0704,Cali,Santa Marta,Aventura,App móvil,19,404656,4.1,4.5,3.4
+VCO0705,Medellín,Santa Marta,Ecoturismo,Recomendación,31,461220,4.4,2.1,4.7
+VCO0706,Bogotá,Medellín,Gastronómico,Reserva directa,33,1899679,2.2,3.2,4.4
+VCO0707,Pereira,Villa de Leyva,Aventura,Recomendación,30,330293,4.7,5.3,4.0
+VCO0708,Bogotá,San Andrés,Gastronómico,Agencia tradicional,43,3034228,1.5,4.3,4.7
+VCO0709,Medellín,Amazonas,Aventura,App móvil,21,284329,3.6,3.3,4.6
+VCO0710,Barranquilla,Cartagena,Descanso,Agencia tradicional,38,1345016,2.6,4.7,5.0
+VCO0711,Medellín,Cartagena,Cultural,Reserva directa,60,1897667,1.0,2.5,4.8
+VCO0712,Bogotá,Santa Marta,Gastronómico,Reserva directa,32,1580511,2.0,4.5,4.4
+VCO0713,Barranquilla,Cartagena,Descanso,Reserva directa,45,1773042,2.5,3.0,4.5
+VCO0714,Bogotá,Cartagena,Descanso,App móvil,47,1019601,1.4,7.5,5.0
+VCO0715,Medellín,Amazonas,Cultural,Recomendación,31,336266,6.2,1.8,4.1
+VCO0716,Bogotá,San Andrés,Cultural,Agencia tradicional,37,2089710,1.3,2.0,5.0
+VCO0717,Medellín,Villa de Leyva,Gastronómico,Reserva directa,35,1674053,1.0,2.0,4.8
+VCO0718,Medellín,Villa de Leyva,Cultural,Reserva directa,46,2988721,1.4,3.4,4.4
+VCO0719,Cali,Eje Cafetero,Aventura,Recomendación,19,422523,2.9,4.2,4.0
+VCO0720,Barranquilla,San Andrés,Cultural,App móvil,34,1279808,2.6,5.8,4.1
+VCO0721,Bogotá,Cartagena,Cultural,Reserva directa,49,2499104,1.0,4.1,5.0
+VCO0722,Pereira,Villa de Leyva,Aventura,Reserva directa,32,234927,3.6,4.2,4.4
+VCO0723,Cali,Amazonas,Cultural,App móvil,21,308786,3.9,1.7,4.8
+VCO0724,Bogotá,San Andrés,Cultural,App móvil,43,1188587,1.8,5.4,4.9
+VCO0725,Bucaramanga,Cartagena,Descanso,Agencia tradicional,43,1228319,1.8,5.8,4.5
+VCO0726,Barranquilla,Medellín,Cultural,Reserva directa,41,2646642,1.0,2.6,4.6
+VCO0727,Cali,Santa Marta,Ecoturismo,App móvil,22,348048,3.5,2.0,3.9
+VCO0728,Bogotá,Cartagena,Descanso,Reserva directa,53,3198596,1.1,3.8,4.4
+VCO0729,Bogotá,Eje Cafetero,Aventura,Recomendación,24,417401,6.1,3.6,4.0
+VCO0730,Bogotá,Villa de Leyva,Ecoturismo,Recomendación,25,410396,5.3,4.3,3.9
+VCO0731,Medellín,Amazonas,Ecoturismo,App móvil,28,194651,4.6,2.9,4.5
+VCO0732,Medellín,Villa de Leyva,Descanso,Reserva directa,36,3105712,1.9,5.4,5.0
+VCO0733,Bogotá,Eje Cafetero,Descanso,Reserva directa,37,961162,3.0,6.0,3.5
+VCO0734,Bogotá,San Andrés,Descanso,App móvil,37,997471,1.6,4.1,4.2
+VCO0735,Medellín,Eje Cafetero,Ecoturismo,Recomendación,25,277775,4.1,3.5,4.7
+VCO0736,Cali,Villa de Leyva,Gastronómico,Agencia tradicional,43,2780729,1.7,5.0,4.9
+VCO0737,Bogotá,Cartagena,Descanso,Agencia tradicional,40,1466086,3.3,6.9,3.6
+VCO0738,Bogotá,Villa de Leyva,Cultural,Reserva directa,37,2309949,1.0,4.6,4.3
+VCO0739,Bogotá,San Andrés,Cultural,App móvil,49,931975,1.2,6.1,5.0
+VCO0740,Bogotá,Amazonas,Aventura,Reserva directa,24,235295,4.1,2.8,4.4
+VCO0741,Medellín,Eje Cafetero,Gastronómico,App móvil,40,902427,2.6,6.1,4.4
+VCO0742,Manizales,Santa Marta,Ecoturismo,Recomendación,24,284879,3.9,4.3,3.8
+VCO0743,Medellín,Santa Marta,Descanso,Reserva directa,38,1277763,2.0,5.5,4.5
+VCO0744,Bucaramanga,San Andrés,Gastronómico,App móvil,37,965225,2.6,5.5,4.8
+VCO0745,Cali,Santa Marta,Aventura,Recomendación,25,391715,4.4,3.8,4.4
+VCO0746,Cali,Cartagena,Gastronómico,Reserva directa,49,3222166,1.0,2.0,4.8
+VCO0747,Bucaramanga,Cartagena,Cultural,App móvil,41,1217118,2.7,5.9,4.5
+VCO0748,Barranquilla,San Andrés,Gastronómico,Agencia tradicional,38,1144325,1.5,5.6,4.0
+VCO0749,Medellín,Villa de Leyva,Gastronómico,Agencia tradicional,45,2344238,1.1,2.1,5.0
+VCO0750,Cúcuta,Santa Marta,Cultural,App móvil,48,1356631,1.0,10.0,4.2
+VCO0751,Medellín,Santa Marta,Cultural,Recomendación,32,385158,4.4,3.5,3.8
+VCO0752,Medellín,Cartagena,Cultural,Agencia tradicional,51,2137069,2.1,4.7,4.7
+VCO0753,Medellín,Eje Cafetero,Descanso,App móvil,47,1157582,2.3,3.4,5.0
+VCO0754,Medellín,Eje Cafetero,Aventura,Reserva directa,28,376517,5.2,3.7,3.5
+VCO0755,Medellín,Santa Marta,Ecoturismo,Recomendación,18,379164,3.5,2.7,4.4
+VCO0756,Cali,Cartagena,Cultural,Agencia tradicional,45,2142890,1.2,2.9,5.0
+VCO0757,Barranquilla,Cartagena,Descanso,Agencia tradicional,42,1145071,1.7,4.7,4.5
+VCO0758,Bogotá,Cartagena,Descanso,App móvil,39,1108556,2.2,5.7,5.0
+VCO0759,Bogotá,Cartagena,Gastronómico,App móvil,52,2543104,1.8,7.0,4.5
+VCO0760,Medellín,Medellín,Cultural,Reserva directa,51,2400042,2.4,3.4,4.5
+VCO0761,Pereira,Eje Cafetero,Aventura,Recomendación,18,259037,6.5,4.2,3.1
+VCO0762,Medellín,Santa Marta,Aventura,Recomendación,28,284254,2.9,3.2,4.4
+VCO0763,Medellín,Eje Cafetero,Ecoturismo,App móvil,21,454207,6.5,4.9,3.2
+VCO0764,Bogotá,Cartagena,Cultural,App móvil,40,1457840,2.7,7.1,4.8
+VCO0765,Medellín,Santa Marta,Aventura,Recomendación,34,305953,4.5,3.7,4.6
+VCO0766,Barranquilla,Eje Cafetero,Descanso,Agencia tradicional,43,1320146,1.7,5.3,4.4
+VCO0767,Cali,Villa de Leyva,Gastronómico,App móvil,41,2108824,1.0,4.0,4.8
+VCO0768,Bogotá,San Andrés,Cultural,Reserva directa,45,2255030,1.0,3.2,4.7
+VCO0769,Cali,Eje Cafetero,Cultural,Recomendación,30,458224,3.2,3.3,4.4
+VCO0770,Bogotá,San Andrés,Descanso,Agencia tradicional,43,3310726,1.4,3.8,4.8
+VCO0771,Bogotá,Eje Cafetero,Ecoturismo,Reserva directa,21,299706,4.0,2.8,3.8
+VCO0772,Cali,San Andrés,Cultural,Agencia tradicional,30,2167971,1.0,5.1,4.6
+VCO0773,Medellín,Eje Cafetero,Aventura,App móvil,24,231473,3.1,2.7,3.8
+VCO0774,Medellín,San Andrés,Descanso,App móvil,37,1472033,2.3,7.6,3.8
+VCO0775,Medellín,Cartagena,Descanso,Agencia tradicional,41,3117018,1.5,3.5,4.2
+VCO0776,Bogotá,Amazonas,Aventura,App móvil,19,323901,3.2,2.8,3.5
+VCO0777,Medellín,Amazonas,Aventura,App móvil,27,242373,5.3,3.4,3.4
+VCO0778,Barranquilla,Cartagena,Descanso,Agencia tradicional,31,1683755,2.0,9.2,4.5
+VCO0779,Bogotá,Eje Cafetero,Gastronómico,Agencia tradicional,31,1499091,2.3,4.9,5.0
+VCO0780,Medellín,San Andrés,Descanso,App móvil,39,1143074,2.6,5.0,4.2
+VCO0781,Bogotá,San Andrés,Gastronómico,Reserva directa,38,805582,2.3,5.2,4.1
+VCO0782,Cúcuta,Cartagena,Descanso,Agencia tradicional,34,1257605,1.6,5.3,4.3
+VCO0783,Bogotá,Amazonas,Aventura,App móvil,27,239332,5.3,5.0,4.6
+VCO0784,Pereira,Eje Cafetero,Aventura,Recomendación,24,422138,4.1,3.9,4.2
+VCO0785,Manizales,Amazonas,Ecoturismo,App móvil,28,412731,5.6,2.9,5.0
+VCO0786,Bogotá,Medellín,Cultural,Agencia tradicional,50,1804229,1.6,5.4,5.0
+VCO0787,Bogotá,Eje Cafetero,Descanso,Agencia tradicional,37,1424193,1.5,3.8,5.0
+VCO0788,Barranquilla,San Andrés,Descanso,Agencia tradicional,33,1361114,1.3,5.0,4.3
+VCO0789,Medellín,Eje Cafetero,Cultural,Agencia tradicional,36,1395164,2.3,4.7,4.5
+VCO0790,Medellín,San Andrés,Cultural,App móvil,46,2796050,1.7,3.1,5.0
+VCO0791,Cali,Santa Marta,Cultural,App móvil,18,328172,3.7,5.3,3.5
+VCO0792,Cúcuta,Cartagena,Descanso,Agencia tradicional,31,1395574,3.1,5.3,4.9
+VCO0793,Barranquilla,San Andrés,Descanso,App móvil,37,1145925,2.5,5.4,4.6
+VCO0794,Medellín,Cartagena,Gastronómico,App móvil,35,922043,1.7,8.2,4.4
+VCO0795,Pereira,Eje Cafetero,Ecoturismo,App móvil,23,229477,3.7,4.3,4.1
+VCO0796,Bogotá,San Andrés,Cultural,Reserva directa,35,2207080,1.5,4.6,4.9
+VCO0797,Bogotá,San Andrés,Cultural,App móvil,42,2812543,1.0,6.5,4.5
+VCO0798,Bucaramanga,San Andrés,Descanso,Agencia tradicional,36,1631824,1.9,6.2,4.5
+VCO0799,Barranquilla,San Andrés,Descanso,App móvil,38,1218262,1.0,3.0,4.2
+VCO0800,Barranquilla,Cartagena,Gastronómico,Reserva directa,47,2419432,1.4,5.3,4.0
+VCO0801,Medellín,Cartagena,Cultural,Reserva directa,46,1073908,1.0,3.1,4.4
+VCO0802,Bogotá,Eje Cafetero,Ecoturismo,Recomendación,27,248442,3.0,4.3,3.8
+VCO0803,Bogotá,Cartagena,Gastronómico,App móvil,38,1043971,1.4,3.0,4.0
+VCO0804,Medellín,Cartagena,Descanso,Agencia tradicional,43,1347053,2.0,4.8,3.8
+VCO0805,Medellín,Eje Cafetero,Descanso,App móvil,38,1088167,2.3,5.0,4.3
+VCO0806,Barranquilla,San Andrés,Descanso,Agencia tradicional,31,1107938,1.9,4.3,4.6
+VCO0807,Barranquilla,Villa de Leyva,Cultural,Reserva directa,38,3073453,1.9,4.1,4.6
+VCO0808,Barranquilla,Cartagena,Cultural,Agencia tradicional,50,1756134,1.8,3.5,4.2
+VCO0809,Bucaramanga,Cartagena,Gastronómico,App móvil,35,1119040,3.2,4.4,4.5
+VCO0810,Manizales,Eje Cafetero,Aventura,Reserva directa,30,296925,5.1,2.6,3.9
+VCO0811,Medellín,Medellín,Gastronómico,Reserva directa,53,2664942,1.3,2.8,4.7
+VCO0812,Barranquilla,Villa de Leyva,Gastronómico,Agencia tradicional,43,3130469,1.8,2.8,4.9
+VCO0813,Cali,Eje Cafetero,Aventura,App móvil,28,360349,6.7,4.6,3.7
+VCO0814,Bogotá,Villa de Leyva,Cultural,Reserva directa,31,2296922,1.1,3.0,4.9
+VCO0815,Cali,Villa de Leyva,Gastronómico,Reserva directa,35,1649266,1.5,5.0,5.0
+VCO0816,Barranquilla,Cartagena,Descanso,Agencia tradicional,31,1264186,3.1,6.2,4.8
+VCO0817,Bogotá,Eje Cafetero,Descanso,App móvil,42,1002426,1.9,7.2,4.0
+VCO0818,Medellín,Cartagena,Descanso,App móvil,28,1344607,1.8,5.4,4.3
+VCO0819,Bogotá,Eje Cafetero,Ecoturismo,App móvil,22,330477,5.8,5.1,4.5
+VCO0820,Cali,Amazonas,Aventura,Reserva directa,27,373577,5.0,1.8,4.3
+VCO0821,Bogotá,Cartagena,Gastronómico,Reserva directa,36,2733534,2.1,4.3,4.5
+VCO0822,Manizales,Amazonas,Aventura,App móvil,20,187785,4.9,3.2,4.4
+VCO0823,Cali,Eje Cafetero,Cultural,Recomendación,23,279116,4.0,2.1,3.7
+VCO0824,Barranquilla,Eje Cafetero,Descanso,Agencia tradicional,37,1577855,2.8,3.9,4.6
+VCO0825,Bucaramanga,Cartagena,Descanso,App móvil,32,1247634,1.4,4.2,4.7
+VCO0826,Bogotá,Cartagena,Cultural,Reserva directa,53,3018082,1.1,4.9,4.4
+VCO0827,Cali,Santa Marta,Ecoturismo,Reserva directa,28,331759,6.5,2.0,3.5
+VCO0828,Bogotá,Santa Marta,Cultural,Reserva directa,28,237441,4.3,6.4,3.8
+VCO0829,Bucaramanga,Eje Cafetero,Descanso,App móvil,33,1264951,2.1,5.9,4.1
+VCO0830,Bogotá,Santa Marta,Descanso,App móvil,30,1316113,2.8,3.5,3.7
+VCO0831,Cali,Eje Cafetero,Aventura,Reserva directa,29,358641,4.4,2.4,4.7
+VCO0832,Medellín,San Andrés,Cultural,Reserva directa,36,1195142,2.2,7.4,4.9
+VCO0833,Medellín,Eje Cafetero,Aventura,Reserva directa,30,426639,3.8,3.3,4.5
+VCO0834,Manizales,Eje Cafetero,Aventura,App móvil,28,403083,4.0,1.6,4.6
+VCO0835,Medellín,San Andrés,Descanso,Reserva directa,40,1058512,2.2,4.6,4.5
+VCO0836,Bogotá,Cartagena,Cultural,Reserva directa,47,1641971,1.7,5.7,4.1
+VCO0837,Bogotá,Villa de Leyva,Gastronómico,Reserva directa,48,2997130,1.6,5.0,4.7
+VCO0838,Pereira,Eje Cafetero,Aventura,Recomendación,22,444551,5.9,3.9,4.3
+VCO0839,Bogotá,San Andrés,Gastronómico,Agencia tradicional,37,1530582,2.0,6.6,4.8
+VCO0840,Bogotá,Eje Cafetero,Descanso,Reserva directa,36,1615555,1.3,5.9,4.0
+VCO0841,Cali,Amazonas,Ecoturismo,Recomendación,23,448181,3.1,3.4,4.3
+VCO0842,Bogotá,Cartagena,Gastronómico,Reserva directa,34,1099269,1.4,5.8,4.8
+VCO0843,Bogotá,Villa de Leyva,Aventura,App móvil,22,385086,5.8,5.2,3.6
+VCO0844,Medellín,San Andrés,Cultural,Reserva directa,42,2090099,1.8,6.2,4.9
+VCO0845,Cali,Santa Marta,Aventura,App móvil,18,435230,5.8,2.4,3.4
+VCO0846,Barranquilla,San Andrés,Descanso,Agencia tradicional,31,1314097,2.9,3.1,4.6
+VCO0847,Manizales,Eje Cafetero,Ecoturismo,Reserva directa,26,451486,3.9,3.8,3.1
+VCO0848,Bogotá,San Andrés,Cultural,Agencia tradicional,46,2790868,1.0,3.9,4.5
+VCO0849,Cúcuta,Eje Cafetero,Descanso,App móvil,40,1137432,1.0,4.5,4.8
+VCO0850,Barranquilla,Cartagena,Gastronómico,Agencia tradicional,35,1406183,2.5,7.0,4.1
+VCO0851,Manizales,Eje Cafetero,Ecoturismo,Recomendación,19,474099,4.7,4.5,4.5
+VCO0852,Cúcuta,Cartagena,Gastronómico,Agencia tradicional,33,1286204,2.2,5.3,4.4
+VCO0853,Bogotá,Eje Cafetero,Cultural,Reserva directa,22,289072,4.3,3.2,3.8
+VCO0854,Cali,Cartagena,Cultural,Reserva directa,42,2400137,1.0,3.9,5.0
+VCO0855,Manizales,Eje Cafetero,Ecoturismo,Reserva directa,29,361634,5.6,3.9,4.4
+VCO0856,Cali,Santa Marta,Aventura,Recomendación,25,293703,4.6,5.4,4.1
+VCO0857,Manizales,Eje Cafetero,Ecoturismo,App móvil,24,485387,4.3,3.0,3.4
+VCO0858,Bucaramanga,Cartagena,Cultural,Agencia tradicional,40,1051953,3.6,6.2,4.4
+VCO0859,Medellín,Cartagena,Descanso,Agencia tradicional,44,1624198,2.7,5.8,4.4
+VCO0860,Pereira,Amazonas,Aventura,App móvil,21,377148,6.1,3.7,5.0
+VCO0861,Medellín,Medellín,Descanso,App móvil,43,2911841,1.2,3.4,4.4
+VCO0862,Bogotá,Cartagena,Descanso,Agencia tradicional,28,1086948,1.7,5.6,4.2
+VCO0863,Medellín,Eje Cafetero,Descanso,Agencia tradicional,33,837602,1.4,6.2,5.0
+VCO0864,Medellín,Cartagena,Gastronómico,Reserva directa,46,1009861,1.7,6.6,4.4
+VCO0865,Medellín,Eje Cafetero,Descanso,App móvil,35,700000,1.6,4.7,3.9
+VCO0866,Bucaramanga,Santa Marta,Gastronómico,Agencia tradicional,32,1172602,2.6,5.9,4.5
+VCO0867,Manizales,Amazonas,Cultural,Recomendación,33,322855,4.8,3.4,5.0
+VCO0868,Medellín,Villa de Leyva,Aventura,Recomendación,30,346693,2.8,3.0,3.7
+VCO0869,Cali,San Andrés,Gastronómico,Reserva directa,51,2570241,1.8,2.0,4.3
+VCO0870,Medellín,Villa de Leyva,Gastronómico,Reserva directa,44,2439219,2.1,2.4,4.6
+VCO0871,Manizales,Villa de Leyva,Ecoturismo,Reserva directa,29,396314,3.8,4.9,3.9
+VCO0872,Bogotá,Santa Marta,Aventura,App móvil,22,386803,5.2,4.6,4.7
+VCO0873,Bogotá,Santa Marta,Descanso,Agencia tradicional,37,1482271,2.3,5.5,4.5
+VCO0874,Medellín,San Andrés,Descanso,Reserva directa,31,1357069,2.9,3.1,3.7
+VCO0875,Bogotá,Eje Cafetero,Ecoturismo,App móvil,30,295146,3.4,3.1,4.5
+VCO0876,Manizales,Amazonas,Aventura,App móvil,35,415623,3.3,5.4,4.0
+VCO0877,Barranquilla,Cartagena,Cultural,Agencia tradicional,41,889392,2.6,5.9,4.8
+VCO0878,Bucaramanga,Cartagena,Descanso,Agencia tradicional,33,919288,2.3,4.6,4.8
+VCO0879,Bogotá,Eje Cafetero,Ecoturismo,App móvil,25,308670,4.7,3.4,4.7
+VCO0880,Medellín,Amazonas,Aventura,Reserva directa,18,268139,3.6,3.9,3.3
+VCO0881,Pereira,Eje Cafetero,Aventura,App móvil,23,372403,3.9,2.7,3.9
+VCO0882,Medellín,Cartagena,Descanso,Agencia tradicional,45,1163350,1.6,5.8,4.2
+VCO0883,Bogotá,Eje Cafetero,Cultural,App móvil,23,209921,4.2,3.6,2.8
+VCO0884,Medellín,Santa Marta,Ecoturismo,Recomendación,26,335800,5.8,2.7,3.6
+VCO0885,Medellín,San Andrés,Descanso,Agencia tradicional,48,3063447,1.5,4.3,4.9
+VCO0886,Bogotá,Eje Cafetero,Ecoturismo,App móvil,30,320454,5.5,3.1,4.6
+VCO0887,Barranquilla,San Andrés,Descanso,Agencia tradicional,41,1074155,1.9,6.2,5.0
+VCO0888,Manizales,Eje Cafetero,Cultural,App móvil,25,284568,3.8,3.5,3.7
+VCO0889,Cali,Eje Cafetero,Ecoturismo,App móvil,24,381296,4.3,2.6,4.5
+VCO0890,Manizales,Santa Marta,Ecoturismo,Recomendación,26,396542,7.1,3.3,3.3
+VCO0891,Medellín,Santa Marta,Descanso,Reserva directa,35,983918,2.5,4.6,4.3
+VCO0892,Barranquilla,Cartagena,Gastronómico,Reserva directa,46,2528915,1.0,4.0,4.3
+VCO0893,Medellín,Cartagena,Cultural,Agencia tradicional,46,2722330,1.0,3.6,4.8
+VCO0894,Medellín,Cartagena,Gastronómico,Agencia tradicional,50,1102168,2.5,4.7,4.1
+VCO0895,Medellín,San Andrés,Descanso,App móvil,28,1092404,1.8,6.4,4.2
+VCO0896,Bogotá,Santa Marta,Aventura,App móvil,22,237770,3.6,2.4,4.5
+VCO0897,Medellín,Eje Cafetero,Ecoturismo,App móvil,24,341348,3.5,4.2,4.5
+VCO0898,Bogotá,Cartagena,Gastronómico,App móvil,44,2793580,1.0,3.8,4.2
+VCO0899,Cali,Villa de Leyva,Ecoturismo,Recomendación,27,404823,3.8,1.0,4.7
+VCO0900,Bogotá,Amazonas,Ecoturismo,Reserva directa,26,462160,5.5,3.3,3.0
+VCO0901,Bogotá,Amazonas,Cultural,Reserva directa,29,325769,3.1,1.0,4.3
+VCO0902,Medellín,Eje Cafetero,Cultural,Recomendación,25,457687,3.8,3.4,3.8
+VCO0903,Medellín,Santa Marta,Ecoturismo,App móvil,27,334535,2.4,3.5,3.7
+VCO0904,Bogotá,San Andrés,Descanso,App móvil,43,1399138,2.0,3.9,4.3
+VCO0905,Cúcuta,San Andrés,Descanso,Agencia tradicional,42,1023713,1.3,3.5,4.8
+VCO0906,Medellín,Cartagena,Gastronómico,Reserva directa,42,2541352,1.7,3.5,4.7
+VCO0907,Medellín,Cartagena,Cultural,Reserva directa,44,2105423,1.7,4.0,4.7
+VCO0908,Pereira,Eje Cafetero,Ecoturismo,Recomendación,25,334525,5.0,5.0,4.3
+VCO0909,Bogotá,Villa de Leyva,Cultural,Reserva directa,31,367471,6.3,1.7,4.2
+VCO0910,Manizales,Amazonas,Aventura,Recomendación,29,453109,5.0,2.3,3.7
+VCO0911,Medellín,San Andrés,Descanso,App móvil,36,1389502,1.4,6.9,4.4
+VCO0912,Medellín,Eje Cafetero,Aventura,Reserva directa,30,244328,2.6,5.3,4.4
+VCO0913,Bogotá,Cartagena,Descanso,App móvil,39,1076326,2.3,6.9,3.9
+VCO0914,Medellín,Cartagena,Descanso,Agencia tradicional,38,1041021,1.0,4.9,4.5
+VCO0915,Bogotá,Santa Marta,Descanso,Agencia tradicional,31,785528,2.6,5.1,4.7
+VCO0916,Bogotá,Cartagena,Cultural,Agencia tradicional,39,1230806,1.3,6.6,4.4
+VCO0917,Cali,Santa Marta,Cultural,App móvil,28,301320,3.8,3.6,4.8
+VCO0918,Cali,Medellín,Gastronómico,Reserva directa,50,2801275,1.7,2.3,4.6
+VCO0919,Cali,San Andrés,Cultural,Reserva directa,46,2067192,1.1,5.6,4.2
+VCO0920,Cali,Amazonas,Ecoturismo,Recomendación,24,206553,6.4,2.9,4.0
+VCO0921,Bogotá,Cartagena,Gastronómico,Reserva directa,38,3086576,1.0,4.6,4.8
+VCO0922,Barranquilla,Santa Marta,Descanso,App móvil,44,1427630,1.8,5.3,4.4
+VCO0923,Barranquilla,Villa de Leyva,Cultural,Reserva directa,44,1886960,1.6,3.2,4.1
+VCO0924,Barranquilla,San Andrés,Cultural,Agencia tradicional,37,2607722,1.1,3.8,4.9
+VCO0925,Bogotá,Cartagena,Descanso,Agencia tradicional,38,908248,1.6,4.5,4.4
+VCO0926,Cali,Villa de Leyva,Ecoturismo,App móvil,21,358283,4.5,4.6,3.8
+VCO0927,Manizales,Eje Cafetero,Cultural,App móvil,23,464492,4.8,3.2,3.6
+VCO0928,Bogotá,San Andrés,Cultural,Agencia tradicional,33,1146572,2.3,3.0,4.4
+VCO0929,Barranquilla,Cartagena,Gastronómico,Agencia tradicional,44,1288070,1.0,7.2,4.5
+VCO0930,Bogotá,Santa Marta,Ecoturismo,App móvil,31,371534,6.4,2.0,4.6
+VCO0931,Pereira,Santa Marta,Cultural,Reserva directa,27,332737,5.1,2.7,4.1
+VCO0932,Medellín,San Andrés,Descanso,Reserva directa,39,2375285,1.3,2.0,4.9
+VCO0933,Bogotá,Cartagena,Gastronómico,Agencia tradicional,35,3000938,1.0,3.8,5.0
+VCO0934,Bucaramanga,Cartagena,Gastronómico,App móvil,30,1102085,4.0,4.5,4.4
+VCO0935,Manizales,Amazonas,Aventura,App móvil,30,202778,3.8,3.7,4.4
+VCO0936,Cali,Villa de Leyva,Cultural,Reserva directa,25,456253,5.2,5.3,4.6
+VCO0937,Cali,Eje Cafetero,Aventura,App móvil,28,309656,2.9,3.9,3.6
+VCO0938,Medellín,Cartagena,Gastronómico,Reserva directa,37,2484974,1.9,3.3,4.5
+VCO0939,Cali,Santa Marta,Aventura,Recomendación,19,208768,5.2,4.6,3.2
+VCO0940,Bogotá,Eje Cafetero,Descanso,Agencia tradicional,36,1233297,2.4,5.5,3.9
+VCO0941,Bogotá,Eje Cafetero,Ecoturismo,App móvil,27,246841,4.9,3.7,3.1
+VCO0942,Barranquilla,Santa Marta,Gastronómico,App móvil,34,1064203,2.0,5.5,4.1
+VCO0943,Bucaramanga,Cartagena,Descanso,Agencia tradicional,48,1103885,1.8,3.0,4.3
+VCO0944,Medellín,Medellín,Cultural,Reserva directa,44,2348150,1.2,4.4,5.0
+VCO0945,Medellín,Amazonas,Cultural,Recomendación,21,345227,5.3,2.8,3.8
+VCO0946,Bogotá,Eje Cafetero,Aventura,Reserva directa,32,213866,2.3,3.4,3.8
+VCO0947,Medellín,Villa de Leyva,Aventura,App móvil,22,285222,5.1,3.7,4.2
+VCO0948,Cali,San Andrés,Descanso,Reserva directa,44,2673705,1.6,2.7,4.2
+VCO0949,Cali,Cartagena,Cultural,Reserva directa,37,1929340,2.0,5.5,4.5
+VCO0950,Bogotá,Cartagena,Descanso,Agencia tradicional,35,1282956,2.3,3.0,5.0
+VCO0951,Medellín,Cartagena,Gastronómico,App móvil,38,1007320,2.3,4.8,3.8
+VCO0952,Bogotá,Cartagena,Descanso,Agencia tradicional,38,813586,3.3,3.0,5.0
+VCO0953,Cali,Santa Marta,Ecoturismo,App móvil,26,251905,4.5,4.7,3.9
+VCO0954,Cali,Cartagena,Descanso,Agencia tradicional,35,1750703,1.2,5.7,4.4
+VCO0955,Bogotá,Santa Marta,Descanso,Reserva directa,41,1022228,2.2,5.6,4.3
+VCO0956,Medellín,Cartagena,Cultural,Agencia tradicional,41,1168050,2.4,4.6,4.1
+VCO0957,Barranquilla,San Andrés,Descanso,Agencia tradicional,33,997167,3.3,4.4,4.6
+VCO0958,Medellín,Amazonas,Aventura,App móvil,22,539232,4.4,4.4,3.7
+VCO0959,Cali,Santa Marta,Aventura,App móvil,18,234902,5.8,6.0,4.3
+VCO0960,Medellín,San Andrés,Descanso,App móvil,42,1202109,2.3,6.3,4.2
+VCO0961,Cali,Amazonas,Ecoturismo,Reserva directa,35,159725,5.0,4.3,3.7
+VCO0962,Medellín,Santa Marta,Descanso,Reserva directa,39,963953,2.1,4.6,4.9
+VCO0963,Medellín,Amazonas,Aventura,App móvil,25,379231,5.3,3.4,5.0
+VCO0964,Barranquilla,San Andrés,Gastronómico,App móvil,38,1197205,2.1,6.3,4.3
+VCO0965,Medellín,Eje Cafetero,Aventura,Recomendación,26,297637,5.8,3.3,4.6
+VCO0966,Cali,Eje Cafetero,Ecoturismo,App móvil,28,186038,5.6,6.0,4.8
+VCO0967,Bogotá,Cartagena,Descanso,Agencia tradicional,33,1375802,2.0,6.0,4.8
+VCO0968,Manizales,Eje Cafetero,Aventura,Recomendación,30,466434,3.2,4.1,4.1
+VCO0969,Bucaramanga,Cartagena,Descanso,App móvil,30,1163567,2.3,5.3,4.0
+VCO0970,Bogotá,Cartagena,Descanso,Agencia tradicional,34,1256242,1.1,3.0,4.6
+VCO0971,Cúcuta,Eje Cafetero,Gastronómico,App móvil,40,1145398,3.5,4.8,4.5
+VCO0972,Bogotá,Medellín,Cultural,Reserva directa,49,2461075,1.8,3.2,4.6
+VCO0973,Barranquilla,Cartagena,Gastronómico,Agencia tradicional,36,1256238,2.0,5.5,4.0
+VCO0974,Manizales,Amazonas,Aventura,App móvil,28,289006,5.9,3.5,3.9
+VCO0975,Manizales,Amazonas,Aventura,App móvil,24,289170,4.7,3.5,4.3
+VCO0976,Bogotá,Eje Cafetero,Ecoturismo,App móvil,23,318511,2.9,4.2,4.0
+VCO0977,Barranquilla,San Andrés,Gastronómico,Agencia tradicional,36,1018299,2.8,6.5,3.9
+VCO0978,Cali,Eje Cafetero,Cultural,App móvil,32,245026,3.1,3.1,4.9
+VCO0979,Bogotá,Cartagena,Gastronómico,Agencia tradicional,37,876565,2.5,6.1,4.7
+VCO0980,Bogotá,San Andrés,Gastronómico,Agencia tradicional,40,1269262,1.8,8.0,4.6
+VCO0981,Medellín,Santa Marta,Aventura,App móvil,26,262076,3.1,3.7,4.2
+VCO0982,Bogotá,Villa de Leyva,Gastronómico,Agencia tradicional,47,2649624,1.1,5.0,4.8
+VCO0983,Bogotá,Santa Marta,Cultural,Recomendación,26,281720,2.9,3.0,3.1
+VCO0984,Manizales,Santa Marta,Aventura,Reserva directa,26,296445,6.1,4.3,3.8
+VCO0985,Barranquilla,San Andrés,Cultural,Agencia tradicional,33,1416900,2.3,4.3,4.9
+VCO0986,Medellín,San Andrés,Gastronómico,Reserva directa,32,1194962,3.2,6.0,4.5
+VCO0987,Barranquilla,Eje Cafetero,Descanso,Agencia tradicional,39,1325536,2.9,6.6,5.0
+VCO0988,Bogotá,Cartagena,Cultural,Reserva directa,39,1532928,1.8,4.7,4.6
+VCO0989,Cali,Eje Cafetero,Ecoturismo,Recomendación,25,438498,3.0,1.1,4.1
+VCO0990,Cali,Villa de Leyva,Gastronómico,App móvil,45,2585993,1.5,4.0,5.0
+VCO0991,Bogotá,San Andrés,Descanso,Agencia tradicional,57,2949370,1.3,7.0,4.1
+VCO0992,Bogotá,Cartagena,Cultural,Agencia tradicional,40,1091140,1.1,8.0,4.0
+VCO0993,Pereira,Villa de Leyva,Aventura,App móvil,26,290046,3.0,4.0,4.8
+VCO0994,Bogotá,Santa Marta,Descanso,App móvil,33,896021,2.4,8.4,4.3
+VCO0995,Bogotá,Amazonas,Aventura,App móvil,20,306393,3.3,3.4,4.9
+VCO0996,Medellín,Eje Cafetero,Aventura,Recomendación,23,495340,5.8,3.5,4.7
+VCO0997,Medellín,Medellín,Gastronómico,Reserva directa,44,2742777,2.4,2.7,4.7
+VCO0998,Bogotá,Amazonas,Aventura,Recomendación,24,472892,4.3,2.9,3.6
+VCO0999,Medellín,San Andrés,Cultural,App móvil,42,3021933,2.0,4.6,4.8
+VCO1000,Bogotá,Eje Cafetero,Cultural,Agencia tradicional,49,1047611,2.5,5.4,4.4
+VCO1001,Bogotá,Amazonas,Aventura,Recomendación,21,416652,6.1,4.4,4.3
+VCO1002,Cúcuta,Cartagena,Descanso,Reserva directa,34,1375565,2.1,8.5,4.4
+VCO1003,Cali,Cartagena,Cultural,Reserva directa,43,2362006,1.5,3.2,5.0
+VCO1004,Medellín,Cartagena,Cultural,Agencia tradicional,39,1195593,1.9,4.2,4.5
+VCO1005,Barranquilla,Villa de Leyva,Gastronómico,Agencia tradicional,48,2263249,1.0,2.6,4.9
+VCO1006,Medellín,Santa Marta,Descanso,Agencia tradicional,31,1798562,1.7,5.2,3.9
+VCO1007,Barranquilla,Eje Cafetero,Gastronómico,App móvil,41,1549171,2.2,4.0,4.6
+VCO1008,Cali,Cartagena,Gastronómico,Agencia tradicional,43,2346966,1.7,4.8,4.2
+VCO1009,Manizales,Amazonas,Ecoturismo,Recomendación,25,380859,4.4,4.7,4.1
+VCO1010,Bogotá,Santa Marta,Descanso,Reserva directa,39,1177281,1.0,6.0,4.2
+VCO1011,Cali,Eje Cafetero,Ecoturismo,App móvil,29,369270,5.6,3.0,4.2
+VCO1012,Medellín,Cartagena,Descanso,App móvil,36,2655369,2.1,4.8,4.8
+VCO1013,Cali,Villa de Leyva,Descanso,App móvil,41,2089099,2.0,5.5,4.8
+VCO1014,Bogotá,Eje Cafetero,Cultural,App móvil,26,359942,4.1,1.6,4.6
+VCO1015,Bucaramanga,Cartagena,Gastronómico,Agencia tradicional,37,1105848,1.0,4.3,4.8
+VCO1016,Bogotá,Medellín,Gastronómico,Reserva directa,54,3093856,1.0,4.1,4.4
+VCO1017,Medellín,Eje Cafetero,Aventura,App móvil,19,352438,4.8,3.1,4.0
+VCO1018,Bogotá,San Andrés,Descanso,Agencia tradicional,37,1505666,2.4,3.0,3.9
+VCO1019,Medellín,Villa de Leyva,Gastronómico,App móvil,43,2613564,1.0,3.6,4.5
+VCO1020,Medellín,Villa de Leyva,Cultural,Recomendación,26,306016,4.7,3.5,3.6
+VCO1021,Cúcuta,Santa Marta,Descanso,App móvil,32,700000,2.4,3.0,3.6
+VCO1022,Pereira,Villa de Leyva,Ecoturismo,Reserva directa,24,371444,4.0,4.0,4.4
+VCO1023,Cali,Cartagena,Cultural,Agencia tradicional,42,2895091,1.3,3.6,4.1
+VCO1024,Bogotá,Villa de Leyva,Cultural,Agencia tradicional,46,2189757,1.1,4.5,4.4
+VCO1025,Cali,Medellín,Gastronómico,Agencia tradicional,50,2188077,1.6,4.0,4.8
+VCO1026,Medellín,Santa Marta,Descanso,Reserva directa,33,934747,3.2,4.2,4.6
+VCO1027,Bogotá,San Andrés,Cultural,App móvil,41,1746806,1.6,3.8,5.0
+VCO1028,Medellín,Cartagena,Cultural,Agencia tradicional,45,1890560,1.3,3.9,4.9
+VCO1029,Manizales,Amazonas,Cultural,Recomendación,24,209564,5.5,3.8,3.7
+VCO1030,Bogotá,Villa de Leyva,Cultural,Agencia tradicional,54,2617313,1.0,3.8,5.0
+VCO1031,Bogotá,Amazonas,Aventura,App móvil,19,387851,4.3,4.3,3.9
+VCO1032,Bogotá,San Andrés,Cultural,Reserva directa,42,1117994,2.2,5.9,4.8
+VCO1033,Medellín,Santa Marta,Cultural,Reserva directa,34,330975,4.2,3.3,4.0
+VCO1034,Manizales,Amazonas,Aventura,Recomendación,20,387314,3.8,4.1,3.2
+VCO1035,Cali,Villa de Leyva,Aventura,Reserva directa,26,391655,4.1,3.2,5.0
+VCO1036,Bucaramanga,Santa Marta,Descanso,App móvil,36,1399643,2.9,5.6,3.6
+VCO1037,Medellín,Eje Cafetero,Cultural,Recomendación,27,429764,2.2,3.4,4.2
+VCO1038,Bucaramanga,Cartagena,Cultural,Agencia tradicional,39,1615468,2.0,7.9,4.6
+VCO1039,Cali,Santa Marta,Aventura,App móvil,23,259612,5.1,4.7,2.9
+VCO1040,Bogotá,Amazonas,Ecoturismo,Reserva directa,27,284093,4.4,2.5,3.8
+VCO1041,Medellín,San Andrés,Descanso,App móvil,43,700000,2.0,5.9,4.2
+VCO1042,Bogotá,Medellín,Cultural,Reserva directa,40,2678681,1.5,5.6,4.6
+VCO1043,Bogotá,Eje Cafetero,Aventura,App móvil,28,172417,3.7,2.6,4.0
+VCO1044,Barranquilla,Cartagena,Descanso,Agencia tradicional,33,1039703,1.6,5.5,5.0
+VCO1045,Cali,Cartagena,Gastronómico,App móvil,58,2716969,2.1,2.8,4.6
+VCO1046,Bogotá,Cartagena,Cultural,App móvil,39,1110671,2.8,5.3,4.2
+VCO1047,Medellín,Eje Cafetero,Cultural,App móvil,31,316926,5.0,2.4,4.1
+VCO1048,Medellín,Amazonas,Ecoturismo,App móvil,27,352591,3.8,2.8,3.4
+VCO1049,Medellín,Medellín,Descanso,Agencia tradicional,37,1962028,1.0,2.7,4.5
+VCO1050,Medellín,Eje Cafetero,Aventura,App móvil,25,326763,6.5,2.1,3.3
+VCO1051,Medellín,San Andrés,Gastronómico,Reserva directa,44,2081231,1.3,4.6,4.6
+VCO1052,Medellín,Santa Marta,Descanso,Agencia tradicional,31,1328308,2.7,5.4,4.5
+VCO1053,Medellín,Cartagena,Gastronómico,Reserva directa,42,1986108,2.0,3.3,5.0
+VCO1054,Bogotá,San Andrés,Cultural,Agencia tradicional,46,2367590,1.3,6.4,5.0
+VCO1055,Barranquilla,Medellín,Gastronómico,Agencia tradicional,46,2681881,1.8,4.1,4.9
+VCO1056,Manizales,Santa Marta,Aventura,Recomendación,27,386865,5.8,2.7,3.7
+VCO1057,Barranquilla,Cartagena,Cultural,Reserva directa,45,2603555,1.4,3.7,4.8
+VCO1058,Bogotá,Eje Cafetero,Descanso,Agencia tradicional,49,790512,1.1,6.5,3.8
+VCO1059,Medellín,San Andrés,Descanso,Reserva directa,37,1155854,3.5,5.2,4.0
+VCO1060,Barranquilla,Cartagena,Cultural,App móvil,37,933464,1.4,3.8,4.7
+VCO1061,Bogotá,Cartagena,Cultural,Reserva directa,54,2370152,1.8,4.6,4.9
+VCO1062,Cali,Medellín,Descanso,Agencia tradicional,44,2595092,1.9,3.4,4.6
+VCO1063,Medellín,Cartagena,Cultural,App móvil,42,2541231,1.9,3.3,4.6
+VCO1064,Bogotá,Santa Marta,Gastronómico,Agencia tradicional,29,1289886,2.1,5.9,4.5
+VCO1065,Medellín,San Andrés,Gastronómico,Reserva directa,34,1384205,2.6,7.4,4.9
+VCO1066,Medellín,Cartagena,Descanso,App móvil,40,1104056,2.8,6.8,4.0
+VCO1067,Bogotá,Amazonas,Aventura,Recomendación,31,285392,7.8,4.9,3.8
+VCO1068,Medellín,Eje Cafetero,Aventura,App móvil,23,332122,6.3,1.1,3.9
+VCO1069,Bogotá,Amazonas,Aventura,App móvil,18,266413,4.2,2.7,3.8
+VCO1070,Bogotá,Eje Cafetero,Cultural,Recomendación,30,492713,4.5,3.0,4.6
+VCO1071,Manizales,Villa de Leyva,Cultural,App móvil,23,484519,4.9,1.0,4.1
+VCO1072,Medellín,Eje Cafetero,Aventura,App móvil,29,279290,3.8,2.1,3.5
+VCO1073,Cali,Amazonas,Aventura,App móvil,18,361783,4.7,4.1,3.7
+VCO1074,Medellín,Eje Cafetero,Aventura,App móvil,29,295560,4.3,3.5,2.5
+VCO1075,Bogotá,Cartagena,Cultural,Agencia tradicional,45,3043047,1.7,2.8,5.0
+VCO1076,Medellín,Cartagena,Cultural,Agencia tradicional,37,1357658,2.0,4.6,4.0
+VCO1077,Bogotá,San Andrés,Cultural,Agencia tradicional,35,1382815,1.6,3.2,5.0
+VCO1078,Medellín,Cartagena,Descanso,App móvil,37,1002590,1.7,6.3,4.6
+VCO1079,Cali,Eje Cafetero,Aventura,Recomendación,24,584832,4.7,3.6,4.4
+VCO1080,Bogotá,Cartagena,Descanso,Agencia tradicional,49,2662437,1.4,4.1,5.0
+VCO1081,Bogotá,Villa de Leyva,Cultural,App móvil,43,2174338,1.2,2.4,4.3
+VCO1082,Manizales,Santa Marta,Ecoturismo,App móvil,28,318552,5.9,3.6,3.9
+VCO1083,Medellín,San Andrés,Descanso,App móvil,39,1165225,2.9,4.9,5.0
+VCO1084,Cali,Cartagena,Descanso,Reserva directa,47,2575176,1.3,4.7,4.7
+VCO1085,Medellín,San Andrés,Descanso,Reserva directa,49,2728988,1.7,5.7,4.2
+VCO1086,Medellín,San Andrés,Descanso,Agencia tradicional,37,930078,2.1,4.9,4.1
+VCO1087,Medellín,San Andrés,Descanso,App móvil,28,1203999,3.5,4.3,4.2
+VCO1088,Medellín,Eje Cafetero,Aventura,App móvil,20,391457,4.4,4.4,4.5
+VCO1089,Cali,Cartagena,Gastronómico,Agencia tradicional,48,2227170,1.6,4.8,4.7
+VCO1090,Manizales,Eje Cafetero,Aventura,Reserva directa,29,335638,4.2,2.9,3.8
+VCO1091,Bogotá,San Andrés,Descanso,App móvil,38,2306148,2.6,3.1,4.3
+VCO1092,Barranquilla,San Andrés,Descanso,Agencia tradicional,39,988777,3.6,5.3,4.2
+VCO1093,Bucaramanga,Santa Marta,Descanso,App móvil,44,823942,1.3,6.4,3.7
+VCO1094,Medellín,San Andrés,Descanso,Agencia tradicional,35,994956,2.3,6.0,4.7
+VCO1095,Cali,Eje Cafetero,Ecoturismo,App móvil,20,194674,4.1,3.4,3.7
+VCO1096,Medellín,Eje Cafetero,Ecoturismo,App móvil,27,159207,5.2,2.6,3.8
+VCO1097,Cali,Eje Cafetero,Ecoturismo,Recomendación,29,377689,2.0,3.4,4.3
+VCO1098,Medellín,Villa de Leyva,Ecoturismo,App móvil,24,389361,4.5,4.5,5.0
+VCO1099,Cali,Cartagena,Cultural,Reserva directa,34,2449334,1.9,3.6,4.4
+VCO1100,Bogotá,Amazonas,Cultural,App móvil,26,362647,3.2,4.4,4.4
+VCO1101,Cali,Villa de Leyva,Cultural,App móvil,27,415579,3.8,4.2,4.2
+VCO1102,Medellín,Cartagena,Cultural,Reserva directa,39,2157023,1.4,4.4,4.8
+VCO1103,Bogotá,Cartagena,Cultural,Reserva directa,45,2579286,1.6,2.6,4.7
+VCO1104,Bogotá,Cartagena,Gastronómico,App móvil,46,2630103,1.9,2.7,4.7
+VCO1105,Bogotá,Cartagena,Cultural,Reserva directa,51,2559419,1.6,5.1,4.2
+VCO1106,Manizales,Villa de Leyva,Aventura,Recomendación,30,383089,6.1,3.9,4.3
+VCO1107,Barranquilla,San Andrés,Descanso,Agencia tradicional,33,1367296,2.1,7.2,4.3
+VCO1108,Bogotá,Villa de Leyva,Descanso,Reserva directa,40,2525416,1.8,5.2,4.8
+VCO1109,Bogotá,Cartagena,Descanso,Agencia tradicional,41,1049855,1.9,6.7,4.2
+VCO1110,Manizales,Amazonas,Aventura,App móvil,25,299663,6.0,3.3,4.0
+VCO1111,Medellín,Cartagena,Cultural,Agencia tradicional,51,1500000,1.3,4.1,4.5
+VCO1112,Medellín,Villa de Leyva,Aventura,App móvil,24,352681,3.9,3.3,4.0
+VCO1113,Medellín,Eje Cafetero,Aventura,Recomendación,23,172592,3.6,2.7,4.5
+VCO1114,Barranquilla,Eje Cafetero,Descanso,Agencia tradicional,34,1122286,2.6,6.4,4.4
+VCO1115,Barranquilla,San Andrés,Descanso,Agencia tradicional,29,975224,2.0,5.3,5.0
+VCO1116,Cúcuta,Cartagena,Gastronómico,Agencia tradicional,40,1275609,2.3,4.4,4.2
+VCO1117,Manizales,Amazonas,Cultural,App móvil,28,419772,6.8,5.2,4.6
+VCO1118,Cali,Villa de Leyva,Cultural,Agencia tradicional,36,2566343,1.0,5.2,4.7
+VCO1119,Manizales,Amazonas,Aventura,Recomendación,28,415928,5.0,2.5,3.6
+VCO1120,Medellín,Villa de Leyva,Ecoturismo,Reserva directa,27,336868,3.3,4.3,4.2
+VCO1121,Bogotá,San Andrés,Cultural,App móvil,40,2316929,1.0,3.7,3.9
+VCO1122,Medellín,Cartagena,Gastronómico,Reserva directa,47,2928590,2.1,3.5,4.5
+VCO1123,Bogotá,San Andrés,Gastronómico,App móvil,50,2056099,1.5,5.2,5.0
+VCO1124,Bogotá,Medellín,Cultural,Agencia tradicional,47,2629298,1.2,3.6,4.6
+VCO1125,Barranquilla,Santa Marta,Gastronómico,App móvil,40,999184,1.8,6.7,4.7
+VCO1126,Barranquilla,Cartagena,Descanso,Reserva directa,35,1388877,2.8,6.0,3.9
+VCO1127,Bogotá,Amazonas,Aventura,Recomendación,29,428114,3.9,2.1,4.4
+VCO1128,Barranquilla,Cartagena,Gastronómico,Agencia tradicional,33,995248,1.0,4.4,4.2
+VCO1129,Cali,Eje Cafetero,Aventura,Reserva directa,23,262086,3.6,2.3,3.7
+VCO1130,Cali,Eje Cafetero,Aventura,App móvil,31,404994,6.8,2.3,3.6
+VCO1131,Medellín,San Andrés,Descanso,Agencia tradicional,40,1182325,2.4,8.1,4.8
+VCO1132,Cúcuta,Cartagena,Descanso,Reserva directa,35,1642137,3.3,7.7,4.9
+VCO1133,Bogotá,Santa Marta,Aventura,Recomendación,26,421204,5.9,1.2,4.6
+VCO1134,Cali,Eje Cafetero,Aventura,Recomendación,22,301419,6.7,4.1,4.3
+VCO1135,Bucaramanga,Santa Marta,Cultural,Reserva directa,38,1376479,3.9,5.2,3.9
+VCO1136,Cali,Eje Cafetero,Cultural,App móvil,28,461938,3.0,3.3,3.8
+VCO1137,Barranquilla,San Andrés,Gastronómico,App móvil,44,2479396,1.2,3.0,4.6
+VCO1138,Bogotá,San Andrés,Gastronómico,Reserva directa,39,1275452,1.7,4.6,4.2
+VCO1139,Medellín,Santa Marta,Descanso,App móvil,33,1162554,1.0,3.8,4.7
+VCO1140,Barranquilla,Cartagena,Cultural,App móvil,32,1406531,3.2,7.8,4.4
+VCO1141,Bogotá,Cartagena,Cultural,App móvil,42,2873524,1.5,3.7,4.9
+VCO1142,Manizales,Amazonas,Aventura,App móvil,22,277447,4.5,3.9,4.5
+VCO1143,Bucaramanga,San Andrés,Descanso,Agencia tradicional,31,1055686,1.9,5.1,4.0
+VCO1144,Bogotá,Cartagena,Gastronómico,Reserva directa,38,1227771,2.2,3.2,4.8
+VCO1145,Cali,Villa de Leyva,Ecoturismo,Recomendación,33,280881,3.3,2.5,4.3
+VCO1146,Barranquilla,Cartagena,Cultural,Reserva directa,50,1975382,1.1,2.5,4.9
+VCO1147,Bogotá,Cartagena,Descanso,Reserva directa,43,2562938,1.0,6.0,4.6
+VCO1148,Bucaramanga,Cartagena,Descanso,App móvil,28,1582321,1.9,7.4,4.6
+VCO1149,Cali,San Andrés,Gastronómico,Agencia tradicional,39,1671145,1.0,4.3,4.3
+VCO1150,Medellín,Cartagena,Gastronómico,Reserva directa,38,2418027,1.4,4.0,4.1
+VCO1151,Bogotá,San Andrés,Cultural,Reserva directa,33,1019469,3.1,4.8,4.1
+VCO1152,Barranquilla,Medellín,Gastronómico,Agencia tradicional,51,2219217,1.1,4.2,4.8
+VCO1153,Medellín,Cartagena,Gastronómico,Agencia tradicional,33,1248414,2.2,6.6,4.5
+VCO1154,Barranquilla,Cartagena,Cultural,App móvil,38,1029804,2.6,5.9,4.6
+VCO1155,Bogotá,Cartagena,Descanso,Agencia tradicional,31,1372784,2.5,7.5,4.6
+VCO1156,Medellín,Cartagena,Cultural,Reserva directa,42,2582194,1.3,7.0,4.2
+VCO1157,Pereira,Santa Marta,Ecoturismo,Recomendación,29,192837,5.6,5.5,3.9
+VCO1158,Cali,Medellín,Descanso,Reserva directa,42,2500721,1.7,4.6,4.5
+VCO1159,Medellín,Cartagena,Gastronómico,Reserva directa,42,2064262,1.7,3.6,4.7
+VCO1160,Cali,Eje Cafetero,Aventura,Recomendación,21,306511,3.5,4.2,4.8
+VCO1161,Bogotá,San Andrés,Descanso,Agencia tradicional,45,2618078,1.0,3.1,5.0
+VCO1162,Medellín,Amazonas,Ecoturismo,Reserva directa,29,496711,5.3,4.3,4.5
+VCO1163,Pereira,Amazonas,Aventura,Reserva directa,27,280566,4.7,4.4,3.9
+VCO1164,Bucaramanga,San Andrés,Descanso,App móvil,38,1528285,2.5,7.8,4.4
+VCO1165,Cali,Eje Cafetero,Aventura,App móvil,25,409942,5.1,5.2,3.9
+VCO1166,Medellín,Cartagena,Cultural,Reserva directa,43,1886350,1.3,2.8,4.9
+VCO1167,Cali,Medellín,Descanso,Agencia tradicional,40,1824786,1.5,5.1,4.2
+VCO1168,Barranquilla,San Andrés,Descanso,Agencia tradicional,40,1151317,1.1,5.1,4.0
+VCO1169,Manizales,Villa de Leyva,Cultural,Recomendación,28,336172,3.5,5.4,4.8
+VCO1170,Bogotá,Eje Cafetero,Cultural,Recomendación,29,315138,3.9,3.2,3.5
+VCO1171,Barranquilla,Cartagena,Cultural,Agencia tradicional,36,1156960,2.8,5.7,5.0
+VCO1172,Cali,Cartagena,Cultural,Agencia tradicional,42,2174125,1.3,3.0,4.5
+VCO1173,Medellín,Santa Marta,Descanso,Reserva directa,43,1230027,2.0,5.7,3.8
+VCO1174,Bogotá,Eje Cafetero,Ecoturismo,App móvil,24,358726,5.8,2.3,4.7
+VCO1175,Barranquilla,Cartagena,Descanso,Agencia tradicional,33,1406276,2.4,3.6,4.2
+VCO1176,Bogotá,Eje Cafetero,Gastronómico,Agencia tradicional,36,1277637,1.3,5.6,4.1
+VCO1177,Medellín,Cartagena,Gastronómico,Agencia tradicional,40,2909909,1.3,2.0,4.3
+VCO1178,Medellín,Amazonas,Aventura,App móvil,26,208361,3.6,5.4,4.8
+VCO1179,Bogotá,Cartagena,Cultural,Agencia tradicional,41,2100471,1.0,2.8,4.3
+VCO1180,Bogotá,Cartagena,Gastronómico,Agencia tradicional,36,1165748,2.4,7.6,4.8
+VCO1181,Bogotá,Cartagena,Cultural,Reserva directa,37,2057251,2.1,3.6,4.7
+VCO1182,Bogotá,Santa Marta,Aventura,Reserva directa,27,304795,3.9,2.6,4.2
+VCO1183,Cúcuta,San Andrés,Descanso,Reserva directa,42,1716714,2.3,4.5,4.0
+VCO1184,Cali,San Andrés,Cultural,Agencia tradicional,40,1999457,1.5,4.3,4.5
+VCO1185,Bogotá,Santa Marta,Aventura,App móvil,18,545297,4.6,4.5,4.5
+VCO1186,Cali,Cartagena,Gastronómico,Agencia tradicional,54,2404557,1.3,4.3,4.7
+VCO1187,Bogotá,Cartagena,Cultural,Agencia tradicional,43,1124715,3.4,4.6,4.4
+VCO1188,Medellín,Santa Marta,Aventura,App móvil,22,388099,6.1,5.1,3.7
+VCO1189,Medellín,Eje Cafetero,Ecoturismo,Recomendación,28,552394,6.2,4.6,3.9
+VCO1190,Medellín,San Andrés,Cultural,Agencia tradicional,30,1456820,1.3,5.4,4.3
+VCO1191,Bogotá,Eje Cafetero,Ecoturismo,Recomendación,30,260366,2.9,5.3,3.7
+VCO1192,Medellín,Eje Cafetero,Descanso,App móvil,40,1088656,3.3,6.1,4.9
+VCO1193,Medellín,Eje Cafetero,Aventura,Recomendación,28,352571,6.4,2.4,4.3
+VCO1194,Medellín,Eje Cafetero,Descanso,Agencia tradicional,32,1354092,1.8,5.2,4.4
+VCO1195,Medellín,Amazonas,Ecoturismo,App móvil,30,351787,5.4,2.6,4.1
+VCO1196,Medellín,San Andrés,Descanso,Agencia tradicional,49,2736667,2.3,6.5,5.0
+VCO1197,Medellín,Villa de Leyva,Cultural,Agencia tradicional,34,2156906,1.4,2.4,5.0
+VCO1198,Cali,Medellín,Gastronómico,Reserva directa,38,2346083,1.6,4.7,4.9
+VCO1199,Bogotá,San Andrés,Descanso,Agencia tradicional,34,1087142,2.1,6.6,3.9
+VCO1200,Cali,Eje Cafetero,Aventura,App móvil,27,421880,4.9,3.5,3.7
+VCO1201,Bogotá,Villa de Leyva,Cultural,Reserva directa,43,2742161,1.6,4.0,4.7
+VCO1202,Pereira,Amazonas,Aventura,App móvil,20,497711,3.8,5.0,3.6
+VCO1203,Manizales,Santa Marta,Aventura,App móvil,19,504668,3.5,3.0,5.0
+VCO1204,Bogotá,Villa de Leyva,Aventura,App móvil,30,370540,4.6,1.5,3.9
+VCO1205,Bogotá,San Andrés,Descanso,Agencia tradicional,36,1375509,2.0,6.7,4.5
+VCO1206,Medellín,Cartagena,Gastronómico,Agencia tradicional,35,2488093,2.0,4.3,4.5
+VCO1207,Bogotá,Cartagena,Gastronómico,App móvil,39,1313728,2.3,4.9,4.9
+VCO1208,Bogotá,San Andrés,Descanso,Reserva directa,46,1276584,2.2,6.7,4.3
+VCO1209,Cali,Santa Marta,Aventura,App móvil,21,307875,3.0,3.6,3.6
+VCO1210,Medellín,Medellín,Descanso,Reserva directa,53,2375413,1.0,3.3,5.0
+VCO1211,Medellín,Cartagena,Cultural,App móvil,31,1122795,2.2,4.9,4.5
+VCO1212,Medellín,Eje Cafetero,Descanso,App móvil,38,1016848,2.2,6.9,4.2
+VCO1213,Bogotá,Amazonas,Cultural,Reserva directa,26,242005,4.8,3.1,4.9
+VCO1214,Bogotá,Cartagena,Cultural,Agencia tradicional,43,3056333,2.4,3.3,4.5
+VCO1215,Barranquilla,Eje Cafetero,Descanso,Reserva directa,34,1163142,1.2,3.0,4.0
+VCO1216,Medellín,Villa de Leyva,Cultural,Recomendación,31,278096,2.5,2.3,4.1
+VCO1217,Medellín,Amazonas,Cultural,App móvil,24,394081,4.5,3.2,4.1
+VCO1218,Bucaramanga,Eje Cafetero,Descanso,App móvil,39,1014346,2.7,3.5,4.7
+VCO1219,Bogotá,Cartagena,Gastronómico,App móvil,30,1361931,2.7,6.8,4.4
+VCO1220,Manizales,Santa Marta,Aventura,Recomendación,27,219815,4.6,4.4,4.2
+VCO1221,Medellín,Villa de Leyva,Cultural,Reserva directa,40,2518384,1.3,2.4,4.4
+VCO1222,Medellín,Amazonas,Aventura,App móvil,22,346458,4.5,2.9,3.1
+VCO1223,Medellín,San Andrés,Gastronómico,App móvil,28,1218525,1.4,7.6,4.7
+VCO1224,Bogotá,Medellín,Descanso,Reserva directa,54,2679078,1.7,2.4,4.1
+VCO1225,Bogotá,Cartagena,Gastronómico,Agencia tradicional,37,1224685,2.2,3.1,4.8
+VCO1226,Bogotá,San Andrés,Descanso,Agencia tradicional,40,908357,1.9,4.7,4.6
+VCO1227,Medellín,Santa Marta,Cultural,Reserva directa,28,1526025,2.4,5.9,4.6
+VCO1228,Bogotá,Eje Cafetero,Aventura,App móvil,22,494445,5.4,3.4,3.8
+VCO1229,Cali,Medellín,Descanso,App móvil,36,2602390,1.5,3.6,4.8
+VCO1230,Barranquilla,Santa Marta,Gastronómico,Reserva directa,42,949319,1.7,7.6,4.7
+VCO1231,Bogotá,Cartagena,Cultural,Agencia tradicional,39,3000778,1.0,3.9,5.0
+VCO1232,Bogotá,Santa Marta,Cultural,Recomendación,22,600000,5.0,3.5,3.3
+VCO1233,Medellín,Amazonas,Aventura,Recomendación,20,250441,5.1,4.1,3.7
+VCO1234,Pereira,Santa Marta,Cultural,Recomendación,23,385986,2.0,2.2,4.4
+VCO1235,Bogotá,Cartagena,Cultural,Reserva directa,36,1032523,1.9,5.2,3.8
+VCO1236,Medellín,Eje Cafetero,Aventura,Recomendación,20,306896,3.7,2.9,4.7
+VCO1237,Bogotá,Villa de Leyva,Gastronómico,Agencia tradicional,45,2322628,2.1,5.6,4.7
+VCO1238,Cúcuta,San Andrés,Cultural,App móvil,41,1233730,2.0,4.4,4.2
+VCO1239,Bogotá,San Andrés,Cultural,Agencia tradicional,32,3145147,1.5,4.1,5.0
+VCO1240,Medellín,Santa Marta,Aventura,App móvil,26,232039,4.2,2.5,4.5
+VCO1241,Cali,Villa de Leyva,Gastronómico,Agencia tradicional,36,2873861,1.4,3.7,4.7
+VCO1242,Bogotá,Villa de Leyva,Cultural,Agencia tradicional,41,2647970,1.0,4.4,4.4
+VCO1243,Medellín,Medellín,Descanso,Reserva directa,47,2053069,1.8,4.7,4.7
+VCO1244,Medellín,San Andrés,Gastronómico,App móvil,44,2483403,1.8,3.2,4.7
+VCO1245,Medellín,Cartagena,Gastronómico,Reserva directa,38,2888195,1.1,3.1,4.3
+VCO1246,Bogotá,San Andrés,Gastronómico,Agencia tradicional,36,727028,1.0,6.5,4.4
+VCO1247,Medellín,Santa Marta,Aventura,Recomendación,20,256875,3.6,4.9,4.0
+VCO1248,Manizales,Eje Cafetero,Aventura,App móvil,29,321360,6.3,3.3,3.6
+VCO1249,Barranquilla,San Andrés,Cultural,Agencia tradicional,42,2924726,1.0,4.4,4.5
+VCO1250,Barranquilla,Eje Cafetero,Cultural,App móvil,34,1191816,2.1,5.5,4.9
+VCO1251,Medellín,Medellín,Gastronómico,App móvil,40,2587335,1.6,5.0,4.8
+VCO1252,Barranquilla,San Andrés,Descanso,App móvil,39,1401282,1.6,3.7,4.3
+VCO1253,Pereira,Amazonas,Cultural,App móvil,21,295076,5.0,2.5,3.5
+VCO1254,Bogotá,Eje Cafetero,Aventura,Recomendación,22,443070,4.8,2.9,3.4
+VCO1255,Medellín,Cartagena,Descanso,Agencia tradicional,30,1084357,1.9,4.7,4.1
+VCO1256,Barranquilla,San Andrés,Descanso,Agencia tradicional,37,1259028,2.3,4.8,4.8
+VCO1257,Medellín,Eje Cafetero,Aventura,App móvil,28,262927,4.5,1.9,4.4
+VCO1258,Bucaramanga,San Andrés,Descanso,Reserva directa,40,1218587,1.9,5.8,4.3
+VCO1259,Bogotá,Eje Cafetero,Ecoturismo,Recomendación,27,490074,4.1,2.9,3.4
+VCO1260,Cúcuta,Cartagena,Gastronómico,Reserva directa,37,1097987,1.3,5.6,4.4
+VCO1261,Bogotá,Amazonas,Aventura,Recomendación,30,370589,4.7,3.6,3.6
+VCO1262,Cali,San Andrés,Descanso,Reserva directa,36,2590772,1.0,4.1,5.0
+VCO1263,Cali,Eje Cafetero,Aventura,Recomendación,25,384588,4.2,4.9,4.3
+VCO1264,Medellín,San Andrés,Gastronómico,Agencia tradicional,29,1026246,1.0,5.8,4.6
+VCO1265,Bogotá,Villa de Leyva,Aventura,App móvil,19,187411,3.1,4.7,4.6
+VCO1266,Bogotá,Villa de Leyva,Cultural,Reserva directa,28,244275,4.1,3.0,5.0
+VCO1267,Bogotá,San Andrés,Gastronómico,Reserva directa,42,1366099,3.0,5.1,4.6
+VCO1268,Barranquilla,San Andrés,Descanso,Agencia tradicional,40,1018840,2.4,7.8,4.1
+VCO1269,Bucaramanga,Santa Marta,Cultural,Agencia tradicional,32,844112,1.1,7.6,4.8
+VCO1270,Bogotá,Eje Cafetero,Aventura,App móvil,24,264027,5.2,2.9,4.0
+VCO1271,Bucaramanga,Cartagena,Descanso,Reserva directa,41,1046729,1.6,6.3,4.3
+VCO1272,Bogotá,Cartagena,Gastronómico,Reserva directa,40,2161584,1.0,4.0,4.9
+VCO1273,Medellín,Cartagena,Cultural,Agencia tradicional,44,2762759,2.1,3.1,4.8
+VCO1274,Medellín,Santa Marta,Aventura,Recomendación,25,349226,4.4,4.2,3.2
+VCO1275,Bogotá,Eje Cafetero,Descanso,App móvil,38,1142369,2.9,4.0,4.7
+VCO1276,Medellín,Amazonas,Ecoturismo,Recomendación,24,388448,3.1,4.6,4.1
+VCO1277,Bogotá,Santa Marta,Aventura,Recomendación,25,465725,4.3,2.2,3.8
+VCO1278,Bogotá,Cartagena,Cultural,Reserva directa,51,2843308,1.0,5.0,4.8
+VCO1279,Manizales,Eje Cafetero,Ecoturismo,Recomendación,24,315629,4.9,2.8,4.2
+VCO1280,Bogotá,San Andrés,Descanso,Reserva directa,34,1302120,3.0,3.4,4.2
+VCO1281,Bogotá,San Andrés,Cultural,App móvil,39,1040868,2.2,5.7,4.6
+VCO1282,Bucaramanga,San Andrés,Gastronómico,App móvil,44,1479883,2.4,3.7,4.9
+VCO1283,Bogotá,Cartagena,Descanso,Agencia tradicional,35,1152692,1.5,5.3,4.2
+VCO1284,Medellín,Eje Cafetero,Cultural,App móvil,28,426824,5.0,5.1,3.4
+VCO1285,Cali,Amazonas,Cultural,Reserva directa,23,206464,2.8,4.0,3.5
+VCO1286,Bogotá,Cartagena,Cultural,Agencia tradicional,42,1029763,2.7,7.3,3.7
+VCO1287,Bogotá,Santa Marta,Aventura,App móvil,27,202918,4.0,4.7,3.4
+VCO1288,Bogotá,Eje Cafetero,Ecoturismo,App móvil,25,421849,5.5,3.9,3.1
+VCO1289,Bogotá,Amazonas,Ecoturismo,Recomendación,22,320577,5.7,2.6,4.4
+VCO1290,Cali,Santa Marta,Aventura,Recomendación,23,406202,2.5,5.4,4.3
+VCO1291,Barranquilla,Cartagena,Gastronómico,Reserva directa,40,848898,2.6,5.4,4.3
+VCO1292,Cali,Villa de Leyva,Ecoturismo,App móvil,22,443693,3.5,3.5,4.2
+VCO1293,Barranquilla,Cartagena,Cultural,Agencia tradicional,48,1022857,3.6,7.3,4.4
+VCO1294,Barranquilla,Santa Marta,Descanso,Agencia tradicional,40,1075033,1.2,4.3,4.4
+VCO1295,Cali,Cartagena,Cultural,App móvil,49,2601651,1.1,3.9,4.4
+VCO1296,Manizales,Eje Cafetero,Aventura,Recomendación,31,209657,5.2,4.1,4.9
+VCO1297,Manizales,Santa Marta,Ecoturismo,App móvil,23,357562,6.8,3.0,3.8
+VCO1298,Cali,Amazonas,Ecoturismo,Recomendación,26,494487,5.5,4.3,3.6
+VCO1299,Medellín,Santa Marta,Cultural,Reserva directa,43,1027114,2.8,5.8,4.0
+VCO1300,Medellín,Santa Marta,Gastronómico,Agencia tradicional,38,1517904,1.2,6.2,4.0
+VCO1301,Bogotá,Villa de Leyva,Ecoturismo,App móvil,26,439334,5.2,2.1,4.2
+VCO1302,Medellín,Cartagena,Cultural,Reserva directa,47,2186271,1.6,2.3,4.5
+VCO1303,Manizales,Santa Marta,Cultural,App móvil,27,389910,3.8,1.9,4.3
+VCO1304,Barranquilla,Cartagena,Gastronómico,Agencia tradicional,41,979045,3.2,4.2,4.0
+VCO1305,Bucaramanga,San Andrés,Gastronómico,Agencia tradicional,34,1397721,1.1,6.5,4.8
+VCO1306,Bogotá,Villa de Leyva,Cultural,Agencia tradicional,43,2700451,1.0,4.9,4.3
+VCO1307,Bogotá,Cartagena,Descanso,Agencia tradicional,39,1320742,2.4,5.1,4.3
+VCO1308,Medellín,San Andrés,Gastronómico,Agencia tradicional,45,2495917,1.4,4.0,5.0
+VCO1309,Cali,Villa de Leyva,Cultural,App móvil,28,345325,4.2,3.0,4.4
+VCO1310,Medellín,Cartagena,Cultural,Agencia tradicional,44,2208643,1.3,3.0,4.8
+VCO1311,Manizales,Amazonas,Ecoturismo,App móvil,30,264717,6.0,5.6,4.7
+VCO1312,Barranquilla,Cartagena,Cultural,Reserva directa,46,2780555,1.2,5.7,5.0
+VCO1313,Barranquilla,San Andrés,Descanso,App móvil,39,1068323,1.9,3.2,4.7
+VCO1314,Cali,San Andrés,Descanso,App móvil,40,2741512,1.3,3.4,4.5
+VCO1315,Barranquilla,Cartagena,Descanso,Reserva directa,39,1295628,2.9,6.6,5.0
+VCO1316,Bogotá,Santa Marta,Gastronómico,App móvil,38,1084554,2.7,9.4,4.3
+VCO1317,Medellín,San Andrés,Descanso,Agencia tradicional,40,1230505,2.7,3.0,4.3
+VCO1318,Bucaramanga,Cartagena,Gastronómico,Agencia tradicional,45,889692,1.3,5.2,4.2
+VCO1319,Cali,Eje Cafetero,Ecoturismo,Reserva directa,20,474820,3.0,1.8,3.1
+VCO1320,Manizales,Amazonas,Aventura,App móvil,28,193871,3.0,4.6,3.5
+VCO1321,Bogotá,Amazonas,Ecoturismo,Reserva directa,23,244764,4.5,1.5,3.6
+VCO1322,Cali,Eje Cafetero,Aventura,App móvil,32,454755,4.9,3.1,3.7
+VCO1323,Bogotá,Cartagena,Gastronómico,Reserva directa,44,2710374,1.0,2.8,5.0
+VCO1324,Medellín,Santa Marta,Cultural,Recomendación,22,296262,3.9,3.1,4.6
+VCO1325,Cali,Cartagena,Cultural,App móvil,30,2022810,1.6,4.3,4.7
+VCO1326,Bogotá,Amazonas,Ecoturismo,Recomendación,29,305598,4.5,4.4,4.0
+VCO1327,Bogotá,Amazonas,Aventura,App móvil,24,237810,2.0,2.6,4.0
+VCO1328,Bogotá,Medellín,Gastronómico,App móvil,46,1789607,2.2,4.6,4.8
+VCO1329,Cúcuta,San Andrés,Descanso,Reserva directa,47,1314228,1.8,4.0,5.0
+VCO1330,Bogotá,San Andrés,Cultural,Agencia tradicional,34,1055302,2.4,5.6,4.7
+VCO1331,Barranquilla,San Andrés,Descanso,Agencia tradicional,29,1453332,1.9,3.0,4.2
+VCO1332,Medellín,Cartagena,Gastronómico,Reserva directa,35,1005787,1.7,3.9,4.6
+VCO1333,Medellín,Villa de Leyva,Cultural,App móvil,24,425671,4.8,4.0,2.9
+VCO1334,Barranquilla,Villa de Leyva,Cultural,Agencia tradicional,56,1900545,1.7,2.8,4.6
+VCO1335,Medellín,Villa de Leyva,Cultural,App móvil,46,2977685,1.8,3.6,4.9
+VCO1336,Bogotá,San Andrés,Descanso,Agencia tradicional,38,1348263,1.7,6.2,4.8
+VCO1337,Medellín,Eje Cafetero,Aventura,Recomendación,24,411522,3.9,4.7,4.7
+VCO1338,Bogotá,Cartagena,Gastronómico,Agencia tradicional,36,1441802,1.7,6.7,3.9
+VCO1339,Pereira,Amazonas,Aventura,Recomendación,29,349591,4.2,4.2,4.2
+VCO1340,Manizales,Eje Cafetero,Aventura,App móvil,27,381901,4.0,4.1,3.5
+VCO1341,Bogotá,Santa Marta,Ecoturismo,App móvil,28,412814,5.2,4.4,3.6
+VCO1342,Barranquilla,Santa Marta,Descanso,Agencia tradicional,37,1109671,2.5,6.0,4.3
+VCO1343,Medellín,San Andrés,Gastronómico,Reserva directa,44,2261047,1.8,3.6,4.6
+VCO1344,Bogotá,Eje Cafetero,Descanso,Agencia tradicional,40,1147367,1.5,6.9,4.4
+VCO1345,Medellín,Santa Marta,Descanso,Agencia tradicional,31,925518,2.0,4.7,4.8
+VCO1346,Bogotá,Cartagena,Descanso,App móvil,40,1138873,1.5,7.4,4.2
+VCO1347,Bogotá,Santa Marta,Ecoturismo,Reserva directa,35,478633,5.8,3.0,4.7
+VCO1348,Bogotá,Villa de Leyva,Aventura,Recomendación,30,458276,4.1,4.3,5.0
+VCO1349,Cali,Medellín,Gastronómico,Reserva directa,42,2160949,1.4,5.0,4.5
+VCO1350,Bogotá,Eje Cafetero,Aventura,App móvil,20,465493,5.8,3.6,3.3
+VCO1351,Cali,Medellín,Cultural,Agencia tradicional,44,2868774,1.0,2.2,4.5
+VCO1352,Cúcuta,Cartagena,Gastronómico,Agencia tradicional,30,1316924,1.4,8.2,5.0
+VCO1353,Medellín,San Andrés,Descanso,Reserva directa,33,1247565,1.2,7.1,4.0
+VCO1354,Bogotá,Santa Marta,Cultural,Agencia tradicional,38,1295925,3.4,6.3,4.8
+VCO1355,Medellín,San Andrés,Cultural,Agencia tradicional,37,1113539,1.6,4.0,4.2
+VCO1356,Barranquilla,Villa de Leyva,Gastronómico,App móvil,34,2516616,1.6,4.6,4.7
+VCO1357,Bogotá,Cartagena,Descanso,Agencia tradicional,47,2070522,1.9,4.4,5.0
+VCO1358,Bucaramanga,Santa Marta,Descanso,Agencia tradicional,41,1457686,2.9,6.5,3.6
+VCO1359,Bogotá,Santa Marta,Aventura,App móvil,25,453236,5.5,4.2,3.6
+VCO1360,Cúcuta,Cartagena,Descanso,App móvil,37,1425769,1.9,5.8,4.4
+VCO1361,Medellín,Cartagena,Gastronómico,Reserva directa,39,3117936,1.7,2.9,4.9
+VCO1362,Manizales,Santa Marta,Aventura,App móvil,35,219960,2.0,6.0,3.9
+VCO1363,Bogotá,San Andrés,Descanso,App móvil,28,1101007,2.0,4.2,3.8
+VCO1364,Medellín,San Andrés,Cultural,App móvil,41,996800,3.7,8.0,4.6
+VCO1365,Bogotá,San Andrés,Cultural,Agencia tradicional,34,851047,2.2,3.0,3.8
+VCO1366,Medellín,Eje Cafetero,Aventura,Reserva directa,27,381957,4.9,2.5,3.4
+VCO1367,Cúcuta,Cartagena,Cultural,Agencia tradicional,34,1135218,2.7,5.4,4.0
+VCO1368,Barranquilla,San Andrés,Cultural,App móvil,44,2397925,1.7,4.3,4.3
+VCO1369,Bogotá,Villa de Leyva,Cultural,Recomendación,34,257444,5.2,5.2,4.2
+VCO1370,Bogotá,Villa de Leyva,Ecoturismo,Recomendación,21,375800,3.4,5.0,3.3
+VCO1371,Cali,Villa de Leyva,Gastronómico,Reserva directa,51,2829369,1.2,6.6,4.2
+VCO1372,Bogotá,Santa Marta,Ecoturismo,App móvil,22,307449,5.0,2.3,3.9
+VCO1373,Bogotá,San Andrés,Gastronómico,Reserva directa,51,2701746,1.8,3.2,4.7
+VCO1374,Barranquilla,San Andrés,Descanso,Reserva directa,28,1476638,3.0,7.1,4.5
+VCO1375,Bogotá,Amazonas,Cultural,Recomendación,24,478428,5.7,2.9,3.7
+VCO1376,Medellín,San Andrés,Gastronómico,Agencia tradicional,59,2301913,1.0,4.2,4.4
+VCO1377,Bogotá,Cartagena,Descanso,Reserva directa,40,1327708,3.4,6.8,4.5
+VCO1378,Bogotá,Eje Cafetero,Descanso,App móvil,36,1539524,1.7,7.0,4.5
+VCO1379,Manizales,Eje Cafetero,Aventura,Recomendación,21,167137,5.3,2.8,5.0
+VCO1380,Bogotá,Santa Marta,Descanso,Agencia tradicional,34,1329225,3.0,4.9,4.2
+VCO1381,Cali,Eje Cafetero,Cultural,Reserva directa,23,411311,3.7,3.7,4.3
+VCO1382,Cúcuta,San Andrés,Descanso,App móvil,41,927591,1.8,4.5,4.7
+VCO1383,Medellín,San Andrés,Cultural,Reserva directa,51,2396311,1.4,3.0,4.4
+VCO1384,Bogotá,Eje Cafetero,Aventura,Reserva directa,24,228213,5.6,3.2,4.3
+VCO1385,Bogotá,San Andrés,Descanso,Reserva directa,42,1212157,1.2,3.2,3.8
+VCO1386,Cali,Eje Cafetero,Aventura,App móvil,27,305591,6.1,4.2,4.2
+VCO1387,Cali,Villa de Leyva,Gastronómico,Agencia tradicional,56,2680324,1.7,4.5,4.4
+VCO1388,Manizales,Villa de Leyva,Ecoturismo,App móvil,23,342570,2.7,2.2,4.1
+VCO1389,Bogotá,San Andrés,Cultural,App móvil,41,2683016,1.7,6.1,4.7
+VCO1390,Medellín,Santa Marta,Gastronómico,App móvil,39,1137664,1.8,3.9,3.9
+VCO1391,Medellín,Eje Cafetero,Aventura,Reserva directa,19,427423,6.0,4.8,4.1
+VCO1392,Medellín,Eje Cafetero,Ecoturismo,App móvil,18,381919,4.4,3.3,4.2
+VCO1393,Bogotá,Eje Cafetero,Ecoturismo,App móvil,33,434003,5.9,2.0,4.3
+VCO1394,Barranquilla,Cartagena,Descanso,Agencia tradicional,38,1201512,3.6,8.0,4.3
+VCO1395,Medellín,Amazonas,Aventura,Reserva directa,22,361439,5.0,3.9,4.0
+VCO1396,Bogotá,Cartagena,Descanso,Reserva directa,35,2673416,1.0,6.5,4.4
+VCO1397,Barranquilla,San Andrés,Descanso,Agencia tradicional,45,1129509,1.8,6.1,4.2
+VCO1398,Manizales,Eje Cafetero,Aventura,Recomendación,26,347809,2.1,4.2,4.3
+VCO1399,Cúcuta,Cartagena,Descanso,Reserva directa,42,1181219,2.0,6.3,4.3
+VCO1400,Cúcuta,Eje Cafetero,Descanso,Agencia tradicional,36,1432600,2.4,3.8,4.6
+VCO1401,Bogotá,Villa de Leyva,Ecoturismo,Recomendación,21,472884,4.7,3.2,4.6
+VCO1402,Medellín,Amazonas,Aventura,App móvil,26,397803,3.1,4.9,3.7
+VCO1403,Medellín,Eje Cafetero,Cultural,App móvil,22,293095,3.1,5.2,4.4
+VCO1404,Bucaramanga,Cartagena,Gastronómico,Agencia tradicional,39,1241698,2.9,9.1,4.8
+VCO1405,Medellín,Santa Marta,Cultural,App móvil,33,729103,2.1,4.9,4.9
+VCO1406,Medellín,Cartagena,Gastronómico,Agencia tradicional,34,1203650,3.3,6.1,4.8
+VCO1407,Medellín,San Andrés,Cultural,Reserva directa,50,2389465,1.0,2.9,4.4
+VCO1408,Barranquilla,Villa de Leyva,Cultural,Agencia tradicional,48,2673499,1.6,5.0,4.5
+VCO1409,Cúcuta,San Andrés,Descanso,App móvil,32,1289167,1.4,3.4,4.6
+VCO1410,Bogotá,Cartagena,Cultural,Reserva directa,38,2358981,1.0,5.1,5.0
+VCO1411,Bogotá,Santa Marta,Ecoturismo,App móvil,26,446465,5.7,2.6,4.5
+VCO1412,Manizales,Eje Cafetero,Aventura,Reserva directa,20,275056,4.2,2.1,3.9
+VCO1413,Bogotá,Eje Cafetero,Aventura,Reserva directa,24,240233,4.0,2.2,3.0
+VCO1414,Bogotá,Villa de Leyva,Ecoturismo,Recomendación,25,444395,4.5,4.1,4.1
+VCO1415,Medellín,Eje Cafetero,Descanso,Agencia tradicional,35,1171026,2.1,6.9,4.6
+VCO1416,Bogotá,Villa de Leyva,Gastronómico,Agencia tradicional,32,2375841,1.5,4.0,4.6
+VCO1417,Manizales,Eje Cafetero,Ecoturismo,App móvil,31,414056,3.9,4.2,4.9
+VCO1418,Medellín,Eje Cafetero,Aventura,App móvil,29,514787,5.1,3.1,4.5
+VCO1419,Barranquilla,Santa Marta,Gastronómico,App móvil,36,748841,2.8,3.9,5.0
+VCO1420,Medellín,Cartagena,Gastronómico,Reserva directa,44,2084082,1.0,2.5,4.7
+VCO1421,Medellín,Eje Cafetero,Aventura,App móvil,27,377434,4.3,3.3,4.0
+VCO1422,Bucaramanga,Santa Marta,Descanso,App móvil,34,1076364,1.8,6.1,4.6
+VCO1423,Medellín,Amazonas,Aventura,App móvil,25,287649,4.0,3.9,3.8
+VCO1424,Medellín,Eje Cafetero,Cultural,App móvil,30,297848,5.1,4.6,3.6
+VCO1425,Bogotá,San Andrés,Cultural,Reserva directa,51,2739635,1.0,3.1,4.8
+VCO1426,Medellín,Villa de Leyva,Gastronómico,Reserva directa,39,2570269,1.6,5.3,4.8
+VCO1427,Medellín,Santa Marta,Ecoturismo,App móvil,20,361046,3.8,3.6,3.1
+VCO1428,Bogotá,Cartagena,Cultural,Reserva directa,30,1947292,1.2,4.5,4.6
+VCO1429,Barranquilla,San Andrés,Cultural,Agencia tradicional,43,1060079,1.5,5.7,4.7
+VCO1430,Bogotá,San Andrés,Gastronómico,Agencia tradicional,53,3102458,1.5,2.0,4.4
+VCO1431,Medellín,Cartagena,Gastronómico,Agencia tradicional,32,1490965,1.8,7.2,4.3
+VCO1432,Bogotá,San Andrés,Gastronómico,Agencia tradicional,45,872719,2.2,5.5,4.4
+VCO1433,Cúcuta,Santa Marta,Gastronómico,App móvil,37,1587172,2.4,5.9,4.1
+VCO1434,Bogotá,Cartagena,Descanso,App móvil,39,1227171,1.3,6.0,5.0
+VCO1435,Bogotá,Amazonas,Aventura,App móvil,29,404010,4.5,4.2,4.1
+VCO1436,Bogotá,Eje Cafetero,Cultural,App móvil,18,212717,5.5,2.6,3.6
+VCO1437,Bogotá,Santa Marta,Cultural,App móvil,23,566863,2.5,3.5,4.7
+VCO1438,Medellín,Cartagena,Gastronómico,Reserva directa,35,1409623,1.6,4.7,4.4
+VCO1439,Bogotá,Villa de Leyva,Aventura,App móvil,30,279801,3.8,2.3,4.0
+VCO1440,Medellín,Santa Marta,Descanso,Agencia tradicional,38,1269082,2.1,6.6,4.1
+VCO1441,Bogotá,Villa de Leyva,Cultural,Reserva directa,42,3062259,2.1,5.0,4.4
+VCO1442,Medellín,Santa Marta,Ecoturismo,Reserva directa,28,339807,5.1,4.2,3.9
+VCO1443,Bucaramanga,San Andrés,Cultural,Agencia tradicional,44,1717195,2.2,3.6,4.6
+VCO1444,Medellín,San Andrés,Descanso,Reserva directa,42,1283810,1.1,5.4,4.1
+VCO1445,Medellín,Medellín,Cultural,Reserva directa,46,2156713,1.0,3.2,5.0
+VCO1446,Medellín,Eje Cafetero,Aventura,Recomendación,25,318989,3.2,5.7,4.0
+VCO1447,Medellín,Santa Marta,Gastronómico,Agencia tradicional,36,915730,1.0,5.6,4.6
+VCO1448,Bogotá,Villa de Leyva,Gastronómico,Agencia tradicional,41,2457022,1.0,4.8,4.9
+VCO1449,Medellín,San Andrés,Cultural,Reserva directa,49,2469253,1.3,6.3,4.5
+VCO1450,Bogotá,Eje Cafetero,Descanso,App móvil,39,1046246,1.4,5.8,4.9
+VCO1451,Cúcuta,Santa Marta,Descanso,App móvil,43,1108193,3.0,3.9,4.9
+VCO1452,Bogotá,Cartagena,Descanso,Reserva directa,34,1316344,2.3,4.3,4.5
+VCO1453,Bogotá,Cartagena,Gastronómico,Agencia tradicional,50,2231476,1.9,4.0,4.4
+VCO1454,Bogotá,San Andrés,Gastronómico,Reserva directa,30,1166637,2.0,8.5,4.2
+VCO1455,Cali,Eje Cafetero,Aventura,Reserva directa,28,434900,4.1,5.0,3.9
+VCO1456,Bogotá,Cartagena,Gastronómico,Agencia tradicional,30,2549367,2.1,3.5,4.4
+VCO1457,Barranquilla,Santa Marta,Descanso,Agencia tradicional,36,900553,3.3,5.8,3.8
+VCO1458,Bogotá,Eje Cafetero,Cultural,App móvil,28,1345302,2.1,6.9,4.5
+VCO1459,Cali,Eje Cafetero,Ecoturismo,App móvil,27,282760,4.8,2.9,3.0
+VCO1460,Medellín,Cartagena,Cultural,Agencia tradicional,32,1516898,2.4,9.6,4.0
+VCO1461,Bogotá,San Andrés,Descanso,Agencia tradicional,34,1041996,2.3,4.4,5.0
+VCO1462,Bucaramanga,Santa Marta,Descanso,App móvil,37,1338563,1.4,5.9,4.6
+VCO1463,Manizales,Villa de Leyva,Aventura,App móvil,26,311772,4.3,4.2,3.5
+VCO1464,Medellín,Cartagena,Descanso,Agencia tradicional,39,1438094,2.1,7.7,4.2
+VCO1465,Bogotá,Medellín,Cultural,Reserva directa,54,2388154,1.0,3.1,4.0
+VCO1466,Cali,Eje Cafetero,Aventura,Recomendación,22,195272,2.3,3.5,4.3
+VCO1467,Bogotá,Cartagena,Descanso,App móvil,45,2689126,1.2,4.2,4.7
+VCO1468,Medellín,Cartagena,Cultural,App móvil,46,1392186,1.8,9.8,5.0
+VCO1469,Bogotá,Cartagena,Cultural,Agencia tradicional,39,2566456,1.0,3.3,4.4
+VCO1470,Barranquilla,San Andrés,Gastronómico,Agencia tradicional,46,2040103,2.2,4.2,4.8
+VCO1471,Barranquilla,Cartagena,Descanso,Agencia tradicional,36,934440,2.1,4.0,4.7
+VCO1472,Bucaramanga,Eje Cafetero,Cultural,Reserva directa,38,1142293,3.0,8.8,3.9
+VCO1473,Cali,San Andrés,Descanso,App móvil,44,2157806,1.3,4.8,4.8
+VCO1474,Barranquilla,Cartagena,Descanso,Agencia tradicional,44,1429297,2.1,4.2,3.9
+VCO1475,Bogotá,Eje Cafetero,Ecoturismo,Recomendación,32,318767,5.7,2.4,4.9
+VCO1476,Bogotá,Santa Marta,Cultural,Reserva directa,36,966448,2.4,6.0,4.1
+VCO1477,Medellín,Cartagena,Descanso,Reserva directa,56,2022649,1.7,3.4,4.7
+VCO1478,Barranquilla,Medellín,Gastronómico,Agencia tradicional,37,1766731,1.3,4.5,4.8
+VCO1479,Bogotá,San Andrés,Cultural,Agencia tradicional,41,2907182,1.1,4.1,4.5
+VCO1480,Barranquilla,Santa Marta,Cultural,App móvil,38,1076785,2.0,3.0,3.9
+VCO1481,Medellín,Cartagena,Gastronómico,Agencia tradicional,48,2428527,2.4,5.3,4.7
+VCO1482,Bogotá,Eje Cafetero,Cultural,Recomendación,25,381647,4.5,3.4,4.3
+VCO1483,Barranquilla,San Andrés,Descanso,Agencia tradicional,39,1428672,2.0,6.2,3.6
+VCO1484,Bogotá,Eje Cafetero,Ecoturismo,App móvil,23,215530,2.0,3.2,4.7
+VCO1485,Cali,Eje Cafetero,Cultural,App móvil,21,374778,5.1,4.8,4.7
+VCO1486,Bogotá,Villa de Leyva,Cultural,App móvil,22,388060,5.4,3.2,4.4
+VCO1487,Medellín,Santa Marta,Gastronómico,Agencia tradicional,39,759417,2.3,5.8,5.0
+VCO1488,Bogotá,Cartagena,Descanso,App móvil,37,1155886,2.7,5.6,4.1
+VCO1489,Bogotá,Cartagena,Descanso,Agencia tradicional,35,1249381,1.7,7.4,4.5
+VCO1490,Barranquilla,Eje Cafetero,Descanso,Agencia tradicional,39,974960,1.8,6.0,4.1
+VCO1491,Bogotá,Eje Cafetero,Cultural,App móvil,22,404925,6.3,3.4,4.8
+VCO1492,Manizales,Amazonas,Ecoturismo,App móvil,32,409285,4.1,4.7,4.9
+VCO1493,Bogotá,Eje Cafetero,Ecoturismo,Recomendación,28,279864,4.8,3.0,4.0
+VCO1494,Bogotá,Eje Cafetero,Ecoturismo,Recomendación,30,402836,6.5,4.4,4.2
+VCO1495,Bogotá,Cartagena,Gastronómico,App móvil,42,1356040,1.0,7.8,4.5
+VCO1496,Barranquilla,Cartagena,Descanso,Agencia tradicional,36,965159,2.6,6.0,4.5
+VCO1497,Bogotá,Santa Marta,Cultural,Reserva directa,40,1128813,1.2,5.9,3.6
+VCO1498,Barranquilla,San Andrés,Descanso,Reserva directa,35,1529575,3.4,7.0,4.9
+VCO1499,Medellín,Eje Cafetero,Aventura,App móvil,26,281640,5.1,3.7,3.7
+VCO1500,Barranquilla,Cartagena,Gastronómico,App móvil,39,2984836,1.5,2.5,4.5
