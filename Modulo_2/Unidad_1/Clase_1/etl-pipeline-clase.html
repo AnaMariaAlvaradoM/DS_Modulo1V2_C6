@@ -1,0 +1,1224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pipelines ETL con Python · Dev Senior</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --purple:#5418CC;
+    --purple-vibe:#6018F0;
+    --purple-dark:#3C1884;
+    --bg:#0c0a18;
+    --panel:#161226;
+    --panel-2:#1c1733;
+    --border:#2a2440;
+    --border-glow:#6018F055;
+    --text:#ECE9F5;
+    --text-dim:#A39FBD;
+    --text-faint:#6f6a8a;
+    --green:#3ED68A;
+    --yellow:#F5C144;
+    --red:#FF5C72;
+    --cyan:#38D9F5;
+    --mono:'JetBrains Mono',monospace;
+    --sans:'Inter',system-ui,sans-serif;
+    --sidebar-w:288px;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:var(--sans);
+    background:
+      radial-gradient(900px 600px at 85% -5%, #6018F022, transparent 60%),
+      radial-gradient(700px 500px at -5% 100%, #5418CC1c, transparent 55%),
+      var(--bg);
+    color:var(--text);
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  ::selection{background:var(--purple-vibe);color:#fff}
+
+  .layout{display:flex;min-height:100vh}
+
+  /* SIDEBAR */
+  .sidebar{
+    width:var(--sidebar-w);flex-shrink:0;
+    position:fixed;top:0;left:0;bottom:0;
+    background:linear-gradient(180deg,#120f20,#0d0b18);
+    border-right:1px solid var(--border);
+    display:flex;flex-direction:column;z-index:40;
+    transition:transform .3s ease;
+  }
+  .brand{padding:22px 22px 16px;border-bottom:1px solid var(--border)}
+  .brand-tag{font-family:var(--mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--purple-vibe);font-weight:700;display:flex;align-items:center;gap:8px}
+  .brand-tag .dot{width:7px;height:7px;border-radius:50%;background:var(--purple-vibe);box-shadow:0 0 10px var(--purple-vibe)}
+  .brand h1{font-size:17px;font-weight:800;margin-top:10px;letter-spacing:-.01em;line-height:1.25}
+  .brand .meta{font-family:var(--mono);font-size:11px;color:var(--text-faint);margin-top:8px}
+
+  .progress-wrap{padding:14px 22px 10px}
+  .progress-label{display:flex;justify-content:space-between;font-size:11px;color:var(--text-dim);font-family:var(--mono);margin-bottom:7px}
+  .progress-track{height:6px;background:#241f3a;border-radius:99px;overflow:hidden}
+  .progress-fill{height:100%;width:0;background:linear-gradient(90deg,var(--purple),var(--cyan));border-radius:99px;transition:width .4s ease}
+
+  .nav{flex:1;overflow-y:auto;padding:8px 12px 16px}
+  .nav::-webkit-scrollbar{width:6px}
+  .nav::-webkit-scrollbar-thumb{background:#2c2645;border-radius:9px}
+  .nav a{display:flex;align-items:center;gap:11px;padding:9px 12px;border-radius:10px;color:var(--text-dim);text-decoration:none;font-size:13.5px;font-weight:500;transition:.15s;position:relative;margin-bottom:2px}
+  .nav a .ico{font-size:16px;width:22px;text-align:center;flex-shrink:0}
+  .nav a .num{font-family:var(--mono);font-size:10px;color:var(--text-faint);width:18px;flex-shrink:0}
+  .nav a:hover{background:#1b1630;color:var(--text)}
+  .nav a.active{background:linear-gradient(90deg,#5418cc2e,#5418cc08);color:#fff;font-weight:600}
+  .nav a.active::before{content:"";position:absolute;left:0;top:18%;bottom:18%;width:3px;border-radius:9px;background:var(--purple-vibe);box-shadow:0 0 10px var(--purple-vibe)}
+  .nav a .check{margin-left:auto;color:var(--green);opacity:0;font-size:12px;transition:.2s}
+  .nav a.seen .check{opacity:1}
+
+  .sidebar-foot{padding:12px 22px;border-top:1px solid var(--border);font-size:10.5px;color:var(--text-faint);line-height:1.5;font-family:var(--mono)}
+
+  /* MAIN */
+  .main{margin-left:var(--sidebar-w);flex:1;min-width:0}
+  .topbar{position:sticky;top:0;z-index:30;display:flex;align-items:center;justify-content:space-between;padding:13px 28px;background:#0c0a18cc;backdrop-filter:blur(14px);border-bottom:1px solid var(--border)}
+  .topbar .crumb{font-family:var(--mono);font-size:12px;color:var(--text-dim)}
+  .topbar .crumb b{color:var(--text)}
+  .topbar-actions{display:flex;gap:10px;align-items:center}
+  .btn{font-family:var(--sans);font-size:12.5px;font-weight:600;background:#1c1733;border:1px solid var(--border);color:var(--text);padding:8px 14px;border-radius:9px;cursor:pointer;transition:.15s;display:inline-flex;align-items:center;gap:7px}
+  .btn:hover{border-color:var(--purple-vibe);background:#231c40}
+  .btn.primary{background:linear-gradient(135deg,var(--purple),var(--purple-vibe));border-color:transparent}
+  .btn.primary:hover{filter:brightness(1.12)}
+  .btn kbd{font-family:var(--mono);font-size:10px;background:#00000040;border:1px solid #ffffff22;border-radius:4px;padding:1px 5px}
+  .menu-toggle{display:none}
+
+  .content{max-width:920px;margin:0 auto;padding:40px 28px 90px}
+
+  /* HERO */
+  .hero{border:1px solid var(--border);border-radius:20px;padding:40px 38px;margin-bottom:30px;background:radial-gradient(600px 300px at 100% 0%, #6018F022, transparent 60%),linear-gradient(160deg,#1a1430,#100d1f);position:relative;overflow:hidden}
+  .hero .eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--cyan);font-weight:700}
+  .hero h2{font-size:clamp(28px,4.5vw,44px);font-weight:900;letter-spacing:-.02em;line-height:1.08;margin:14px 0 16px}
+  .hero h2 .grad{background:linear-gradient(120deg,var(--purple-vibe),var(--cyan));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .hero p{color:var(--text-dim);font-size:16px;max-width:640px}
+  .hero-chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+  .chip{font-family:var(--mono);font-size:11.5px;color:var(--text-dim);background:#ffffff08;border:1px solid var(--border);border-radius:99px;padding:6px 13px;display:flex;align-items:center;gap:7px}
+  .chip b{color:var(--text)}
+
+  .flow{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:30px;border:1px solid var(--border);border-radius:14px;overflow:hidden;background:#0e0b1a}
+  .flow-step{padding:18px 16px;border-right:1px solid var(--border);position:relative}
+  .flow-step:last-child{border-right:none}
+  .flow-step .fs-q{font-size:13px;color:var(--text-dim);min-height:38px}
+  .flow-step .fs-src{margin-top:12px;font-weight:700;font-size:14px;display:flex;align-items:center;gap:8px}
+  .flow-step .fs-ico{font-size:18px}
+  .flow-step .fs-n{font-family:var(--mono);font-size:11px;color:var(--purple-vibe);font-weight:700}
+  @media(max-width:760px){.flow{grid-template-columns:1fr}.flow-step{border-right:none;border-bottom:1px solid var(--border)}}
+
+  /* SECTIONS */
+  section{scroll-margin-top:74px;margin-bottom:50px}
+  .sec-head{display:flex;align-items:flex-start;gap:16px;margin-bottom:18px}
+  .sec-badge{width:48px;height:48px;flex-shrink:0;border-radius:13px;background:linear-gradient(135deg,var(--purple),var(--purple-dark));display:flex;align-items:center;justify-content:center;font-size:24px;box-shadow:0 6px 20px -6px var(--purple)}
+  .sec-head .htext{flex:1;min-width:0}
+  .sec-head .kicker{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--purple-vibe);font-weight:700}
+  .sec-head h3{font-size:25px;font-weight:800;letter-spacing:-.015em;margin-top:3px;line-height:1.15}
+  .sec-head .time{font-family:var(--mono);font-size:11px;color:var(--text-faint);margin-top:5px}
+
+  .card{background:var(--panel);border:1px solid var(--border);border-radius:15px;padding:24px 26px;margin-bottom:16px}
+  .card p{color:var(--text-dim);margin-bottom:11px}
+  .card p:last-child{margin-bottom:0}
+  .card strong,.card b{color:var(--text);font-weight:600}
+  .lead{font-size:16.5px;color:var(--text)!important}
+
+  .def{border-left:3px solid var(--purple-vibe);padding:4px 0 4px 18px;margin:18px 0}
+  .def .term{font-weight:700;color:#fff;font-size:15px}
+  .def p{margin:6px 0 0;color:var(--text-dim);font-size:14.5px}
+
+  .terms{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin:16px 0}
+  .term-card{background:var(--panel-2);border:1px solid var(--border);border-radius:12px;padding:16px 17px}
+  .term-card .t{font-weight:700;font-size:14.5px;color:#fff}
+  .term-card .d{font-size:13.5px;color:var(--text-dim);margin-top:8px}
+  .term-card .irl{font-size:12.5px;color:var(--text-faint);font-style:italic;margin-top:6px}
+
+  /* QUESTION (think first, reveal answer) */
+  .think{border:1px solid var(--border-glow);border-radius:14px;margin:18px 0;overflow:hidden;background:linear-gradient(160deg,#1a142e,#15101f)}
+  .think .q{padding:17px 20px;display:flex;gap:12px;align-items:flex-start}
+  .think .q .qi{font-size:20px;flex-shrink:0}
+  .think .q .qt{font-weight:600;font-size:15.5px;color:#fff}
+  .reveal{border-top:1px solid var(--border)}
+  .reveal summary{list-style:none;cursor:pointer;padding:13px 20px;display:flex;align-items:center;gap:10px;font-size:13px;font-weight:600;color:var(--cyan);font-family:var(--mono);letter-spacing:.04em;transition:.15s;user-select:none}
+  .reveal summary::-webkit-details-marker{display:none}
+  .reveal summary:hover{background:#ffffff06}
+  .reveal summary .arrow{transition:transform .2s;display:inline-block}
+  .reveal[open] summary .arrow{transform:rotate(90deg)}
+  .reveal[open] summary{color:var(--green);border-bottom:1px solid var(--border)}
+  .reveal .ans-body{padding:16px 20px;font-size:14.5px;color:#d6ecdf;background:#3ed68a08}
+  .reveal .ans-body b{color:#fff}
+
+  /* banners */
+  .banner{display:flex;gap:13px;padding:15px 18px;border-radius:12px;margin:16px 0;font-size:14.5px}
+  .banner .bi{font-size:18px;flex-shrink:0;line-height:1.4}
+  .banner .bt{flex:1}
+  .banner .bt b{color:#fff}
+  .banner.tip{background:#6018f014;border:1px solid var(--border-glow);color:var(--text-dim)}
+  .banner.warn{background:#ff5c7212;border:1px solid #ff5c7240;color:#f3c9cf}
+  .banner.warn .bt b{color:var(--red)}
+  .banner.success{background:#3ed68a12;border:1px solid #3ed68a40;color:#cfeede}
+  .banner.success .bt b{color:var(--green)}
+  .banner.info{background:#38d9f50e;border:1px solid #38d9f538;color:var(--text-dim)}
+  .banner.info .bt b{color:var(--cyan)}
+
+  /* code */
+  .code{position:relative;margin:16px 0;border:1px solid var(--border);border-radius:12px;overflow:hidden;background:#0a0814}
+  .code-head{display:flex;align-items:center;justify-content:space-between;padding:9px 14px;background:#100d1d;border-bottom:1px solid var(--border)}
+  .code-head .fname{font-family:var(--mono);font-size:11.5px;color:var(--text-dim);display:flex;align-items:center;gap:8px}
+  .code-head .fname .lang{color:var(--purple-vibe);font-weight:700}
+  .copy-btn{font-family:var(--mono);font-size:11px;background:#1c1733;border:1px solid var(--border);color:var(--text-dim);padding:4px 10px;border-radius:7px;cursor:pointer;transition:.15s}
+  .copy-btn:hover{border-color:var(--purple-vibe);color:#fff}
+  .copy-btn.ok{color:var(--green);border-color:var(--green)}
+  pre{margin:0;padding:16px 18px;overflow-x:auto;font-family:var(--mono);font-size:13px;line-height:1.65}
+  pre::-webkit-scrollbar{height:7px}
+  pre::-webkit-scrollbar-thumb{background:#2c2645;border-radius:9px}
+  code{font-family:var(--mono)}
+  .tok-kw{color:#C792EA}
+  .tok-str{color:#9CE07F}
+  .tok-num{color:#F78C6C}
+  .tok-fn{color:#82AAFF}
+  .tok-com{color:#5b5772;font-style:italic}
+  .tok-bi{color:#7FDBFF}
+  .inline-code{font-family:var(--mono);font-size:.88em;background:#1c1733;border:1px solid var(--border);border-radius:5px;padding:1px 6px;color:#d8c9ff}
+
+  /* output */
+  .out{margin:14px 0;border:1px solid var(--border);border-radius:11px;overflow:hidden}
+  .out-head{font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--green);background:#0e0b1a;padding:8px 14px;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:7px}
+
+  /* infographic */
+  .infog{background:var(--panel-2);border:1px solid var(--border);border-radius:14px;padding:22px;margin:18px 0}
+  .infog-title{font-size:13px;font-weight:700;color:#fff;margin-bottom:4px}
+  .infog-sub{font-family:var(--mono);font-size:11px;color:var(--text-faint);margin-bottom:18px}
+  .etl-svg{width:100%;height:auto;margin:0}
+  .hbar{display:grid;grid-template-columns:90px 1fr 56px;align-items:center;gap:12px;margin-bottom:9px}
+  .hbar .name{font-size:13px;color:var(--text-dim);text-align:right;font-weight:500}
+  .hbar .track{height:22px;background:#0e0b1a;border-radius:6px;overflow:hidden}
+  .hbar .fill{height:100%;border-radius:6px;background:linear-gradient(90deg,var(--purple),var(--purple-vibe));transition:width 1s cubic-bezier(.2,.8,.2,1)}
+  .hbar .pct{font-family:var(--mono);font-size:12px;color:var(--cyan);text-align:right}
+  .hbar.lo .fill{background:linear-gradient(90deg,#3c1884,#2a2440)}
+
+  /* candidates */
+  .cands{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:11px;margin:16px 0}
+  .cand{border-radius:12px;padding:15px;border:1px solid var(--border);background:var(--panel-2)}
+  .cand .ct{font-weight:700;font-size:15px;display:flex;align-items:center;gap:7px}
+  .cand .cv{font-size:12.5px;color:var(--text-dim);margin-top:7px}
+  .cand.safe{border-color:#3ed68a45;background:#3ed68a0c}
+  .cand.risk{border-color:#ff5c7245;background:#ff5c720c}
+  .cand.meh{border-color:#f5c14438;background:#f5c1440a}
+  .cand .tag{font-family:var(--mono);font-size:9.5px;text-transform:uppercase;letter-spacing:.08em;font-weight:700;padding:2px 7px;border-radius:5px;margin-left:auto}
+  .cand.safe .tag{background:#3ed68a22;color:var(--green)}
+  .cand.risk .tag{background:#ff5c7222;color:var(--red)}
+  .cand.meh .tag{background:#f5c14422;color:var(--yellow)}
+
+  .obj{display:flex;gap:12px;margin-bottom:11px;font-size:14.5px;color:var(--text-dim)}
+  .obj .oi{color:var(--purple-vibe);flex-shrink:0;font-weight:700}
+  .obj b{color:#fff}
+
+  .checklist{list-style:none}
+  .checklist li{display:flex;gap:11px;padding:8px 0;font-size:14px;color:var(--text-dim);border-bottom:1px solid #221d36}
+  .checklist li:last-child{border-bottom:none}
+  .checklist li::before{content:"☐";color:var(--purple-vibe);font-size:16px}
+
+  footer{border-top:1px solid var(--border);padding:26px 28px;text-align:center;font-size:11.5px;color:var(--text-faint);font-family:var(--mono);max-width:920px;margin:0 auto}
+  footer a{color:var(--purple-vibe);text-decoration:none}
+
+  /* PRESENTATION */
+  body.present{overflow:hidden}
+  body.present .sidebar,body.present .topbar,body.present footer{display:none}
+  body.present .main{margin-left:0}
+  body.present .content{max-width:1100px;padding:0}
+  body.present section{display:none;min-height:100vh;margin:0;padding:54px 60px;align-content:center}
+  body.present section.slide-active{display:block;animation:slideIn .4s ease}
+  body.present .hero{display:none}
+  body.present.hero-slide .hero{display:block;animation:slideIn .4s ease;margin:0;min-height:100vh}
+  @keyframes slideIn{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+  .present-bar{display:none;position:fixed;bottom:0;left:0;right:0;z-index:60;align-items:center;justify-content:space-between;padding:11px 26px;background:#0c0a18ee;backdrop-filter:blur(12px);border-top:1px solid var(--border)}
+  body.present .present-bar{display:flex}
+  .present-bar .pinfo{font-family:var(--mono);font-size:12px;color:var(--text-dim)}
+  .present-bar .pinfo b{color:#fff}
+  .present-bar .pdots{display:flex;gap:6px;flex-wrap:wrap;max-width:55%;justify-content:center}
+  .present-bar .pdot{width:8px;height:8px;border-radius:50%;background:#2c2645;cursor:pointer;transition:.2s}
+  .present-bar .pdot.on{background:var(--purple-vibe);box-shadow:0 0 8px var(--purple-vibe);transform:scale(1.25)}
+  .present-bar .pnav{display:flex;gap:8px}
+  body.present .content{padding-bottom:70px}
+
+  @media(max-width:980px){
+    :root{--sidebar-w:0px}
+    .sidebar{transform:translateX(-100%)}
+    .sidebar.open{transform:translateX(0)}
+    .main{margin-left:0}
+    .menu-toggle{display:inline-flex}
+    .scrim{display:none;position:fixed;inset:0;background:#000a;z-index:35}
+    .scrim.show{display:block}
+  }
+  @media(max-width:560px){
+    .content{padding:24px 16px 80px}
+    .hero{padding:26px 22px}
+    .card{padding:18px 18px}
+    .topbar-actions .label-txt{display:none}
+  }
+</style>
+</head>
+<body>
+
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="brand">
+      <div class="brand-tag"><span class="dot"></span>Dev Senior</div>
+      <h1>Construcción de Pipelines ETL con Python</h1>
+      <div class="meta">Máster en IA · Módulo 2 · Unidad 1 · Clase 1</div>
+    </div>
+    <div class="progress-wrap">
+      <div class="progress-label"><span>Tu progreso</span><span id="progPct">0%</span></div>
+      <div class="progress-track"><div class="progress-fill" id="progFill"></div></div>
+    </div>
+    <nav class="nav" id="nav"></nav>
+    <div class="sidebar-foot">© 2026 Ana Alvarado<br>Educadora Tech & Full Stack Dev</div>
+  </aside>
+  <div class="scrim" id="scrim"></div>
+
+  <div class="main">
+    <div class="topbar">
+      <div style="display:flex;align-items:center;gap:14px">
+        <button class="btn menu-toggle" id="menuBtn" aria-label="Menú">☰</button>
+        <div class="crumb">Máster en IA · <b>Ingeniería de Datos (ETL)</b></div>
+      </div>
+      <div class="topbar-actions">
+        <button class="btn" id="resetBtn" title="Reiniciar progreso">↻</button>
+        <button class="btn primary" id="presentBtn"><span>▶</span><span class="label-txt">Presentar</span> <kbd>P</kbd></button>
+      </div>
+    </div>
+
+    <div class="content" id="content">
+
+      <!-- HERO -->
+      <div class="hero" id="hero">
+        <div class="eyebrow">Clase 1 · Módulo 2 · Unidad 1</div>
+        <h2>De "estas categorías faltan" a<br><span class="grad">"lanza ESTA y aquí está el dato"</span></h2>
+        <p>Rappi Colombia quiere lanzar una categoría de comida <b>nueva</b> y necesita decidir cuál con datos. En esta clase construimos la tubería que trae el mundo, lo cruza con Colombia y entrega una recomendación defendible.</p>
+        <div class="hero-chips">
+          <span class="chip">🐍 <b>Python</b> · Pandas · requests</span>
+          <span class="chip">🔌 API <b>TheMealDB</b></span>
+          <span class="chip">📊 1207 pedidos</span>
+          <span class="chip">🎯 Repo <b>master-ia/m2u1-etl</b></span>
+        </div>
+        <div class="flow">
+          <div class="flow-step"><div class="fs-n">01</div><div class="fs-q">¿Qué existe en el mundo?</div><div class="fs-src"><span class="fs-ico">🔌</span> Una API</div></div>
+          <div class="flow-step"><div class="fs-n">02</div><div class="fs-q">¿Qué pide Colombia, y hacia dónde se inclina?</div><div class="fs-src"><span class="fs-ico">📄</span> El archivo</div></div>
+          <div class="flow-step"><div class="fs-n">03</div><div class="fs-q">El conteo miente si el dato está sucio.</div><div class="fs-src"><span class="fs-ico">🧼</span> Limpieza</div></div>
+          <div class="flow-step"><div class="fs-n">04</div><div class="fs-q">De lo que Colombia ama vs lo que no ofrece…</div><div class="fs-src"><span class="fs-ico">🎯</span> La decisión</div></div>
+        </div>
+      </div>
+
+      <!-- OBJETIVOS -->
+      <section id="s-obj">
+        <div class="sec-head">
+          <div class="sec-badge">🎯</div>
+          <div class="htext"><div class="kicker">Antes de empezar</div><h3>Qué vas a lograr</h3><div class="time">Al terminar esta clase vas a poder…</div></div>
+        </div>
+        <div class="card">
+          <div class="obj"><span class="oi">→</span><div><b>Explicar</b> qué es un pipeline ETL y por qué es el trabajo base de todo científico de datos.</div></div>
+          <div class="obj"><span class="oi">→</span><div><b>Consumir</b> una API externa y usarla para responder algo que tus datos no contienen.</div></div>
+          <div class="obj"><span class="oi">→</span><div><b>Demostrar</b> por qué se limpia un dato: porque sin limpiar, el análisis miente.</div></div>
+          <div class="obj"><span class="oi">→</span><div><b>Analizar</b> la tendencia de un negocio con conteos, proporciones y una gráfica.</div></div>
+          <div class="obj"><span class="oi">→</span><div><b>Cruzar</b> API + archivo para entregar una recomendación de negocio, no solo una lista.</div></div>
+        </div>
+        <div class="banner tip"><span class="bi">💡</span><div class="bt"><b>La meta real:</b> que puedas mirar la tendencia de Colombia, señalar qué categoría ausente es apuesta segura y cuál es arriesgada, y defenderlo con un número concreto.</div></div>
+      </section>
+
+      <!-- BLOQUE 0 -->
+      <section id="s0">
+        <div class="sec-head">
+          <div class="sec-badge">🌉</div>
+          <div class="htext"><div class="kicker">Punto de partida</div><h3>El problema de negocio</h3><div class="time">El gerente pide una decisión con datos</div></div>
+        </div>
+        <div class="card">
+          <p class="lead">Todo arranca con una decisión real, no con un archivo.</p>
+          <p><b>Rappi nació en Bogotá en 2015</b> y hoy mueve millones de pedidos al día. Eres parte del equipo de datos. El gerente de producto dice: <i>"Quiero lanzar una categoría de comida nueva en Colombia. No me digan cuál creen ustedes; díganme cuál, con datos."</i></p>
+        </div>
+        <div class="think">
+          <div class="q"><span class="qi">🤔</span><span class="qt">Con SOLO el archivo de pedidos de Rappi Colombia, ¿puedes decirle al gerente qué categoría nueva lanzar? ¿Qué te falta?</span></div>
+          <details class="reveal">
+            <summary><span class="arrow">▸</span> Ver la idea clave</summary>
+            <div class="ans-body">El archivo solo dice lo que <b>ya</b> se pide; no dice lo que existe en el mundo y aún no se ofrece. Mirar lo más vendido y lanzar más de eso es <b>repetir</b> lo que ya funciona, no lanzar algo <b>nuevo</b>. Para encontrar algo nuevo necesitas saber qué se cocina en el mundo — y eso vive afuera, en una <b>API</b>.</div>
+          </details>
+        </div>
+        <div class="banner success"><span class="bi">🌉</span><div class="bt"><b>La idea que abre la clase:</b> tu archivo solo conoce a Colombia. Para algo nuevo necesitas dos cosas: qué se cocina en el mundo (una API) y hacia dónde se inclina Colombia (los pedidos). La tubería que trae, limpia y cruza las dos fuentes se llama <b>pipeline ETL</b>.</div></div>
+      </section>
+
+      <!-- BLOQUE 1 -->
+      <section id="s1">
+        <div class="sec-head">
+          <div class="sec-badge">🧩</div>
+          <div class="htext"><div class="kicker">Concepto</div><h3>Pipeline ETL: la idea nueva</h3><div class="time">La tubería automática de datos</div></div>
+        </div>
+        <div class="think">
+          <div class="q"><span class="qi">🤔</span><span class="qt">Una planta de agua: entra agua sucia del río, pasa por filtros, sale agua potable. Tres etapas fijas, en orden. ¿Qué tres etapas tendría una "planta de datos"?</span></div>
+          <details class="reveal">
+            <summary><span class="arrow">▸</span> Ver la respuesta</summary>
+            <div class="ans-body">Entrada, limpieza y salida. Eso es exactamente <b>ETL</b>: Extraer → Transformar → Cargar.</div>
+          </details>
+        </div>
+
+        <div class="def">
+          <span class="term">¿Qué es un pipeline?</span>
+          <p>"Pipeline" significa "tubería". Un <b>pipeline ETL</b> es una tubería automática de datos con tres etapas fijas: traer, limpiar, guardar. No es una tarea manual.</p>
+        </div>
+
+        <div class="infog">
+          <div class="infog-title">El flujo ETL de la clase</div>
+          <div class="infog-sub">Extract → Transform → Load</div>
+          <svg class="etl-svg" viewBox="0 0 720 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Diagrama del flujo ETL">
+            <defs>
+              <linearGradient id="gE" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#6018F0"/><stop offset="1" stop-color="#3C1884"/></linearGradient>
+              <linearGradient id="gT" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5418CC"/><stop offset="1" stop-color="#2a2440"/></linearGradient>
+              <linearGradient id="gL" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#38D9F5"/><stop offset="1" stop-color="#1a5566"/></linearGradient>
+              <marker id="arr" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#6f6a8a"/></marker>
+            </defs>
+            <rect x="10" y="20" width="120" height="48" rx="9" fill="#161226" stroke="#2a2440"/>
+            <text x="70" y="42" text-anchor="middle" fill="#ECE9F5" font-family="JetBrains Mono" font-size="13">🔌 API</text>
+            <text x="70" y="58" text-anchor="middle" fill="#6f6a8a" font-family="JetBrains Mono" font-size="9">menú mundial</text>
+            <rect x="10" y="132" width="120" height="48" rx="9" fill="#161226" stroke="#2a2440"/>
+            <text x="70" y="154" text-anchor="middle" fill="#ECE9F5" font-family="JetBrains Mono" font-size="13">📄 CSV</text>
+            <text x="70" y="170" text-anchor="middle" fill="#6f6a8a" font-family="JetBrains Mono" font-size="9">pedidos Colombia</text>
+            <rect x="190" y="76" width="110" height="48" rx="9" fill="url(#gE)"/>
+            <text x="245" y="98" text-anchor="middle" fill="#fff" font-family="Inter" font-weight="800" font-size="15">EXTRACT</text>
+            <text x="245" y="114" text-anchor="middle" fill="#e7defc" font-family="JetBrains Mono" font-size="9">traer crudo</text>
+            <rect x="340" y="76" width="120" height="48" rx="9" fill="url(#gT)"/>
+            <text x="400" y="98" text-anchor="middle" fill="#fff" font-family="Inter" font-weight="800" font-size="15">TRANSFORM</text>
+            <text x="400" y="114" text-anchor="middle" fill="#e7defc" font-family="JetBrains Mono" font-size="9">limpiar + cruzar</text>
+            <rect x="500" y="76" width="110" height="48" rx="9" fill="url(#gL)"/>
+            <text x="555" y="98" text-anchor="middle" fill="#06222b" font-family="Inter" font-weight="800" font-size="15">LOAD</text>
+            <text x="555" y="114" text-anchor="middle" fill="#0a3743" font-family="JetBrains Mono" font-size="9">guardar (Clase 2)</text>
+            <rect x="650" y="76" width="60" height="48" rx="9" fill="#161226" stroke="#3ed68a55"/>
+            <text x="680" y="104" text-anchor="middle" fill="#3ED68A" font-size="20">🎯</text>
+            <path d="M132 44 C 160 44, 162 92, 188 96" stroke="#6f6a8a" fill="none" stroke-width="1.6" marker-end="url(#arr)"/>
+            <path d="M132 156 C 160 156, 162 108, 188 104" stroke="#6f6a8a" fill="none" stroke-width="1.6" marker-end="url(#arr)"/>
+            <path d="M300 100 L 338 100" stroke="#6f6a8a" fill="none" stroke-width="1.6" marker-end="url(#arr)"/>
+            <path d="M460 100 L 498 100" stroke="#6f6a8a" fill="none" stroke-width="1.6" marker-end="url(#arr)"/>
+            <path d="M610 100 L 648 100" stroke="#6f6a8a" fill="none" stroke-width="1.6" marker-end="url(#arr)"/>
+          </svg>
+        </div>
+
+        <div class="terms">
+          <div class="term-card"><div class="t">Extract</div><div class="d">Traer datos crudos de su fuente. Aquí usamos DOS fuentes: una API y un archivo.</div><div class="irl">Recoger agua de dos ríos distintos.</div></div>
+          <div class="term-card"><div class="t">Transform</div><div class="d">Limpiar, dar forma y cruzar las fuentes.</div><div class="irl">El filtro que vuelve potable el agua.</div></div>
+          <div class="term-card"><div class="t">Load</div><div class="d">Guardar el dato limpio. En esta clase lo dejamos listo; el guardado real es la Clase 2.</div><div class="irl">Embotellar el agua ya potable.</div></div>
+        </div>
+
+        <div class="banner tip"><span class="bi">🧠</span><div class="bt"><b>¿Por qué esto es EL trabajo del científico de datos?</b> Un modelo de IA aprende de los datos que le das. Si entran datos sucios, aprende mal: <i>"garbage in, garbage out"</i>. Por eso se invierte la mayor parte del tiempo en ETL: construir la cocina que le sirve comida limpia al modelo.</div></div>
+
+        <p style="color:var(--text-dim);margin:16px 0 4px">El esqueleto del pipeline, en <span class="inline-code">clase1_etl.ipynb</span>, primera celda. Una función por responsabilidad — principio SOLID: una sola razón para existir.</p>
+        <div class="code" data-code="def extract_menu_mundial():
+    pass   # traer del API las categorías que existen en el mundo
+
+def extract_pedidos(ruta):
+    pass   # traer los pedidos de Colombia desde el archivo
+
+def transform(pedidos, catalogo):
+    pass   # limpiar y cruzar
+
+def validar_esquema(df):
+    pass   # revisar el contrato del dato final">
+          <div class="code-head"><span class="fname"><span class="lang">python</span> clase1_etl.ipynb · celda 1</span><button class="copy-btn">Copiar</button></div>
+          <pre><code><span class="tok-kw">def</span> <span class="tok-fn">extract_menu_mundial</span>():
+    <span class="tok-kw">pass</span>   <span class="tok-com"># traer del API las categorías que existen en el mundo</span>
+
+<span class="tok-kw">def</span> <span class="tok-fn">extract_pedidos</span>(ruta):
+    <span class="tok-kw">pass</span>   <span class="tok-com"># traer los pedidos de Colombia desde el archivo</span>
+
+<span class="tok-kw">def</span> <span class="tok-fn">transform</span>(pedidos, catalogo):
+    <span class="tok-kw">pass</span>   <span class="tok-com"># limpiar y cruzar</span>
+
+<span class="tok-kw">def</span> <span class="tok-fn">validar_esquema</span>(df):
+    <span class="tok-kw">pass</span>   <span class="tok-com"># revisar el contrato del dato final</span></code></pre>
+        </div>
+        <div class="think">
+          <div class="q"><span class="qi">🤔</span><span class="qt">¿Por qué hay DOS funciones de Extract y no una sola?</span></div>
+          <details class="reveal">
+            <summary><span class="arrow">▸</span> Ver la respuesta</summary>
+            <div class="ans-body">Son dos fuentes distintas (API vs archivo); cada una se trae de forma diferente y puede fallar por motivos diferentes. Separarlas es SOLID: si una se daña, no tumba la otra.</div>
+          </details>
+        </div>
+      </section>
+
+      <!-- BLOQUE 2 -->
+      <section id="s2">
+        <div class="sec-head">
+          <div class="sec-badge">🔌</div>
+          <div class="htext"><div class="kicker">Concepto</div><h3>¿Qué es una API?</h3><div class="time">Desde cero, con la analogía del restaurante</div></div>
+        </div>
+        <div class="think">
+          <div class="q"><span class="qi">🤔</span><span class="qt">En un restaurante no entras a la cocina a cocinar. Le pides al mesero, él lleva el pedido y trae el plato. ¿Por qué no te dejan entrar directo a la cocina?</span></div>
+          <details class="reveal">
+            <summary><span class="arrow">▸</span> Ver la idea clave</summary>
+            <div class="ans-body">Sería un caos, es un espacio privado, no sabrías dónde está todo. Esa es justo la razón de existir de una API: un intermediario con reglas que protege "la cocina" interna.</div>
+          </details>
+        </div>
+        <div class="def">
+          <span class="term">¿Qué es una API?</span>
+          <p>Es un <b>mesero entre programas</b>: pides un dato con ciertas reglas y te lo trae, sin dejarte entrar a "la cocina" (el sistema interno de otra empresa). API viene de <i>Application Programming Interface</i>.</p>
+        </div>
+        <div class="banner info"><span class="bi">⚓</span><div class="bt"><b>Para recordar:</b> API = el mesero. Pides con reglas, te trae el dato. No entras a la cocina ajena.</div></div>
+
+        <div class="terms">
+          <div class="term-card"><div class="t">Endpoint</div><div class="d">La dirección exacta a la que pides; es una URL.</div><div class="irl">La ventanilla donde haces el pedido.</div></div>
+          <div class="term-card"><div class="t">Request</div><div class="d">La petición que envías. En Python: <span class="inline-code">requests.get(endpoint)</span>.</div><div class="irl">Decirle al mesero "quiero esto".</div></div>
+          <div class="term-card"><div class="t">Status code</div><div class="d">Número que dice si salió bien: 200 = bien · 404 = no existe · 403 = sin permiso.</div><div class="irl">"Listo" o "no hay".</div></div>
+          <div class="term-card"><div class="t">JSON</div><div class="d">El formato del dato que llega: texto con llaves y valores, casi idéntico a un diccionario de Python.</div><div class="irl">El plato servido en formato estándar.</div></div>
+        </div>
+
+        <p style="color:var(--text-dim);margin:16px 0 4px">Así se ve la respuesta JSON de la API (la llave <span class="inline-code">categories</span> contiene una LISTA):</p>
+        <div class="code" data-code='{
+  "categories": [
+    { "idCategory": "1",  "strCategory": "Beef" },
+    { "idCategory": "2",  "strCategory": "Chicken" },
+    { "idCategory": "12", "strCategory": "Vegan" }
+  ]
+}'>
+          <div class="code-head"><span class="fname"><span class="lang">json</span> respuesta de la API</span><button class="copy-btn">Copiar</button></div>
+          <pre><code>{
+  <span class="tok-str">"categories"</span>: [
+    { <span class="tok-str">"idCategory"</span>: <span class="tok-str">"1"</span>,  <span class="tok-str">"strCategory"</span>: <span class="tok-str">"Beef"</span> },
+    { <span class="tok-str">"idCategory"</span>: <span class="tok-str">"2"</span>,  <span class="tok-str">"strCategory"</span>: <span class="tok-str">"Chicken"</span> },
+    { <span class="tok-str">"idCategory"</span>: <span class="tok-str">"12"</span>, <span class="tok-str">"strCategory"</span>: <span class="tok-str">"Vegan"</span> }
+  ]
+}</code></pre>
+        </div>
+        <div class="think">
+          <div class="q"><span class="qi">🤔</span><span class="qt">Si esta API te da TODAS las categorías que existen en el mundo… ¿para qué te sirve en la pregunta del gerente?</span></div>
+          <details class="reveal">
+            <summary><span class="arrow">▸</span> Ver la respuesta</summary>
+            <div class="ans-body">Es el "universo de lo posible". Lo de Colombia lo traes del archivo. La oportunidad está donde el mundo tiene algo que Colombia <b>no</b> ofrece todavía.</div>
+          </details>
+        </div>
+      </section>
+
+      <!-- BLOQUE 3 -->
+      <section id="s3">
+        <div class="sec-head">
+          <div class="sec-badge">💻</div>
+          <div class="htext"><div class="kicker">Manos al código</div><h3>Extract desde la API (menú mundial)</h3><div class="time">Resultado: la función extract_menu_mundial()</div></div>
+        </div>
+        <div class="card"><p>Primer Extract. Usamos <b>TheMealDB</b>: API pública de comida, gratis, con clave de prueba <span class="inline-code">1</span>.</p></div>
+
+        <p style="color:var(--text-dim);margin:6px 0 4px"><b>1.</b> Importa <span class="inline-code">requests</span>, la herramienta de Python para hablar con APIs.</p>
+        <div class="code" data-code="import requests">
+          <div class="code-head"><span class="fname"><span class="lang">python</span> clase1_etl.ipynb</span><button class="copy-btn">Copiar</button></div>
+          <pre><code><span class="tok-kw">import</span> requests</code></pre>
+        </div>
+
+        <p style="color:var(--text-dim);margin:14px 0 4px"><b>2.</b> Define el endpoint y haz la petición. Revisa primero el status code: si imprime <span class="inline-code">200</span>, el mesero trajo el plato.</p>
+        <div class="code" data-code='endpoint = "https://www.themealdb.com/api/json/v1/1/categories.php"
+respuesta = requests.get(endpoint, timeout=10)
+respuesta.status_code'>
+          <div class="code-head"><span class="fname"><span class="lang">python</span> clase1_etl.ipynb</span><button class="copy-btn">Copiar</button></div>
+          <pre><code>endpoint = <span class="tok-str">"https://www.themealdb.com/api/json/v1/1/categories.php"</span>
+respuesta = requests.<span class="tok-fn">get</span>(endpoint, timeout=<span class="tok-num">10</span>)
+respuesta.status_code</code></pre>
+        </div>
+
+        <div class="think">
+          <div class="q"><span class="qi">🤔</span><span class="qt">¿Por qué se revisa el status code ANTES de usar el dato?</span></div>
+          <details class="reveal">
+            <summary><span class="arrow">▸</span> Ver la respuesta</summary>
+            <div class="ans-body">Si fue 404 o 403 no hay dato útil; usarlo de una rompería el programa más adelante con un error confuso.</div>
+          </details>
+        </div>
+
+        <p style="color:var(--text-dim);margin:14px 0 4px"><b>3-5.</b> Convierte a JSON, saca la lista, cuéntala y vuélvela tabla de Pandas (<span class="inline-code">DataFrame</span>: filas y columnas, como Excel).</p>
+        <div class="code" data-code='datos = respuesta.json()
+categorias = datos["categories"]
+len(categorias)
+
+import pandas as pd
+menu = pd.DataFrame(categorias)
+menu.head()'>
+          <div class="code-head"><span class="fname"><span class="lang">python</span> clase1_etl.ipynb</span><button class="copy-btn">Copiar</button></div>
+          <pre><code>datos = respuesta.<span class="tok-fn">json</span>()
+categorias = datos[<span class="tok-str">"categories"</span>]
+<span class="tok-bi">len</span>(categorias)
+
+<span class="tok-kw">import</span> pandas <span class="tok-kw">as</span> pd
+menu = pd.<span class="tok-fn">DataFrame</span>(categorias)
+menu.<span class="tok-fn">head</span>()</code></pre>
+        </div>
+
+        <p style="color:var(--text-dim);margin:14px 0 4px"><b>6.</b> Empaca todo en la función, con red de seguridad <span class="inline-code">try/except</span>, y quédate solo con la columna que importa.</p>
+        <div class="code" data-code='def extract_menu_mundial():
+    url = "https://www.themealdb.com/api/json/v1/1/categories.php"
+    try:
+        datos = requests.get(url, timeout=10).json()
+        return pd.DataFrame(datos["categories"])[["strCategory"]]
+    except Exception:
+        print("API no disponible")
+        return pd.DataFrame()'>
+          <div class="code-head"><span class="fname"><span class="lang">python</span> clase1_etl.ipynb</span><button class="copy-btn">Copiar</button></div>
+          <pre><code><span class="tok-kw">def</span> <span class="tok-fn">extract_menu_mundial</span>():
+    url = <span class="tok-str">"https://www.themealdb.com/api/json/v1/1/categories.php"</span>
+    <span class="tok-kw">try</span>:
+        datos = requests.<span class="tok-fn">get</span>(url, timeout=<span class="tok-num">10</span>).<span class="tok-fn">json</span>()
+        <span class="tok-kw">return</span> pd.<span class="tok-fn">DataFrame</span>(datos[<span class="tok-str">"categories"</span>])[[<span class="tok-str">"strCategory"</span>]]
+    <span class="tok-kw">except</span> <span class="tok-bi">Exception</span>:
+        <span class="tok-fn">print</span>(<span class="tok-str">"API no disponible"</span>)
+        <span class="tok-kw">return</span> pd.<span class="tok-fn">DataFrame</span>()</code></pre>
+        </div>
+        <div class="banner tip"><span class="bi">🛡️</span><div class="bt"><b>Buena práctica:</b> el <span class="inline-code">try/except</span> evita que el pipeline muera si la API se cae; devuelve tabla vacía y el programa sigue en vez de explotar.</div></div>
+
+        <p style="color:var(--text-dim);margin:14px 0 4px"><b>7.</b> Úsala de verdad. Definir fue escribir la receta; esta línea es cocinarla.</p>
+        <div class="code" data-code='menu = extract_menu_mundial()
+menu["strCategory"].tolist()'>
+          <div class="code-head"><span class="fname"><span class="lang">python</span> clase1_etl.ipynb</span><button class="copy-btn">Copiar</button></div>
+          <pre><code>menu = <span class="tok-fn">extract_menu_mundial</span>()
+menu[<span class="tok-str">"strCategory"</span>].<span class="tok-fn">tolist</span>()</code></pre>
+        </div>
+        <div class="banner info"><span class="bi">🔁</span><div class="bt"><b>Definir ≠ ejecutar:</b> <span class="inline-code">def</span> crea la herramienta pero no la usa. Es la diferencia entre tener un exprimidor y exprimir la naranja.</div></div>
+
+        <div class="banner warn"><span class="bi">⚠️</span><div class="bt"><b>Error frecuente:</b> escribir la llave en español, <span class="inline-code">datos["categorias"]</span>. Sale un <span class="inline-code">KeyError</span> con <span class="inline-code">'categorias'</span> — esa llave no existe. Para confirmar el nombre exacto se usa <span class="inline-code">datos.keys()</span>. <b>Regla:</b> el JSON manda; sus nombres son exactos, en su idioma y sensibles a mayúsculas.</div></div>
+      </section>
+
+      <!-- BLOQUE 4 -->
+      <section id="s4">
+        <div class="sec-head">
+          <div class="sec-badge">🌍</div>
+          <div class="htext"><div class="kicker">Análisis</div><h3>¿Qué cocina el mundo?</h3><div class="time">Usar la tabla que trajo la API</div></div>
+        </div>
+        <div class="think">
+          <div class="q"><span class="qi">🤔</span><span class="qt">Esta tabla vino de internet, no de un CSV. ¿Se analiza distinto por venir de una API, o igual que cualquier tabla?</span></div>
+          <details class="reveal">
+            <summary><span class="arrow">▸</span> Ver la respuesta</summary>
+            <div class="ans-body">Igual. Una vez es DataFrame, da lo mismo de dónde vino. La API no cambia <b>cómo</b> analizas; cambia de <b>dónde</b> vienen los datos.</div>
+          </details>
+        </div>
+        <div class="code" data-code='print("Categorías en el mundo:", len(menu))
+sorted(menu["strCategory"].tolist())'>
+          <div class="code-head"><span class="fname"><span class="lang">python</span> clase1_etl.ipynb</span><button class="copy-btn">Copiar</button></div>
+          <pre><code><span class="tok-fn">print</span>(<span class="tok-str">"Categorías en el mundo:"</span>, <span class="tok-bi">len</span>(menu))
+<span class="tok-bi">sorted</span>(menu[<span class="tok-str">"strCategory"</span>].<span class="tok-fn">tolist</span>())</code></pre>
+        </div>
+        <div class="out">
+          <div class="out-head">Resultado — 14 categorías</div>
+          <div style="padding:14px 16px;display:flex;flex-wrap:wrap;gap:7px">
+            <span class="chip">Beef</span><span class="chip">Breakfast</span><span class="chip">Chicken</span><span class="chip">Dessert</span><span class="chip">Goat</span><span class="chip">Lamb</span><span class="chip">Miscellaneous</span><span class="chip">Pasta</span><span class="chip">Pork</span><span class="chip">Seafood</span><span class="chip">Side</span><span class="chip">Starter</span><span class="chip">Vegan</span><span class="chip">Vegetarian</span>
+          </div>
+        </div>
+        <div class="banner tip"><span class="bi">🚰</span><div class="bt"><b>API vs CSV:</b> el CSV es una foto fija que envejece; la API es un grifo vivo: cada llamada trae el dato actualizado. Si aparece una categoría nueva en el mundo, sale sola en la próxima llamada, sin que nadie reexporte nada a mano.</div></div>
+
+        <div class="think">
+          <div class="q"><span class="qi">🤔</span><span class="qt">Ya sabes que existen 14 categorías. Pero esto es "lo que el mundo cocina", no "lo que Colombia pide". ¿Esta tabla sola te dice qué pide Colombia?</span></div>
+          <details class="reveal">
+            <summary><span class="arrow">▸</span> Ver la respuesta</summary>
+            <div class="ans-body">No. La API solo conoce el mundo. Falta la otra mitad: los pedidos reales de Colombia. Eso traemos ahora.</div>
+          </details>
+        </div>
+      </section>
+
+      <!-- BLOQUE 5 -->
+      <section id="s5">
+        <div class="sec-head">
+          <div class="sec-badge">🗄️</div>
+          <div class="htext"><div class="kicker">Concepto</div><h3>Archivos masivos: cuando no cabe en la RAM</h3><div class="time">Leer por lotes con chunksize</div></div>
+        </div>
+        <div class="think">
+          <div class="q"><span class="qi">🤔</span><span class="qt">Tu computador tiene 8 GB de RAM. Rappi te manda un archivo de pedidos de 20 GB. Si haces <span class="inline-code">pd.read_csv("archivo.csv")</span> como siempre… ¿qué pasa?</span></div>
+          <details class="reveal">
+            <summary><span class="arrow">▸</span> Ver la respuesta</summary>
+            <div class="ans-body">Pandas intenta meter 20 GB en 8 GB y se queda sin memoria: se traba.</div>
+          </details>
+        </div>
+        <div class="def">
+          <span class="term">¿Qué es la RAM?</span>
+          <p>La memoria de trabajo del computador: rápida pero limitada. Pandas mete ahí el archivo para procesarlo. Si el archivo es más grande que la RAM, no cabe.</p>
+        </div>
+        <div class="banner info"><span class="bi">🍕</span><div class="bt"><b>Idea central:</b> un archivo masivo es uno tan grande que no cabe entero en la RAM. Solución: leerlo por lotes (<i>chunks</i>), un pedazo a la vez. Como comerse una pizza por tajadas, no de un solo bocado.</div></div>
+        <div class="def">
+          <span class="term">chunksize=N</span>
+          <p>Le dice a <span class="inline-code">read_csv</span>: "tráeme de a N filas". Procesas un lote, lo sueltas, traes el siguiente. La RAM nunca se llena.</p>
+        </div>
+        <div class="banner tip"><span class="bi">🔮</span><div class="bt"><b>El límite de esta técnica:</b> <span class="inline-code">chunksize</span> es la primera defensa, en UN solo computador. Cuando ni por lotes alcanza, se reparte el trabajo entre muchos computadores: eso es <b>Big Data con PySpark</b>, Unidad 2 de este mismo módulo.</div></div>
+      </section>
+
+      <!-- BLOQUE 6 -->
+      <section id="s6">
+        <div class="sec-head">
+          <div class="sec-badge">🕳️</div>
+          <div class="htext"><div class="kicker">Manos al código</div><h3>Extract del archivo + la primera mentira</h3><div class="time">Resultado: la función extract_pedidos()</div></div>
+        </div>
+        <div class="card"><p>Aquí pasa algo importante: <b>todavía no se limpia</b>. Primero traemos el archivo, intentamos usarlo, y dejamos que el dato sucio muestre por qué hay que limpiar.</p></div>
+
+        <p style="color:var(--text-dim);margin:6px 0 4px"><b>Leer por lotes.</b> Con <span class="inline-code">chunksize=500</span>, <span class="inline-code">read_csv</span> devuelve un iterador que entrega de a pedazos; por eso se usa un <span class="inline-code">for</span>.</p>
+        <div class="code" data-code='pedidos = pd.read_csv("rappi_pedidos.csv")
+pedidos.shape   # (1207, 7)
+
+for lote in pd.read_csv("rappi_pedidos.csv", chunksize=500):
+    print("Procesando lote de", len(lote), "filas")'>
+          <div class="code-head"><span class="fname"><span class="lang">python</span> clase1_etl.ipynb</span><button class="copy-btn">Copiar</button></div>
+          <pre><code>pedidos = pd.<span class="tok-fn">read_csv</span>(<span class="tok-str">"rappi_pedidos.csv"</span>)
+pedidos.shape   <span class="tok-com"># (1207, 7)</span>
+
+<span class="tok-kw">for</span> lote <span class="tok-kw">in</span> pd.<span class="tok-fn">read_csv</span>(<span class="tok-str">"rappi_pedidos.csv"</span>, chunksize=<span class="tok-num">500</span>):
+    <span class="tok-fn">print</span>(<span class="tok-str">"Procesando lote de"</span>, <span class="tok-bi">len</span>(lote), <span class="tok-str">"filas"</span>)</code></pre>
+        </div>
+        <div class="out">
+          <div class="out-head">Resultado</div>
+          <div style="padding:12px 16px;font-family:var(--mono);font-size:13px;color:var(--text-dim)">Lote de <b style="color:var(--cyan)">500</b> · <b style="color:var(--cyan)">500</b> · <b style="color:var(--cyan)">207</b> → total 1207. Nunca hubo 1207 filas en memoria a la vez, máximo 500.</div>
+        </div>
+
+        <h4 style="font-size:16px;font-weight:700;color:#fff;margin:24px 0 8px">La primera mentira: el cruce que pierde pedidos en silencio</h4>
+        <p style="color:var(--text-dim);margin:0 0 4px">Hay que traducir cada <span class="inline-code">id_plato</span> a su categoría con un <span class="inline-code">merge</span> (igual que un JOIN de SQL). <span class="inline-code">how="left"</span> conserva todos los pedidos.</p>
+        <div class="code" data-code='catalogo = pd.read_csv("catalogo_platos.csv")
+pedidos = pd.read_csv("rappi_pedidos.csv")
+prueba = pedidos.merge(catalogo, on="id_plato", how="left")
+prueba["categoria"].notna().sum()'>
+          <div class="code-head"><span class="fname"><span class="lang">python</span> clase1_etl.ipynb</span><button class="copy-btn">Copiar</button></div>
+          <pre><code>catalogo = pd.<span class="tok-fn">read_csv</span>(<span class="tok-str">"catalogo_platos.csv"</span>)
+pedidos = pd.<span class="tok-fn">read_csv</span>(<span class="tok-str">"rappi_pedidos.csv"</span>)
+prueba = pedidos.<span class="tok-fn">merge</span>(catalogo, on=<span class="tok-str">"id_plato"</span>, how=<span class="tok-str">"left"</span>)
+prueba[<span class="tok-str">"categoria"</span>].<span class="tok-fn">notna</span>().<span class="tok-fn">sum</span>()</code></pre>
+        </div>
+        <div class="think">
+          <div class="q"><span class="qi">🤔</span><span class="qt">Hay 1207 pedidos y todos tienen un id_plato. ¿Cuántos encontrarán su categoría: todos, o se perderá alguno?</span></div>
+          <details class="reveal">
+            <summary><span class="arrow">▸</span> Ver el resultado</summary>
+            <div class="ans-body">Salen <b>1111</b>, no 1207. Faltan 96 pedidos… y no apareció ningún error.</div>
+          </details>
+        </div>
+
+        <p style="color:var(--text-dim);margin:14px 0 4px">96 pedidos perdidos sin un solo error. Miremos de cerca esos <span class="inline-code">id_plato</span>:</p>
+        <div class="code" data-code='prueba[prueba["categoria"].isna()]["id_plato"].unique()[:5]'>
+          <div class="code-head"><span class="fname"><span class="lang">python</span> clase1_etl.ipynb</span><button class="copy-btn">Copiar</button></div>
+          <pre><code>prueba[prueba[<span class="tok-str">"categoria"</span>].<span class="tok-fn">isna</span>()][<span class="tok-str">"id_plato"</span>].<span class="tok-fn">unique</span>()[:<span class="tok-num">5</span>]</code></pre>
+        </div>
+        <div class="out">
+          <div class="out-head">Resultado — la pista</div>
+          <div style="padding:14px 16px;font-family:var(--mono);font-size:13px;color:var(--cyan)">[' P0202', ' P0201', ' P0601', ' P0102', ' P0101']</div>
+        </div>
+        <div class="banner warn"><span class="bi">🔍</span><div class="bt"><b>Fíjate en el espacio ANTES de la P.</b> En el catálogo el código es <span class="inline-code">'P0202'</span>; en estos pedidos llegó como <span class="inline-code">' P0202'</span> con un espacio invisible al inicio. Para Python son textos distintos. Por eso no cruzan.</div></div>
+        <div class="banner tip"><span class="bi">🪙</span><div class="bt"><b>La lección:</b> los peores errores de datos no son los que tumban el programa, sino los que entregan un número creíble y falso. Por eso no basta con confiar en que "cruzó bien": se verifica cuántos cruzaron.</div></div>
+
+        <p style="color:var(--text-dim);margin:14px 0 4px">Por ahora la extracción se queda simple y honesta. <b>SOLID:</b> <span class="inline-code">extract</span> solo TRAE; limpiar es trabajo del <span class="inline-code">transform</span>.</p>
+        <div class="code" data-code='def extract_pedidos(ruta):
+    df = pd.read_csv(ruta)
+    print(f"Extraídos {df.shape[0]} pedidos")
+    return df'>
+          <div class="code-head"><span class="fname"><span class="lang">python</span> clase1_etl.ipynb</span><button class="copy-btn">Copiar</button></div>
+          <pre><code><span class="tok-kw">def</span> <span class="tok-fn">extract_pedidos</span>(ruta):
+    df = pd.<span class="tok-fn">read_csv</span>(ruta)
+    <span class="tok-fn">print</span>(<span class="tok-str">f"Extraídos {df.shape[0]} pedidos"</span>)
+    <span class="tok-kw">return</span> df</code></pre>
+        </div>
+      </section>
+
+      <!-- BLOQUE 7 -->
+      <section id="s7">
+        <div class="sec-head">
+          <div class="sec-badge">🧼</div>
+          <div class="htext"><div class="kicker">Manos al código</div><h3>Transform · limpiar porque el conteo miente</h3><div class="time">Resultado: la función transform()</div></div>
+        </div>
+        <div class="card"><p class="lead">Aquí no se limpia "porque toca". Se limpia porque al contar algo sale un número absurdo, y limpiar es lo único que lo arregla.</p></div>
+
+        <h4 style="font-size:16px;font-weight:700;color:#fff;margin:18px 0 8px">"¿Cuántos pedidos se cancelaron?"</h4>
+        <div class="code" data-code='(pedidos["estado"] == "cancelado").sum()'>
+          <div class="code-head"><span class="fname"><span class="lang">python</span> clase1_etl.ipynb</span><button class="copy-btn">Copiar</button></div>
+          <pre><code>(pedidos[<span class="tok-str">"estado"</span>] == <span class="tok-str">"cancelado"</span>).<span class="tok-fn">sum</span>()</code></pre>
+        </div>
+        <div class="out"><div class="out-head">Resultado — sospechosamente bajo</div><div style="padding:12px 16px;font-family:var(--mono);font-size:13px;color:var(--text-dim)"><b style="color:var(--yellow)">34</b> &nbsp;·&nbsp; ¿solo 34 cancelados en 1207 pedidos? Huele raro.</div></div>
+
+        <p style="color:var(--text-dim);margin:14px 0 4px">Miremos todos los valores distintos de <span class="inline-code">estado</span>:</p>
+        <div class="code" data-code='sorted(pedidos["estado"].unique())'>
+          <div class="code-head"><span class="fname"><span class="lang">python</span> clase1_etl.ipynb</span><button class="copy-btn">Copiar</button></div>
+          <pre><code><span class="tok-bi">sorted</span>(pedidos[<span class="tok-str">"estado"</span>].<span class="tok-fn">unique</span>())</code></pre>
+        </div>
+        <div class="out"><div class="out-head">Resultado — la mentira al desnudo</div><div style="padding:14px 16px;font-family:var(--mono);font-size:12px;color:var(--cyan);word-break:break-word">[' cancelado', ' en_camino', ' entregado', 'CANCELADO', 'Cancelado', 'ENTREGADO', 'EN_CAMINO', 'En_camino', 'Entregado', 'cancelado', 'en_camino', 'entregado']</div></div>
+        <div class="banner warn"><span class="bi">🎭</span><div class="bt"><b>Son 3 estados disfrazados de 12:</b> mayúsculas, minúsculas y espacios sobrantes. El conteo de "34 cancelados" solo agarró los que decían exactamente <span class="inline-code">cancelado</span> en minúscula sin espacios.</div></div>
+
+        <div class="think">
+          <div class="q"><span class="qi">🤔</span><span class="qt">¿Se limpia el texto por estética, o porque la respuesta al gerente está mal hasta que lo hagas?</span></div>
+          <details class="reveal">
+            <summary><span class="arrow">▸</span> Ver la respuesta</summary>
+            <div class="ans-body">Está mal. La limpieza no es cosmética; es la diferencia entre decir "34 cancelados" (falso) o el número real.</div>
+          </details>
+        </div>
+
+        <p style="color:var(--text-dim);margin:14px 0 4px">Normaliza: quita espacios y pasa a minúscula. Las 12 variantes colapsan a 3. Cuenta de nuevo, ahora bien:</p>
+        <div class="code" data-code='pedidos["estado"] = pedidos["estado"].astype(str).str.strip().str.lower()
+(pedidos["estado"] == "cancelado").sum()'>
+          <div class="code-head"><span class="fname"><span class="lang">python</span> clase1_etl.ipynb</span><button class="copy-btn">Copiar</button></div>
+          <pre><code>pedidos[<span class="tok-str">"estado"</span>] = pedidos[<span class="tok-str">"estado"</span>].<span class="tok-fn">astype</span>(<span class="tok-bi">str</span>).str.<span class="tok-fn">strip</span>().str.<span class="tok-fn">lower</span>()
+(pedidos[<span class="tok-str">"estado"</span>] == <span class="tok-str">"cancelado"</span>).<span class="tok-fn">sum</span>()</code></pre>
+        </div>
+        <div class="out"><div class="out-head">Resultado — la verdad</div><div style="padding:12px 16px;font-family:var(--mono);font-size:13px;color:var(--text-dim)"><b style="color:var(--green)">117</b> &nbsp;·&nbsp; el número real era 117, no 34. Limpiar más que triplicó la respuesta.</div></div>
+
+        <div class="banner info"><span class="bi">🏙️</span><div class="bt"><b>El mismo problema esconde la ciudad:</b> <span class="inline-code">BOGOTA</span>, <span class="inline-code">Bogotá</span>, <span class="inline-code"> bogota </span> parecen tres ciudades pero son una. Se normaliza igual + quitar tildes → quedan 5 ciudades reales: Barranquilla, Bogota, Cali, Cartagena, Medellin.</div></div>
+
+        <h4 style="font-size:16px;font-weight:700;color:#fff;margin:22px 0 8px">Los nulos también mienten en los promedios</h4>
+        <p style="color:var(--text-dim);margin:0 0 4px"><span class="inline-code">minutos_entrega</span> tiene nulos, negativos e imposibles (999). Un solo 999 dispara el promedio.</p>
+        <div class="code" data-code='import numpy as np
+pedidos["minutos_entrega"] = pd.to_numeric(pedidos["minutos_entrega"], errors="coerce")
+pedidos.loc[(pedidos["minutos_entrega"] <= 0) | (pedidos["minutos_entrega"] > 180),
+            "minutos_entrega"] = np.nan
+pedidos["minutos_entrega"] = pedidos["minutos_entrega"].fillna(pedidos["minutos_entrega"].median())'>
+          <div class="code-head"><span class="fname"><span class="lang">python</span> clase1_etl.ipynb</span><button class="copy-btn">Copiar</button></div>
+          <pre><code><span class="tok-kw">import</span> numpy <span class="tok-kw">as</span> np
+pedidos[<span class="tok-str">"minutos_entrega"</span>] = pd.<span class="tok-fn">to_numeric</span>(pedidos[<span class="tok-str">"minutos_entrega"</span>], errors=<span class="tok-str">"coerce"</span>)
+pedidos.loc[(pedidos[<span class="tok-str">"minutos_entrega"</span>] &lt;= <span class="tok-num">0</span>) | (pedidos[<span class="tok-str">"minutos_entrega"</span>] &gt; <span class="tok-num">180</span>),
+            <span class="tok-str">"minutos_entrega"</span>] = np.nan
+pedidos[<span class="tok-str">"minutos_entrega"</span>] = pedidos[<span class="tok-str">"minutos_entrega"</span>].<span class="tok-fn">fillna</span>(pedidos[<span class="tok-str">"minutos_entrega"</span>].<span class="tok-fn">median</span>())</code></pre>
+        </div>
+        <div class="think">
+          <div class="q"><span class="qi">🤔</span><span class="qt">¿Por qué se rellena con la mediana y no con el promedio?</span></div>
+          <details class="reveal">
+            <summary><span class="arrow">▸</span> Ver la respuesta</summary>
+            <div class="ans-body">La mediana no se deja arrastrar por un valor extremo; el promedio sí. Un solo 999 envenena el promedio pero casi no mueve la mediana.</div>
+          </details>
+        </div>
+
+        <p style="color:var(--text-dim);margin:18px 0 4px">Y la cura del cruce anterior: <span class="inline-code">.str.strip()</span> quita el espacio invisible, así <span class="inline-code">' P0202'</span> vuelve a ser <span class="inline-code">'P0202'</span> y los 96 perdidos cruzan. Toda la limpieza empacada en su función:</p>
+        <div class="code" data-code='def transform(pedidos, catalogo):
+    pedidos["estado"] = pedidos["estado"].astype(str).str.strip().str.lower()
+    pedidos["ciudad"] = (pedidos["ciudad"].astype(str).str.strip().str.lower()
+                         .str.normalize("NFKD")
+                         .str.encode("ascii", "ignore").str.decode("utf-8")
+                         .str.capitalize())
+    pedidos["propina_usd"] = pd.to_numeric(pedidos["propina_usd"], errors="coerce").fillna(0)
+    pedidos["minutos_entrega"] = pd.to_numeric(pedidos["minutos_entrega"], errors="coerce")
+    pedidos.loc[(pedidos["minutos_entrega"] <= 0) | (pedidos["minutos_entrega"] > 180),
+                "minutos_entrega"] = np.nan
+    pedidos["minutos_entrega"] = pedidos["minutos_entrega"].fillna(pedidos["minutos_entrega"].median())
+    pedidos = pedidos.dropna(subset=["id_pedido"]).drop_duplicates()
+    pedidos["id_plato"] = pedidos["id_plato"].astype(str).str.strip()
+    final = pedidos.merge(catalogo, on="id_plato", how="left")
+    final["categoria"] = final["categoria"].fillna("Desconocido")
+    return final'>
+          <div class="code-head"><span class="fname"><span class="lang">python</span> clase1_etl.ipynb · función transform completa</span><button class="copy-btn">Copiar</button></div>
+          <pre><code><span class="tok-kw">def</span> <span class="tok-fn">transform</span>(pedidos, catalogo):
+    pedidos[<span class="tok-str">"estado"</span>] = pedidos[<span class="tok-str">"estado"</span>].<span class="tok-fn">astype</span>(<span class="tok-bi">str</span>).str.<span class="tok-fn">strip</span>().str.<span class="tok-fn">lower</span>()
+    pedidos[<span class="tok-str">"ciudad"</span>] = (pedidos[<span class="tok-str">"ciudad"</span>].<span class="tok-fn">astype</span>(<span class="tok-bi">str</span>).str.<span class="tok-fn">strip</span>().str.<span class="tok-fn">lower</span>()
+                         .str.<span class="tok-fn">normalize</span>(<span class="tok-str">"NFKD"</span>)
+                         .str.<span class="tok-fn">encode</span>(<span class="tok-str">"ascii"</span>, <span class="tok-str">"ignore"</span>).str.<span class="tok-fn">decode</span>(<span class="tok-str">"utf-8"</span>)
+                         .str.<span class="tok-fn">capitalize</span>())
+    pedidos[<span class="tok-str">"propina_usd"</span>] = pd.<span class="tok-fn">to_numeric</span>(pedidos[<span class="tok-str">"propina_usd"</span>], errors=<span class="tok-str">"coerce"</span>).<span class="tok-fn">fillna</span>(<span class="tok-num">0</span>)
+    pedidos[<span class="tok-str">"minutos_entrega"</span>] = pd.<span class="tok-fn">to_numeric</span>(pedidos[<span class="tok-str">"minutos_entrega"</span>], errors=<span class="tok-str">"coerce"</span>)
+    pedidos.loc[(pedidos[<span class="tok-str">"minutos_entrega"</span>] &lt;= <span class="tok-num">0</span>) | (pedidos[<span class="tok-str">"minutos_entrega"</span>] &gt; <span class="tok-num">180</span>),
+                <span class="tok-str">"minutos_entrega"</span>] = np.nan
+    pedidos[<span class="tok-str">"minutos_entrega"</span>] = pedidos[<span class="tok-str">"minutos_entrega"</span>].<span class="tok-fn">fillna</span>(pedidos[<span class="tok-str">"minutos_entrega"</span>].<span class="tok-fn">median</span>())
+    pedidos = pedidos.<span class="tok-fn">dropna</span>(subset=[<span class="tok-str">"id_pedido"</span>]).<span class="tok-fn">drop_duplicates</span>()
+    pedidos[<span class="tok-str">"id_plato"</span>] = pedidos[<span class="tok-str">"id_plato"</span>].<span class="tok-fn">astype</span>(<span class="tok-bi">str</span>).str.<span class="tok-fn">strip</span>()
+    final = pedidos.<span class="tok-fn">merge</span>(catalogo, on=<span class="tok-str">"id_plato"</span>, how=<span class="tok-str">"left"</span>)
+    final[<span class="tok-str">"categoria"</span>] = final[<span class="tok-str">"categoria"</span>].<span class="tok-fn">fillna</span>(<span class="tok-str">"Desconocido"</span>)
+    <span class="tok-kw">return</span> final</code></pre>
+        </div>
+        <div class="banner tip"><span class="bi">🔥</span><div class="bt"><b>Cada línea está aquí por una razón:</b> sin ella, una pregunta de negocio se respondía mal. La limpieza ahora vive dentro del pipeline y limpia mientras el dato fluye hacia el análisis.</div></div>
+      </section>
+
+      <!-- BLOQUE 8 -->
+      <section id="s8">
+        <div class="sec-head">
+          <div class="sec-badge">📊</div>
+          <div class="htext"><div class="kicker">Análisis</div><h3>El cruce + la tendencia de Colombia</h3><div class="time">Conteo, proporción y gráfica</div></div>
+        </div>
+        <div class="card"><p>Con los datos ya limpios, no basta saber QUÉ pide Colombia; queremos saber hacia dónde se INCLINA, porque eso decide si una categoría nueva es apuesta segura o riesgosa.</p></div>
+        <div class="code" data-code='catalogo = pd.read_csv("catalogo_platos.csv")
+final = transform(pedidos, catalogo)
+(final["categoria"] == "Desconocido").sum()   # 0'>
+          <div class="code-head"><span class="fname"><span class="lang">python</span> clase1_etl.ipynb</span><button class="copy-btn">Copiar</button></div>
+          <pre><code>catalogo = pd.<span class="tok-fn">read_csv</span>(<span class="tok-str">"catalogo_platos.csv"</span>)
+final = <span class="tok-fn">transform</span>(pedidos, catalogo)
+(final[<span class="tok-str">"categoria"</span>] == <span class="tok-str">"Desconocido"</span>).<span class="tok-fn">sum</span>()   <span class="tok-com"># 0</span></code></pre>
+        </div>
+        <div class="banner success"><span class="bi">✓</span><div class="bt"><b>0 desconocidos.</b> Ahora que <span class="inline-code">transform</span> quita el espacio del <span class="inline-code">id_plato</span>, los 1197 pedidos cruzaron bien. Compara con los 96 que se perdían al inicio: ese es el viaje completo, de un cruce que mentía a uno que cuadra.</div></div>
+
+        <div class="infog">
+          <div class="infog-title">¿Qué pide Colombia en Rappi?</div>
+          <div class="infog-sub">Proporción sobre 1197 pedidos</div>
+          <div class="hbar"><div class="name">Chicken</div><div class="track"><div class="fill" data-w="100"></div></div><div class="pct">40.0%</div></div>
+          <div class="hbar"><div class="name">Beef</div><div class="track"><div class="fill" data-w="57"></div></div><div class="pct">22.7%</div></div>
+          <div class="hbar"><div class="name">Side</div><div class="track"><div class="fill" data-w="40"></div></div><div class="pct">15.9%</div></div>
+          <div class="hbar"><div class="name">Pasta</div><div class="track"><div class="fill" data-w="25"></div></div><div class="pct">10.1%</div></div>
+          <div class="hbar"><div class="name">Seafood</div><div class="track"><div class="fill" data-w="23"></div></div><div class="pct">9.1%</div></div>
+          <div class="hbar lo"><div class="name">Lamb</div><div class="track"><div class="fill" data-w="3"></div></div><div class="pct">0.9%</div></div>
+          <div class="hbar lo"><div class="name">Dessert</div><div class="track"><div class="fill" data-w="2"></div></div><div class="pct">0.8%</div></div>
+          <div class="hbar lo"><div class="name">Vegetarian</div><div class="track"><div class="fill" data-w="1"></div></div><div class="pct">0.4%</div></div>
+        </div>
+
+        <p style="color:var(--text-dim);margin:14px 0 4px">La gráfica que cuenta la historia de un vistazo, con Seaborn:</p>
+        <div class="code" data-code='import seaborn as sns
+import matplotlib.pyplot as plt
+
+orden = final["categoria"].value_counts().index
+plt.figure(figsize=(9, 4))
+sns.countplot(data=final, y="categoria", order=orden, color="#5418CC")
+plt.title("¿Qué pide Colombia en Rappi? (1197 pedidos)")
+plt.xlabel("Número de pedidos")
+plt.ylabel("")
+plt.tight_layout()
+plt.show()'>
+          <div class="code-head"><span class="fname"><span class="lang">python</span> clase1_etl.ipynb</span><button class="copy-btn">Copiar</button></div>
+          <pre><code><span class="tok-kw">import</span> seaborn <span class="tok-kw">as</span> sns
+<span class="tok-kw">import</span> matplotlib.pyplot <span class="tok-kw">as</span> plt
+
+orden = final[<span class="tok-str">"categoria"</span>].<span class="tok-fn">value_counts</span>().index
+plt.<span class="tok-fn">figure</span>(figsize=(<span class="tok-num">9</span>, <span class="tok-num">4</span>))
+sns.<span class="tok-fn">countplot</span>(data=final, y=<span class="tok-str">"categoria"</span>, order=orden, color=<span class="tok-str">"#5418CC"</span>)
+plt.<span class="tok-fn">title</span>(<span class="tok-str">"¿Qué pide Colombia en Rappi? (1197 pedidos)"</span>)
+plt.<span class="tok-fn">xlabel</span>(<span class="tok-str">"Número de pedidos"</span>)
+plt.<span class="tok-fn">ylabel</span>(<span class="tok-str">""</span>)
+plt.<span class="tok-fn">tight_layout</span>()
+plt.<span class="tok-fn">show</span>()</code></pre>
+        </div>
+
+        <p style="color:var(--text-dim);margin:14px 0 4px">El insight de negocio en una frase — juntando la proteína:</p>
+        <div class="code" data-code='proteina = ["Beef", "Chicken", "Seafood", "Lamb"]
+pct_proteina = final["categoria"].isin(proteina).mean() * 100
+round(pct_proteina, 1)   # 72.8'>
+          <div class="code-head"><span class="fname"><span class="lang">python</span> clase1_etl.ipynb</span><button class="copy-btn">Copiar</button></div>
+          <pre><code>proteina = [<span class="tok-str">"Beef"</span>, <span class="tok-str">"Chicken"</span>, <span class="tok-str">"Seafood"</span>, <span class="tok-str">"Lamb"</span>]
+pct_proteina = final[<span class="tok-str">"categoria"</span>].<span class="tok-fn">isin</span>(proteina).<span class="tok-fn">mean</span>() * <span class="tok-num">100</span>
+<span class="tok-bi">round</span>(pct_proteina, <span class="tok-num">1</span>)   <span class="tok-com"># 72.8</span></code></pre>
+        </div>
+        <div class="banner success"><span class="bi">📰</span><div class="bt"><b>El titular: 72.8%.</b> Casi 3 de cada 4 pedidos en Colombia son proteína. Dulce + vegetariano juntos no llegan ni al 2%. La forma de la gráfica lo grita: <b>Colombia come proteína.</b></div></div>
+
+        <div class="think">
+          <div class="q"><span class="qi">🤔</span><span class="qt">Con esta tendencia, ¿qué tipo de categoría nueva tiene más probabilidad de pegar en Colombia: una que rime con la proteína, o una dulce/vegetariana?</span></div>
+          <details class="reveal">
+            <summary><span class="arrow">▸</span> Ver la respuesta</summary>
+            <div class="ans-body">El dato sugiere que Colombia premia la proteína. Pero ojo: ¿una categoría ausente que es proteína es oportunidad segura… o hay una razón de que no esté? Eso abre la pregunta clave del siguiente bloque.</div>
+          </details>
+        </div>
+      </section>
+
+      <!-- BLOQUE 9 -->
+      <section id="s9">
+        <div class="sec-head">
+          <div class="sec-badge">🏆</div>
+          <div class="htext"><div class="kicker">La decisión</div><h3>La pregunta de oro</h3><div class="time">Cruzar API + archivo en una recomendación</div></div>
+        </div>
+        <div class="card"><p class="lead">Aquí la API y el archivo por fin se cruzan y producen una recomendación, no una lista.</p></div>
+        <div class="code" data-code='mundiales = set(menu["strCategory"])
+pedidas = set(final[final["categoria"] != "Desconocido"]["categoria"])
+nunca_pedidas = mundiales - pedidas
+print(sorted(nunca_pedidas), "->", len(nunca_pedidas), "categorías")'>
+          <div class="code-head"><span class="fname"><span class="lang">python</span> clase1_etl.ipynb</span><button class="copy-btn">Copiar</button></div>
+          <pre><code>mundiales = <span class="tok-bi">set</span>(menu[<span class="tok-str">"strCategory"</span>])
+pedidas = <span class="tok-bi">set</span>(final[final[<span class="tok-str">"categoria"</span>] != <span class="tok-str">"Desconocido"</span>][<span class="tok-str">"categoria"</span>])
+nunca_pedidas = mundiales - pedidas
+<span class="tok-fn">print</span>(<span class="tok-bi">sorted</span>(nunca_pedidas), <span class="tok-str">"->"</span>, <span class="tok-bi">len</span>(nunca_pedidas), <span class="tok-str">"categorías"</span>)</code></pre>
+        </div>
+        <div class="out"><div class="out-head">Resultado — 6 categorías ausentes</div><div style="padding:12px 16px;font-family:var(--mono);font-size:13px;color:var(--cyan)">Breakfast · Goat · Miscellaneous · Pork · Starter · Vegan</div></div>
+
+        <div class="banner tip"><span class="bi">🎯</span><div class="bt"><b>La lista no es la respuesta.</b> El paso que marca la diferencia es clasificar esas 6 ausentes según la tendencia que descubrimos: 72.8% proteína.</div></div>
+
+        <div class="think">
+          <div class="q"><span class="qi">🤔</span><span class="qt">De estas 6 ausentes, ¿cuáles riman con el gusto proteico de Colombia y cuáles van en contra? ¿Cuál es apuesta segura y cuál arriesgada?</span></div>
+          <details class="reveal">
+            <summary><span class="arrow">▸</span> Ver el análisis</summary>
+            <div class="ans-body">No hay una sola respuesta: hay argumentos que se defienden con datos. Pork rima con la tendencia (es proteína); Vegan va en contra (vegetariano es 0.4%); Goat y Breakfast necesitan más información. Mira las tarjetas de abajo.</div>
+          </details>
+        </div>
+
+        <div class="cands">
+          <div class="cand safe"><div class="ct">🐷 Pork <span class="tag">Segura</span></div><div class="cv">Es proteína, igual que el 72.8% que Colombia ya devora. Rima con la tendencia. El dato lo respalda.</div></div>
+          <div class="cand risk"><div class="ct">🥗 Vegan <span class="tag">Arriesgada</span></div><div class="cv">Va contra toda la tendencia: vegetariano es apenas 0.4%, el fondo de la tabla. El dato dice "cuidado".</div></div>
+          <div class="cand meh"><div class="ct">🐐 Goat <span class="tag">Faltan datos</span></div><div class="cv">Proteína, pero muy de nicho regional. "Necesito más información" también es una respuesta profesional.</div></div>
+          <div class="cand meh"><div class="ct">🍳 Breakfast <span class="tag">Faltan datos</span></div><div class="cv">Cambia el horario de uso de Rappi. Requiere más análisis antes de recomendar.</div></div>
+        </div>
+
+        <div class="banner warn"><span class="bi">🟡</span><div class="bt"><b>El contraargumento de Pork (pensamiento crítico):</b> si es proteína y encaja tan bien… ¿por qué nadie lo ofrece aún? ¿Oportunidad de oro sin explotar, o hay una razón cultural o de proveedores que el dato no ve?</div></div>
+
+        <div class="banner success"><span class="bi">🎤</span><div class="bt"><b>Así suena la recomendación final:</b> "Gerente: recomiendo pilotar <i>Pork</i> primero. Colombia es 72.8% proteína y el cerdo encaja en ese gusto, pero hoy nadie lo ofrece — es el hueco más alineado con lo que el país ya ama. Sugiero un piloto pequeño antes de invertir fuerte. <i>Vegan</i> lo dejo para después: iría contra una tendencia donde lo vegetariano es apenas 0.4%."</div></div>
+        <div class="banner info"><span class="bi">✨</span><div class="bt">No es "faltan 6 categorías". Es "lanza esta, espera con esta, y aquí está el número que lo prueba". Eso era imposible con una sola fuente. Cruzarlas convirtió datos en una decisión.</div></div>
+      </section>
+
+      <!-- BLOQUE 10 -->
+      <section id="s10">
+        <div class="sec-head">
+          <div class="sec-badge">📋</div>
+          <div class="htext"><div class="kicker">Concepto + código</div><h3>Validación de esquema: el contrato</h3><div class="time">Que el pipeline avise en vez de entregar basura</div></div>
+        </div>
+        <div class="think">
+          <div class="q"><span class="qi">🤔</span><span class="qt">En un contrato de arriendo hay condiciones obligatorias: precio, fecha, firmas. Si falta una, no vale. ¿Qué condiciones obligatorias debería cumplir la tabla final?</span></div>
+          <details class="reveal">
+            <summary><span class="arrow">▸</span> Ver la respuesta</summary>
+            <div class="ans-body">Estados sin variantes raras, minutos en un rango lógico, categoría siempre asignada. Esas condiciones son el <b>esquema</b>: columnas correctas y valores permitidos.</div>
+          </details>
+        </div>
+        <div class="def">
+          <span class="term">¿Qué hace assert?</span>
+          <p>Revisa una condición: si es verdadera, sigue; si es falsa, DETIENE el programa con el mensaje dado. El pipeline se frena solo si algo está mal.</p>
+        </div>
+        <div class="code" data-code='def validar_esquema(df):
+    assert df["estado"].isin(["entregado", "cancelado", "en_camino"]).all(), "Estado inválido"
+    assert df["minutos_entrega"].between(1, 180).all(), "Minutos fuera de rango"
+    assert df["categoria"].notna().all(), "Categoría sin asignar"
+    print("Esquema válido:", df.shape[0], "filas listas para cargar")
+    return True'>
+          <div class="code-head"><span class="fname"><span class="lang">python</span> clase1_etl.ipynb</span><button class="copy-btn">Copiar</button></div>
+          <pre><code><span class="tok-kw">def</span> <span class="tok-fn">validar_esquema</span>(df):
+    <span class="tok-kw">assert</span> df[<span class="tok-str">"estado"</span>].<span class="tok-fn">isin</span>([<span class="tok-str">"entregado"</span>, <span class="tok-str">"cancelado"</span>, <span class="tok-str">"en_camino"</span>]).<span class="tok-fn">all</span>(), <span class="tok-str">"Estado inválido"</span>
+    <span class="tok-kw">assert</span> df[<span class="tok-str">"minutos_entrega"</span>].<span class="tok-fn">between</span>(<span class="tok-num">1</span>, <span class="tok-num">180</span>).<span class="tok-fn">all</span>(), <span class="tok-str">"Minutos fuera de rango"</span>
+    <span class="tok-kw">assert</span> df[<span class="tok-str">"categoria"</span>].<span class="tok-fn">notna</span>().<span class="tok-fn">all</span>(), <span class="tok-str">"Categoría sin asignar"</span>
+    <span class="tok-fn">print</span>(<span class="tok-str">"Esquema válido:"</span>, df.shape[<span class="tok-num">0</span>], <span class="tok-str">"filas listas para cargar"</span>)
+    <span class="tok-kw">return</span> <span class="tok-kw">True</span></code></pre>
+        </div>
+        <div class="think">
+          <div class="q"><span class="qi">🤔</span><span class="qt">¿Por qué assert y no un print de advertencia?</span></div>
+          <details class="reveal">
+            <summary><span class="arrow">▸</span> Ver la respuesta</summary>
+            <div class="ans-body"><span class="inline-code">assert</span> detiene el pipeline si algo falla. Un <span class="inline-code">print</span> se ignora y los datos malos siguen de largo. El assert es el guardia que no deja pasar basura.</div>
+          </details>
+        </div>
+        <div class="out"><div class="out-head">Resultado</div><div style="padding:12px 16px;font-family:var(--mono);font-size:13px;color:var(--green)">Esquema válido: 1197 filas listas para cargar</div></div>
+      </section>
+
+      <!-- BLOQUE 11 — RETO -->
+      <section id="s11">
+        <div class="sec-head">
+          <div class="sec-badge">🧪</div>
+          <div class="htext"><div class="kicker">Ejercicio integrador</div><h3>Tu reto: arma el pipeline completo</h3><div class="time">Junta todo en una sola función</div></div>
+        </div>
+        <div class="card">
+          <p class="lead">Vuelve al gerente: "¿qué categoría nueva lanzo en Colombia?" Respóndele con el dato en la mano.</p>
+          <p><b>Ensambla el pipeline completo</b> en <span class="inline-code">run_etl(ruta)</span> que: (1) traiga el menú mundial, (2) los pedidos, (3) limpie y cruce con <span class="inline-code">transform()</span>, (4) muestre la tendencia (top 3 con %), (5) liste las categorías ausentes y marque la apuesta segura, (6) valide con <span class="inline-code">validar_esquema()</span>.</p>
+        </div>
+
+        <h4 style="font-size:15px;font-weight:700;color:#fff;margin:6px 0 8px">Criterios de aceptación</h4>
+        <ul class="checklist">
+          <li>Corre de principio a fin sin errores.</li>
+          <li>Imprime el top 3 de lo que pide Colombia con porcentaje.</li>
+          <li>Imprime las categorías que existen en el mundo pero Colombia no ofrece.</li>
+          <li>Señala al menos una apuesta segura y una arriesgada, con su justificación numérica.</li>
+          <li><span class="inline-code">validar_esquema</span> confirma el esquema.</li>
+        </ul>
+
+        <div class="think" style="margin-top:18px">
+          <div class="q"><span class="qi">💡</span><span class="qt">¿Te bloqueaste con la estructura? Intenta resolverlo tú primero; aquí tienes una guía si la necesitas.</span></div>
+          <details class="reveal">
+            <summary><span class="arrow">▸</span> Ver una estructura de referencia</summary>
+            <div class="ans-body" style="padding:0">
+              <div class="code" data-code='def run_etl(ruta):
+    menu = extract_menu_mundial()
+    pedidos = extract_pedidos(ruta)
+    catalogo = pd.read_csv("catalogo_platos.csv")
+    final = transform(pedidos, catalogo)
+    top = (final["categoria"].value_counts(normalize=True) * 100).round(1).head(3)
+    print("Colombia pide (top 3):"); print(top)
+    ausentes = set(menu["strCategory"]) - set(final["categoria"])
+    print("Ausentes (candidatas):", sorted(ausentes))
+    validar_esquema(final)
+    return final' style="margin:0;border-radius:0;border:none">
+                <div class="code-head"><span class="fname"><span class="lang">python</span> clase1_etl.ipynb · run_etl</span><button class="copy-btn">Copiar</button></div>
+                <pre><code><span class="tok-kw">def</span> <span class="tok-fn">run_etl</span>(ruta):
+    menu = <span class="tok-fn">extract_menu_mundial</span>()
+    pedidos = <span class="tok-fn">extract_pedidos</span>(ruta)
+    catalogo = pd.<span class="tok-fn">read_csv</span>(<span class="tok-str">"catalogo_platos.csv"</span>)
+    final = <span class="tok-fn">transform</span>(pedidos, catalogo)
+    top = (final[<span class="tok-str">"categoria"</span>].<span class="tok-fn">value_counts</span>(normalize=<span class="tok-kw">True</span>) * <span class="tok-num">100</span>).<span class="tok-fn">round</span>(<span class="tok-num">1</span>).<span class="tok-fn">head</span>(<span class="tok-num">3</span>)
+    <span class="tok-fn">print</span>(<span class="tok-str">"Colombia pide (top 3):"</span>); <span class="tok-fn">print</span>(top)
+    ausentes = <span class="tok-bi">set</span>(menu[<span class="tok-str">"strCategory"</span>]) - <span class="tok-bi">set</span>(final[<span class="tok-str">"categoria"</span>])
+    <span class="tok-fn">print</span>(<span class="tok-str">"Ausentes (candidatas):"</span>, <span class="tok-bi">sorted</span>(ausentes))
+    <span class="tok-fn">validar_esquema</span>(final)
+    <span class="tok-kw">return</span> final</code></pre>
+              </div>
+            </div>
+          </details>
+        </div>
+
+        <h4 style="font-size:15px;font-weight:700;color:#fff;margin:22px 0 8px">Prepárate para explicar en voz alta</h4>
+        <div class="card" style="margin-bottom:12px">
+          <div class="obj"><span class="oi">1</span><div>¿Por qué el primer cruce perdió 96 pedidos sin dar error? ¿Qué tenía el dato y cómo se arregló?</div></div>
+          <div class="obj"><span class="oi">2</span><div>¿Por qué limpiar el estado no era cosmético? ¿Qué número cambió y cuánto?</div></div>
+          <div class="obj"><span class="oi">3</span><div>¿Por qué Pork es apuesta más segura que Vegan? Defiéndelo con un porcentaje.</div></div>
+          <div class="obj"><span class="oi">4</span><div>El archivo crece a 50 GB. ¿<span class="inline-code">chunksize</span> basta? ¿Qué necesitarías cuando ni eso alcance?</div></div>
+        </div>
+      </section>
+
+      <!-- BLOQUE 12 -->
+      <section id="s12">
+        <div class="sec-head">
+          <div class="sec-badge">🌉</div>
+          <div class="htext"><div class="kicker">Cierre</div><h3>Lo que queda pendiente</h3><div class="time">Hacia la Clase 2</div></div>
+        </div>
+        <div class="card">
+          <p>En esta clase no trajimos datos por traerlos. Le respondimos al gerente con una recomendación defendible: vimos qué existe en el mundo, descubrimos que Colombia es <b>72.8% proteína</b>, atrapamos dos mentiras del dato sucio, y cruzamos todo para señalar <b>Pork</b> como la apuesta más alineada.</p>
+          <p>Pero esa tabla final vive solo en memoria. Si cierras el notebook, desaparece. La <b>"L" de Load</b> —guardarla de verdad— quedó pendiente.</p>
+        </div>
+        <div class="think">
+          <div class="q"><span class="qi">🤔</span><span class="qt">Para pensar hasta la próxima clase: ¿dónde guardamos esta tabla y este historial para que sobrevivan y se consulten después? ¿Un archivo basta, o necesitamos una base de datos?</span></div>
+          <details class="reveal">
+            <summary><span class="arrow">▸</span> Ver hacia dónde vamos</summary>
+            <div class="ans-body">Persistencia con SQLAlchemy (SQL) y MongoDB (NoSQL) — la "L" de Load de verdad. Esa es la Clase 2.</div>
+          </details>
+        </div>
+      </section>
+
+    </div>
+
+    <footer>
+      © 2026 Ana Alvarado · Educadora Tech &amp; Desarrolladora Full Stack · <a href="https://linkedin.com/in/ana-alvarado-instructora-full-stack" target="_blank" rel="noopener">linkedin.com/in/ana-alvarado-instructora-full-stack</a>
+    </footer>
+  </div>
+</div>
+
+<div class="present-bar" id="presentBar">
+  <div class="pinfo">Diapositiva <b id="slideNow">1</b> / <span id="slideTotal">14</span></div>
+  <div class="pdots" id="pdots"></div>
+  <div class="pnav">
+    <button class="btn" id="prevSlide">← Anterior</button>
+    <button class="btn" id="nextSlide">Siguiente →</button>
+    <button class="btn primary" id="exitPresent">Salir <kbd>Esc</kbd></button>
+  </div>
+</div>
+
+<script>
+(function(){
+  const sections = [
+    {id:'s-obj', ico:'🎯', num:'··', label:'Qué vas a lograr'},
+    {id:'s0',  ico:'🌉', num:'00', label:'El problema'},
+    {id:'s1',  ico:'🧩', num:'01', label:'Pipeline ETL'},
+    {id:'s2',  ico:'🔌', num:'02', label:'¿Qué es una API?'},
+    {id:'s3',  ico:'💻', num:'03', label:'Extract API'},
+    {id:'s4',  ico:'🌍', num:'04', label:'Analizar la API'},
+    {id:'s5',  ico:'🗄️', num:'05', label:'Archivos masivos'},
+    {id:'s6',  ico:'🕳️', num:'06', label:'Extract + 1ª mentira'},
+    {id:'s7',  ico:'🧼', num:'07', label:'Transform'},
+    {id:'s8',  ico:'📊', num:'08', label:'Tendencia Colombia'},
+    {id:'s9',  ico:'🏆', num:'09', label:'La pregunta de oro'},
+    {id:'s10', ico:'📋', num:'10', label:'Validar esquema'},
+    {id:'s11', ico:'🧪', num:'11', label:'Tu reto'},
+    {id:'s12', ico:'🌉', num:'12', label:'Cierre'},
+  ];
+  const STORE='etl_seen_v2';
+
+  const nav=document.getElementById('nav');
+  sections.forEach(s=>{
+    const a=document.createElement('a');
+    a.href='#'+s.id; a.dataset.id=s.id;
+    a.innerHTML=`<span class="num">${s.num}</span><span class="ico">${s.ico}</span><span>${s.label}</span><span class="check">✓</span>`;
+    nav.appendChild(a);
+  });
+  const navLinks=[...nav.querySelectorAll('a')];
+
+  let seen=new Set();
+  try{seen=new Set(JSON.parse(localStorage.getItem(STORE)||'[]'));}catch(e){}
+  function save(){try{localStorage.setItem(STORE,JSON.stringify([...seen]));}catch(e){}}
+  function markSeen(id){if(!seen.has(id)){seen.add(id);save();}updateProgress();}
+  function updateProgress(){
+    const total=sections.length;
+    const pct=Math.round(seen.size/total*100);
+    document.getElementById('progFill').style.width=pct+'%';
+    document.getElementById('progPct').textContent=pct+'%';
+    navLinks.forEach(a=>a.classList.toggle('seen',seen.has(a.dataset.id)));
+  }
+  updateProgress();
+  document.getElementById('resetBtn').addEventListener('click',()=>{seen=new Set();save();updateProgress();});
+
+  const secEls=sections.map(s=>document.getElementById(s.id));
+  const obs=new IntersectionObserver(entries=>{
+    entries.forEach(en=>{
+      if(en.isIntersecting){
+        const id=en.target.id;
+        navLinks.forEach(a=>a.classList.toggle('active',a.dataset.id===id));
+        markSeen(id);
+      }
+    });
+  },{rootMargin:'-45% 0px -45% 0px',threshold:0});
+  secEls.forEach(el=>obs.observe(el));
+
+  const barObs=new IntersectionObserver(entries=>{
+    entries.forEach(en=>{
+      if(en.isIntersecting){en.target.querySelectorAll('.fill[data-w]').forEach(f=>{f.style.width=f.dataset.w+'%';});}
+    });
+  },{threshold:.3});
+  document.querySelectorAll('.infog').forEach(i=>barObs.observe(i));
+
+  document.querySelectorAll('.code').forEach(block=>{
+    const btn=block.querySelector('.copy-btn');
+    if(!btn)return;
+    btn.addEventListener('click',e=>{
+      e.preventDefault();e.stopPropagation();
+      const code=block.dataset.code||'';
+      navigator.clipboard.writeText(code).then(()=>{
+        btn.textContent='✓ Copiado';btn.classList.add('ok');
+        setTimeout(()=>{btn.textContent='Copiar';btn.classList.remove('ok');},1600);
+      });
+    });
+  });
+
+  const sidebar=document.getElementById('sidebar');
+  const scrim=document.getElementById('scrim');
+  function closeMenu(){sidebar.classList.remove('open');scrim.classList.remove('show');}
+  document.getElementById('menuBtn').addEventListener('click',()=>{sidebar.classList.toggle('open');scrim.classList.toggle('show');});
+  scrim.addEventListener('click',closeMenu);
+  navLinks.forEach(a=>a.addEventListener('click',()=>{if(window.innerWidth<=980)closeMenu();}));
+
+  // PRESENTATION
+  const slideIds=['__hero__',...sections.map(s=>s.id)];
+  const totalSlides=slideIds.length;
+  document.getElementById('slideTotal').textContent=totalSlides;
+  let cur=0, presenting=false;
+
+  const pdots=document.getElementById('pdots');
+  slideIds.forEach((id,i)=>{
+    const d=document.createElement('div');
+    d.className='pdot';d.dataset.i=i;
+    d.addEventListener('click',()=>goTo(i));
+    pdots.appendChild(d);
+  });
+  const dotEls=[...pdots.children];
+
+  function showSlide(i){
+    const id=slideIds[i];
+    document.body.classList.toggle('hero-slide', id==='__hero__');
+    secEls.forEach(el=>el.classList.remove('slide-active'));
+    if(id!=='__hero__'){
+      const el=document.getElementById(id);
+      el.classList.add('slide-active');
+      markSeen(id);
+    }
+    document.querySelector('.content').scrollTo(0,0);
+    window.scrollTo(0,0);
+    document.getElementById('slideNow').textContent=i+1;
+    dotEls.forEach((d,k)=>d.classList.toggle('on',k===i));
+    document.querySelectorAll('.slide-active .fill[data-w]').forEach(f=>{f.style.width=f.dataset.w+'%';});
+  }
+  function goTo(i){cur=Math.max(0,Math.min(totalSlides-1,i));showSlide(cur);}
+  function next(){if(cur<totalSlides-1)goTo(cur+1);}
+  function prev(){if(cur>0)goTo(cur-1);}
+
+  function enterPresent(){
+    presenting=true;
+    document.body.classList.add('present');
+    if(document.documentElement.requestFullscreen){document.documentElement.requestFullscreen().catch(()=>{});}
+    goTo(cur);
+  }
+  function exitPresent(){
+    presenting=false;
+    document.body.classList.remove('present','hero-slide');
+    secEls.forEach(el=>el.classList.remove('slide-active'));
+    if(document.fullscreenElement){document.exitFullscreen().catch(()=>{});}
+  }
+
+  document.getElementById('presentBtn').addEventListener('click',enterPresent);
+  document.getElementById('exitPresent').addEventListener('click',exitPresent);
+  document.getElementById('nextSlide').addEventListener('click',next);
+  document.getElementById('prevSlide').addEventListener('click',prev);
+
+  document.addEventListener('keydown',e=>{
+    const typing=/INPUT|TEXTAREA/.test(document.activeElement.tagName);
+    if((e.key==='p'||e.key==='P') && !presenting && !typing){e.preventDefault();enterPresent();return;}
+    if(!presenting)return;
+    if(e.key==='ArrowRight'||e.key==='ArrowDown'||e.key===' '){e.preventDefault();next();}
+    else if(e.key==='ArrowLeft'||e.key==='ArrowUp'){e.preventDefault();prev();}
+    else if(e.key==='Escape'){exitPresent();}
+    else if(e.key==='Home'){goTo(0);}
+    else if(e.key==='End'){goTo(totalSlides-1);}
+  });
+  document.addEventListener('fullscreenchange',()=>{if(!document.fullscreenElement && presenting){exitPresent();}});
+})();
+</script>
+</body>
+</html>

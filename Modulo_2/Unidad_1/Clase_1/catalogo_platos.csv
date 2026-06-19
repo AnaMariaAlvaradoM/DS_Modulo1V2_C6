@@ -1,0 +1,17 @@
+id_plato,nombre_plato,categoria
+P0101,Bandeja Beef,Beef
+P0102,Lomo Saltado,Beef
+P0103,Hamburguesa Res,Beef
+P0201,Pollo Asado,Chicken
+P0202,Alitas BBQ,Chicken
+P0203,Pollo Broaster,Chicken
+P0204,Sancocho Pollo,Chicken
+P0301,Cazuela Mariscos,Seafood
+P0302,Ceviche,Seafood
+P0401,Pasta Alfredo,Pasta
+P0402,Lasagna,Pasta
+P0501,Cordero Asado,Lamb
+P0601,Papas Fritas,Side
+P0602,Arepa,Side
+P0701,Tres Leches,Dessert
+P0801,Bowl Vegetariano,Vegetarian
