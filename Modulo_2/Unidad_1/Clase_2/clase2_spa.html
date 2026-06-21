@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clase 2 — Persistencia y Bases de Datos · Máster IA Dev Senior</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0c0a1a;
+  --bg-2:#12102a;
+  --card:#181434;
+  --card-2:#1f1a42;
+  --line:#2c2557;
+  --purple:#6018F0;
+  --purple-2:#7C3DFF;
+  --purple-deep:#3C1884;
+  --purple-soft:#5418CC;
+  --cyan:#38D9F5;
+  --text:#EDEBFA;
+  --text-dim:#A39FD0;
+  --text-faint:#6E6A9A;
+  --good:#4ADE80;
+  --warn:#FBBF24;
+  --code-bg:#0a0818;
+  --radius:16px;
+  --sidebar-w:260px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Inter',system-ui,sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+}
+/* ===== Ambient backdrop ===== */
+body::before{
+  content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
+  background:
+    radial-gradient(720px 480px at 78% -8%, rgba(96,24,240,.22), transparent 60%),
+    radial-gradient(620px 420px at 8% 108%, rgba(56,217,245,.10), transparent 60%);
+}
+/* ===== Layout ===== */
+.app{display:flex;min-height:100vh;position:relative;z-index:1}
+.sidebar{
+  width:var(--sidebar-w);flex-shrink:0;position:fixed;top:0;left:0;height:100vh;
+  background:linear-gradient(180deg,var(--bg-2),#0d0b22);
+  border-right:1px solid var(--line);
+  display:flex;flex-direction:column;padding:26px 18px;overflow-y:auto;z-index:30;
+}
+.brand{display:flex;align-items:center;gap:11px;margin-bottom:6px;padding:0 6px}
+.brand-mark{
+  width:40px;height:40px;border-radius:11px;flex-shrink:0;
+  background:linear-gradient(135deg,var(--purple-2),var(--purple-deep));
+  display:grid;place-items:center;font-family:'JetBrains Mono',monospace;
+  font-weight:700;font-size:18px;color:#fff;box-shadow:0 6px 18px rgba(96,24,240,.4);
+}
+.brand-txt b{font-size:14px;font-weight:700;letter-spacing:.2px;display:block;line-height:1.2}
+.brand-txt span{font-size:11px;color:var(--text-faint);letter-spacing:.5px}
+.side-label{
+  font-size:10px;text-transform:uppercase;letter-spacing:1.6px;color:var(--text-faint);
+  margin:26px 8px 10px;font-weight:600;
+}
+.nav{display:flex;flex-direction:column;gap:3px;flex:1}
+.nav a{
+  display:flex;align-items:center;gap:12px;padding:10px 12px;border-radius:11px;
+  color:var(--text-dim);text-decoration:none;font-size:13.5px;font-weight:500;
+  transition:.18s;border:1px solid transparent;position:relative;
+}
+.nav a .ico{width:21px;text-align:center;font-size:15px;flex-shrink:0}
+.nav a .num{
+  margin-left:auto;font-family:'JetBrains Mono',monospace;font-size:10.5px;
+  color:var(--text-faint);background:var(--card);padding:1px 6px;border-radius:6px;
+}
+.nav a:hover{background:var(--card);color:var(--text)}
+.nav a.active{
+  background:linear-gradient(135deg,rgba(96,24,240,.25),rgba(96,24,240,.08));
+  color:#fff;border-color:var(--purple);
+}
+.nav a.active .num{background:var(--purple);color:#fff}
+.side-foot{margin-top:18px;padding:12px 10px 4px;border-top:1px solid var(--line)}
+.side-foot button{
+  width:100%;background:var(--card);border:1px solid var(--line);color:var(--text-dim);
+  padding:9px;border-radius:10px;font-family:'Inter';font-size:12px;font-weight:600;
+  cursor:pointer;transition:.18s;display:flex;align-items:center;justify-content:center;gap:7px;
+}
+.side-foot button:hover{border-color:var(--purple);color:#fff}
+.side-foot kbd{
+  font-family:'JetBrains Mono',monospace;font-size:10px;background:var(--bg);
+  border:1px solid var(--line);border-radius:4px;padding:1px 5px;color:var(--cyan);
+}
+/* ===== Progress bar (top) ===== */
+.progress-wrap{
+  position:fixed;top:0;left:var(--sidebar-w);right:0;height:3px;background:var(--bg-2);z-index:40;
+}
+.progress-bar{height:100%;width:0;background:linear-gradient(90deg,var(--purple-2),var(--cyan));transition:width .25s}
+/* ===== Main ===== */
+.main{margin-left:var(--sidebar-w);flex:1;padding:0;min-width:0}
+.section{
+  max-width:980px;margin:0 auto;padding:64px 48px 40px;
+  border-bottom:1px solid var(--line);
+}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:9px;font-family:'JetBrains Mono',monospace;
+  font-size:11.5px;letter-spacing:1.5px;text-transform:uppercase;color:var(--cyan);
+  background:rgba(56,217,245,.08);border:1px solid rgba(56,217,245,.22);
+  padding:5px 13px;border-radius:30px;margin-bottom:20px;font-weight:500;
+}
+.section h2{
+  font-size:clamp(28px,3.6vw,40px);font-weight:800;letter-spacing:-.8px;line-height:1.12;
+  margin-bottom:14px;
+}
+.section h2 .em{font-size:.85em;margin-right:8px}
+.lede{font-size:17px;color:var(--text-dim);max-width:680px;margin-bottom:30px}
+h3{font-size:19px;font-weight:700;margin:32px 0 12px;letter-spacing:-.3px;display:flex;align-items:center;gap:9px}
+h3 .bar{width:4px;height:19px;border-radius:3px;background:linear-gradient(var(--purple-2),var(--cyan))}
+p{margin-bottom:14px;color:var(--text)}
+.dim{color:var(--text-dim)}
+strong{color:#fff;font-weight:600}
+code.inline{
+  font-family:'JetBrains Mono',monospace;font-size:.86em;background:var(--card-2);
+  border:1px solid var(--line);border-radius:6px;padding:1px 7px;color:var(--cyan);
+}
+/* ===== Hero (section 1) ===== */
+.hero-quote{
+  background:linear-gradient(135deg,var(--card),var(--card-2));
+  border:1px solid var(--line);border-left:4px solid var(--purple);
+  border-radius:var(--radius);padding:26px 28px;margin:8px 0 28px;font-size:18px;
+  font-weight:500;color:#fff;position:relative;
+}
+.hero-quote::before{
+  content:"“";position:absolute;top:-6px;left:14px;font-size:60px;color:var(--purple);
+  opacity:.32;font-family:Georgia,serif;
+}
+.hero-quote .src{display:block;margin-top:10px;font-size:13px;color:var(--text-faint);font-weight:400}
+/* ===== Cards / grid ===== */
+.grid{display:grid;gap:16px;margin:18px 0}
+.g2{grid-template-columns:1fr 1fr}
+.g3{grid-template-columns:repeat(3,1fr)}
+.card{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:20px 22px;transition:.2s;
+}
+.card:hover{border-color:var(--purple);transform:translateY(-2px)}
+.card .ic{font-size:22px;margin-bottom:10px;display:block}
+.card h4{font-size:15px;font-weight:700;margin-bottom:7px}
+.card p{font-size:13.5px;color:var(--text-dim);margin:0}
+/* ===== Definition box ===== */
+.def{
+  background:var(--card-2);border:1px solid var(--line);border-radius:var(--radius);
+  padding:20px 22px;margin:18px 0;
+}
+.def .tag{
+  font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:1px;
+  text-transform:uppercase;color:var(--purple-2);font-weight:700;margin-bottom:8px;display:block;
+}
+.def .tech{font-size:15px;margin-bottom:12px}
+.def .life{
+  font-size:14px;color:var(--text-dim);padding-top:12px;border-top:1px dashed var(--line);
+}
+.def .life b{color:var(--cyan)}
+/* ===== Tip / warn banners ===== */
+.banner{
+  display:flex;gap:13px;align-items:flex-start;border-radius:13px;padding:15px 18px;margin:18px 0;
+  font-size:14px;border:1px solid;
+}
+.banner .bic{font-size:18px;flex-shrink:0;line-height:1.4}
+.banner.tip{background:rgba(96,24,240,.10);border-color:rgba(124,61,255,.35)}
+.banner.warn{background:rgba(251,191,36,.08);border-color:rgba(251,191,36,.3)}
+.banner.warn .bic{color:var(--warn)}
+.banner.key{background:rgba(56,217,245,.07);border-color:rgba(56,217,245,.28)}
+.banner b{color:#fff}
+/* ===== Reflection (ex-socratic) ===== */
+.reflect{
+  background:linear-gradient(135deg,rgba(96,24,240,.12),rgba(56,217,245,.05));
+  border:1px solid var(--purple);border-radius:var(--radius);
+  padding:20px 22px;margin:20px 0;
+}
+.reflect .q{
+  font-size:15.5px;font-weight:600;color:#fff;margin-bottom:14px;display:flex;gap:11px;align-items:flex-start;
+}
+.reflect .q .qm{
+  font-family:'JetBrains Mono',monospace;color:var(--cyan);font-size:15px;flex-shrink:0;font-weight:700;
+}
+.reveal{
+  background:var(--card);border:1px solid var(--line);border-radius:11px;
+  padding:0 18px;cursor:pointer;transition:.2s;overflow:hidden;
+}
+.reveal summary{
+  list-style:none;padding:13px 0;font-size:13.5px;font-weight:600;color:var(--purple-2);
+  display:flex;align-items:center;gap:9px;
+}
+.reveal summary::-webkit-details-marker{display:none}
+.reveal summary .chev{transition:.2s;font-size:11px}
+.reveal[open] summary .chev{transform:rotate(90deg)}
+.reveal .ans{padding:2px 0 16px;font-size:14px;color:var(--text-dim);line-height:1.6}
+.reveal .ans b{color:var(--text)}
+/* ===== Code blocks ===== */
+.code{
+  background:var(--code-bg);border:1px solid var(--line);border-radius:13px;
+  margin:16px 0;overflow:hidden;
+}
+.code-head{
+  display:flex;align-items:center;gap:9px;padding:9px 14px;
+  background:#100d22;border-bottom:1px solid var(--line);
+}
+.code-head .fname{
+  font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--text-dim);
+}
+.code-head .fname b{color:var(--cyan);font-weight:500}
+.code-head .dots{display:flex;gap:6px;margin-right:4px}
+.code-head .dots i{width:11px;height:11px;border-radius:50%;display:block}
+.code-head .dots i:nth-child(1){background:#ff5f57}
+.code-head .dots i:nth-child(2){background:#febc2e}
+.code-head .dots i:nth-child(3){background:#28c840}
+.copy-btn{
+  margin-left:auto;background:var(--card-2);border:1px solid var(--line);color:var(--text-dim);
+  font-family:'Inter';font-size:11.5px;font-weight:600;padding:5px 12px;border-radius:7px;
+  cursor:pointer;transition:.18s;display:flex;align-items:center;gap:6px;
+}
+.copy-btn:hover{border-color:var(--purple);color:#fff}
+.copy-btn.done{color:var(--good);border-color:var(--good)}
+pre{margin:0;padding:16px 18px;overflow-x:auto}
+pre code{font-family:'JetBrains Mono',monospace;font-size:13px;line-height:1.7;color:#d6d3f0}
+/* syntax */
+.t-kw{color:#C792EA}.t-str{color:#C3E88D}.t-num{color:#F78C6C}.t-com{color:#5b5780;font-style:italic}
+.t-fn{color:#82AAFF}.t-cls{color:#FFCB6B}.t-bi{color:#89DDFF}
+/* output box */
+.out{
+  background:#0a1410;border:1px solid #1d3a2b;border-radius:11px;margin:14px 0;
+  font-family:'JetBrains Mono',monospace;
+}
+.out .oh{
+  font-size:10.5px;letter-spacing:1px;text-transform:uppercase;color:var(--good);
+  padding:8px 14px;border-bottom:1px solid #1d3a2b;font-weight:600;
+}
+.out pre{padding:13px 16px}
+.out pre code{color:#a8e6c4;font-size:12.5px}
+/* what did I get */
+.gotit{
+  border-left:3px solid var(--cyan);padding:4px 0 4px 16px;margin:16px 0;
+}
+.gotit .lbl{font-size:12px;font-weight:700;color:var(--cyan);text-transform:uppercase;letter-spacing:.5px;margin-bottom:4px}
+.gotit p{font-size:14px;color:var(--text-dim);margin:0}
+/* ===== Infographics ===== */
+.info-flow{
+  display:flex;align-items:center;justify-content:center;gap:0;flex-wrap:wrap;
+  margin:24px 0;padding:24px;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+}
+.flow-node{
+  text-align:center;padding:16px 20px;border-radius:13px;min-width:120px;
+  background:var(--card-2);border:1px solid var(--line);position:relative;
+}
+.flow-node .fe{font-size:26px;display:block;margin-bottom:6px}
+.flow-node .ft{font-size:13px;font-weight:700;color:#fff}
+.flow-node .fs{font-size:11px;color:var(--text-faint)}
+.flow-node.hot{border-color:var(--purple);background:linear-gradient(135deg,rgba(96,24,240,.2),var(--card-2))}
+.flow-arr{font-size:22px;color:var(--purple-2);padding:0 14px}
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:0;margin:22px 0;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line)}
+.compare-col{padding:22px}
+.compare-col.sql{background:linear-gradient(160deg,rgba(96,24,240,.12),var(--card))}
+.compare-col.nosql{background:linear-gradient(160deg,rgba(56,217,245,.08),var(--card));border-left:1px solid var(--line)}
+.compare-col .ch{font-size:16px;font-weight:800;margin-bottom:4px;display:flex;align-items:center;gap:9px}
+.compare-col .csub{font-size:12px;color:var(--text-faint);margin-bottom:16px;font-family:'JetBrains Mono',monospace}
+.compare-col ul{list-style:none}
+.compare-col li{font-size:13.5px;padding:7px 0;border-bottom:1px dashed var(--line);color:var(--text-dim);display:flex;gap:9px}
+.compare-col li:last-child{border:none}
+.compare-col li::before{content:"▸";color:var(--purple-2)}
+.compare-col.nosql li::before{color:var(--cyan)}
+/* hierarchy infographic */
+.hier{display:flex;flex-direction:column;gap:10px;margin:20px 0}
+.hier-row{display:grid;grid-template-columns:1fr 24px 1fr;align-items:center;gap:12px}
+.hier-box{padding:12px 16px;border-radius:11px;font-size:13.5px;display:flex;align-items:center;gap:10px}
+.hier-box.mongo{background:rgba(56,217,245,.08);border:1px solid rgba(56,217,245,.3)}
+.hier-box.sql{background:rgba(96,24,240,.12);border:1px solid var(--purple)}
+.hier-box b{font-weight:700;color:#fff}
+.hier-box .he{font-size:18px}
+.hier-eq{text-align:center;color:var(--text-faint);font-family:'JetBrains Mono',monospace;font-size:13px}
+/* roles infographic */
+.roles{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin:22px 0;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+.role{padding:22px 18px;text-align:center;position:relative}
+.role:not(:last-child){border-right:1px solid var(--line)}
+.role .rn{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--text-faint);margin-bottom:8px}
+.role .re{font-size:30px;margin-bottom:10px;display:block}
+.role .rt{font-size:14px;font-weight:700;margin-bottom:6px}
+.role .rd{font-size:12px;color:var(--text-dim);line-height:1.5}
+.role.us{background:linear-gradient(160deg,rgba(96,24,240,.18),transparent)}
+.role.us::after{content:"AQUÍ ESTAMOS";position:absolute;top:8px;right:8px;font-size:8.5px;font-weight:700;letter-spacing:.5px;color:var(--cyan);background:rgba(56,217,245,.12);padding:2px 7px;border-radius:20px;border:1px solid rgba(56,217,245,.3)}
+/* stat strip */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:13px;margin:22px 0}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:13px;padding:18px 16px;text-align:center}
+.stat .sv{font-family:'JetBrains Mono',monospace;font-size:26px;font-weight:700;color:var(--cyan);line-height:1}
+.stat .sl{font-size:11.5px;color:var(--text-dim);margin-top:7px}
+/* CRUD legend */
+.crud{display:grid;grid-template-columns:repeat(4,1fr);gap:11px;margin:18px 0}
+.crud-c{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:15px;text-align:center}
+.crud-c .cl{font-family:'JetBrains Mono',monospace;font-size:20px;font-weight:700;color:var(--purple-2)}
+.crud-c .ct{font-size:12.5px;font-weight:700;margin-top:5px}
+.crud-c .cd{font-size:11px;color:var(--text-faint);margin-top:2px}
+/* dependency map */
+.depmap{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:24px;margin:22px 0}
+.depmap-plano{text-align:center;margin-bottom:8px}
+.dep-pill{display:inline-flex;align-items:center;gap:8px;background:linear-gradient(135deg,var(--purple-2),var(--purple-deep));color:#fff;padding:11px 20px;border-radius:12px;font-family:'JetBrains Mono',monospace;font-size:13px;font-weight:600;box-shadow:0 6px 20px rgba(96,24,240,.35)}
+.dep-branches{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin-top:18px}
+.dep-line{text-align:center;color:var(--purple-2);font-size:20px;margin:6px 0}
+.dep-child{background:var(--card-2);border:1px solid var(--line);border-radius:10px;padding:11px 14px;font-family:'JetBrains Mono',monospace;font-size:11.5px;color:var(--text-dim);text-align:center;min-width:130px}
+.dep-child b{display:block;color:var(--cyan);font-size:12px;margin-bottom:3px}
+/* footer */
+.foot{max-width:980px;margin:0 auto;padding:30px 48px 60px;text-align:center;color:var(--text-faint);font-size:12.5px}
+.foot a{color:var(--purple-2);text-decoration:none}
+.foot a:hover{text-decoration:underline}
+/* ===== Presentation mode ===== */
+body.present .sidebar,body.present .progress-wrap{display:none}
+body.present .main{margin-left:0}
+body.present .section{
+  display:none;min-height:100vh;max-width:1180px;padding:70px 70px;
+  align-content:center;flex-direction:column;justify-content:center;
+}
+body.present .section.show{display:flex}
+body.present .foot{display:none}
+.present-hud{
+  display:none;position:fixed;bottom:20px;right:24px;z-index:60;
+  background:var(--card);border:1px solid var(--purple);border-radius:30px;
+  padding:8px 16px;font-size:12px;color:var(--text-dim);align-items:center;gap:12px;
+  font-family:'JetBrains Mono',monospace;
+}
+body.present .present-hud{display:flex}
+.present-hud .pdot{color:var(--cyan);font-weight:700}
+.present-hud kbd{background:var(--bg);border:1px solid var(--line);border-radius:4px;padding:1px 6px;font-size:10px}
+.present-exit{cursor:pointer;color:var(--warn)}
+/* mobile menu toggle */
+.menu-btn{
+  display:none;position:fixed;top:14px;left:14px;z-index:50;
+  background:var(--card);border:1px solid var(--purple);color:#fff;
+  width:42px;height:42px;border-radius:11px;font-size:18px;cursor:pointer;
+}
+/* ===== Responsive ===== */
+@media(max-width:920px){
+  .g2,.g3,.compare,.roles,.stats,.crud{grid-template-columns:1fr}
+  .roles .role:not(:last-child){border-right:none;border-bottom:1px solid var(--line)}
+  .stats{grid-template-columns:1fr 1fr}
+  .crud{grid-template-columns:1fr 1fr}
+}
+@media(max-width:760px){
+  .sidebar{transform:translateX(-100%);transition:.25s;width:240px}
+  .sidebar.open{transform:translateX(0)}
+  .main{margin-left:0}
+  .progress-wrap{left:0}
+  .menu-btn{display:block}
+  .section{padding:60px 22px 32px}
+  .foot{padding:30px 22px 60px}
+  .info-flow{flex-direction:column}
+  .flow-arr{transform:rotate(90deg)}
+  .hier-row{grid-template-columns:1fr}
+  .hier-eq{display:none}
+}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<button class="menu-btn" onclick="document.querySelector('.sidebar').classList.toggle('open')">☰</button>
+
+<div class="progress-wrap"><div class="progress-bar" id="prog"></div></div>
+
+<div class="app">
+  <!-- ===== SIDEBAR ===== -->
+  <aside class="sidebar">
+    <div class="brand">
+      <div class="brand-mark">DB</div>
+      <div class="brand-txt">
+        <b>Persistencia</b>
+        <span>Máster IA · Clase 2</span>
+      </div>
+    </div>
+    <div class="side-label">Contenido</div>
+    <nav class="nav" id="nav">
+      <a href="#s1" class="active"><span class="ico">🎯</span> El problema <span class="num">01</span></a>
+      <a href="#s2"><span class="ico">🔧</span> SQLAlchemy y el ORM <span class="num">02</span></a>
+      <a href="#s3"><span class="ico">📐</span> El plano de la base <span class="num">03</span></a>
+      <a href="#s4"><span class="ico">🤖</span> ¿De dónde sale el modelo? <span class="num">04</span></a>
+      <a href="#s5"><span class="ico">💾</span> Guardar y auditar <span class="num">05</span></a>
+      <a href="#s6"><span class="ico">🍃</span> NoSQL con MongoDB <span class="num">06</span></a>
+      <a href="#s7"><span class="ico">🧩</span> La foto completa <span class="num">07</span></a>
+    </nav>
+    <div class="side-foot">
+      <button onclick="enterPresent()">▶ Modo presentación <kbd>P</kbd></button>
+    </div>
+  </aside>
+
+  <!-- ===== MAIN ===== -->
+  <main class="main" id="main">
+
+    <!-- ===== SECTION 1 ===== -->
+    <section class="section show" id="s1" data-title="El problema">
+      <span class="eyebrow">● Ingeniería de Datos · ETL</span>
+      <h2><span class="em">🎯</span>Del notebook a producción</h2>
+      <p class="lede">La clase pasada construimos un pipeline ETL completo para Rappi: extraer, limpiar, cruzar tablas, llegar a 1.197 filas limpias. Hoy resolvemos una pregunta incómoda: <strong>¿dónde quedó todo ese trabajo?</strong></p>
+
+      <div class="hero-quote">
+        Limpiamos 1.197 filas, cruzamos datos, debatimos qué categoría lanzar… y todo eso vive en una variable que muere al cerrar el programa.
+        <span class="src">El ETL de la clase 1 hizo la <b style="color:var(--cyan)">E</b>xtracción y la <b style="color:var(--cyan)">T</b>ransformación. Hoy completamos la <b style="color:var(--cyan)">L</b>oad: cargar y guardar de verdad.</span>
+      </div>
+
+      <h3><span class="bar"></span>¿Qué es persistencia?</h3>
+      <div class="def">
+        <span class="tag">Definición técnica</span>
+        <p class="tech">La <strong>persistencia</strong> es la capacidad de que un dato <strong>sobreviva</strong> al cierre del programa que lo creó. Un dato persistente sigue existiendo aunque apagues el computador.</p>
+        <p class="life">🌎 <b>En la vida real:</b> escribir en un cuaderno (persistente) vs. recordar algo solo de memoria (volátil). Si te golpeas la cabeza, pierdes la memoria; el cuaderno sigue ahí. La RAM es la memoria; la base de datos es el cuaderno.</p>
+      </div>
+
+      <h3><span class="bar"></span>¿Por qué un CSV no alcanza?</h3>
+      <div class="grid g2">
+        <div class="card"><span class="ic">🔍</span><h4>No sabe buscar</h4><p>Para filtrar tienes que cargar todo el archivo a memoria. Una base busca al instante.</p></div>
+        <div class="card"><span class="ic">👥</span><h4>No controla accesos</h4><p>¿Qué pasa si dos procesos escriben al mismo tiempo? El CSV se corrompe.</p></div>
+        <div class="card"><span class="ic">🛡️</span><h4>No garantiza integridad</h4><p>Puedes escribir basura sin que nadie reclame. La base valida tipos y reglas.</p></div>
+        <div class="card"><span class="ic">📈</span><h4>No escala</h4><p>Un CSV nuevo cada día es inmanejable. ¿Cómo cuentas las cancelaciones de marzo?</p></div>
+      </div>
+
+      <h3><span class="bar"></span>Dos familias de bases de datos</h3>
+      <div class="compare">
+        <div class="compare-col sql">
+          <div class="ch">🗄️ SQL</div>
+          <div class="csub">relacional</div>
+          <ul>
+            <li>Tablas con filas y columnas fijas</li>
+            <li>Esquema rígido: defines las columnas antes</li>
+            <li>PostgreSQL · MySQL · SQLite</li>
+            <li>Ideal para datos uniformes que se auditan</li>
+          </ul>
+        </div>
+        <div class="compare-col nosql">
+          <div class="ch">🍃 NoSQL</div>
+          <div class="csub">documental</div>
+          <ul>
+            <li>Documentos flexibles tipo JSON</li>
+            <li>Esquema flexible: cada documento puede variar</li>
+            <li>MongoDB</li>
+            <li>Ideal para datos variables o no estructurados</li>
+          </ul>
+        </div>
+      </div>
+      <div class="banner key"><span class="bic">🔑</span><div>Hoy usamos <b>una de cada familia</b>, porque cada parte de Rappi pide una distinta. Las predicciones van en SQL; los metadatos de los modelos, en NoSQL.</div></div>
+
+      <div class="reflect">
+        <div class="q"><span class="qm">?</span><span>Tienes las predicciones de un modelo que corre todos los días sobre miles de pedidos nuevos. ¿Por qué no las guardas simplemente con <code class="inline">df.to_csv()</code>?</span></div>
+        <details class="reveal"><summary><span class="chev">▶</span> Ver respuesta</summary>
+          <div class="ans">Porque un CSV no busca, no controla accesos simultáneos, no valida integridad y no escala. Necesitas una herramienta hecha para <b>guardar, consultar y auditar</b> a escala: una base de datos.</div>
+        </details>
+      </div>
+    </section>
+
+    <!-- ===== SECTION 2 ===== -->
+    <section class="section" id="s2" data-title="SQLAlchemy y el ORM">
+      <span class="eyebrow">● Herramienta · SQL</span>
+      <h2><span class="em">🔧</span>SQLAlchemy y el ORM</h2>
+      <p class="lede">Antes de tocar la base, entendamos con qué le vamos a hablar. Escribir SQL crudo pegando strings dentro de Python es peligroso. Aquí entra el ORM.</p>
+
+      <h3><span class="bar"></span>El problema de escribir SQL a mano</h3>
+      <p class="dim">Para hablar con una base SQL, podríamos armar el comando como un texto gigante, concatenando variables a mano: <code class="inline">"INSERT INTO predicciones VALUES (" + valor + ")"</code>. Eso trae tres riesgos serios:</p>
+      <div class="grid g3">
+        <div class="card"><span class="ic">💉</span><h4>Inyección SQL</h4><p>Una vulnerabilidad de seguridad clásica: alguien mete código malicioso por una variable.</p></div>
+        <div class="card"><span class="ic">🐛</span><h4>Errores tardíos</h4><p>Los fallos de sintaxis solo aparecen al ejecutar, no al escribir.</p></div>
+        <div class="card"><span class="ic">🔄</span><h4>Amarrado al motor</h4><p>Si cambias de SQLite a PostgreSQL, reescribes todo el SQL.</p></div>
+      </div>
+
+      <h3><span class="bar"></span>¿Qué es un ORM?</h3>
+      <div class="def">
+        <span class="tag">Definición técnica</span>
+        <p class="tech"><strong>ORM</strong> = <em>Object-Relational Mapping</em> (Mapeo Objeto-Relacional). Es una herramienta que <strong>traduce</strong> entre objetos de Python (clases) y tablas de la base de datos. Trabajas con clases y objetos; el ORM genera el SQL por ti.</p>
+        <p class="life">🌎 <b>En la vida real:</b> un traductor en una reunión. Tú hablas español (Python), el otro habla inglés (SQL). No aprendes inglés; el traductor convierte en ambas direcciones. <b>SQLAlchemy es ese traductor.</b></p>
+      </div>
+
+      <h3><span class="bar"></span>¿Por qué SQLAlchemy?</h3>
+      <p>Es el <strong>estándar de la industria</strong> en Python para ORM. Funciona con SQLite, PostgreSQL, MySQL y más, <strong>con el mismo código</strong>. Hoy usamos SQLite por debajo (no requiere instalar un servidor), pero el código sirve igual en producción con PostgreSQL: solo cambia una línea de conexión.</p>
+
+      <div class="code">
+        <div class="code-head"><span class="dots"><i></i><i></i><i></i></span><span class="fname">terminal · entorno <b>master-ia</b></span>
+          <button class="copy-btn" onclick="copyCode(this)">⧉ Copiar</button></div>
+        <pre><code>pip install sqlalchemy</code></pre>
+      </div>
+      <div class="banner warn"><span class="bic">⚠️</span><div>Cuidado con el nombre: es <b>sqlalchemy</b> (s-q-l), no "sqalchemy". Un typo da el error <code class="inline">No matching distribution found</code>. La versión esperada es <b>2.0.x</b> (usamos la sintaxis moderna 2.0).</div></div>
+    </section>
+
+    <!-- ===== SECTION 3 ===== -->
+    <section class="section" id="s3" data-title="El plano de la base">
+      <span class="eyebrow">● Archivo 1 · modelos_db.py</span>
+      <h2><span class="em">📐</span>El plano de la base</h2>
+      <p class="lede">Primer archivo: <code class="inline">modelos_db.py</code>. Es el plano de la base de datos. Define cómo es la tabla y cómo conectarse. Todos los demás archivos lo importarán.</p>
+
+      <div class="banner tip"><span class="bic">📁</span><div>Todo el trabajo de hoy vive en una carpeta, por ejemplo <b>rappi_persistencia/</b>. Todos los archivos van dentro de la misma carpeta para que los <code class="inline">import</code> entre ellos funcionen.</div></div>
+
+      <h3><span class="bar"></span>¿Qué necesitamos guardar de cada predicción?</h3>
+      <p class="dim">Para poder auditar después, cada predicción necesita: el id del pedido, la categoría, el valor, la probabilidad que dio el modelo, la predicción final (sí/no), la versión del modelo y la fecha. <strong>Sin versión ni fecha, no hay auditoría posible.</strong> De esa lista nacen las columnas.</p>
+
+      <h3><span class="bar"></span>Parte A — Las importaciones</h3>
+      <div class="code">
+        <div class="code-head"><span class="dots"><i></i><i></i><i></i></span><span class="fname"><b>modelos_db.py</b> · inicio</span>
+          <button class="copy-btn" onclick="copyCode(this)">⧉ Copiar</button></div>
+        <pre><code><span class="t-kw">from</span> datetime <span class="t-kw">import</span> datetime
+<span class="t-kw">from</span> sqlalchemy <span class="t-kw">import</span> String, Integer, Float, Boolean, DateTime, create_engine
+<span class="t-kw">from</span> sqlalchemy.orm <span class="t-kw">import</span> DeclarativeBase, Mapped, mapped_column</code></pre>
+      </div>
+      <div class="gotit"><div class="lbl">Qué hace cada pieza</div><p><code class="inline">create_engine</code> crea la conexión · <code class="inline">DeclarativeBase</code> es la clase raíz de los modelos · <code class="inline">Mapped</code> y <code class="inline">mapped_column</code> son la forma moderna (2.0) de declarar columnas.</p></div>
+
+      <h3><span class="bar"></span>Parte B — La tabla como clase Python</h3>
+      <div class="code">
+        <div class="code-head"><span class="dots"><i></i><i></i><i></i></span><span class="fname"><b>modelos_db.py</b> · a continuación</span>
+          <button class="copy-btn" onclick="copyCode(this)">⧉ Copiar</button></div>
+        <pre><code><span class="t-kw">class</span> <span class="t-cls">Base</span>(DeclarativeBase):
+    <span class="t-kw">pass</span>
+
+
+<span class="t-kw">class</span> <span class="t-cls">PrediccionCancelacion</span>(Base):
+    __tablename__ = <span class="t-str">"predicciones"</span>
+
+    id: Mapped[<span class="t-bi">int</span>] = mapped_column(Integer, primary_key=<span class="t-kw">True</span>, autoincrement=<span class="t-kw">True</span>)
+    id_pedido: Mapped[<span class="t-bi">str</span>] = mapped_column(String(<span class="t-num">20</span>))
+    categoria: Mapped[<span class="t-bi">str</span>] = mapped_column(String(<span class="t-num">50</span>))
+    valor_pedido: Mapped[<span class="t-bi">float</span>] = mapped_column(Float)
+    prob_cancelacion: Mapped[<span class="t-bi">float</span>] = mapped_column(Float)
+    prediccion: Mapped[<span class="t-bi">bool</span>] = mapped_column(Boolean)      <span class="t-com"># True = se cancelará</span>
+    modelo_version: Mapped[<span class="t-bi">str</span>] = mapped_column(String(<span class="t-num">20</span>))
+    creado_en: Mapped[datetime] = mapped_column(DateTime)</code></pre>
+      </div>
+      <div class="gotit"><div class="lbl">¿Y esto qué me dio?</div><p>Una tabla definida <b>sin escribir una sola línea de SQL</b>. La clase <code class="inline">PrediccionCancelacion</code> ES la tabla <code class="inline">predicciones</code>. Cada objeto que crees de esta clase será una fila.</p></div>
+      <div class="banner tip"><span class="bic">🔑</span><div><b>primary_key=True</b> marca la columna que identifica de forma única cada fila (como la cédula). <b>autoincrement=True</b> hace que la base asigne el id sola: 1, 2, 3…</div></div>
+
+      <h3><span class="bar"></span>Parte C — El motor y crear la tabla</h3>
+      <div class="code">
+        <div class="code-head"><span class="dots"><i></i><i></i><i></i></span><span class="fname"><b>modelos_db.py</b> · al final</span>
+          <button class="copy-btn" onclick="copyCode(this)">⧉ Copiar</button></div>
+        <pre><code>engine = create_engine(<span class="t-str">"sqlite:///rappi_produccion.db"</span>, echo=<span class="t-kw">False</span>)
+
+Base.metadata.create_all(engine)
+
+<span class="t-fn">print</span>(<span class="t-str">"[modelos_db.py] Tabla lista en rappi_produccion.db"</span>)</code></pre>
+      </div>
+      <div class="out"><div class="oh">▸ salida en consola</div><pre><code>[modelos_db.py] Tabla lista en rappi_produccion.db</code></pre></div>
+      <div class="gotit"><div class="lbl">¿Y esto qué me dio?</div><p>Aparece un archivo nuevo en la carpeta: <code class="inline">rappi_produccion.db</code>. <b>Ese archivo ES la base de datos</b>, persistente, con la tabla lista para recibir filas. <code class="inline">echo=True</code> te mostraría el SQL que SQLAlchemy genera por debajo.</p></div>
+    </section>
+
+    <!-- ===== SECTION 4 ===== -->
+    <section class="section" id="s4" data-title="¿De dónde sale el modelo?">
+      <span class="eyebrow">● Contexto laboral real</span>
+      <h2><span class="em">🤖</span>¿De dónde sale "el modelo"?</h2>
+      <p class="lede">Antes de seguir con código: ¿quién creó el modelo que predice cancelaciones? ¿De dónde salen esas predicciones que vamos a guardar? En una empresa real, esto está dividido en roles.</p>
+
+      <div class="roles">
+        <div class="role">
+          <div class="rn">ROL 1</div>
+          <span class="re">🧪</span>
+          <div class="rt">Data Scientist</div>
+          <div class="rd">Entrena el modelo con datos históricos. Otra etapa del máster (Módulo 1, Unidad 3).</div>
+        </div>
+        <div class="role">
+          <div class="rn">ROL 2</div>
+          <span class="re">🚀</span>
+          <div class="rt">Modelo en producción</div>
+          <div class="rd">El modelo entrenado (ej. <code class="inline">modelo.pkl</code>) recibe pedidos nuevos y devuelve una probabilidad de cancelación.</div>
+        </div>
+        <div class="role us">
+          <div class="rn">ROL 3</div>
+          <span class="re">🛠️</span>
+          <div class="rt">Data Engineer</div>
+          <div class="rd">No entrena el modelo. Recibe sus predicciones y las persiste de forma ordenada y auditable.</div>
+        </div>
+      </div>
+      <div class="banner key"><span class="bic">🎯</span><div>Hoy somos el <b>Data Engineer</b>. El modelo ya existe y ya predice. Nuestro trabajo es <b>guardar bien</b> lo que el modelo produce. No nos toca entrenarlo.</div></div>
+
+      <h3><span class="bar"></span>¿Por qué simulamos con números aleatorios?</h3>
+      <p>En la práctica no tenemos el modelo real de Rappi conectado. Entonces lo <strong>simulamos</strong>: en vez de llamar al modelo, generamos predicciones de mentira con números aleatorios, para tener datos realistas que persistir. En una empresa, esa parte sería una llamada al modelo real (<code class="inline">modelo.predict(pedido)</code>); aquí la reemplazamos por <code class="inline">random</code> solo para aprender.</p>
+
+      <h3><span class="bar"></span>¿Y la semilla (seed)?</h3>
+      <div class="def">
+        <span class="tag">Para qué sirve</span>
+        <p class="tech">Cuando generas números aleatorios, cada computador daría números distintos. <code class="inline">random.seed(42)</code> fija el punto de partida del generador: <strong>todos obtienen exactamente los mismos números</strong>. Así los resultados son reproducibles y verificables.</p>
+        <p class="life">💡 La semilla <b>no existe en producción</b>: ahí los datos son reales, no generados. Es solo una herramienta de aprendizaje. El número 42 es una convención popular, sin significado técnico.</p>
+      </div>
+
+      <div class="reflect">
+        <div class="q"><span class="qm">?</span><span>Si el modelo ya está entrenado y corriendo en otro lado, ¿por qué nuestro código genera predicciones con <code class="inline">random</code> en vez de usar el modelo real?</span></div>
+        <details class="reveal"><summary><span class="chev">▶</span> Ver respuesta</summary>
+          <div class="ans">Porque en el ejercicio no tenemos el modelo de producción conectado. Lo simulamos para tener datos realistas que guardar y auditar. En la empresa, <code class="inline">random.uniform(0,1)</code> sería reemplazado por la salida real del modelo. Lo que aprendemos —<b>persistir y auditar</b>— es idéntico en ambos casos.</div>
+        </details>
+      </div>
+    </section>
+
+    <!-- ===== SECTION 5 ===== -->
+    <section class="section" id="s5" data-title="Guardar y auditar">
+      <span class="eyebrow">● Archivos 2, 3 y 4</span>
+      <h2><span class="em">💾</span>Guardar, auditar y comprobar</h2>
+      <p class="lede">El corazón de la clase. Generamos 500 predicciones, las guardamos en la base, las consultamos para auditar, y comprobamos que sobreviven al cierre del programa.</p>
+
+      <h3><span class="bar"></span>Generar las predicciones</h3>
+      <div class="code">
+        <div class="code-head"><span class="dots"><i></i><i></i><i></i></span><span class="fname"><b>guardar_predicciones.py</b></span>
+          <button class="copy-btn" onclick="copyCode(this)">⧉ Copiar</button></div>
+        <pre><code><span class="t-kw">import</span> random
+<span class="t-kw">from</span> datetime <span class="t-kw">import</span> datetime
+<span class="t-kw">from</span> sqlalchemy.orm <span class="t-kw">import</span> Session
+<span class="t-kw">from</span> modelos_db <span class="t-kw">import</span> engine, PrediccionCancelacion
+
+random.seed(<span class="t-num">42</span>)
+
+categorias = [<span class="t-str">"Chicken"</span>, <span class="t-str">"Beef"</span>, <span class="t-str">"Side"</span>, <span class="t-str">"Pasta"</span>, <span class="t-str">"Seafood"</span>, <span class="t-str">"Dessert"</span>, <span class="t-str">"Vegetarian"</span>]
+
+predicciones = []
+<span class="t-kw">for</span> i <span class="t-kw">in</span> <span class="t-fn">range</span>(<span class="t-num">500</span>):
+    prob = <span class="t-fn">round</span>(random.uniform(<span class="t-num">0</span>, <span class="t-num">1</span>), <span class="t-num">3</span>)
+    predicciones.append({
+        <span class="t-str">"id_pedido"</span>: <span class="t-str">f"PED{<span class="t-bi">1000</span> + i}"</span>,
+        <span class="t-str">"categoria"</span>: random.choice(categorias),
+        <span class="t-str">"valor_pedido"</span>: <span class="t-fn">round</span>(random.uniform(<span class="t-num">15000</span>, <span class="t-num">95000</span>), <span class="t-num">0</span>),
+        <span class="t-str">"prob_cancelacion"</span>: prob,
+        <span class="t-str">"prediccion"</span>: prob >= <span class="t-num">0.5</span>,
+        <span class="t-str">"modelo_version"</span>: <span class="t-str">"v1.0"</span>,
+    })
+
+<span class="t-fn">print</span>(<span class="t-str">"Predicciones generadas:"</span>, <span class="t-fn">len</span>(predicciones))</code></pre>
+      </div>
+      <div class="banner key"><span class="bic">📌</span><div>La línea <code class="inline">from modelos_db import engine, PrediccionCancelacion</code> es la que <b>conecta los archivos</b>: trae la conexión y la tabla desde el plano. No se redefinen aquí, se reutilizan.</div></div>
+
+      <h3><span class="bar"></span>Guardar con Session</h3>
+      <div class="code">
+        <div class="code-head"><span class="dots"><i></i><i></i><i></i></span><span class="fname"><b>guardar_predicciones.py</b> · al final</span>
+          <button class="copy-btn" onclick="copyCode(this)">⧉ Copiar</button></div>
+        <pre><code>ahora = datetime.now()
+
+<span class="t-kw">with</span> Session(engine) <span class="t-kw">as</span> session:
+    objetos = [PrediccionCancelacion(creado_en=ahora, **p) <span class="t-kw">for</span> p <span class="t-kw">in</span> predicciones]
+    session.add_all(objetos)
+    session.commit()
+    <span class="t-fn">print</span>(<span class="t-str">"Predicciones guardadas y confirmadas:"</span>, <span class="t-fn">len</span>(objetos))</code></pre>
+      </div>
+      <div class="out"><div class="oh">▸ salida en consola</div><pre><code>[modelos_db.py] Tabla lista en rappi_produccion.db
+Predicciones generadas: 500
+Predicciones guardadas y confirmadas: 500</code></pre></div>
+      <div class="gotit"><div class="lbl">¿Cómo se lee?</div><p><code class="inline">Session(engine)</code> abre la sesión de trabajo · <code class="inline">**p</code> desempaqueta cada diccionario en argumentos · <code class="inline">add_all</code> agrega los 500 objetos · <code class="inline">commit()</code> los escribe de verdad en la base.</p></div>
+      <div class="banner warn"><span class="bic">⚠️</span><div>Error silencioso más común: <b>olvidar <code class="inline">session.commit()</code></b>. No sale ningún error, el programa "corre bien"… pero la base queda vacía. Sin commit, nada se guarda.</div></div>
+
+      <h3><span class="bar"></span>Auditar lo guardado</h3>
+      <p class="dim">Auditar es interrogar lo que el modelo predijo. Lo mejor: <strong>no necesitas volver a correr el modelo</strong>, solo consultas la base.</p>
+      <div class="code">
+        <div class="code-head"><span class="dots"><i></i><i></i><i></i></span><span class="fname"><b>auditoria.py</b> · solo lectura</span>
+          <button class="copy-btn" onclick="copyCode(this)">⧉ Copiar</button></div>
+        <pre><code><span class="t-kw">from</span> sqlalchemy <span class="t-kw">import</span> select, func
+<span class="t-kw">from</span> sqlalchemy.orm <span class="t-kw">import</span> Session
+<span class="t-kw">from</span> modelos_db <span class="t-kw">import</span> engine, PrediccionCancelacion
+
+<span class="t-kw">with</span> Session(engine) <span class="t-kw">as</span> session:
+    total = session.scalar(select(func.count()).select_from(PrediccionCancelacion))
+    <span class="t-fn">print</span>(<span class="t-str">"Total de predicciones guardadas:"</span>, total)
+
+    alto = session.scalars(
+        select(PrediccionCancelacion).where(PrediccionCancelacion.prob_cancelacion >= <span class="t-num">0.8</span>)
+    ).all()
+    <span class="t-fn">print</span>(<span class="t-str">"Pedidos de alto riesgo (prob >= 0.8):"</span>, <span class="t-fn">len</span>(alto))
+
+    prom = session.scalar(select(func.avg(PrediccionCancelacion.prob_cancelacion)))
+    <span class="t-fn">print</span>(<span class="t-str">"Probabilidad promedio de cancelación:"</span>, <span class="t-fn">round</span>(prom, <span class="t-num">4</span>))</code></pre>
+      </div>
+      <div class="out"><div class="oh">▸ salida en consola</div><pre><code>Total de predicciones guardadas: 500
+Pedidos de alto riesgo (prob >= 0.8): 92
+Probabilidad promedio de cancelación: 0.4991</code></pre></div>
+
+      <h3><span class="bar"></span>Cancelaciones por categoría</h3>
+      <div class="code">
+        <div class="code-head"><span class="dots"><i></i><i></i><i></i></span><span class="fname"><b>auditoria.py</b> · agrupar y ordenar</span>
+          <button class="copy-btn" onclick="copyCode(this)">⧉ Copiar</button></div>
+        <pre><code><span class="t-kw">with</span> Session(engine) <span class="t-kw">as</span> session:
+    consulta = (
+        select(PrediccionCancelacion.categoria, func.count())
+        .where(PrediccionCancelacion.prediccion == <span class="t-kw">True</span>)
+        .group_by(PrediccionCancelacion.categoria)
+        .order_by(func.count().desc())
+    )
+    <span class="t-fn">print</span>(<span class="t-str">"Cancelaciones predichas por categoría:"</span>)
+    <span class="t-kw">for</span> categoria, cantidad <span class="t-kw">in</span> session.execute(consulta).all():
+        <span class="t-fn">print</span>(<span class="t-str">f"  {categoria}: {cantidad}"</span>)</code></pre>
+      </div>
+      <div class="out"><div class="oh">▸ salida en consola</div><pre><code>Cancelaciones predichas por categoría:
+  Pasta: 48
+  Side: 42
+  Vegetarian: 36
+  Chicken: 35
+  Beef: 31
+  Seafood: 30
+  Dessert: 27</code></pre></div>
+      <div class="banner tip"><span class="bic">💡</span><div><b>Lectura de negocio:</b> Pasta lidera las cancelaciones predichas (48). Operaciones podría revisar tiempos de entrega de esa categoría. El dato guardado se volvió una decisión.</div></div>
+
+      <h3><span class="bar"></span>La prueba de fuego: ¿persisten de verdad?</h3>
+      <p class="dim">Abrimos una conexión nueva desde cero, como si fuéramos otro programa que corre días después.</p>
+      <div class="code">
+        <div class="code-head"><span class="dots"><i></i><i></i><i></i></span><span class="fname"><b>otro_dia.py</b></span>
+          <button class="copy-btn" onclick="copyCode(this)">⧉ Copiar</button></div>
+        <pre><code><span class="t-kw">from</span> sqlalchemy <span class="t-kw">import</span> create_engine, select, func
+<span class="t-kw">from</span> sqlalchemy.orm <span class="t-kw">import</span> Session
+<span class="t-kw">from</span> modelos_db <span class="t-kw">import</span> PrediccionCancelacion
+
+engine_nuevo = create_engine(<span class="t-str">"sqlite:///rappi_produccion.db"</span>)
+
+<span class="t-kw">with</span> Session(engine_nuevo) <span class="t-kw">as</span> session:
+    total = session.scalar(select(func.count()).select_from(PrediccionCancelacion))
+    <span class="t-fn">print</span>(<span class="t-str">"Filas que seguían en la base:"</span>, total)</code></pre>
+      </div>
+      <div class="out"><div class="oh">▸ salida en consola</div><pre><code>Filas que seguían en la base: 500</code></pre></div>
+
+      <div class="stats">
+        <div class="stat"><div class="sv">500</div><div class="sl">predicciones guardadas</div></div>
+        <div class="stat"><div class="sv">92</div><div class="sl">de alto riesgo (≥0.8)</div></div>
+        <div class="stat"><div class="sv">0.4991</div><div class="sl">probabilidad promedio</div></div>
+        <div class="stat"><div class="sv">500</div><div class="sl">sobreviven al cierre</div></div>
+      </div>
+
+      <div class="reflect">
+        <div class="q"><span class="qm">?</span><span>Si hicieras esta misma prueba con un DataFrame en memoria en vez de la base, ¿qué pasaría al reabrir?</span></div>
+        <details class="reveal"><summary><span class="chev">▶</span> Ver respuesta</summary>
+          <div class="ans">Saldría un <b>error</b>: el DataFrame ya no existe, murió al cerrar el programa anterior. Los 500 registros sobrevivieron porque están en disco. <b>Esa es toda la diferencia entre RAM y base de datos: eso es persistencia.</b></div>
+        </details>
+      </div>
+    </section>
+
+    <!-- ===== SECTION 6 ===== -->
+    <section class="section" id="s6" data-title="NoSQL con MongoDB">
+      <span class="eyebrow">● Archivo 5 · MongoDB</span>
+      <h2><span class="em">🍃</span>NoSQL con MongoDB</h2>
+      <p class="lede">Rappi ya no tiene un solo modelo: tiene versiones (v1.0 RandomForest, v2.0 XGBoost…) y cada una con campos distintos. Para guardar esos metadatos irregulares, SQL estorba y NoSQL brilla.</p>
+
+      <h3><span class="bar"></span>El problema que resuelve NoSQL</h3>
+      <p class="dim">Si guardas los metadatos de cada modelo en una tabla SQL rígida, cuando v2.0 trae un campo nuevo (<code class="inline">hiperparametros</code>) que v1.0 no tenía, toca <strong>alterar la tabla</strong> y las filas viejas quedan con esa columna vacía. La estructura fija estorba cuando los datos son irregulares.</p>
+
+      <div class="def">
+        <span class="tag">Definición técnica</span>
+        <p class="tech">Una base <strong>NoSQL documental</strong> guarda <strong>documentos</strong> (estructuras tipo JSON) en lugar de filas. Cada documento puede tener campos distintos. No hay esquema rígido previo.</p>
+        <p class="life">🌎 <b>En la vida real:</b> SQL es un <b>formulario</b> con casillas fijas, todos llenan los mismos campos. MongoDB es una <b>hoja en blanco</b>, cada quien escribe lo que su caso necesita. Para datos uniformes, el formulario; para datos variables, la hoja en blanco.</p>
+      </div>
+
+      <h3><span class="bar"></span>La jerarquía de MongoDB</h3>
+      <div class="hier">
+        <div class="hier-row">
+          <div class="hier-box mongo"><span class="he">🍃</span><div><b>Base de datos</b></div></div>
+          <div class="hier-eq">=</div>
+          <div class="hier-box sql"><span class="he">🗄️</span><div><b>Base de datos</b></div></div>
+        </div>
+        <div class="hier-row">
+          <div class="hier-box mongo"><span class="he">📚</span><div><b>Colección</b></div></div>
+          <div class="hier-eq">=</div>
+          <div class="hier-box sql"><span class="he">📋</span><div><b>Tabla</b></div></div>
+        </div>
+        <div class="hier-row">
+          <div class="hier-box mongo"><span class="he">📄</span><div><b>Documento</b> <span class="dim" style="font-size:11px">(flexible, tipo JSON)</span></div></div>
+          <div class="hier-eq">=</div>
+          <div class="hier-box sql"><span class="he">➖</span><div><b>Fila</b> <span class="dim" style="font-size:11px">(rígida)</span></div></div>
+        </div>
+      </div>
+
+      <h3><span class="bar"></span>¿Por qué Atlas y no instalar MongoDB?</h3>
+      <p><strong>MongoDB Atlas</strong> es MongoDB en la nube, gratis en su capa M0. Evita instalar un servidor en cada máquina. Te conectas con una URI y listo. La preparación (cuenta, cluster M0, usuario, URI) se hace una sola vez.</p>
+      <div class="code">
+        <div class="code-head"><span class="dots"><i></i><i></i><i></i></span><span class="fname"><b>metadatos_modelos.py</b> · conexión</span>
+          <button class="copy-btn" onclick="copyCode(this)">⧉ Copiar</button></div>
+        <pre><code><span class="t-kw">from</span> pymongo <span class="t-kw">import</span> MongoClient
+
+<span class="t-com"># Reemplazar por la URI real de Atlas</span>
+client = MongoClient(<span class="t-str">"mongodb+srv://usuario:clave@cluster.xxxx.mongodb.net"</span>)
+
+db = client[<span class="t-str">"rappi_ml"</span>]          <span class="t-com"># base de datos</span>
+coleccion = db[<span class="t-str">"modelos"</span>]        <span class="t-com"># colección (se crea sola al primer insert)</span>
+
+<span class="t-fn">print</span>(<span class="t-str">"Conexión lista. Colecciones:"</span>, db.list_collection_names())</code></pre>
+      </div>
+      <div class="banner tip"><span class="bic">🔌</span><div><b>Sin red / plan B:</b> la misma sintaxis funciona con <code class="inline">mongomock</code>. Instala <code class="inline">pip install mongomock</code> y cambia la conexión por <code class="inline">import mongomock</code> + <code class="inline">client = mongomock.MongoClient()</code>. Todo el CRUD corre idéntico.</div></div>
+
+      <h3><span class="bar"></span>CRUD: las cuatro operaciones</h3>
+      <div class="crud">
+        <div class="crud-c"><div class="cl">C</div><div class="ct">Create</div><div class="cd">crear / insertar</div></div>
+        <div class="crud-c"><div class="cl">R</div><div class="ct">Read</div><div class="cd">leer / consultar</div></div>
+        <div class="crud-c"><div class="cl">U</div><div class="ct">Update</div><div class="cd">actualizar</div></div>
+        <div class="crud-c"><div class="cl">D</div><div class="ct">Delete</div><div class="cd">borrar</div></div>
+      </div>
+
+      <h4 style="font-size:14px;color:var(--purple-2);margin:18px 0 8px;font-weight:700">CREATE — insertar dos modelos con estructura distinta</h4>
+      <div class="code">
+        <div class="code-head"><span class="dots"><i></i><i></i><i></i></span><span class="fname"><b>metadatos_modelos.py</b></span>
+          <button class="copy-btn" onclick="copyCode(this)">⧉ Copiar</button></div>
+        <pre><code><span class="t-kw">from</span> datetime <span class="t-kw">import</span> datetime
+
+modelo_v1 = {
+    <span class="t-str">"nombre"</span>: <span class="t-str">"predictor_cancelaciones"</span>,
+    <span class="t-str">"version"</span>: <span class="t-str">"v1.0"</span>,
+    <span class="t-str">"algoritmo"</span>: <span class="t-str">"RandomForest"</span>,
+    <span class="t-str">"metricas"</span>: {<span class="t-str">"accuracy"</span>: <span class="t-num">0.87</span>, <span class="t-str">"precision"</span>: <span class="t-num">0.83</span>, <span class="t-str">"recall"</span>: <span class="t-num">0.79</span>},
+    <span class="t-str">"features"</span>: [<span class="t-str">"categoria"</span>, <span class="t-str">"valor_pedido"</span>, <span class="t-str">"hora"</span>, <span class="t-str">"ciudad"</span>],
+    <span class="t-str">"entrenado_en"</span>: datetime(<span class="t-num">2026</span>, <span class="t-num">6</span>, <span class="t-num">15</span>),
+    <span class="t-str">"notas"</span>: <span class="t-str">"Primer modelo en producción. Falta validar en Medellín."</span>,
+}
+coleccion.insert_one(modelo_v1)
+
+modelo_v2 = {
+    <span class="t-str">"nombre"</span>: <span class="t-str">"predictor_cancelaciones"</span>,
+    <span class="t-str">"version"</span>: <span class="t-str">"v2.0"</span>,
+    <span class="t-str">"algoritmo"</span>: <span class="t-str">"XGBoost"</span>,
+    <span class="t-str">"metricas"</span>: {<span class="t-str">"accuracy"</span>: <span class="t-num">0.91</span>, <span class="t-str">"precision"</span>: <span class="t-num">0.88</span>, <span class="t-str">"recall"</span>: <span class="t-num">0.85</span>, <span class="t-str">"f1"</span>: <span class="t-num">0.86</span>},
+    <span class="t-str">"features"</span>: [<span class="t-str">"categoria"</span>, <span class="t-str">"valor_pedido"</span>, <span class="t-str">"hora"</span>, <span class="t-str">"ciudad"</span>, <span class="t-str">"clima"</span>, <span class="t-str">"dia_semana"</span>],
+    <span class="t-str">"hiperparametros"</span>: {<span class="t-str">"max_depth"</span>: <span class="t-num">6</span>, <span class="t-str">"learning_rate"</span>: <span class="t-num">0.1</span>},  <span class="t-com"># campo nuevo</span>
+    <span class="t-str">"entrenado_en"</span>: datetime(<span class="t-num">2026</span>, <span class="t-num">6</span>, <span class="t-num">18</span>),
+}
+coleccion.insert_one(modelo_v2)</code></pre>
+      </div>
+      <div class="gotit"><div class="lbl">¿Y esto qué me dio?</div><p>Dos modelos con <b>estructuras diferentes</b> conviviendo en la misma colección. <code class="inline">notas</code> es texto libre; <code class="inline">hiperparametros</code> solo existe en v2.0. En SQL esto habría exigido alterar la tabla. Aquí, cero fricción.</p></div>
+
+      <h4 style="font-size:14px;color:var(--purple-2);margin:18px 0 8px;font-weight:700">READ — leer y filtrar (incluso campos anidados)</h4>
+      <div class="code">
+        <div class="code-head"><span class="dots"><i></i><i></i><i></i></span><span class="fname"><b>metadatos_modelos.py</b></span>
+          <button class="copy-btn" onclick="copyCode(this)">⧉ Copiar</button></div>
+        <pre><code>total = coleccion.count_documents({})
+<span class="t-fn">print</span>(<span class="t-str">"Documentos en la colección:"</span>, total)
+
+v2 = coleccion.find_one({<span class="t-str">"version"</span>: <span class="t-str">"v2.0"</span>})
+<span class="t-fn">print</span>(<span class="t-str">"v2.0 accuracy:"</span>, v2[<span class="t-str">"metricas"</span>][<span class="t-str">"accuracy"</span>])
+
+buenos = coleccion.count_documents({<span class="t-str">"metricas.accuracy"</span>: {<span class="t-str">"$gte"</span>: <span class="t-num">0.90</span>}})
+<span class="t-fn">print</span>(<span class="t-str">"Modelos con accuracy >= 0.90:"</span>, buenos)</code></pre>
+      </div>
+      <div class="out"><div class="oh">▸ salida en consola</div><pre><code>Documentos en la colección: 2
+v2.0 accuracy: 0.91
+Modelos con accuracy >= 0.90: 1</code></pre></div>
+      <div class="banner tip"><span class="bic">🔎</span><div>La notación de punto <code class="inline">"metricas.accuracy"</code> entra a campos anidados. <code class="inline">$gte</code> significa "mayor o igual" (<em>greater than or equal</em>).</div></div>
+
+      <h4 style="font-size:14px;color:var(--purple-2);margin:18px 0 8px;font-weight:700">UPDATE y DELETE</h4>
+      <div class="code">
+        <div class="code-head"><span class="dots"><i></i><i></i><i></i></span><span class="fname"><b>metadatos_modelos.py</b></span>
+          <button class="copy-btn" onclick="copyCode(this)">⧉ Copiar</button></div>
+        <pre><code><span class="t-com"># UPDATE: marcar v2.0 como modelo en producción</span>
+coleccion.update_one(
+    {<span class="t-str">"version"</span>: <span class="t-str">"v2.0"</span>},
+    {<span class="t-str">"$set"</span>: {<span class="t-str">"estado"</span>: <span class="t-str">"produccion"</span>}}
+)
+
+<span class="t-com"># DELETE: dar de baja el modelo viejo v1.0</span>
+coleccion.delete_one({<span class="t-str">"version"</span>: <span class="t-str">"v1.0"</span>})
+<span class="t-fn">print</span>(<span class="t-str">"Documentos tras eliminar v1.0:"</span>, coleccion.count_documents({}))</code></pre>
+      </div>
+      <div class="out"><div class="oh">▸ salida en consola</div><pre><code>Documentos tras eliminar v1.0: 1</code></pre></div>
+      <div class="gotit"><div class="lbl">¿Cómo se lee?</div><p><code class="inline">$set</code> agrega o cambia un campo sin tocar el resto: a v2.0 le aparece <code class="inline">estado</code>, pero v1.0 nunca lo tuvo. Campos distintos por documento, sin problema.</p></div>
+    </section>
+
+    <!-- ===== SECTION 7 ===== -->
+    <section class="section" id="s7" data-title="La foto completa">
+      <span class="eyebrow">● Síntesis</span>
+      <h2><span class="em">🧩</span>La foto completa</h2>
+      <p class="lede">Rappi ahora tiene dos bases trabajando juntas, cada una para lo que mejor sabe hacer. Ese es el verdadero trabajo de ingeniería de datos: elegir la herramienta correcta para cada dato.</p>
+
+      <div class="compare">
+        <div class="compare-col sql">
+          <div class="ch">🗄️ SQL · SQLAlchemy</div>
+          <div class="csub">las predicciones</div>
+          <ul>
+            <li>Datos uniformes que se auditan</li>
+            <li>500 filas, persistentes en disco</li>
+            <li>Consultas, filtros, agregaciones</li>
+            <li>La base del historial del modelo</li>
+          </ul>
+        </div>
+        <div class="compare-col nosql">
+          <div class="ch">🍃 NoSQL · MongoDB</div>
+          <div class="csub">los metadatos de modelos</div>
+          <ul>
+            <li>Datos variables que cambian de forma</li>
+            <li>Cada versión con campos distintos</li>
+            <li>Documentos flexibles tipo JSON</li>
+            <li>La ficha técnica de cada modelo</li>
+          </ul>
+        </div>
+      </div>
+
+      <h3><span class="bar"></span>Cómo se conectan los archivos</h3>
+      <div class="depmap">
+        <div class="depmap-plano">
+          <div class="dep-pill">📐 modelos_db.py · el plano</div>
+        </div>
+        <div class="dep-line">↓ todos lo importan ↓</div>
+        <div class="dep-branches">
+          <div class="dep-child"><b>guardar_predicciones.py</b>genera y guarda</div>
+          <div class="dep-child"><b>auditoria.py</b>consulta y audita</div>
+          <div class="dep-child"><b>otro_dia.py</b>prueba persistencia</div>
+        </div>
+        <div class="dep-line" style="margin-top:18px;color:var(--cyan)">— independiente —</div>
+        <div class="dep-branches">
+          <div class="dep-child" style="border-color:rgba(56,217,245,.3)"><b>metadatos_modelos.py</b>CRUD en MongoDB</div>
+        </div>
+      </div>
+      <div class="banner key"><span class="bic">🔑</span><div>La idea que amarra todo: <b>modelos_db.py es el plano</b>; los demás lo importan. Por eso <code class="inline">from modelos_db import engine, PrediccionCancelacion</code> aparece en casi todos. Es la línea que conecta los archivos.</div></div>
+
+      <h3><span class="bar"></span>Y una pregunta para llevarte</h3>
+      <div class="reflect">
+        <div class="q"><span class="qm">?</span><span>Rappi quiere guardar, por cada pedido, los comentarios libres que el cliente escribe al cancelar ("llegó frío", "demoró mucho", emojis…). ¿Eso va en SQL o en NoSQL?</span></div>
+        <details class="reveal"><summary><span class="chev">▶</span> Ver el razonamiento</summary>
+          <div class="ans"><b>No hay una sola respuesta correcta.</b> Si es texto libre, variable, a veces vacío y a veces con metadatos extra, encaja en <b>NoSQL</b>. Pero si es solo un texto corto atado a un <code class="inline">id_pedido</code> que ya está en la tabla de predicciones, podría ser una columna más en <b>SQL</b> y mantener todo cruzable. La clave es elegir según <b>qué tan estructurado y cruzable</b> necesitas el dato. Eso es ingeniería de datos real.</div>
+        </details>
+      </div>
+
+      <div class="banner tip"><span class="bic">🔗</span><div><b>Lo que viene:</b> en la Clase 4 (SQL Avanzado) correremos window functions y agregaciones complejas sobre <b>estas mismas predicciones</b> que hoy persistimos. Hoy construimos el almacén; pronto lo exprimimos. Todo se conecta.</div></div>
+    </section>
+
+    <div class="foot">
+      © 2026 Ana Alvarado · Educadora Tech &amp; Desarrolladora Full Stack · <a href="https://linkedin.com/in/ana-alvarado-instructora-full-stack" target="_blank" rel="noopener">linkedin.com/in/ana-alvarado-instructora-full-stack</a>
+    </div>
+  </main>
+</div>
+
+<div class="present-hud">
+  <span class="pdot" id="hudNum">1 / 7</span>
+  <span id="hudTitle">El problema</span>
+  <span>·</span>
+  <kbd>←</kbd><kbd>→</kbd> navegar
+  <span class="present-exit" onclick="exitPresent()">✕ salir (Esc)</span>
+</div>
+
+<script>
+const sections = Array.from(document.querySelectorAll('.section'));
+const navLinks = Array.from(document.querySelectorAll('.nav a'));
+const prog = document.getElementById('prog');
+let current = 0;
+const seen = new Set([0]);
+
+/* ---- Copy code ---- */
+function copyCode(btn){
+  const code = btn.closest('.code').querySelector('pre code').innerText;
+  navigator.clipboard.writeText(code).then(()=>{
+    const o = btn.innerHTML;
+    btn.innerHTML = '✓ Copiado'; btn.classList.add('done');
+    setTimeout(()=>{btn.innerHTML=o; btn.classList.remove('done');},1600);
+  });
+}
+
+/* ---- Scroll spy (normal mode) ---- */
+const spy = new IntersectionObserver((entries)=>{
+  if(document.body.classList.contains('present')) return;
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      const id = e.target.id;
+      const idx = sections.findIndex(s=>s.id===id);
+      seen.add(idx);
+      navLinks.forEach(a=>a.classList.toggle('active', a.getAttribute('href')==='#'+id));
+      updateProgress();
+    }
+  });
+},{rootMargin:'-45% 0px -45% 0px'});
+sections.forEach(s=>spy.observe(s));
+
+function updateProgress(){
+  prog.style.width = (seen.size/sections.length*100)+'%';
+}
+
+/* ---- Smooth nav + close mobile menu ---- */
+navLinks.forEach(a=>a.addEventListener('click',()=>{
+  document.querySelector('.sidebar').classList.remove('open');
+}));
+
+/* ---- Presentation mode ---- */
+function enterPresent(){
+  document.body.classList.add('present');
+  current = getClosestSection();
+  showSlide(current);
+  if(document.documentElement.requestFullscreen){
+    document.documentElement.requestFullscreen().catch(()=>{});
+  }
+}
+function exitPresent(){
+  document.body.classList.remove('present');
+  if(document.fullscreenElement){document.exitFullscreen().catch(()=>{});}
+  sections[current].scrollIntoView();
+}
+function getClosestSection(){
+  const mid = window.innerHeight/2;
+  let best=0,bd=Infinity;
+  sections.forEach((s,i)=>{
+    const r=s.getBoundingClientRect();
+    const d=Math.abs(r.top+r.height/2-mid);
+    if(d<bd){bd=d;best=i;}
+  });
+  return best;
+}
+function showSlide(i){
+  sections.forEach((s,idx)=>s.classList.toggle('show', idx===i));
+  document.getElementById('hudNum').textContent = (i+1)+' / '+sections.length;
+  document.getElementById('hudTitle').textContent = sections[i].dataset.title;
+  seen.add(i); updateProgress();
+  document.querySelector('.main').scrollTop = 0;
+  window.scrollTo(0,0);
+}
+function nextSlide(){ if(current<sections.length-1){current++;showSlide(current);} }
+function prevSlide(){ if(current>0){current--;showSlide(current);} }
+
+/* ---- Keyboard ---- */
+document.addEventListener('keydown',(e)=>{
+  const present = document.body.classList.contains('present');
+  if(e.key==='p'||e.key==='P'){
+    if(!present && !isTyping(e)) {e.preventDefault(); enterPresent();}
+  }
+  if(e.key==='Escape' && present){ exitPresent(); }
+  if(present){
+    if(e.key==='ArrowRight'||e.key==='ArrowDown'||e.key===' '){e.preventDefault();nextSlide();}
+    if(e.key==='ArrowLeft'||e.key==='ArrowUp'){e.preventDefault();prevSlide();}
+  }
+});
+function isTyping(e){return /input|textarea|select/i.test(e.target.tagName);}
+
+/* exit fullscreen via browser leaves present mode tidy */
+document.addEventListener('fullscreenchange',()=>{
+  if(!document.fullscreenElement && document.body.classList.contains('present')){
+    document.body.classList.remove('present');
+    sections[current].scrollIntoView();
+  }
+});
+
+updateProgress();
+</script>
+</body>
+</html>
